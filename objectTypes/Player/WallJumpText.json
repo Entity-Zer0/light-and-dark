@@ -1,0 +1,10 @@
+{
+	"name": "WallJumpText",
+	"plugin-id": "Text",
+	"sid": 518509130386779,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

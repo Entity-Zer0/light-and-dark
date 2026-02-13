@@ -1,0 +1,10 @@
+{
+	"name": "PressSpaceText",
+	"plugin-id": "Text",
+	"sid": 744137559969296,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
