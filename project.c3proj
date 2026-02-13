@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
@@ -72,7 +79,9 @@
 			"TiledBackground",
 			"Sprite3",
 			"PressSpaceText",
-			"WhiteWallMoving"
+			"WhiteWallMoving",
+			"FadeWhite",
+			"FadeBlack"
 		],
 		"subfolders": [
 			{
@@ -128,13 +137,15 @@
 	"layouts": {
 		"items": [
 			"Layout 1",
-			"Layout 2"
+			"Layout 2",
+			"Fade in"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event sheet 1",
+			"Code for Fade in"
 		],
 		"subfolders": []
 	},
