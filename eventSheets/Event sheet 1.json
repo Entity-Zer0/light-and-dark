@@ -1528,41 +1528,6 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "key-is-down",
-									"objectClass": "Keyboard",
-									"sid": 254690475933952,
-									"parameters": {
-										"key": 38
-									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 508132163075325,
-									"parameters": {
-										"variable": "White",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 391873550609836,
-									"parameters": {
-										"animation": "\"WhiteSpriteJump\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 987289297546194
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
 									"id": "is-moving",
 									"objectClass": "Player",
 									"sid": 360944562532865,
@@ -1592,39 +1557,6 @@
 								}
 							],
 							"sid": 625280443635566
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-falling",
-									"objectClass": "Player",
-									"sid": 639154234931560,
-									"behaviorType": "Platform"
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 499595118699795,
-									"parameters": {
-										"variable": "White",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 252802351302417,
-									"parameters": {
-										"animation": "\"WhiteSpriteMoving\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 386666471361240
 						},
 						{
 							"eventType": "block",
@@ -1716,84 +1648,16 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "key-is-down",
-									"objectClass": "Keyboard",
-									"sid": 690585616364139,
-									"parameters": {
-										"key": 38
-									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 542134354648896,
-									"parameters": {
-										"variable": "Black",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 330533653706621,
-									"parameters": {
-										"animation": "\"BlackSpriteJump\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 146621800219068
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-falling",
-									"objectClass": "Player",
-									"sid": 710792741813304,
-									"behaviorType": "Platform"
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 889509048841187,
-									"parameters": {
-										"variable": "Black",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 877000543231657,
-									"parameters": {
-										"animation": "\"BlackSpriteMoving\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 946088536879676
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
 									"id": "is-moving",
 									"objectClass": "Player",
-									"sid": 780438688210079,
+									"sid": 575089808079694,
 									"behaviorType": "Platform",
 									"isInverted": true
 								},
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 109556595650628,
+									"sid": 532225672665714,
 									"parameters": {
 										"variable": "Black",
 										"comparison": 0,
@@ -1805,14 +1669,14 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Player",
-									"sid": 746089706917532,
+									"sid": 435793404452650,
 									"parameters": {
 										"animation": "\"BlackSpriteIdle\"",
 										"from": "beginning"
 									}
 								}
 							],
-							"sid": 572564593950556
+							"sid": 803249857324756
 						}
 					],
 					"sid": 562976824831849
