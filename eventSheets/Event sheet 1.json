@@ -1439,90 +1439,332 @@
 					"isActiveOnStart": true,
 					"children": [
 						{
-							"eventType": "block",
-							"conditions": [
+							"eventType": "group",
+							"disabled": false,
+							"title": "WalkingDirection",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
 								{
-									"id": "key-is-down",
-									"objectClass": "Keyboard",
-									"sid": 581116342726672,
-									"parameters": {
-										"key": 39
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 987049534727310,
+											"parameters": {
+												"key": 39
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 726292622547208,
+											"parameters": {
+												"variable": "White",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Player",
+											"sid": 700748593242117,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 808132357733835,
+											"parameters": {
+												"animation": "\"WhiteSpriteMoving\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 386884119477324
 								},
 								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 154945247828546,
-									"parameters": {
-										"variable": "White",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-mirrored",
-									"objectClass": "Player",
-									"sid": 544047472390847,
-									"parameters": {
-										"state": "not-mirrored"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 914035548886461,
+											"parameters": {
+												"key": 37
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 651002682328944,
+											"parameters": {
+												"variable": "White",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Player",
+											"sid": 122273218711108,
+											"parameters": {
+												"state": "mirrored"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 645299945628318,
+											"parameters": {
+												"animation": "\"WhiteSpriteMoving\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 751999687318217
 								},
 								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 254028791693364,
-									"parameters": {
-										"animation": "\"WhiteSpriteMoving\"",
-										"from": "beginning"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 960524470032672,
+											"parameters": {
+												"key": 39
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 405245938411672,
+											"parameters": {
+												"variable": "Black",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Player",
+											"sid": 383488864698837,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 660913210828067,
+											"parameters": {
+												"animation": "\"BlackSpriteMoving\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 676470985478280
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 306158508600287,
+											"parameters": {
+												"key": 37
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 514001507723724,
+											"parameters": {
+												"variable": "Black",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-mirrored",
+											"objectClass": "Player",
+											"sid": 268335273339957,
+											"parameters": {
+												"state": "mirrored"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 966802106743762,
+											"parameters": {
+												"animation": "\"BlackSpriteMoving\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 615640794784159
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-falling",
+											"objectClass": "Player",
+											"sid": 672053136562873,
+											"behaviorType": "Platform"
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 326362289778659,
+											"parameters": {
+												"variable": "White",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 765135396769638,
+											"parameters": {
+												"animation": "\"WhiteSpriteMoving\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 223968907209546
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-falling",
+											"objectClass": "Player",
+											"sid": 593671147735994,
+											"behaviorType": "Platform"
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 605143601672569,
+											"parameters": {
+												"variable": "Black",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 262810258588000,
+											"parameters": {
+												"animation": "\"BlackSpriteMoving\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 478751532447526
 								}
 							],
-							"sid": 754851429306896
+							"sid": 695568240357259
 						},
 						{
-							"eventType": "block",
-							"conditions": [
+							"eventType": "group",
+							"disabled": false,
+							"title": "Jump",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
 								{
-									"id": "key-is-down",
-									"objectClass": "Keyboard",
-									"sid": 659665963771401,
-									"parameters": {
-										"key": 37
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 307294283565944,
+											"parameters": {
+												"key": 38
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 354401516852027,
+											"parameters": {
+												"variable": "White",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 563608537216332,
+											"parameters": {
+												"animation": "\"WhiteSpriteJump\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 416561271889734
 								},
 								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 965229143042974,
-									"parameters": {
-										"variable": "White",
-										"comparison": 0,
-										"value": "1"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 984308817492025,
+											"parameters": {
+												"key": 38
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 789723067108430,
+											"parameters": {
+												"variable": "Black",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 450298245109329,
+											"parameters": {
+												"animation": "\"BlackSpriteJump\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 242258231880408
 								}
 							],
-							"actions": [
-								{
-									"id": "set-mirrored",
-									"objectClass": "Player",
-									"sid": 406770130599644,
-									"parameters": {
-										"state": "mirrored"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 934249610339662,
-									"parameters": {
-										"animation": "\"WhiteSpriteMoving\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 613554922203681
+							"sid": 662246066103936
 						},
 						{
 							"eventType": "block",
@@ -1562,102 +1804,16 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "key-is-down",
-									"objectClass": "Keyboard",
-									"sid": 672072627791852,
-									"parameters": {
-										"key": 39
-									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 583970726025031,
-									"parameters": {
-										"variable": "Black",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-mirrored",
-									"objectClass": "Player",
-									"sid": 365550081988431,
-									"parameters": {
-										"state": "not-mirrored"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 163668660923085,
-									"parameters": {
-										"animation": "\"BlackSpriteMoving\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 688867073130189
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "key-is-down",
-									"objectClass": "Keyboard",
-									"sid": 917284449023113,
-									"parameters": {
-										"key": 37
-									}
-								},
-								{
-									"id": "compare-eventvar",
-									"objectClass": "System",
-									"sid": 978209456449279,
-									"parameters": {
-										"variable": "Black",
-										"comparison": 0,
-										"value": "1"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-mirrored",
-									"objectClass": "Player",
-									"sid": 818013972822613,
-									"parameters": {
-										"state": "mirrored"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 298408995770014,
-									"parameters": {
-										"animation": "\"BlackSpriteMoving\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 276157658538116
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
 									"id": "is-moving",
 									"objectClass": "Player",
-									"sid": 575089808079694,
+									"sid": 692182623702002,
 									"behaviorType": "Platform",
 									"isInverted": true
 								},
 								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 532225672665714,
+									"sid": 928334630647132,
 									"parameters": {
 										"variable": "Black",
 										"comparison": 0,
@@ -1669,14 +1825,14 @@
 								{
 									"id": "set-animation",
 									"objectClass": "Player",
-									"sid": 435793404452650,
+									"sid": 325815356779507,
 									"parameters": {
 										"animation": "\"BlackSpriteIdle\"",
 										"from": "beginning"
 									}
 								}
 							],
-							"sid": 803249857324756
+							"sid": 997317699142784
 						}
 					],
 					"sid": 562976824831849
