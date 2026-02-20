@@ -2145,7 +2145,7 @@
 					}
 				},
 				{
-					"type": "Door",
+					"type": "WhiteDoor",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -6253,7 +6253,7 @@
 					}
 				},
 				{
-					"type": "Elevator",
+					"type": "WhiteElevator",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -6290,7 +6290,7 @@
 					}
 				},
 				{
-					"type": "Elevator",
+					"type": "WhiteElevator",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -7606,7 +7606,7 @@
 					}
 				},
 				{
-					"type": "Elevator",
+					"type": "WhiteElevator",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -7643,7 +7643,7 @@
 					}
 				},
 				{
-					"type": "Elevator",
+					"type": "WhiteElevator",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -9722,10 +9722,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 140,
-						"y": 205,
+						"x": 139.91615501920566,
+						"y": 210.75755098616713,
 						"width": 98.15454280917928,
-						"height": 0.2903195478548639,
+						"height": 0.40191721729215146,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -10030,10 +10030,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 131,
-						"y": 86,
+						"x": 131.0005158121128,
+						"y": 79.98488566156298,
 						"width": 7.368788872748283,
-						"height": 85.54204041404961,
+						"height": 91.55715477460276,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -10811,8 +10811,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 132,
-						"y": 86,
+						"x": 131.63172769085702,
+						"y": 80.10764305371174,
 						"width": 6.457199822455593,
 						"height": 0.348816058562619,
 						"originX": 0,

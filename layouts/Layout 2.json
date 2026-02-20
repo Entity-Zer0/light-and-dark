@@ -4944,7 +4944,7 @@
 					}
 				},
 				{
-					"type": "Door",
+					"type": "WhiteDoor",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

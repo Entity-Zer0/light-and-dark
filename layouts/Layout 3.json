@@ -1884,7 +1884,7 @@
 					}
 				},
 				{
-					"type": "Sprite7",
+					"type": "LazerWarning",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -1995,7 +1995,7 @@
 					}
 				},
 				{
-					"type": "Sprite8",
+					"type": "WhiteButton",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -2079,7 +2079,7 @@
 					}
 				},
 				{
-					"type": "Sprite9",
+					"type": "LabVault",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

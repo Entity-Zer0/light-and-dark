@@ -74,13 +74,7 @@
 	"objectTypes": {
 		"items": [
 			"Keyboard",
-			"Preview",
-			"X",
-			"BreakThrough",
-			"Sprite7",
-			"Sprite8",
-			"Sprite9",
-			"InvisBlock"
+			"Preview"
 		],
 		"subfolders": [
 			{
@@ -91,7 +85,7 @@
 					"WhiteWindow",
 					"BlackBackground",
 					"WhiteBackground",
-					"Door",
+					"WhiteDoor",
 					"BlackLightAngled",
 					"WhiteTable",
 					"WhiteLightsAngled",
@@ -101,9 +95,14 @@
 					"BlackLightSwitch",
 					"BrokenWindow",
 					"TiledBackground",
-					"Elevator",
+					"WhiteElevator",
 					"BlackTable",
-					"BrokenBlackWindow"
+					"BrokenBlackWindow",
+					"WhiteButton",
+					"LabVault",
+					"LazerWarning",
+					"BlackElevator",
+					"BlackDoor"
 				],
 				"subfolders": [
 					{
@@ -141,7 +140,9 @@
 					"SPACEobjects",
 					"Sprite5",
 					"Sprite6",
-					"ColorSwitchTxt"
+					"ColorSwitchTxt",
+					"BreakThrough",
+					"X"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -151,7 +152,8 @@
 					"Sprite",
 					"Sprite2",
 					"Sprite3",
-					"Sprite4"
+					"Sprite4",
+					"InvisBlock"
 				],
 				"subfolders": [],
 				"name": "Random"

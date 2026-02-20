@@ -3639,7 +3639,7 @@
 											"objectClass": "Player",
 											"sid": 972342917176429,
 											"parameters": {
-												"object": "Sprite8"
+												"object": "WhiteButton"
 											}
 										},
 										{
@@ -3672,7 +3672,7 @@
 										},
 										{
 											"id": "move-to-layer",
-											"objectClass": "Sprite9",
+											"objectClass": "LabVault",
 											"sid": 511503866961469,
 											"parameters": {
 												"layer": "7"
@@ -3765,7 +3765,7 @@
 											"objectClass": "Player",
 											"sid": 269005157107593,
 											"parameters": {
-												"object": "Sprite8"
+												"object": "WhiteButton"
 											}
 										},
 										{
@@ -3828,7 +3828,7 @@
 									"objectClass": "Player",
 									"sid": 560054651678153,
 									"parameters": {
-										"object": "Door"
+										"object": "WhiteDoor"
 									}
 								},
 								{
@@ -3843,7 +3843,7 @@
 								},
 								{
 									"id": "pick-by-unique-id",
-									"objectClass": "Door",
+									"objectClass": "WhiteDoor",
 									"sid": 479849271152862,
 									"parameters": {
 										"unique-id": "371"
