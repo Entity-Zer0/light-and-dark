@@ -134,17 +134,25 @@
 					"Player",
 					"Spawn",
 					"UpgradeScreen",
-					"WallJumpText",
 					"ColorChangerBlack",
 					"ColorChangerWhite",
-					"SPACEobjects",
-					"Sprite5",
-					"Sprite6",
-					"ColorSwitchTxt",
-					"BreakThrough",
-					"X"
+					"BlackColorSpawn",
+					"WhiteColorSpawn"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"BreakThrough",
+							"ColorSwitchTxt",
+							"SPACEobjects",
+							"WallJumpText",
+							"WhiteX",
+							"BlackX"
+						],
+						"subfolders": [],
+						"name": "Text"
+					}
+				],
 				"name": "Player"
 			},
 			{

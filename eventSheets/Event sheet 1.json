@@ -527,7 +527,7 @@
 													"objectClass": "Player",
 													"sid": 698656623384787,
 													"parameters": {
-														"object": "Sprite5"
+														"object": "BlackColorSpawn"
 													}
 												}
 											],
@@ -561,7 +561,7 @@
 												},
 												{
 													"id": "destroy",
-													"objectClass": "Sprite5",
+													"objectClass": "BlackColorSpawn",
 													"sid": 930828551244542
 												}
 											],
@@ -585,7 +585,7 @@
 													"objectClass": "Spawn",
 													"sid": 276920660547503,
 													"parameters": {
-														"object": "Sprite5",
+														"object": "BlackColorSpawn",
 														"layer": "0",
 														"image-point": "0",
 														"create-hierarchy": false,
@@ -613,7 +613,7 @@
 													"objectClass": "Spawn",
 													"sid": 582679684895357,
 													"parameters": {
-														"object": "Sprite5",
+														"object": "BlackColorSpawn",
 														"layer": "0",
 														"image-point": "0",
 														"create-hierarchy": false,
@@ -641,7 +641,7 @@
 													"objectClass": "Player",
 													"sid": 438988726200096,
 													"parameters": {
-														"object": "Sprite6"
+														"object": "WhiteColorSpawn"
 													}
 												}
 											],
@@ -675,7 +675,7 @@
 												},
 												{
 													"id": "destroy",
-													"objectClass": "Sprite6",
+													"objectClass": "WhiteColorSpawn",
 													"sid": 440953084289293
 												}
 											],
@@ -699,7 +699,7 @@
 													"objectClass": "Spawn",
 													"sid": 244184067078779,
 													"parameters": {
-														"object": "Sprite6",
+														"object": "WhiteColorSpawn",
 														"layer": "0",
 														"image-point": "0",
 														"create-hierarchy": false,
@@ -727,7 +727,7 @@
 													"objectClass": "Spawn",
 													"sid": 320906892854740,
 													"parameters": {
-														"object": "Sprite6",
+														"object": "WhiteColorSpawn",
 														"layer": "0",
 														"image-point": "0",
 														"create-hierarchy": false,
@@ -4261,7 +4261,7 @@
 						},
 						{
 							"id": "pick-by-unique-id",
-							"objectClass": "X",
+							"objectClass": "WhiteX",
 							"sid": 906637909590771,
 							"parameters": {
 								"unique-id": "617"
@@ -4271,7 +4271,7 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "X",
+							"objectClass": "WhiteX",
 							"sid": 718652464543966,
 							"parameters": {
 								"visibility": "visible"
@@ -4309,7 +4309,7 @@
 						},
 						{
 							"id": "pick-by-unique-id",
-							"objectClass": "X",
+							"objectClass": "WhiteX",
 							"sid": 641340777997064,
 							"parameters": {
 								"unique-id": "616"
@@ -4319,7 +4319,7 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "X",
+							"objectClass": "WhiteX",
 							"sid": 562418766638456,
 							"parameters": {
 								"visibility": "visible"
@@ -4357,7 +4357,7 @@
 						},
 						{
 							"id": "pick-by-unique-id",
-							"objectClass": "X",
+							"objectClass": "WhiteX",
 							"sid": 916198328091677,
 							"parameters": {
 								"unique-id": "618"
@@ -4367,7 +4367,7 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "X",
+							"objectClass": "WhiteX",
 							"sid": 682339165599750,
 							"parameters": {
 								"visibility": "visible"
@@ -4405,7 +4405,7 @@
 						},
 						{
 							"id": "pick-by-unique-id",
-							"objectClass": "X",
+							"objectClass": "WhiteX",
 							"sid": 677465273927624,
 							"parameters": {
 								"unique-id": "78"
@@ -4415,7 +4415,7 @@
 					"actions": [
 						{
 							"id": "set-visible",
-							"objectClass": "X",
+							"objectClass": "WhiteX",
 							"sid": 746557518745540,
 							"parameters": {
 								"visibility": "visible"

@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite5",
+					"type": "BlackColorSpawn",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -9776,7 +9776,7 @@
 					}
 				},
 				{
-					"type": "X",
+					"type": "WhiteX",
 					"properties": {
 						"text": "X\n",
 						"enable-bbcode": true,
@@ -9829,7 +9829,7 @@
 					}
 				},
 				{
-					"type": "X",
+					"type": "WhiteX",
 					"properties": {
 						"text": "X\n",
 						"enable-bbcode": true,
@@ -11059,7 +11059,7 @@
 					}
 				},
 				{
-					"type": "X",
+					"type": "WhiteX",
 					"properties": {
 						"text": "X\n",
 						"enable-bbcode": true,
@@ -11112,7 +11112,7 @@
 					}
 				},
 				{
-					"type": "X",
+					"type": "WhiteX",
 					"properties": {
 						"text": "X\n",
 						"enable-bbcode": true,
