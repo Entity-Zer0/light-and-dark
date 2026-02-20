@@ -938,19 +938,19 @@
 								{
 									"id": "set-vector-x",
 									"objectClass": "Player",
-									"sid": 450452275538115,
+									"sid": 855707949765934,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-x": "Self.X-900"
+										"vector-x": "-200"
 									}
 								},
 								{
 									"id": "set-vector-y",
 									"objectClass": "Player",
-									"sid": 757614136012744,
+									"sid": 542170844116524,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "Self.Y-465"
+										"vector-y": "-365"
 									}
 								},
 								{
@@ -1063,19 +1063,19 @@
 								{
 									"id": "set-vector-x",
 									"objectClass": "Player",
-									"sid": 518234330357985,
+									"sid": 518133817088536,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-x": "Self.X+900"
+										"vector-x": "200"
 									}
 								},
 								{
 									"id": "set-vector-y",
 									"objectClass": "Player",
-									"sid": 421102284341985,
+									"sid": 425865026071442,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "Self.Y-465"
+										"vector-y": "-365"
 									}
 								},
 								{
