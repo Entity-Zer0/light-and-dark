@@ -74,7 +74,8 @@
 	"objectTypes": {
 		"items": [
 			"Keyboard",
-			"Preview"
+			"Preview",
+			"Sprite5"
 		],
 		"subfolders": [
 			{
@@ -83,8 +84,6 @@
 					"BlackWindow",
 					"WhiteLampLights",
 					"WhiteWindow",
-					"BlackBackground",
-					"WhiteBackground",
 					"WhiteDoor",
 					"BlackLightAngled",
 					"WhiteTable",
@@ -111,7 +110,9 @@
 							"BlackWallsSolid",
 							"WhiteWallsSolid",
 							"WhiteWallMoving",
-							"JumpThruBlock"
+							"JumpThruBlock",
+							"BlackBackground",
+							"WhiteBackground"
 						],
 						"subfolders": [],
 						"name": "Walls and Solid"
@@ -139,20 +140,7 @@
 					"BlackColorSpawn",
 					"WhiteColorSpawn"
 				],
-				"subfolders": [
-					{
-						"items": [
-							"BreakThrough",
-							"ColorSwitchTxt",
-							"SPACEobjects",
-							"WallJumpText",
-							"WhiteX",
-							"BlackX"
-						],
-						"subfolders": [],
-						"name": "Text"
-					}
-				],
+				"subfolders": [],
 				"name": "Player"
 			},
 			{
@@ -165,6 +153,18 @@
 				],
 				"subfolders": [],
 				"name": "Random"
+			},
+			{
+				"items": [
+					"BreakThrough",
+					"ColorSwitchTxt",
+					"SPACEobjects",
+					"WallJumpText",
+					"WhiteX",
+					"BlackX"
+				],
+				"subfolders": [],
+				"name": "Text"
 			}
 		]
 	},

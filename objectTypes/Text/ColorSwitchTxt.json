@@ -1,0 +1,10 @@
+{
+	"name": "ColorSwitchTxt",
+	"plugin-id": "Text",
+	"sid": 304120516164938,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

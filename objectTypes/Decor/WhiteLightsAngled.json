@@ -27,7 +27,44 @@
 					}
 				],
 				"sid": 839409675402035,
-				"name": "Animation 1",
+				"name": "AngledWhite",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 71,
+						"height": 60,
+						"originX": 0.49295774647887325,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3309173,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.016666666666666666,
+								1,
+								0.016666666666666666,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 748323769902424,
+				"name": "AngledBlack",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
