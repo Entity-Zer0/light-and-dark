@@ -50,8 +50,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Tween",
-			"name": "Tween",
+			"id": "jumpthru",
+			"name": "Jump-thru",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -75,13 +75,7 @@
 		"items": [
 			"Keyboard",
 			"Preview",
-			"Sprite",
-			"TiledBackground",
-			"Sprite3",
-			"PressSpaceText",
-			"WhiteWallMoving",
-			"FadeWhite",
-			"FadeBlack"
+			"Sprite5"
 		],
 		"subfolders": [
 			{
@@ -90,25 +84,48 @@
 					"BlackWindow",
 					"WhiteLampLights",
 					"WhiteWindow",
-					"BlackBackground",
-					"BlackWallsSolid",
-					"WhiteBackground",
-					"WhiteWallsSolid",
-					"Door",
+					"WhiteDoor",
 					"BlackLightAngled",
 					"WhiteTable",
 					"WhiteLightsAngled",
 					"BackgroundTowers",
 					"WhiteFan",
-					"BlackFan"
+					"BlackFan",
+					"BlackLightSwitch",
+					"BrokenWindow",
+					"TiledBackground",
+					"WhiteElevator",
+					"BlackTable",
+					"BrokenBlackWindow",
+					"WhiteButton",
+					"LabVault",
+					"LazerWarning",
+					"BlackElevator",
+					"BlackDoor"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"BlackWallMoving",
+							"BlackWallsSolid",
+							"WhiteWallsSolid",
+							"WhiteWallMoving",
+							"JumpThruBlock",
+							"BlackBackground",
+							"WhiteBackground"
+						],
+						"subfolders": [],
+						"name": "Walls and Solid"
+					}
+				],
 				"name": "Decor"
 			},
 			{
 				"items": [
 					"WhiteSpikes",
-					"BlackSpikes"
+					"BlackSpikes",
+					"BlackLazer",
+					"WhiteLazer"
 				],
 				"subfolders": [],
 				"name": "Hazards"
@@ -118,12 +135,36 @@
 					"Player",
 					"Spawn",
 					"UpgradeScreen",
-					"WallJumpText",
 					"ColorChangerBlack",
-					"ColorChangerWhite"
+					"ColorChangerWhite",
+					"BlackColorSpawn",
+					"WhiteColorSpawn"
 				],
 				"subfolders": [],
 				"name": "Player"
+			},
+			{
+				"items": [
+					"Sprite",
+					"Sprite2",
+					"Sprite3",
+					"Sprite4",
+					"InvisBlock"
+				],
+				"subfolders": [],
+				"name": "Random"
+			},
+			{
+				"items": [
+					"BreakThrough",
+					"ColorSwitchTxt",
+					"SPACEobjects",
+					"WallJumpText",
+					"WhiteX",
+					"BlackX"
+				],
+				"subfolders": [],
+				"name": "Text"
 			}
 		]
 	},
@@ -138,14 +179,13 @@
 		"items": [
 			"Layout 1",
 			"Layout 2",
-			"Fade in"
+			"Layout 3"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
-			"Code for Fade in"
+			"Event sheet 1"
 		],
 		"subfolders": []
 	},
