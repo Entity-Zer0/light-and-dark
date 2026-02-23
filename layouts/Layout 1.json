@@ -10650,7 +10650,7 @@
 					"world": {
 						"x": 139.91615501920566,
 						"y": 210.75755098616713,
-						"width": 98.15454280917928,
+						"width": 99.11908465754385,
 						"height": 0.40191721729215146,
 						"originX": 0,
 						"originY": 0,
@@ -12599,8 +12599,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 244.9120353473612,
-						"y": 212.42626110534374,
+						"x": 244.5602174746383,
+						"y": 216.53078841464762,
 						"width": 19.94787839422014,
 						"height": 0.7915619045753317,
 						"originX": 0,
@@ -12649,7 +12649,7 @@
 						"x": 263.94450825243854,
 						"y": 209.880150227318,
 						"width": 0.9126758068620688,
-						"height": 2.88205486497975,
+						"height": 7.428284248347808,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12697,6 +12697,53 @@
 						"y": 209.45076552153046,
 						"width": 136.31308226695091,
 						"height": 0.7915619045753317,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "WhiteBackground",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 500,
+					"sid": 584469873270655,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 584469873270655,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 234.13285231442038,
+						"y": 216.58781853028356,
+						"width": 4.89680474357769,
+						"height": 0.6775000393609503,
 						"originX": 0,
 						"originY": 0,
 						"color": [
