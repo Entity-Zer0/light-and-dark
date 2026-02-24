@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "WallJump",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -907,6 +907,13 @@
 										"comparison": 0,
 										"value": "1"
 									}
+								},
+								{
+									"id": "is-on-floor",
+									"objectClass": "Player",
+									"sid": 961494966671654,
+									"behaviorType": "Platform",
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -949,10 +956,10 @@
 								{
 									"id": "set-vector-y",
 									"objectClass": "Player",
-									"sid": 542170844116524,
+									"sid": 413477727373606,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "-365"
+										"vector-y": "-325"
 									}
 								},
 								{
@@ -1032,6 +1039,13 @@
 										"comparison": 0,
 										"value": "1"
 									}
+								},
+								{
+									"id": "is-on-floor",
+									"objectClass": "Player",
+									"sid": 126733316066742,
+									"behaviorType": "Platform",
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -1074,10 +1088,10 @@
 								{
 									"id": "set-vector-y",
 									"objectClass": "Player",
-									"sid": 425865026071442,
+									"sid": 112791669206576,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "-365"
+										"vector-y": "-325"
 									}
 								},
 								{
