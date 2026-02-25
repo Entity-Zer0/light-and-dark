@@ -68,6 +68,13 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "blacknwhite",
+			"name": "Black & white",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "5kweg2kb1i2",
@@ -101,7 +108,9 @@
 					"LabVault",
 					"LazerWarning",
 					"BlackElevator",
-					"BlackDoor"
+					"BlackDoor",
+					"WallButton",
+					"Vault"
 				],
 				"subfolders": [
 					{
@@ -138,7 +147,8 @@
 					"ColorChangerBlack",
 					"ColorChangerWhite",
 					"BlackColorSpawn",
-					"WhiteColorSpawn"
+					"WhiteColorSpawn",
+					"PlayerCamera"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -179,7 +189,8 @@
 		"items": [
 			"Layout 1",
 			"Layout 2",
-			"Layout 3"
+			"Layout 3",
+			"Layout 4"
 		],
 		"subfolders": []
 	},

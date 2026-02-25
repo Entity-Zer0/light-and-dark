@@ -53,11 +53,6 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 609727891144874
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 234338630916792
 		}
 	],
 	"effectTypes": [],

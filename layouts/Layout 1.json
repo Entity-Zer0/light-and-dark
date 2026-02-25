@@ -4372,6 +4372,49 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "PlayerCamera",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 982,
+					"sid": 573237522452548,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 573237522452548,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 165,
+						"y": 92,
+						"width": 6.333933579799606,
+						"height": 7.300838483195363,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 618781790894752,
@@ -13047,11 +13090,6 @@
 								"default-controls": true,
 								"enabled": true
 							}
-						},
-						"ScrollTo": {
-							"properties": {
-								"enabled": true
-							}
 						}
 					},
 					"instanceFolderItem": {
@@ -13374,7 +13412,18 @@
 	},
 	"sid": 457283938040426,
 	"nonworld-instances": [],
-	"effectTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "blacknwhite",
+			"name": "BlackWhite",
+			"instance": {
+				"isEnabled": false,
+				"parameters": {
+					"threshold": 0.5
+				}
+			}
+		}
+	],
 	"width": 1700,
 	"height": 1000,
 	"unboundedScrolling": false,

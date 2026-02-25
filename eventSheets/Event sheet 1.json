@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "WallJump",
 			"type": "number",
-			"initialValue": "1",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -42,6 +42,16 @@
 			"sid": 232138224645151
 		},
 		{
+			"eventType": "variable",
+			"name": "Vault",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 174878652212553
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -69,6 +79,38 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Camera",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 829590980359548
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "PlayerCamera",
+									"sid": 609371147392277,
+									"parameters": {
+										"x": "lerp(PlayerCamera.X,Player.X,0.1)",
+										"y": "lerp(PlayerCamera.Y,Player.Y,0.1)"
+									}
+								}
+							],
+							"sid": 300418609770647
+						}
+					],
+					"sid": 419169744053724
+				},
 				{
 					"eventType": "group",
 					"disabled": false,
@@ -745,68 +787,6 @@
 						}
 					],
 					"sid": 527081073985764
-				},
-				{
-					"eventType": "group",
-					"disabled": true,
-					"title": "Dev Color Change",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 763047528268165,
-									"parameters": {
-										"key": 69
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 171097530923048,
-									"parameters": {
-										"animation": "\"Black\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 154684664844951,
-							"disabled": true
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 626339669236426,
-									"parameters": {
-										"key": 82
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-animation",
-									"objectClass": "Player",
-									"sid": 657023769943768,
-									"parameters": {
-										"animation": "\"white\"",
-										"from": "beginning"
-									}
-								}
-							],
-							"sid": 753458889915683,
-							"disabled": true
-						}
-					],
-					"sid": 530952999294222
 				},
 				{
 					"eventType": "group",
@@ -3152,6 +3132,304 @@
 								}
 							],
 							"sid": 674441572021430
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "VaultLights",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-start-of-layout",
+											"objectClass": "System",
+											"sid": 809268459827083
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "WhiteLampLights",
+											"sid": 314361231553579,
+											"parameters": {
+												"unique-id": "1026"
+											}
+										},
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 357263773185846,
+											"parameters": {
+												"count": "1000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 586600351982747,
+											"parameters": {
+												"seconds": "loopindex * 13",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 760257998930309,
+											"parameters": {
+												"seconds": "random(6, 9)",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "WhiteLampLights",
+											"sid": 933067283252053,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 844607370470723,
+											"parameters": {
+												"seconds": "4",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "WhiteLampLights",
+											"sid": 785473184385807,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 827914561764136
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-start-of-layout",
+											"objectClass": "System",
+											"sid": 915790338677846
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "WhiteLampLights",
+											"sid": 263251868454317,
+											"parameters": {
+												"unique-id": "1027"
+											}
+										},
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 342847198210758,
+											"parameters": {
+												"count": "1000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 286108837608577,
+											"parameters": {
+												"seconds": "loopindex * 14",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 901073619386067,
+											"parameters": {
+												"seconds": "random(6, 10)",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "WhiteLampLights",
+											"sid": 638167191790803,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 957454027523226,
+											"parameters": {
+												"seconds": "4",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "WhiteLampLights",
+											"sid": 652808473454101,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 347043759514307
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-start-of-layout",
+											"objectClass": "System",
+											"sid": 308503120907816
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "WhiteLampLights",
+											"sid": 273286006732336,
+											"parameters": {
+												"unique-id": "1028"
+											}
+										},
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 601467868145946,
+											"parameters": {
+												"count": "1000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 509540554027183,
+											"parameters": {
+												"seconds": "loopindex * 14",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 114492255257917,
+											"parameters": {
+												"seconds": "random(5, 10)",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "WhiteLampLights",
+											"sid": 345129243953809,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 902937647431790,
+											"parameters": {
+												"seconds": "4",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "WhiteLampLights",
+											"sid": 172614162484580,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 791237547963303
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-start-of-layout",
+											"objectClass": "System",
+											"sid": 991170904027296
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "WhiteLampLights",
+											"sid": 534770494807111,
+											"parameters": {
+												"unique-id": "1029"
+											}
+										},
+										{
+											"id": "repeat",
+											"objectClass": "System",
+											"sid": 501023897028426,
+											"parameters": {
+												"count": "1000"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 207171486882460,
+											"parameters": {
+												"seconds": "loopindex * 14",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 898627229538785,
+											"parameters": {
+												"seconds": "random(5, 10)",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "WhiteLampLights",
+											"sid": 580874973628479,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 628569668554421,
+											"parameters": {
+												"seconds": "4",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "WhiteLampLights",
+											"sid": 291080645251678,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 604468203813745
+								}
+							],
+							"sid": 294019604594860
 						}
 					],
 					"sid": 981591951481465
@@ -3163,6 +3441,210 @@
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "VaultOpen",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 696150256753504,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 114111834855382,
+											"parameters": {
+												"object": "WallButton"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "WallButton",
+											"sid": 142122736966604,
+											"parameters": {
+												"unique-id": "1044"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "WallButton",
+											"sid": 261508397760995,
+											"parameters": {
+												"animation": "\"On\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 657499560652733,
+											"parameters": {
+												"variable": "Vault",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 750412326067688
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 641208887970492,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 578589685449886,
+											"parameters": {
+												"object": "WallButton"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "WallButton",
+											"sid": 898950129925555,
+											"parameters": {
+												"unique-id": "1045"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "WallButton",
+											"sid": 215452982710065,
+											"parameters": {
+												"animation": "\"On\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 252603135572551,
+											"parameters": {
+												"variable": "Vault",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 621394600493358
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 637591329315126,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 199404970455336,
+											"parameters": {
+												"object": "WallButton"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "WallButton",
+											"sid": 589343940294035,
+											"parameters": {
+												"unique-id": "1046"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "WallButton",
+											"sid": 660009771832660,
+											"parameters": {
+												"animation": "\"On\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 610008856349970,
+											"parameters": {
+												"variable": "Vault",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 337157681100737
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 892665420788995,
+											"parameters": {
+												"variable": "Vault",
+												"comparison": 0,
+												"value": "3"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "WhiteDoor",
+											"sid": 305846483353832,
+											"parameters": {
+												"unique-id": "1047"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "WhiteDoor",
+											"sid": 309481003003416,
+											"parameters": {
+												"object": "Vault",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Vault",
+											"sid": 491360414686697,
+											"parameters": {
+												"animation": "\"Opened\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 866622334852373
+								}
+							],
+							"sid": 724655939727667
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -3338,6 +3820,60 @@
 								}
 							],
 							"sid": 621470835838758
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-pressed",
+									"objectClass": "Keyboard",
+									"sid": 984834709218085,
+									"parameters": {
+										"key": 32
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 789856120473961,
+									"parameters": {
+										"object": "WallButton"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "WhiteWallsSolid",
+									"sid": 194882827255586,
+									"parameters": {
+										"unique-id": "989"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "WallButton",
+									"sid": 257054276511195,
+									"parameters": {
+										"unique-id": "970"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "WallButton",
+									"sid": 521536199278130,
+									"parameters": {
+										"animation": "\"On\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "WhiteWallsSolid",
+									"sid": 730964193062964
+								}
+							],
+							"sid": 759549285503150
 						}
 					],
 					"sid": 791956501795047
@@ -3853,6 +4389,118 @@
 					"isActiveOnStart": true,
 					"children": [
 						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "RespawnCheckpoint",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Player",
+											"sid": 873821840216707,
+											"parameters": {
+												"object": "BlackWindow"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackWindow",
+											"sid": 689359219116064,
+											"parameters": {
+												"unique-id": "299"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "Spawn",
+											"sid": 192362579082989,
+											"parameters": {
+												"x": "837",
+												"y": "380"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 799954485370536,
+											"parameters": {
+												"group-name": "\"Layout1Start\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 142114926443126,
+											"parameters": {
+												"group-name": "\"Layout1Start2\"",
+												"state": "activated"
+											}
+										}
+									],
+									"sid": 278192581393718
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 616092956738801,
+											"parameters": {
+												"object": "BlackElevator"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackElevator",
+											"sid": 341152824696684,
+											"parameters": {
+												"unique-id": "842"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position",
+											"objectClass": "Spawn",
+											"sid": 173159111861986,
+											"parameters": {
+												"x": "1227",
+												"y": "300"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 553817323431280,
+											"parameters": {
+												"group-name": "\"Layout1Start\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 952076813893933,
+											"parameters": {
+												"group-name": "\"Layout1Start2\"",
+												"state": "activated"
+											}
+										}
+									],
+									"sid": 895380361195994
+								}
+							],
+							"sid": 403205714562193
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -3948,6 +4596,38 @@
 								{
 									"id": "is-overlapping-another-object",
 									"objectClass": "Player",
+									"sid": 309758464072229,
+									"parameters": {
+										"object": "WhiteDoor"
+									}
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "WhiteDoor",
+									"sid": 973285357510139,
+									"parameters": {
+										"unique-id": "1047"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "go-to-nextprevious-layout",
+									"objectClass": "System",
+									"sid": 461465316206304,
+									"parameters": {
+										"which": "next"
+									}
+								}
+							],
+							"sid": 414281458400366
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
 									"sid": 605689402664149,
 									"parameters": {
 										"object": "WhiteWindow"
@@ -4006,108 +4686,6 @@
 								}
 							],
 							"sid": 711953048636063
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Player",
-									"sid": 444824858215717,
-									"parameters": {
-										"object": "BlackWindow"
-									}
-								},
-								{
-									"id": "pick-by-unique-id",
-									"objectClass": "BlackWindow",
-									"sid": 589295944251704,
-									"parameters": {
-										"unique-id": "299"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "Spawn",
-									"sid": 582317829741374,
-									"parameters": {
-										"x": "837",
-										"y": "380"
-									}
-								},
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 284776743693428,
-									"parameters": {
-										"group-name": "\"Layout1Start\"",
-										"state": "deactivated"
-									}
-								},
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 944240339513450,
-									"parameters": {
-										"group-name": "\"Layout1Start2\"",
-										"state": "activated"
-									}
-								}
-							],
-							"sid": 428170005026417
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-overlapping-another-object",
-									"objectClass": "Player",
-									"sid": 151108786978680,
-									"parameters": {
-										"object": "BlackElevator"
-									}
-								},
-								{
-									"id": "pick-by-unique-id",
-									"objectClass": "BlackElevator",
-									"sid": 164520930962895,
-									"parameters": {
-										"unique-id": "842"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-position",
-									"objectClass": "Spawn",
-									"sid": 162986892148470,
-									"parameters": {
-										"x": "1227",
-										"y": "300"
-									}
-								},
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 723698512597079,
-									"parameters": {
-										"group-name": "\"Layout1Start\"",
-										"state": "deactivated"
-									}
-								},
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 579697165065691,
-									"parameters": {
-										"group-name": "\"Layout1Start2\"",
-										"state": "activated"
-									}
-								}
-							],
-							"sid": 120873986686351
 						}
 					],
 					"sid": 672021551342472
