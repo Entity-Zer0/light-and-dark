@@ -82,7 +82,8 @@
 		"items": [
 			"Keyboard",
 			"Preview",
-			"Sprite5"
+			"Sprite5",
+			"HoleTear"
 		],
 		"subfolders": [
 			{
@@ -110,7 +111,11 @@
 					"BlackElevator",
 					"BlackDoor",
 					"WallButton",
-					"Vault"
+					"Vault",
+					"BlackElevatorOpen",
+					"LabMachine",
+					"LabSpecimen",
+					"LabTubeBroken"
 				],
 				"subfolders": [
 					{
@@ -121,7 +126,8 @@
 							"WhiteWallMoving",
 							"JumpThruBlock",
 							"BlackBackground",
-							"WhiteBackground"
+							"WhiteBackground",
+							"InvisSolid"
 						],
 						"subfolders": [],
 						"name": "Walls and Solid"
