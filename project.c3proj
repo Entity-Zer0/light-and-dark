@@ -91,8 +91,13 @@
 			"Preview",
 			"Sprite5",
 			"HoleTear",
+<<<<<<< HEAD
 			"Audio",
 			"Text"
+=======
+			"ColorChangeTxt",
+			"Sprite6"
+>>>>>>> c30e2a878c5030addfc5cdb375c9c688bcabd6a4
 		],
 		"subfolders": [
 			{
