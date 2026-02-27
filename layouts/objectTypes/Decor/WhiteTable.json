@@ -1,0 +1,52 @@
+{
+	"name": "WhiteTable",
+	"plugin-id": "Sprite",
+	"sid": 646497620653248,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 30,
+						"height": 20,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8288439,
+						"collisionPoly": {
+							"points": [
+								0.019047619047619042,
+								0.048214312962123335,
+								0.9595239548456103,
+								0.04821427209036696,
+								0.902380807059152,
+								0.9482141767229354,
+								0.09761912027994793,
+								0.9499999999999997
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 978946419016725,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
