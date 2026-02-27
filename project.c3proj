@@ -115,7 +115,8 @@
 					"BlackElevatorOpen",
 					"LabMachine",
 					"LabSpecimen",
-					"LabTubeBroken"
+					"LabTubeBroken",
+					"ElevatorSign"
 				],
 				"subfolders": [
 					{
