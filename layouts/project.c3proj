@@ -8,13 +8,6 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Audio",
-			"name": "Audio",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -75,13 +68,6 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "blacknwhite",
-			"name": "Black & white",
-			"author": "Scirra",
-			"bundled": false
 		}
 	],
 	"uniqueId": "5kweg2kb1i2",
@@ -89,15 +75,12 @@
 		"items": [
 			"Keyboard",
 			"Preview",
-			"Sprite5",
-			"HoleTear",
-<<<<<<< HEAD
-			"Audio",
-			"Text"
-=======
-			"ColorChangeTxt",
-			"Sprite6"
->>>>>>> c30e2a878c5030addfc5cdb375c9c688bcabd6a4
+			"X",
+			"BreakThrough",
+			"Sprite7",
+			"Sprite8",
+			"Sprite9",
+			"InvisBlock"
 		],
 		"subfolders": [
 			{
@@ -106,7 +89,9 @@
 					"BlackWindow",
 					"WhiteLampLights",
 					"WhiteWindow",
-					"WhiteDoor",
+					"BlackBackground",
+					"WhiteBackground",
+					"Door",
 					"BlackLightAngled",
 					"WhiteTable",
 					"WhiteLightsAngled",
@@ -116,21 +101,9 @@
 					"BlackLightSwitch",
 					"BrokenWindow",
 					"TiledBackground",
-					"WhiteElevator",
+					"Elevator",
 					"BlackTable",
-					"BrokenBlackWindow",
-					"WhiteButton",
-					"LabVault",
-					"LazerWarning",
-					"BlackElevator",
-					"BlackDoor",
-					"WallButton",
-					"Vault",
-					"BlackElevatorOpen",
-					"LabMachine",
-					"LabSpecimen",
-					"LabTubeBroken",
-					"ElevatorSign"
+					"BrokenBlackWindow"
 				],
 				"subfolders": [
 					{
@@ -139,10 +112,7 @@
 							"BlackWallsSolid",
 							"WhiteWallsSolid",
 							"WhiteWallMoving",
-							"JumpThruBlock",
-							"BlackBackground",
-							"WhiteBackground",
-							"InvisSolid"
+							"JumpThruBlock"
 						],
 						"subfolders": [],
 						"name": "Walls and Solid"
@@ -165,11 +135,13 @@
 					"Player",
 					"Spawn",
 					"UpgradeScreen",
+					"WallJumpText",
 					"ColorChangerBlack",
 					"ColorChangerWhite",
-					"BlackColorSpawn",
-					"WhiteColorSpawn",
-					"PlayerCamera"
+					"SPACEobjects",
+					"Sprite5",
+					"Sprite6",
+					"ColorSwitchTxt"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -179,24 +151,10 @@
 					"Sprite",
 					"Sprite2",
 					"Sprite3",
-					"Sprite4",
-					"InvisBlock"
+					"Sprite4"
 				],
 				"subfolders": [],
 				"name": "Random"
-			},
-			{
-				"items": [
-					"BreakThrough",
-					"ColorSwitchTxt",
-					"SPACEobjects",
-					"WallJumpText",
-					"WhiteX",
-					"BlackX",
-					"NoteInDrew"
-				],
-				"subfolders": [],
-				"name": "Text"
 			}
 		]
 	},
@@ -211,8 +169,7 @@
 		"items": [
 			"Layout 1",
 			"Layout 2",
-			"Layout 3",
-			"Layout 4"
+			"Layout 3"
 		],
 		"subfolders": []
 	},
@@ -232,40 +189,7 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [
-				{
-					"name": "Level 1 theme.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 329329518992636,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "Title theme.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 694917912750464,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "Final Stage.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 989164055750594,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "City rooftop theme - 2_13_26, 9.37 AM.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 650232983985430,
-					"file-info": {
-						"purpose": "none"
-					}
-				}
-			],
+			"items": [],
 			"subfolders": []
 		},
 		"video": {
