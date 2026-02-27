@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -83,7 +90,9 @@
 			"Keyboard",
 			"Preview",
 			"Sprite5",
-			"HoleTear"
+			"HoleTear",
+			"Audio",
+			"Text"
 		],
 		"subfolders": [
 			{
@@ -178,7 +187,8 @@
 					"SPACEobjects",
 					"WallJumpText",
 					"WhiteX",
-					"BlackX"
+					"BlackX",
+					"NoteInDrew"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -217,7 +227,40 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Level 1 theme.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 329329518992636,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Title theme.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 694917912750464,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Final Stage.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 989164055750594,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "City rooftop theme - 2_13_26, 9.37 AM.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 650232983985430,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {
