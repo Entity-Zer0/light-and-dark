@@ -77,6 +77,15 @@
 						"group-name": "\"Camera2\"",
 						"state": "deactivated"
 					}
+				},
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Player",
+					"sid": 804412558823169,
+					"parameters": {
+						"object": "Spawn",
+						"image-point-optional": "0"
+					}
 				}
 			],
 			"sid": 261720775584557
@@ -6721,6 +6730,208 @@
 						{
 							"eventType": "group",
 							"disabled": false,
+							"title": "TabelCheckLvl3",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 963905071907066,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 656084884909527,
+											"parameters": {
+												"object": "BlackTable"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackTable",
+											"sid": 506875680443598,
+											"parameters": {
+												"unique-id": "660"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackX",
+											"sid": 477969322634016,
+											"parameters": {
+												"unique-id": "713"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "BlackX",
+											"sid": 123267405317892,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 956901054398905
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 609654230514842,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 866535910968607,
+											"parameters": {
+												"object": "BlackTable"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackTable",
+											"sid": 216103088398563,
+											"parameters": {
+												"unique-id": "670"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackX",
+											"sid": 386986942536918,
+											"parameters": {
+												"unique-id": "1698"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "BlackX",
+											"sid": 876214543616735,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 485186444751662
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 962278137022229,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 440527841288700,
+											"parameters": {
+												"object": "BlackTable"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackTable",
+											"sid": 586910070281951,
+											"parameters": {
+												"unique-id": "661"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackX",
+											"sid": 302300574642431,
+											"parameters": {
+												"unique-id": "1699"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "BlackX",
+											"sid": 793981222581076,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 671355611986867
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 809706441711886,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 636528732770914,
+											"parameters": {
+												"object": "BlackTable"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackTable",
+											"sid": 640893014058853,
+											"parameters": {
+												"unique-id": "664"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackX",
+											"sid": 275669108990903,
+											"parameters": {
+												"unique-id": "1700"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-visible",
+											"objectClass": "BlackX",
+											"sid": 484837648060657,
+											"parameters": {
+												"visibility": "visible"
+											}
+										}
+									],
+									"sid": 252217816980647
+								}
+							],
+							"sid": 358683546999181
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
 							"title": "Table Highlight",
 							"description": "",
 							"isActiveOnStart": true,
@@ -6763,32 +6974,6 @@
 										}
 									],
 									"sid": 858913535298237
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "is-overlapping-another-object",
-											"objectClass": "Player",
-											"sid": 688675542198831,
-											"parameters": {
-												"object": "WhiteTable"
-											},
-											"isInverted": true
-										}
-									],
-									"actions": [
-										{
-											"id": "set-animation",
-											"objectClass": "WhiteTable",
-											"sid": 523999934659265,
-											"parameters": {
-												"animation": "\"Wtable\"",
-												"from": "beginning"
-											}
-										}
-									],
-									"sid": 414524488022118
 								},
 								{
 									"eventType": "block",
