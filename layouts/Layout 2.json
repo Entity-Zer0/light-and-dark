@@ -9887,43 +9887,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 543,
-					"sid": 932186414010754,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 932186414010754,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 2551.0390987736328,
-						"y": 72.37294394618348,
-						"width": 15.8569290379895,
-						"height": 27.907425381337305,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BlackWindow",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "BlackWindow",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 544,
 					"sid": 706532577391850,
 					"tags": "",
@@ -16535,7 +16498,7 @@
 					"locked": false,
 					"world": {
 						"x": 2514.0390987736328,
-						"y": 76.37294394618348,
+						"y": 72.31764262986985,
 						"width": 15.856929,
 						"height": 27.907425,
 						"originX": 0.5,
@@ -16571,8 +16534,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2552.0390987736328,
-						"y": 77.37294394618348,
+						"x": 2551.1318029065237,
+						"y": 72.12068238302403,
 						"width": 15.856929,
 						"height": 27.907425,
 						"originX": 0.5,
@@ -19797,9 +19760,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2391.0390987736328,
+						"x": 2390.1438983443,
 						"y": 82.37294394618348,
-						"width": 61.07885585313511,
+						"width": 61.97405628246793,
 						"height": 1.6393601504057074,
 						"originX": 0,
 						"originY": 0,
@@ -19852,8 +19815,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2501.0390987736328,
-						"y": 56.37294394618348,
+						"x": 2501.75727492174,
+						"y": 45.1215176258328,
 						"width": 61.07885585313511,
 						"height": 1.6393601504057074,
 						"originX": 0,

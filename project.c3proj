@@ -83,7 +83,9 @@
 			"Keyboard",
 			"Preview",
 			"Sprite5",
-			"HoleTear"
+			"HoleTear",
+			"ColorChangeTxt",
+			"Sprite6"
 		],
 		"subfolders": [
 			{

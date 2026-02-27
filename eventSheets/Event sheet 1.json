@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "WallJump",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -79,12 +79,57 @@
 					}
 				},
 				{
-					"id": "set-position-to-another-object",
+					"id": "set-max-speed",
 					"objectClass": "Player",
-					"sid": 804412558823169,
+					"sid": 552987615633437,
+					"behaviorType": "Platform",
 					"parameters": {
-						"object": "Spawn",
-						"image-point-optional": "0"
+						"max-speed": "125"
+					}
+				},
+				{
+					"id": "set-acceleration",
+					"objectClass": "Player",
+					"sid": 164546838500541,
+					"behaviorType": "Platform",
+					"parameters": {
+						"acceleration": "400"
+					}
+				},
+				{
+					"id": "set-deceleration",
+					"objectClass": "Player",
+					"sid": 234929280955192,
+					"behaviorType": "Platform",
+					"parameters": {
+						"deceleration": "800"
+					}
+				},
+				{
+					"id": "set-jump-strength",
+					"objectClass": "Player",
+					"sid": 813500602161660,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-strength": "200"
+					}
+				},
+				{
+					"id": "set-gravity",
+					"objectClass": "Player",
+					"sid": 173075771885118,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "600"
+					}
+				},
+				{
+					"id": "set-max-fall-speed",
+					"objectClass": "Player",
+					"sid": 543169269014247,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-fall-speed": "300"
 					}
 				}
 			],
@@ -968,16 +1013,16 @@
 								{
 									"id": "set-max-fall-speed",
 									"objectClass": "Player",
-									"sid": 322055635422798,
+									"sid": 890646804535406,
 									"behaviorType": "Platform",
 									"parameters": {
-										"max-fall-speed": "30"
+										"max-fall-speed": "100"
 									}
 								},
 								{
 									"id": "set-vector-x",
 									"objectClass": "Player",
-									"sid": 855707949765934,
+									"sid": 339003865930191,
 									"behaviorType": "Platform",
 									"parameters": {
 										"vector-x": "-200"
@@ -986,10 +1031,10 @@
 								{
 									"id": "set-vector-y",
 									"objectClass": "Player",
-									"sid": 413477727373606,
+									"sid": 890461344266951,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "-325"
+										"vector-y": "-210"
 									}
 								},
 								{
@@ -1004,10 +1049,10 @@
 								{
 									"id": "set-max-fall-speed",
 									"objectClass": "Player",
-									"sid": 394491117774216,
+									"sid": 976278225549570,
 									"behaviorType": "Platform",
 									"parameters": {
-										"max-fall-speed": "235"
+										"max-fall-speed": "200"
 									}
 								},
 								{
@@ -1100,16 +1145,16 @@
 								{
 									"id": "set-max-fall-speed",
 									"objectClass": "Player",
-									"sid": 680659490793314,
+									"sid": 623718034792478,
 									"behaviorType": "Platform",
 									"parameters": {
-										"max-fall-speed": "30"
+										"max-fall-speed": "100"
 									}
 								},
 								{
 									"id": "set-vector-x",
 									"objectClass": "Player",
-									"sid": 518133817088536,
+									"sid": 925476009675452,
 									"behaviorType": "Platform",
 									"parameters": {
 										"vector-x": "200"
@@ -1118,10 +1163,10 @@
 								{
 									"id": "set-vector-y",
 									"objectClass": "Player",
-									"sid": 112791669206576,
+									"sid": 856572610682014,
 									"behaviorType": "Platform",
 									"parameters": {
-										"vector-y": "-325"
+										"vector-y": "-210"
 									}
 								},
 								{
@@ -1136,10 +1181,10 @@
 								{
 									"id": "set-max-fall-speed",
 									"objectClass": "Player",
-									"sid": 135605831843068,
+									"sid": 612841937779118,
 									"behaviorType": "Platform",
 									"parameters": {
-										"max-fall-speed": "235"
+										"max-fall-speed": "200"
 									}
 								},
 								{
@@ -4806,6 +4851,24 @@
 									"parameters": {
 										"which": "next"
 									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 675747713706578,
+									"parameters": {
+										"variable": "Black",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 370451446469566,
+									"parameters": {
+										"variable": "White",
+										"value": "0"
+									}
 								}
 							],
 							"sid": 122747947167626
@@ -5271,244 +5334,708 @@
 							"isActiveOnStart": true,
 							"children": [
 								{
-									"eventType": "block",
-									"conditions": [
+									"eventType": "group",
+									"disabled": false,
+									"title": "1stSet",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
 										{
-											"id": "pick-by-unique-id",
-											"objectClass": "BlackLightSwitch",
-											"sid": 445248595452893,
-											"parameters": {
-												"unique-id": "731"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 531647432376062,
+													"parameters": {
+														"unique-id": "731"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 832487924759618,
+													"parameters": {
+														"animation": "\"On\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 224752648133755,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 473217888828887,
+													"parameters": {
+														"unique-id": "208"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 422851341820645,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 699418507650477,
+													"parameters": {
+														"visibility": "visible"
+													}
+												}
+											],
+											"sid": 650411690753388
 										},
 										{
-											"id": "is-animation-playing",
-											"objectClass": "BlackLightSwitch",
-											"sid": 957598624551208,
-											"parameters": {
-												"animation": "\"On\""
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 378179788702954,
+													"parameters": {
+														"unique-id": "731"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 575024154940203,
+													"parameters": {
+														"animation": "\"Off\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 713342509199825,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 707220890893246,
+													"parameters": {
+														"unique-id": "208"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 184822608453368,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 400163627735765,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 860499207138694
 										},
 										{
-											"id": "pick-by-unique-id",
-											"objectClass": "WhiteLampLights",
-											"sid": 496357516790553,
-											"parameters": {
-												"unique-id": "208"
-											}
-										}
-									],
-									"actions": [
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 265111132882805,
+													"parameters": {
+														"unique-id": "731"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 998569877349372,
+													"parameters": {
+														"animation": "\"On\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 683060724321478,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 532566918690515,
+													"parameters": {
+														"unique-id": "51"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 630040013288042,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 316300659576448,
+													"parameters": {
+														"visibility": "visible"
+													}
+												}
+											],
+											"sid": 897796220332597
+										},
 										{
-											"id": "set-visible",
-											"objectClass": "WhiteLampLights",
-											"sid": 737514435034264,
-											"parameters": {
-												"visibility": "visible"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 643073415824131,
+													"parameters": {
+														"unique-id": "731"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 956894591140205,
+													"parameters": {
+														"animation": "\"Off\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 441060501188446,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 875963789980959,
+													"parameters": {
+														"unique-id": "51"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 208698516711727,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 616828952491020,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 800473613512342
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 478922995345213,
+													"parameters": {
+														"unique-id": "731"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 157723805894317,
+													"parameters": {
+														"animation": "\"On\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 375651647921810,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 207027392244785,
+													"parameters": {
+														"unique-id": "732"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 703187505561541,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 840987330696499,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 906557458072879
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 569887311071408,
+													"parameters": {
+														"unique-id": "731"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 155338086436231,
+													"parameters": {
+														"animation": "\"Off\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 805679041156550,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 885375143823112,
+													"parameters": {
+														"unique-id": "732"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 836882283427335,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 837949897665533,
+													"parameters": {
+														"visibility": "visible"
+													}
+												}
+											],
+											"sid": 720364968588634
 										}
 									],
-									"sid": 859804347768104
+									"sid": 716875307404150
 								},
 								{
-									"eventType": "block",
-									"conditions": [
+									"eventType": "group",
+									"disabled": false,
+									"title": "2ndSet",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
 										{
-											"id": "pick-by-unique-id",
-											"objectClass": "BlackLightSwitch",
-											"sid": 764557581554798,
-											"parameters": {
-												"unique-id": "731"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 713654307816302,
+													"parameters": {
+														"unique-id": "1674"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 676493243430921,
+													"parameters": {
+														"animation": "\"On\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 102114175720774,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 770749543594832,
+													"parameters": {
+														"unique-id": "208"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 952044289199844,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 747797379519120,
+													"parameters": {
+														"visibility": "visible"
+													}
+												}
+											],
+											"sid": 305511283869279
 										},
 										{
-											"id": "is-animation-playing",
-											"objectClass": "BlackLightSwitch",
-											"sid": 690695982398932,
-											"parameters": {
-												"animation": "\"Off\""
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 223535447346361,
+													"parameters": {
+														"unique-id": "1674"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 497819060325994,
+													"parameters": {
+														"animation": "\"Off\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 943845055409261,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 490836725717598,
+													"parameters": {
+														"unique-id": "208"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 664448210514134,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 405695472554212,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 829801505828389
 										},
 										{
-											"id": "pick-by-unique-id",
-											"objectClass": "WhiteLampLights",
-											"sid": 257160974976422,
-											"parameters": {
-												"unique-id": "208"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-visible",
-											"objectClass": "WhiteLampLights",
-											"sid": 807251170823579,
-											"parameters": {
-												"visibility": "invisible"
-											}
-										}
-									],
-									"sid": 612684445710585
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "BlackLightSwitch",
-											"sid": 261587595817126,
-											"parameters": {
-												"unique-id": "731"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 361915319456205,
+													"parameters": {
+														"unique-id": "1674"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 218301584719980,
+													"parameters": {
+														"animation": "\"On\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 549107369298809,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 488710814914685,
+													"parameters": {
+														"unique-id": "51"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 894641242538783,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 303953870316635,
+													"parameters": {
+														"visibility": "visible"
+													}
+												}
+											],
+											"sid": 317313505487789
 										},
 										{
-											"id": "is-animation-playing",
-											"objectClass": "BlackLightSwitch",
-											"sid": 394317347863297,
-											"parameters": {
-												"animation": "\"On\""
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 223741604714874,
+													"parameters": {
+														"unique-id": "1674"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 691500147396030,
+													"parameters": {
+														"animation": "\"Off\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 977581573105440,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 164474518175367,
+													"parameters": {
+														"unique-id": "51"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 629856655553068,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 916982382144649,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 895917278965132
 										},
 										{
-											"id": "pick-by-unique-id",
-											"objectClass": "WhiteLampLights",
-											"sid": 187620440528243,
-											"parameters": {
-												"unique-id": "51"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-visible",
-											"objectClass": "WhiteLampLights",
-											"sid": 456109284007821,
-											"parameters": {
-												"visibility": "visible"
-											}
-										}
-									],
-									"sid": 934981314477615
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "BlackLightSwitch",
-											"sid": 647388826685357,
-											"parameters": {
-												"unique-id": "731"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 869269768547854,
+													"parameters": {
+														"unique-id": "1674"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 274175983009492,
+													"parameters": {
+														"animation": "\"On\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 322679865004429,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 642710093271203,
+													"parameters": {
+														"unique-id": "732"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 382711364336467,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 754135183159028,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												}
+											],
+											"sid": 236763557550864
 										},
 										{
-											"id": "is-animation-playing",
-											"objectClass": "BlackLightSwitch",
-											"sid": 344745935015834,
-											"parameters": {
-												"animation": "\"Off\""
-											}
-										},
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "WhiteLampLights",
-											"sid": 501909288231868,
-											"parameters": {
-												"unique-id": "51"
-											}
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackLightSwitch",
+													"sid": 818544373028195,
+													"parameters": {
+														"unique-id": "1674"
+													}
+												},
+												{
+													"id": "is-animation-playing",
+													"objectClass": "BlackLightSwitch",
+													"sid": 657285401183697,
+													"parameters": {
+														"animation": "\"Off\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 841644469191827,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "WhiteLampLights",
+													"sid": 353025564346944,
+													"parameters": {
+														"unique-id": "732"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 609217948206414,
+													"parameters": {
+														"seconds": "0.2",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "WhiteLampLights",
+													"sid": 278456565808462,
+													"parameters": {
+														"visibility": "visible"
+													}
+												}
+											],
+											"sid": 115269780144735
 										}
 									],
-									"actions": [
-										{
-											"id": "set-visible",
-											"objectClass": "WhiteLampLights",
-											"sid": 229791361780956,
-											"parameters": {
-												"visibility": "invisible"
-											}
-										}
-									],
-									"sid": 648174085325565
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "BlackLightSwitch",
-											"sid": 667798981446680,
-											"parameters": {
-												"unique-id": "731"
-											}
-										},
-										{
-											"id": "is-animation-playing",
-											"objectClass": "BlackLightSwitch",
-											"sid": 640393048241118,
-											"parameters": {
-												"animation": "\"On\""
-											}
-										},
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "WhiteLampLights",
-											"sid": 714683148608698,
-											"parameters": {
-												"unique-id": "732"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-visible",
-											"objectClass": "WhiteLampLights",
-											"sid": 155664437775784,
-											"parameters": {
-												"visibility": "invisible"
-											}
-										}
-									],
-									"sid": 251379417710069
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "BlackLightSwitch",
-											"sid": 820049787773238,
-											"parameters": {
-												"unique-id": "731"
-											}
-										},
-										{
-											"id": "is-animation-playing",
-											"objectClass": "BlackLightSwitch",
-											"sid": 308912025010808,
-											"parameters": {
-												"animation": "\"Off\""
-											}
-										},
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "WhiteLampLights",
-											"sid": 968001499238029,
-											"parameters": {
-												"unique-id": "732"
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-visible",
-											"objectClass": "WhiteLampLights",
-											"sid": 254250018567608,
-											"parameters": {
-												"visibility": "visible"
-											}
-										}
-									],
-									"sid": 368478400900072
+									"sid": 455261811792026
 								}
 							],
 							"sid": 721060094590058
@@ -5637,6 +6164,14 @@
 													}
 												},
 												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 636021204382094,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
 													"id": "pick-by-unique-id",
 													"objectClass": "WhiteBackground",
 													"sid": 919177862873774,
@@ -5700,6 +6235,14 @@
 													"sid": 455418311051760,
 													"parameters": {
 														"animation": "\"Off\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 447859353250292,
+													"parameters": {
+														"object": "BlackLightSwitch"
 													}
 												},
 												{
@@ -5769,6 +6312,14 @@
 													}
 												},
 												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 420799484493972,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
 													"id": "pick-by-unique-id",
 													"objectClass": "BlackLampLights",
 													"sid": 723730010010906,
@@ -5816,6 +6367,14 @@
 													"sid": 686616910800188,
 													"parameters": {
 														"animation": "\"On\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 541164147557686,
+													"parameters": {
+														"object": "BlackLightSwitch"
 													}
 												},
 												{
@@ -5885,6 +6444,14 @@
 													}
 												},
 												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 622386542265566,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
 													"id": "pick-by-unique-id",
 													"objectClass": "WhiteBackground",
 													"sid": 955730713321740,
@@ -5951,6 +6518,14 @@
 													}
 												},
 												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 473109284725406,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
 													"id": "pick-by-unique-id",
 													"objectClass": "BlackLampLights",
 													"sid": 930903625362459,
@@ -6008,6 +6583,14 @@
 													"sid": 252161769594125,
 													"parameters": {
 														"animation": "\"Off\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 391027147863334,
+													"parameters": {
+														"object": "BlackLightSwitch"
 													}
 												},
 												{
@@ -6077,6 +6660,14 @@
 													}
 												},
 												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 883385243937654,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
 													"id": "pick-by-unique-id",
 													"objectClass": "WhiteBackground",
 													"sid": 311674680474558,
@@ -6143,6 +6734,14 @@
 													}
 												},
 												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 410629114024603,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
 													"id": "pick-by-unique-id",
 													"objectClass": "BlackLampLights",
 													"sid": 403064159639566,
@@ -6190,6 +6789,14 @@
 													"sid": 727675018121932,
 													"parameters": {
 														"animation": "\"On\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 921935727189822,
+													"parameters": {
+														"object": "BlackLightSwitch"
 													}
 												},
 												{
@@ -6259,6 +6866,14 @@
 													}
 												},
 												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 656298664049464,
+													"parameters": {
+														"object": "BlackLightSwitch"
+													}
+												},
+												{
 													"id": "pick-by-unique-id",
 													"objectClass": "WhiteBackground",
 													"sid": 667094142629096,
@@ -6322,6 +6937,14 @@
 													"sid": 141169246797269,
 													"parameters": {
 														"animation": "\"On\""
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 589567781287530,
+													"parameters": {
+														"object": "BlackLightSwitch"
 													}
 												},
 												{
