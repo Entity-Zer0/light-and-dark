@@ -13668,43 +13668,6 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Sprite6",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 543,
-					"sid": 469058205424714,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 469058205424714,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1183.170722681862,
-						"y": 70.63368332485067,
-						"width": 10.780888878869293,
-						"height": 5.641039135052907,
-						"originX": 0.6951219512195121,
-						"originY": 0.782051282051282,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.2009003664137235,
-						"zElevation": 0
-					}
 				}
 			],
 			"sid": 725405357598100,
@@ -14233,59 +14196,6 @@
 						"y": 72.54516069436522,
 						"width": 89.37793791891272,
 						"height": 9.027462958183307,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "ColorChangeTxt",
-					"properties": {
-						"text": "Color shards change your color",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 2,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 636,
-					"sid": 862629000633973,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 862629000633973,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1040.7962437044694,
-						"y": 66.59098651102754,
-						"width": 37.64960766302761,
-						"height": 6.626448134079681,
 						"originX": 0,
 						"originY": 0,
 						"color": [
