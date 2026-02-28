@@ -13932,8 +13932,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 533.5570176872682,
-						"y": 280.28113105202914,
+						"x": 164.46098200715733,
+						"y": 110.67820492888383,
 						"width": 7.167333715891343,
 						"height": 9.062624386962101,
 						"originX": 0.4742268041237113,
@@ -14252,7 +14252,7 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1703,
+					"uid": 636,
 					"sid": 935398491960167,
 					"tags": "",
 					"instanceVariables": {},
@@ -14305,7 +14305,7 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 1701,
+					"uid": 1684,
 					"sid": 497749956543999,
 					"tags": "",
 					"instanceVariables": {},

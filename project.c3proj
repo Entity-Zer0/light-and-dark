@@ -93,7 +93,6 @@
 			"HoleTear",
 			"Audio",
 			"Text"
-
 		],
 		"subfolders": [
 			{
@@ -224,7 +223,16 @@
 			"subfolders": []
 		},
 		"sound": {
-			"items": [],
+			"items": [
+				{
+					"name": "Lazer.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 958230617672590,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"music": {

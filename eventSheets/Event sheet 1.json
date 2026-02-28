@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "WallJump",
 			"type": "number",
-			"initialValue": "1",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -50,6 +50,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 174878652212553
+		},
+		{
+			"eventType": "variable",
+			"name": "dist",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 489796229735252
 		},
 		{
 			"eventType": "block",
@@ -130,20 +140,6 @@
 					"behaviorType": "Platform",
 					"parameters": {
 						"max-fall-speed": "300"
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 276685587535336,
-					"parameters": {
-						"audio-file": {
-							"path": "Title theme"
-						},
-						"loop": "looping",
-						"volume": "0",
-						"stereo-pan": "0",
-						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -7680,6 +7676,122 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "LazerSoundEffect",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 676121775858837
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 817890829268866,
+									"parameters": {
+										"audio-file": {
+											"path": "Lazer"
+										},
+										"loop": "looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"LazerSound\""
+									}
+								},
+								{
+									"id": "set-volume",
+									"objectClass": "Audio",
+									"sid": 696089303191058,
+									"parameters": {
+										"tag": "\"LazerSound\"",
+										"db": "-35"
+									}
+								}
+							],
+							"sid": 612073852539316
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 260980800950302
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "BlackLazer",
+									"sid": 467784758328253,
+									"parameters": {
+										"which": "nearest",
+										"x": "Player.X",
+										"y": "Player.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 318693354772012,
+									"parameters": {
+										"variable": "dist",
+										"value": "distance(Player.X, Player.Y, BlackLazer.X, BlackLazer.Y)"
+									}
+								},
+								{
+									"id": "set-volume",
+									"objectClass": "Audio",
+									"sid": 839503557568354,
+									"parameters": {
+										"tag": "\"LazerSound\"",
+										"db": "lerp(-60, -13, clamp(1- dist/250, 0, 1))"
+									}
+								}
+							],
+							"sid": 956315747431892
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 419948792196032
+								}
+							],
+							"actions": [
+								{
+									"id": "set-listener-object",
+									"objectClass": "Audio",
+									"sid": 951804285182632,
+									"parameters": {
+										"object": "Player"
+									}
+								},
+								{
+									"id": "set-listener-z",
+									"objectClass": "Audio",
+									"sid": 897495610558460,
+									"parameters": {
+										"z": "0"
+									}
+								}
+							],
+							"sid": 876347299613436
+						}
+					],
+					"sid": 652577718021865
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -7706,6 +7818,45 @@
 					],
 					"sid": 959821493243627,
 					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 337942654077461,
+							"parameters": {
+								"key": 32
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play-at-object",
+							"objectClass": "Audio",
+							"sid": 786252692315861,
+							"parameters": {
+								"audio-file": {
+									"path": "Lazer"
+								},
+								"loop": "not-looping",
+								"volume": "-15",
+								"object": "Player",
+								"inner-angle": "360",
+								"outer-angle": "360",
+								"outer-gain": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 835124846237874,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Example for positioned based Audio, On space sound plays, can be any other condition needed, you can also replace the sound being played at object player to whatever other object you need."
+						}
+					]
 				}
 			],
 			"sid": 917762701830548
