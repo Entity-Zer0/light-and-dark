@@ -1,0 +1,24 @@
+{
+	"name": "Audio",
+	"plugin-id": "Audio",
+	"sid": 896829410436902,
+	"singleglobal-inst": {
+		"type": "Audio",
+		"properties": {
+			"timescale-audio": "off",
+			"save-load": "all",
+			"play-in-background": false,
+			"latency-hint": "interactive",
+			"enable-multiple-tags": true,
+			"panning-model": "hrtf",
+			"distance-model": "linear",
+			"listener-z-height": 0,
+			"reference-distance": 50,
+			"maximum-distance": 180,
+			"roll-off-factor": 1
+		},
+		"uid": 712,
+		"sid": 237158248794275,
+		"tags": ""
+	}
+}
