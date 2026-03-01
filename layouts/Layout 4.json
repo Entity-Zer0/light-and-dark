@@ -22610,8 +22610,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 906.138150433645,
-						"y": 649.9630227696551,
+						"x": 906.3039233674862,
+						"y": 683.283894702101,
 						"width": 16.718053790711938,
 						"height": 3.938044052948271,
 						"originX": 0.4807692307692308,
@@ -22622,7 +22622,7 @@
 							1,
 							1
 						],
-						"angle": 0.025215541101206718,
+						"angle": 6.168132581911079,
 						"zElevation": 0
 					}
 				},
@@ -23681,9 +23681,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 977.8508306586752,
-						"y": 671.3220079625748,
-						"width": -14.166251338621548,
+						"x": 977.4593775418364,
+						"y": 671.3432903746294,
+						"width": -13.288848113997231,
 						"height": 17.28467631824241,
 						"originX": 0.5531914893617021,
 						"originY": 0.35,
@@ -25359,43 +25359,6 @@
 							1
 						],
 						"angle": 6.281496058858385,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BlackSpikes",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "BlackSpikes",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1645,
-					"sid": 218970137649191,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 218970137649191,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1215.353092300103,
-						"y": 675.0880894290755,
-						"width": 6.973436632100334,
-						"height": 10.605856045555345,
-						"originX": 0.5531914893617021,
-						"originY": 0.35,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0.07658825346588305,
 						"zElevation": 0
 					}
 				},

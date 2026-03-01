@@ -62,6 +62,16 @@
 			"sid": 489796229735252
 		},
 		{
+			"eventType": "variable",
+			"name": "Note1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 160983809483725
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -118,10 +128,10 @@
 				{
 					"id": "set-jump-strength",
 					"objectClass": "Player",
-					"sid": 813500602161660,
+					"sid": 799326526480662,
 					"behaviorType": "Platform",
 					"parameters": {
-						"jump-strength": "200"
+						"jump-strength": "190"
 					}
 				},
 				{
@@ -4033,6 +4043,14 @@
 											"parameters": {
 												"unique-id": "615"
 											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "UpgradeScreen",
+											"sid": 920773346925958,
+											"parameters": {
+												"unique-id": "159"
+											}
 										}
 									],
 									"actions": [
@@ -7071,6 +7089,16 @@
 											}
 										},
 										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 437841533231021,
+											"parameters": {
+												"variable": "Note1",
+												"comparison": 0,
+												"value": "0"
+											}
+										},
+										{
 											"id": "is-overlapping-another-object",
 											"objectClass": "Player",
 											"sid": 589335131001151,
@@ -7088,24 +7116,162 @@
 										},
 										{
 											"id": "pick-by-unique-id",
-											"objectClass": "WhiteX",
-											"sid": 473588858754206,
+											"objectClass": "UpgradeScreen",
+											"sid": 568630715711581,
 											"parameters": {
-												"unique-id": "616"
+												"unique-id": "636"
 											}
 										}
 									],
 									"actions": [
 										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 621078691626210,
+											"parameters": {
+												"seconds": "0.3",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "UpgradeScreen",
+											"sid": 479542257140184,
+											"parameters": {
+												"object": "Player",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "NoteInTable1",
+											"sid": 554761051320074,
+											"parameters": {
+												"object": "Player",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "NoteInTable1",
+											"sid": 912063726079799,
+											"parameters": {
+												"x": "NoteInTable1.X - 28"
+											}
+										},
+										{
+											"id": "set-y",
+											"objectClass": "NoteInTable1",
+											"sid": 908643936058062,
+											"parameters": {
+												"y": "NoteInTable1.Y - 29"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 566420664957440,
+											"parameters": {
+												"variable": "Note1",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 587822599135218,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										},
+										{
 											"id": "set-visible",
-											"objectClass": "WhiteX",
-											"sid": 903822073301810,
+											"objectClass": "UpgradeScreen",
+											"sid": 188099617325190,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "NoteInTable1",
+											"sid": 940784056476749,
 											"parameters": {
 												"visibility": "visible"
 											}
 										}
 									],
 									"sid": 955869547152281
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 191930465340771,
+											"parameters": {
+												"key": 32
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 884080359016118,
+											"parameters": {
+												"variable": "Note1",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 722731778571489,
+											"parameters": {
+												"seconds": "0.3",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "UpgradeScreen",
+											"sid": 681153614665948,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "NoteInTable1",
+											"sid": 950453065734438,
+											"parameters": {
+												"visibility": "invisible"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 465193838504491,
+											"parameters": {
+												"variable": "Note1",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 547661962839690,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "enabled"
+											}
+										}
+									],
+									"sid": 126917429955584
 								},
 								{
 									"eventType": "block",
@@ -7614,9 +7780,49 @@
 										{
 											"id": "is-overlapping-another-object",
 											"objectClass": "Player",
+											"sid": 195928808370460,
+											"parameters": {
+												"object": "WhiteTable"
+											},
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "set-animation",
+											"objectClass": "WhiteTable",
+											"sid": 815759018664325,
+											"parameters": {
+												"animation": "\"Wtable\"",
+												"from": "beginning"
+											}
+										}
+									],
+									"sid": 419669378025025
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
 											"sid": 396310453022277,
 											"parameters": {
 												"object": "BlackTable"
+											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "BlackX",
+											"sid": 738126747915142,
+											"isInverted": true
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BlackTable",
+											"sid": 981674477009302,
+											"parameters": {
+												"object": "BlackX"
 											}
 										}
 									],
