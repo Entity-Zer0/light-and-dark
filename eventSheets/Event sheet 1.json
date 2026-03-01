@@ -7895,6 +7895,11 @@
 									"id": "on-start-of-layout",
 									"objectClass": "System",
 									"sid": 676121775858837
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "BlackLazer",
+									"sid": 320252079526804
 								}
 							],
 							"actions": [
@@ -8057,6 +8062,7 @@
 						}
 					],
 					"sid": 835124846237874,
+					"disabled": true,
 					"children": [
 						{
 							"eventType": "comment",
@@ -8066,6 +8072,547 @@
 				}
 			],
 			"sid": 917762701830548
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "TitleScreen",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 945149934725654,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "StartButton"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "StartAnimation",
+							"sid": 191979229819636,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 177608967727438,
+							"parameters": {
+								"layer": "4",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 859210515577112,
+							"parameters": {
+								"layer": "2",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 194403742064126,
+							"parameters": {
+								"layer": "1",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 482676027153330,
+							"parameters": {
+								"layer": "0",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "start-animation",
+							"objectClass": "StartAnimation",
+							"sid": 512826173654643,
+							"parameters": {
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 171818165923905,
+							"parameters": {
+								"seconds": "35",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "go-to-layout-by-name",
+							"objectClass": "System",
+							"sid": 720138204258265,
+							"parameters": {
+								"layout": "\"Layout 1\""
+							}
+						}
+					],
+					"sid": 891685619338927
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 730263086903825,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ControlsButton"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "BlackBackground",
+							"sid": 777905200556431,
+							"parameters": {
+								"unique-id": "1729"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "Exit",
+							"sid": 523129576508579,
+							"parameters": {
+								"unique-id": "1736"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "BlackBackground",
+							"sid": 664517610213198,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 750086425073193,
+							"parameters": {
+								"layer": "4",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 510052096140846,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 462758369411111,
+							"parameters": {
+								"layer": "2",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 114613469915874,
+							"parameters": {
+								"layer": "1",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 235730792326671,
+							"parameters": {
+								"layer": "0",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BlackBackground",
+							"sid": 716737371055496,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Exit",
+							"sid": 453026099710604,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ControlsTxt",
+							"sid": 827562773354249,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 734312831497598
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 459836032908430,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Exit"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "BlackBackground",
+							"sid": 766610798643040,
+							"parameters": {
+								"unique-id": "1729"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "Exit",
+							"sid": 533444185651481,
+							"parameters": {
+								"unique-id": "1736"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "BlackBackground",
+							"sid": 188399964861730,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 752148562481809,
+							"parameters": {
+								"layer": "4",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 932796630511455,
+							"parameters": {
+								"layer": "3",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 159398990884434,
+							"parameters": {
+								"layer": "2",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 274640386729871,
+							"parameters": {
+								"layer": "1",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 564763815072471,
+							"parameters": {
+								"layer": "0",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BlackBackground",
+							"sid": 371713910744825,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Exit",
+							"sid": 848887290561845,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ControlsTxt",
+							"sid": 263002804260099,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 478725368521426
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 961465974215592,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "CreditsButton"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "BlackBackground",
+							"sid": 391605190694590,
+							"parameters": {
+								"unique-id": "1738"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "Exit",
+							"sid": 381778181626744,
+							"parameters": {
+								"unique-id": "1739"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "BlackBackground",
+							"sid": 221370306035546,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 209990948144119,
+							"parameters": {
+								"layer": "4",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 103073481118157,
+							"parameters": {
+								"layer": "3",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 763930666825211,
+							"parameters": {
+								"layer": "2",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 807918101088775,
+							"parameters": {
+								"layer": "1",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 238778534499204,
+							"parameters": {
+								"layer": "0",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BlackBackground",
+							"sid": 149966688452924,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Exit",
+							"sid": 993093002715393,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CreditsTxt",
+							"sid": 418024160815935,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 648140453376703
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 952579764764506,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Exit"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "BlackBackground",
+							"sid": 109717628259678,
+							"parameters": {
+								"unique-id": "1738"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "Exit",
+							"sid": 878266496086936,
+							"parameters": {
+								"unique-id": "1739"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "BlackBackground",
+							"sid": 954103439311913,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 174100643683767,
+							"parameters": {
+								"layer": "4",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 171064966317393,
+							"parameters": {
+								"layer": "3",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 165556865462772,
+							"parameters": {
+								"layer": "2",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 404329203729606,
+							"parameters": {
+								"layer": "1",
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-layer-visible",
+							"objectClass": "System",
+							"sid": 670174663588706,
+							"parameters": {
+								"layer": "0",
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "BlackBackground",
+							"sid": 468899636924715,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Exit",
+							"sid": 835245940638523,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "CreditsTxt",
+							"sid": 113519003914470,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 697580097049618
+				}
+			],
+			"sid": 512528510916302
 		}
 	],
 	"sid": 285828799823789

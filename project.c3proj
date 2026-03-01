@@ -22,6 +22,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -90,8 +97,8 @@
 			"Keyboard",
 			"Preview",
 			"Sprite5",
-			"HoleTear",
-			"Audio"
+			"Audio",
+			"Mouse"
 		],
 		"subfolders": [
 			{
@@ -124,7 +131,8 @@
 					"LabMachine",
 					"LabSpecimen",
 					"LabTubeBroken",
-					"ElevatorSign"
+					"ElevatorSign",
+					"HoleTear"
 				],
 				"subfolders": [
 					{
@@ -191,6 +199,21 @@
 				],
 				"subfolders": [],
 				"name": "Text"
+			},
+			{
+				"items": [
+					"ControlsButton",
+					"CreditsButton",
+					"StartAnimation",
+					"TitleCard",
+					"TitleBackground",
+					"StartButton",
+					"ControlsTxt",
+					"Exit",
+					"CreditsTxt"
+				],
+				"subfolders": [],
+				"name": "Title"
 			}
 		]
 	},
@@ -203,6 +226,7 @@
 	},
 	"layouts": {
 		"items": [
+			"Title Screen",
 			"Layout 1",
 			"Layout 2",
 			"Layout 3",
