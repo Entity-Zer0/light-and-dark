@@ -10791,7 +10791,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 0.00040398074111291926,
 						"zElevation": 0
 					}
 				},
@@ -11129,8 +11129,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 150.1536826487745,
-						"y": 236.29807006966323,
+						"x": 209.00767541678422,
+						"y": 238.2479753500148,
 						"width": 9.567267654697702,
 						"height": 13.870503929185702,
 						"originX": 0,
@@ -14244,7 +14244,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "UpgradeScreen",
+					"type": "NoteTextBoxLvl4",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -14253,21 +14253,21 @@
 						"live-preview": false
 					},
 					"uid": 636,
-					"sid": 935398491960167,
+					"sid": 654565251180727,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 935398491960167,
+						"sid": 654565251180727,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 212.30876582818343,
-						"y": 233.17188226107402,
-						"width": 65.74387158023396,
-						"height": 41.53137961910386,
+						"x": 153.35331040978693,
+						"y": 268.2296069602701,
+						"width": 57.504080283950486,
+						"height": 41.17257040196546,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -14283,7 +14283,7 @@
 				{
 					"type": "NoteInDrew",
 					"properties": {
-						"text": "Philip  Jinbu                                                           February 1st- A color changing cloak made with light fibers that has chromatophores in it. Fifty cuttlefish had to be extracted from for the suit creation. A willing participant for are clinical trials will be an Alex Jinbu.                  ",
+						"text": "Philip  Jinbu                                                           February 1st- A color changing cloak made with light fibers that has chromatophores in it. Fifty cuttlefish had to be extracted from for the suit creation. A willing participant  for are clinical trials will be an Alex Jinbu.                  ",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 2,
@@ -14298,10 +14298,10 @@
 						],
 						"horizontal-alignment": "left",
 						"vertical-alignment": "center",
-						"wrapping": "character",
+						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "top-left",
 						"read-aloud": false
 					},
@@ -14317,10 +14317,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 186.46367454895753,
-						"y": 204.16767046201628,
-						"width": 51.51310525094371,
-						"height": 59.27003721633744,
+						"x": 126.55661587799233,
+						"y": 246.58895211942962,
+						"width": 53.92087848658136,
+						"height": 44.23097085408625,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -14329,7 +14329,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 6.279393012123126,
 						"zElevation": 0
 					}
 				}

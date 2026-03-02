@@ -26820,6 +26820,43 @@
 						"angle": 5.823010783406392,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "NoteTextBoxLvl2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1687,
+					"sid": 958685998071721,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 958685998071721,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1284.5448471688928,
+						"y": 210.68979877765793,
+						"width": 57.504080283950486,
+						"height": 41.17257040196546,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 272240592981895,

@@ -92,7 +92,7 @@
 			"Sprite5",
 			"HoleTear",
 			"Audio",
-			"Text"
+			"Sprite6"
 		],
 		"subfolders": [
 			{
@@ -159,7 +159,6 @@
 				"items": [
 					"Player",
 					"Spawn",
-					"UpgradeScreen",
 					"ColorChangerBlack",
 					"ColorChangerWhite",
 					"BlackColorSpawn",
@@ -188,7 +187,14 @@
 					"WallJumpText",
 					"WhiteX",
 					"BlackX",
-					"NoteInDrew"
+					"NoteInDrew",
+					"UpgradeScreen",
+					"NoteTextBoxLvl4",
+					"NoteTextBoxLvl2",
+					"NoteTextBoxLvl3",
+					"TextLvl3",
+					"Text",
+					"TextLvl4"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -231,9 +237,39 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "Nothing in desk SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 253286996438929,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Lab SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 360323568307125,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Found_level up SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 265325295365811,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [],
+					"subfolders": [],
+					"name": "New folder"
+				}
+			]
 		},
 		"music": {
 			"items": [

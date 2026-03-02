@@ -1,7 +1,7 @@
 {
-	"name": "Sprite6",
+	"name": "NoteTextBoxLvl2",
 	"plugin-id": "Sprite",
-	"sid": 500851379844758,
+	"sid": 705614533016219,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -20,13 +20,13 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4291032,
+						"imageSpriteId": 5898862,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 420145956469303,
+				"sid": 405425360652782,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

@@ -7299,6 +7299,131 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "Textbox & Notestext",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "NoteTextBoxLvl3",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1691,
+					"sid": 386169826164398,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 386169826164398,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 512.5957665160734,
+						"y": 88.23164680590226,
+						"width": 95.70407399595405,
+						"height": 40.326504694875524,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "TextLvl3",
+					"properties": {
+						"text": "Philip Jinbu\nFebruary 7th- Alex, the test subject, is holding up while with the clinical trials. She hasn't become ill from the injection from Sunday. Although, mentally she has become “wondering”; this day I'd got her peach ice cream. She didn't care for it, Alex at six would be so excited for it because it was hard to find. She only said “Oh.”\nTook the ice cream, stared it for a minute then ate it. All day in our facility made room; she would sit on her bed watch tv or read.\n",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 2,
+						"line-height": -2,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 1704,
+					"sid": 114985125802306,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 114985125802306,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 467.9316575899249,
+						"y": 69.89399322647793,
+						"width": 89.62018444800219,
+						"height": 39.33721163229889,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 526746709642519,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
 	"scene-graphs-folder-root": {
