@@ -1258,7 +1258,7 @@
 						"x": 591.7232985992772,
 						"y": 224.95847692579343,
 						"width": 413.0791750780992,
-						"height": 17.55629751998957,
+						"height": 13.357205885589664,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -3205,7 +3205,7 @@
 						"x": 440.23564279138037,
 						"y": 166.70691838575718,
 						"width": 126.57000772991688,
-						"height": 75.71932862361774,
+						"height": 70.78520933589897,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -4150,6 +4150,61 @@
 							1
 						],
 						"angle": 0.00008575266944821358,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BlackWallsSolid",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1741,
+					"sid": 977782342064010,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": true,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 977782342064010,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 424.94166868761494,
+						"y": 267.9620847770819,
+						"width": 17.014841697075347,
+						"height": 3.14862451203008,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.09214887429064,
 						"zElevation": 0
 					}
 				}
@@ -27403,7 +27458,7 @@
 					}
 				},
 				{
-					"type": "Sprite5",
+					"type": "Circle",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",

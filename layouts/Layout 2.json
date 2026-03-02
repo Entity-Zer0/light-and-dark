@@ -24968,7 +24968,7 @@
 					}
 				},
 				{
-					"type": "Sprite5",
+					"type": "Circle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -26335,7 +26335,7 @@
 					}
 				},
 				{
-					"type": "Sprite5",
+					"type": "Circle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -26560,7 +26560,7 @@
 					}
 				},
 				{
-					"type": "Sprite5",
+					"type": "Circle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -26691,7 +26691,7 @@
 					}
 				},
 				{
-					"type": "Sprite5",
+					"type": "Circle",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",

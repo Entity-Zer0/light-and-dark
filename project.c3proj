@@ -96,7 +96,6 @@
 		"items": [
 			"Keyboard",
 			"Preview",
-			"Sprite5",
 			"Audio",
 			"Mouse"
 		],
@@ -132,7 +131,9 @@
 					"LabSpecimen",
 					"LabTubeBroken",
 					"ElevatorSign",
-					"HoleTear"
+					"HoleTear",
+					"Circle",
+					"ExitSign"
 				],
 				"subfolders": [
 					{
@@ -195,7 +196,8 @@
 					"WallJumpText",
 					"WhiteX",
 					"BlackX",
-					"NoteInTable1"
+					"NoteInTable1",
+					"ColorShardTxt"
 				],
 				"subfolders": [],
 				"name": "Text"

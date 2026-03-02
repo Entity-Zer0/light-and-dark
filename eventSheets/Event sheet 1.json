@@ -12,6 +12,10 @@
 			"sid": 470816701047689
 		},
 		{
+			"eventType": "comment",
+			"text": "WallJump, if testing other floors after layout 1 make sure you switch this to 1"
+		},
+		{
 			"eventType": "variable",
 			"name": "ColorSwitch",
 			"type": "number",
@@ -20,6 +24,10 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 675604076308051
+		},
+		{
+			"eventType": "comment",
+			"text": "ColorJump, if you want to switch between colors or testing layout 4 turn this to 1"
 		},
 		{
 			"eventType": "variable",
@@ -40,6 +48,10 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 232138224645151
+		},
+		{
+			"eventType": "comment",
+			"text": "Black and White, put 0 on the color you dont want and put 1 on the shade you want to be when testing (You usually shouldnt need to touch this one)"
 		},
 		{
 			"eventType": "variable",
@@ -72,88 +84,18 @@
 			"sid": 160983809483725
 		},
 		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 288778200985135
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layout-scale",
-					"objectClass": "System",
-					"sid": 170840178101836,
-					"parameters": {
-						"scale": "3.5"
-					}
-				},
-				{
-					"id": "set-group-active",
-					"objectClass": "System",
-					"sid": 636411375410411,
-					"parameters": {
-						"group-name": "\"Camera2\"",
-						"state": "deactivated"
-					}
-				},
-				{
-					"id": "set-max-speed",
-					"objectClass": "Player",
-					"sid": 552987615633437,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-speed": "125"
-					}
-				},
-				{
-					"id": "set-acceleration",
-					"objectClass": "Player",
-					"sid": 164546838500541,
-					"behaviorType": "Platform",
-					"parameters": {
-						"acceleration": "400"
-					}
-				},
-				{
-					"id": "set-deceleration",
-					"objectClass": "Player",
-					"sid": 234929280955192,
-					"behaviorType": "Platform",
-					"parameters": {
-						"deceleration": "800"
-					}
-				},
-				{
-					"id": "set-jump-strength",
-					"objectClass": "Player",
-					"sid": 799326526480662,
-					"behaviorType": "Platform",
-					"parameters": {
-						"jump-strength": "190"
-					}
-				},
-				{
-					"id": "set-gravity",
-					"objectClass": "Player",
-					"sid": 173075771885118,
-					"behaviorType": "Platform",
-					"parameters": {
-						"gravity": "600"
-					}
-				},
-				{
-					"id": "set-max-fall-speed",
-					"objectClass": "Player",
-					"sid": 543169269014247,
-					"behaviorType": "Platform",
-					"parameters": {
-						"max-fall-speed": "300"
-					}
-				}
-			],
-			"sid": 261720775584557
+			"eventType": "variable",
+			"name": "Music",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 362653085234397
+		},
+		{
+			"eventType": "comment",
+			"text": "Music, if testing on floors use numbers to connect it to the layouts music. 0 = Title theme, 1 = layout 1 music, 2 = layout 2 music, 3 = layout 3 and 4 music. But if you starting from Title you shouldnt need to worry about this"
 		},
 		{
 			"eventType": "group",
@@ -3583,6 +3525,11 @@
 											}
 										},
 										{
+											"id": "is-visible",
+											"objectClass": "Player",
+											"sid": 226069005905421
+										},
+										{
 											"id": "pick-by-unique-id",
 											"objectClass": "WallButton",
 											"sid": 142122736966604,
@@ -3633,6 +3580,11 @@
 											}
 										},
 										{
+											"id": "is-visible",
+											"objectClass": "Player",
+											"sid": 525525868281447
+										},
+										{
 											"id": "pick-by-unique-id",
 											"objectClass": "WallButton",
 											"sid": 898950129925555,
@@ -3681,6 +3633,11 @@
 											"parameters": {
 												"object": "WallButton"
 											}
+										},
+										{
+											"id": "is-visible",
+											"objectClass": "Player",
+											"sid": 172113838932621
 										},
 										{
 											"id": "pick-by-unique-id",
@@ -3954,6 +3911,11 @@
 									"parameters": {
 										"object": "WallButton"
 									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "Player",
+									"sid": 944708470550850
 								},
 								{
 									"id": "pick-by-unique-id",
@@ -4621,7 +4583,7 @@
 											"objectClass": "Player",
 											"sid": 907467976095581,
 											"parameters": {
-												"object": "Sprite5",
+												"object": "Circle",
 												"image-point-optional": "0"
 											}
 										},
@@ -4873,6 +4835,15 @@
 							],
 							"actions": [
 								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 681036111275836,
+									"parameters": {
+										"variable": "Music",
+										"value": "2"
+									}
+								},
+								{
 									"id": "go-to-nextprevious-layout",
 									"objectClass": "System",
 									"sid": 870503353479180,
@@ -4931,6 +4902,15 @@
 							],
 							"actions": [
 								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 232405197226723,
+									"parameters": {
+										"variable": "Music",
+										"value": "3"
+									}
+								},
+								{
 									"id": "go-to-nextprevious-layout",
 									"objectClass": "System",
 									"sid": 160802533810372,
@@ -4962,6 +4942,15 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 279554511586937,
+									"parameters": {
+										"variable": "Music",
+										"value": "4"
+									}
+								},
 								{
 									"id": "go-to-nextprevious-layout",
 									"objectClass": "System",
@@ -8006,69 +7995,181 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-any-playing",
-							"objectClass": "Audio",
-							"sid": 591703605762529
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 594051031662024
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 537794942634218,
+							"parameters": {
+								"variable": "Music",
+								"comparison": 0,
+								"value": "0"
+							}
 						}
 					],
 					"actions": [
 						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 801960527108754,
+							"parameters": {
+								"tag": "\"Music\""
+							}
+						},
+						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 346306491022156,
+							"sid": 672999514153468,
 							"parameters": {
 								"audio-file": {
-									"path": "Level 1 theme"
+									"path": "Title theme"
 								},
 								"loop": "looping",
-								"volume": "0",
+								"volume": "-15",
 								"stereo-pan": "0",
-								"tag-optional": "\"\""
+								"tag-optional": "\"Music\""
 							}
 						}
 					],
-					"sid": 959821493243627,
-					"disabled": true
+					"sid": 347556273345392
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 337942654077461,
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 950564876343418
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 673462164134474,
 							"parameters": {
-								"key": 32
+								"variable": "Music",
+								"comparison": 0,
+								"value": "1"
 							}
 						}
 					],
 					"actions": [
 						{
-							"id": "play-at-object",
+							"id": "stop",
 							"objectClass": "Audio",
-							"sid": 786252692315861,
+							"sid": 683999940051893,
+							"parameters": {
+								"tag": "\"Music\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 634097207140438,
 							"parameters": {
 								"audio-file": {
-									"path": "Lazer"
+									"path": "Level 1 theme"
 								},
-								"loop": "not-looping",
-								"volume": "-15",
-								"object": "Player",
-								"inner-angle": "360",
-								"outer-angle": "360",
-								"outer-gain": "0",
-								"tag-optional": "\"\""
+								"loop": "looping",
+								"volume": "-13",
+								"stereo-pan": "0",
+								"tag-optional": "\"Music\""
 							}
 						}
 					],
-					"sid": 835124846237874,
-					"disabled": true,
-					"children": [
+					"sid": 525202724348255
+				},
+				{
+					"eventType": "block",
+					"conditions": [
 						{
-							"eventType": "comment",
-							"text": "Example for positioned based Audio, On space sound plays, can be any other condition needed, you can also replace the sound being played at object player to whatever other object you need."
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 505338745274040
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 727435913391782,
+							"parameters": {
+								"variable": "Music",
+								"comparison": 0,
+								"value": "2"
+							}
 						}
-					]
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 583381419605988,
+							"parameters": {
+								"tag": "\"Music\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 939044497717999,
+							"parameters": {
+								"audio-file": {
+									"path": "City rooftop theme - 2_13_26, 9.37 AM"
+								},
+								"loop": "looping",
+								"volume": "-13",
+								"stereo-pan": "0",
+								"tag-optional": "\"Music\""
+							}
+						}
+					],
+					"sid": 265195796056473
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 165057931969822
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 294360614816077,
+							"parameters": {
+								"variable": "Music",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 278792618736023,
+							"parameters": {
+								"tag": "\"Music\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 668945562569577,
+							"parameters": {
+								"audio-file": {
+									"path": "Final Stage"
+								},
+								"loop": "looping",
+								"volume": "-13",
+								"stereo-pan": "0",
+								"tag-optional": "\"Music\""
+							}
+						}
+					],
+					"sid": 997847884356842
 				}
 			],
 			"sid": 917762701830548
@@ -8154,6 +8255,15 @@
 							"parameters": {
 								"seconds": "35",
 								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 158509162357404,
+							"parameters": {
+								"variable": "Music",
+								"value": "1"
 							}
 						},
 						{
@@ -8613,6 +8723,90 @@
 				}
 			],
 			"sid": 512528510916302
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 953798443968531
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 283118786682074,
+					"parameters": {
+						"scale": "3.5"
+					}
+				},
+				{
+					"id": "set-group-active",
+					"objectClass": "System",
+					"sid": 381998844081710,
+					"parameters": {
+						"group-name": "\"Camera2\"",
+						"state": "deactivated"
+					}
+				},
+				{
+					"id": "set-max-speed",
+					"objectClass": "Player",
+					"sid": 785097460721724,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-speed": "125"
+					}
+				},
+				{
+					"id": "set-acceleration",
+					"objectClass": "Player",
+					"sid": 248637742538701,
+					"behaviorType": "Platform",
+					"parameters": {
+						"acceleration": "400"
+					}
+				},
+				{
+					"id": "set-deceleration",
+					"objectClass": "Player",
+					"sid": 726245783935775,
+					"behaviorType": "Platform",
+					"parameters": {
+						"deceleration": "800"
+					}
+				},
+				{
+					"id": "set-jump-strength",
+					"objectClass": "Player",
+					"sid": 307777961569122,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-strength": "190"
+					}
+				},
+				{
+					"id": "set-gravity",
+					"objectClass": "Player",
+					"sid": 781233054204922,
+					"behaviorType": "Platform",
+					"parameters": {
+						"gravity": "600"
+					}
+				},
+				{
+					"id": "set-max-fall-speed",
+					"objectClass": "Player",
+					"sid": 142947156199359,
+					"behaviorType": "Platform",
+					"parameters": {
+						"max-fall-speed": "300"
+					}
+				}
+			],
+			"sid": 519453194365882
 		}
 	],
 	"sid": 285828799823789
