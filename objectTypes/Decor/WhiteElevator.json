@@ -27,7 +27,32 @@
 					}
 				],
 				"sid": 669091667039379,
-				"name": "Animation 1",
+				"name": "WhiteElevator",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 66,
+						"height": 100,
+						"originX": 0.5,
+						"originY": 0.42,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 851548,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 694652642925974,
+				"name": "Highlight",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

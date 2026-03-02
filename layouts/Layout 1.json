@@ -5818,7 +5818,7 @@
 					"type": "WhiteElevator",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "WhiteElevator",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -5855,7 +5855,7 @@
 					"type": "WhiteElevator",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "WhiteElevator",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -5892,7 +5892,7 @@
 					"type": "WhiteElevator",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "WhiteElevator",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -5929,7 +5929,7 @@
 					"type": "WhiteElevator",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "WhiteElevator",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -11320,6 +11320,43 @@
 						"height": 6.797142745097659,
 						"originX": 0.5,
 						"originY": 0.5365853658536586,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Checkpoint",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1839,
+					"sid": 716374735772879,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 716374735772879,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 839.779534653337,
+						"y": 378.74693626052465,
+						"width": 3.9494978148376276,
+						"height": 3.5147494174292433,
+						"originX": 0.4965986394557823,
+						"originY": 0.48695652173913045,
 						"color": [
 							1,
 							1,

@@ -11205,7 +11205,7 @@
 					"type": "WhiteElevator",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "WhiteElevator",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -11945,7 +11945,7 @@
 					"type": "WhiteElevator",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "WhiteElevator",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -18661,9 +18661,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1000.6778994892472,
+						"x": 1002.5069286133147,
 						"y": 149.07540264452496,
-						"width": 11.549453576156816,
+						"width": 14.855775454278865,
 						"height": 8.644836072847056,
 						"originX": 0.5531914893617021,
 						"originY": 0.35,
@@ -18698,10 +18698,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1011.8585501467986,
-						"y": 149.24691425130018,
+						"x": 997.5866340235652,
+						"y": 145.72913873004703,
 						"width": 11.549453576156816,
-						"height": 8.644836072847056,
+						"height": 15.363029377957389,
 						"originX": 0.5531914893617021,
 						"originY": 0.35,
 						"color": [
@@ -18710,7 +18710,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 0.21274850303032988,
 						"zElevation": 0
 					}
 				},
@@ -18859,6 +18859,43 @@
 							1
 						],
 						"angle": 4.71238898038469,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "WhiteSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1746,
+					"sid": 683681001256697,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 683681001256697,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1009.3545122456867,
+						"y": 148.8919925417085,
+						"width": 8.739082344621147,
+						"height": 8.644836072847056,
+						"originX": 0.5531914893617021,
+						"originY": 0.35,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -22765,6 +22802,43 @@
 						"height": 7.300838483195363,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Checkpoint",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1840,
+					"sid": 859649287096643,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 859649287096643,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1227.797633925768,
+						"y": 303.1172505595881,
+						"width": 3.949497814837627,
+						"height": 3.5147494174292433,
+						"originX": 0.4965986394557823,
+						"originY": 0.48695652173913045,
 						"color": [
 							1,
 							1,
@@ -26818,6 +26892,53 @@
 							1
 						],
 						"angle": 5.823010783406392,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BlackBackground",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1747,
+					"sid": 603222100428887,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 603222100428887,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 990.9990917148983,
+						"y": 155.07399431653755,
+						"width": 22.146848934153127,
+						"height": 5.942496382369086,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
 						"zElevation": 0
 					}
 				}

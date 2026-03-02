@@ -1855,7 +1855,7 @@
 					"world": {
 						"x": 339.52623313016727,
 						"y": 135.25373026774548,
-						"width": 21.861858305000624,
+						"width": 21.672894769980353,
 						"height": 0.930385280390432,
 						"originX": 0,
 						"originY": 0,
@@ -1865,7 +1865,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 0.0006541670959430979,
 						"zElevation": 0
 					}
 				},
@@ -1890,10 +1890,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 343.90478879663283,
-						"y": 140.44871593800218,
+						"x": 344.14904115176586,
+						"y": 139.77210549004684,
 						"width": 9.4,
-						"height": 6.673792814901475,
+						"height": 6.4132834832910275,
 						"originX": 0.5531914893617021,
 						"originY": 0.35,
 						"color": [
@@ -1902,7 +1902,7 @@
 							1,
 							1
 						],
-						"angle": 3.141592653589793,
+						"angle": 3.0853120745568785,
 						"zElevation": 0
 					}
 				},
@@ -5395,10 +5395,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 375.89441439470755,
-						"y": 162.37637580699698,
+						"x": 377.0538784385431,
+						"y": 161.1516905630602,
 						"width": 9.4,
-						"height": 8,
+						"height": 9.88413114451808,
 						"originX": 0.5531914893617021,
 						"originY": 0.35,
 						"color": [
@@ -5407,7 +5407,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 6.230032726488238,
 						"zElevation": 0
 					}
 				},
@@ -6766,6 +6766,43 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "BlackColorSpawn",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1844,
+					"sid": 729461762379491,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 729461762379491,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 285,
+						"y": 101,
+						"width": 26.280992083855693,
+						"height": 21.039012485711282,
+						"originX": 0.4878048780487805,
+						"originY": 0.47706422018348627,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player",
 					"properties": {
 						"initially-visible": true,
@@ -7116,7 +7153,7 @@
 						"x": 259.47274528657755,
 						"y": 167.34047613288422,
 						"width": 146.98845424724246,
-						"height": 0.4120523675887142,
+						"height": 0.5389410552231624,
 						"originX": 0,
 						"originY": 0,
 						"color": [

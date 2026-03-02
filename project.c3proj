@@ -172,7 +172,8 @@
 					"ColorChangerWhite",
 					"BlackColorSpawn",
 					"WhiteColorSpawn",
-					"PlayerCamera"
+					"PlayerCamera",
+					"Checkpoint"
 				],
 				"subfolders": [],
 				"name": "Player"
