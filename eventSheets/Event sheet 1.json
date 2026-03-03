@@ -8720,6 +8720,67 @@
 						}
 					],
 					"sid": 477033679755376
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "GasLeak",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 877698338145777,
+									"parameters": {
+										"object": "GasEvent"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layout-effect-enabled",
+									"objectClass": "System",
+									"sid": 899981839588147,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"RadialBlur\""
+									}
+								}
+							],
+							"sid": 955787451727995
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 594374232969349,
+									"parameters": {
+										"object": "GasEvent"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layout-effect-enabled",
+									"objectClass": "System",
+									"sid": 510290299098389,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"RadialBlur\""
+									}
+								}
+							],
+							"sid": 764259684015942
+						}
+					],
+					"sid": 462063430279112
 				}
 			],
 			"sid": 879497991412662

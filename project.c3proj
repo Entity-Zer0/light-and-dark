@@ -104,7 +104,8 @@
 			"Keyboard",
 			"Preview",
 			"Audio",
-			"Mouse"
+			"Mouse",
+			"GasEvent"
 		],
 		"subfolders": [
 			{
