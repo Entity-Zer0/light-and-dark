@@ -105,7 +105,9 @@
 			"Preview",
 			"Audio",
 			"Mouse",
-			"GasEvent"
+			"GasEvent",
+			"Sprite5",
+			"Sprite6"
 		],
 		"subfolders": [
 			{
@@ -170,7 +172,9 @@
 					"WhiteSpikes",
 					"BlackSpikes",
 					"BlackLazer",
-					"WhiteLazer"
+					"WhiteLazer",
+					"BlueSpike",
+					"GreenSpike"
 				],
 				"subfolders": [],
 				"name": "Hazards"
@@ -266,6 +270,46 @@
 					"name": "Lazer.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 958230617672590,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Light Swicth FX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 554577234644458,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Found_level up SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 320744127614927,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Elevator FX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 801692284673647,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Lab SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 875767448292158,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Nothing in desk SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 233972365130493,
 					"file-info": {
 						"purpose": "none"
 					}
