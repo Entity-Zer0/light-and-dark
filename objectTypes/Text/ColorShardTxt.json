@@ -1,7 +1,7 @@
 {
-	"name": "Text",
+	"name": "ColorShardTxt",
 	"plugin-id": "Text",
-	"sid": 838206601152884,
+	"sid": 189711835863135,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],

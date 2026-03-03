@@ -1,0 +1,59 @@
+{
+	"name": "Circle",
+	"plugin-id": "Sprite",
+<<<<<<< HEAD:objectTypes/Sprite6.json
+	"sid": 500851379844758,
+=======
+	"sid": 935838609777010,
+>>>>>>> 138f8fa9d476220a64d86504643001e9072a5d03:objectTypes/Decor/Circle.json
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+<<<<<<< HEAD:objectTypes/Sprite6.json
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
+=======
+						"width": 83,
+						"height": 83,
+						"originX": 0.4939759036144578,
+						"originY": 0.4939759036144578,
+>>>>>>> 138f8fa9d476220a64d86504643001e9072a5d03:objectTypes/Decor/Circle.json
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+<<<<<<< HEAD:objectTypes/Sprite6.json
+						"imageSpriteId": 4291032,
+=======
+						"imageSpriteId": 8456372,
+>>>>>>> 138f8fa9d476220a64d86504643001e9072a5d03:objectTypes/Decor/Circle.json
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+<<<<<<< HEAD:objectTypes/Sprite6.json
+				"sid": 420145956469303,
+=======
+				"sid": 704210257714291,
+>>>>>>> 138f8fa9d476220a64d86504643001e9072a5d03:objectTypes/Decor/Circle.json
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

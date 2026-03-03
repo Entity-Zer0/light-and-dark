@@ -1,7 +1,7 @@
 {
-	"name": "Sprite8",
+	"name": "ExitSign",
 	"plugin-id": "Sprite",
-	"sid": 503264164973895,
+	"sid": 323390239737163,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 20,
-						"height": 20,
+						"width": 27,
+						"height": 15,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8496794,
+						"imageSpriteId": 7186789,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 261424335196499,
+				"sid": 814856492752949,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

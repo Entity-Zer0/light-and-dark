@@ -7322,15 +7322,6 @@
 									"actions": [
 										{
 											"id": "set-visible",
-											"objectClass": "WhiteX",
-											"sid": 439692244459509,
-											"disabled": true,
-											"parameters": {
-												"visibility": "visible"
-											}
-										},
-										{
-											"id": "set-visible",
 											"objectClass": "NoteInDrew",
 											"sid": 528315673324959,
 											"parameters": {
@@ -7531,18 +7522,34 @@
 										},
 										{
 											"id": "pick-by-unique-id",
-											"objectClass": "WhiteX",
-											"sid": 142076190575264,
+											"objectClass": "TextLvl2",
+											"sid": 528198593553402,
 											"parameters": {
-												"unique-id": "918"
+												"unique-id": "1705"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "NoteTextBoxLvl2",
+											"sid": 573301571242240,
+											"parameters": {
+												"unique-id": "1687"
 											}
 										}
 									],
 									"actions": [
 										{
 											"id": "set-visible",
-											"objectClass": "WhiteX",
-											"sid": 810343860266837,
+											"objectClass": "TextLvl2",
+											"sid": 740308188711709,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "NoteTextBoxLvl2",
+											"sid": 384863779485942,
 											"parameters": {
 												"visibility": "visible"
 											}

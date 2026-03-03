@@ -1,7 +1,7 @@
 {
-	"name": "Sprite9",
+	"name": "Checkpoint",
 	"plugin-id": "Sprite",
-	"sid": 540330368991214,
+	"sid": 537105996771811,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,33 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 76,
-						"height": 31,
-						"originX": 0.5,
-						"originY": 0.16129032258064516,
+						"width": 147,
+						"height": 115,
+						"originX": 0.4965986394557823,
+						"originY": 0.48695652173913045,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6189387,
-						"collisionPoly": {
-							"points": [
-								0.013157894736842105,
-								0,
-								0.9868421052631579,
-								0,
-								0.9868421052631579,
-								0.967741935483871,
-								0.013157894736842105,
-								0.967741935483871
-							]
-						},
+						"imageSpriteId": 9563794,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 431947375662671,
+				"sid": 901692538092580,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
