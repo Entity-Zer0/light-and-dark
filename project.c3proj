@@ -194,7 +194,8 @@
 					"NoteTextBoxLvl3",
 					"TextLvl3",
 					"Text",
-					"TextLvl4"
+					"TextLvl4",
+					"TextLvl2"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -258,6 +259,22 @@
 					"name": "Found_level up SFX.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 265325295365811,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Light Swicth FX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 489869462769640,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Elevator FX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 846219475506379,
 					"file-info": {
 						"purpose": "none"
 					}

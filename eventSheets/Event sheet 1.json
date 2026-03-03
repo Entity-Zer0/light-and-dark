@@ -3872,6 +3872,20 @@
 									"parameters": {
 										"state": "enabled"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 998077949146245,
+									"parameters": {
+										"audio-file": {
+											"path": "Lab SFX"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 704210199788031
@@ -3921,6 +3935,20 @@
 									"behaviorType": "Solid",
 									"parameters": {
 										"state": "disabled"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 769591406242987,
+									"parameters": {
+										"audio-file": {
+											"path": "Light Swicth FX"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -4384,6 +4412,20 @@
 											"parameters": {
 												"visibility": "visible"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 787852157163518,
+											"parameters": {
+												"audio-file": {
+													"path": "Found_level up SFX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 875603750732014
@@ -4448,6 +4490,20 @@
 											"behaviorType": "Platform",
 											"parameters": {
 												"state": "enabled"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 438371321866129,
+											"parameters": {
+												"audio-file": {
+													"path": "Found_level up SFX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -4695,6 +4751,20 @@
 											"parameters": {
 												"group-name": "\"Camera\"",
 												"state": "activated"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 931714630316939,
+											"parameters": {
+												"audio-file": {
+													"path": "Elevator FX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -7480,10 +7550,10 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 889640351108353,
+											"sid": 664668139840548,
 											"parameters": {
 												"audio-file": {
-													"path": "Nothing in desk SFX"
+													"path": "Found_level up SFX"
 												},
 												"loop": "not-looping",
 												"volume": "0",
@@ -8144,6 +8214,33 @@
 				}
 			],
 			"sid": 917762701830548
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 710329928919310
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 584721621939085,
+					"parameters": {
+						"audio-file": {
+							"path": "City rooftop theme - 2_13_26, 9.37 AM"
+						},
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 903956003691914
 		}
 	],
 	"sid": 285828799823789
