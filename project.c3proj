@@ -89,6 +89,13 @@
 			"name": "Black & white",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "radialblur",
+			"name": "Radial blur",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "5kweg2kb1i2",
@@ -133,7 +140,11 @@
 					"ElevatorSign",
 					"HoleTear",
 					"Circle",
-					"ExitSign"
+					"ExitSign",
+					"BlackCircle",
+					"ColorMachine",
+					"GasLeak",
+					"GasLeakGround"
 				],
 				"subfolders": [
 					{
