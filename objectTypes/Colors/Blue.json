@@ -1,0 +1,52 @@
+{
+	"name": "Blue",
+	"plugin-id": "Sprite",
+	"sid": 958285661708767,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 47,
+						"height": 40,
+						"originX": 0.5531914893617021,
+						"originY": 0.35,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4351429,
+						"collisionPoly": {
+							"points": [
+								0.2838305651717299,
+								0.026736690967566795,
+								0.6989381017027996,
+								0,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 222697332525040,
+				"name": "BlackSpikes",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

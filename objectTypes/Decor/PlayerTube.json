@@ -1,7 +1,7 @@
 {
-	"name": "Sprite7",
+	"name": "PlayerTube",
 	"plugin-id": "Sprite",
-	"sid": 309986783323773,
+	"sid": 468734771136783,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,24 +12,24 @@
 			{
 				"frames": [
 					{
-						"width": 246,
-						"height": 116,
-						"originX": 0.5121951219512195,
-						"originY": 0.31896551724137934,
+						"width": 212,
+						"height": 172,
+						"originX": 0.4716981132075472,
+						"originY": 0.7325581395348837,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 100691,
+						"imageSpriteId": 5658748,
 						"collisionPoly": {
 							"points": [
-								0.0040650406504065045,
 								0,
+								0.005813953488372093,
+								1,
+								0.005813953488372093,
+								1,
 								1,
 								0,
-								1,
-								1,
-								0.0040650406504065045,
 								1
 							]
 						},
@@ -38,7 +38,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 395576170728986,
+				"sid": 881042681332075,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

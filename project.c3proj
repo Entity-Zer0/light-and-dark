@@ -105,12 +105,7 @@
 			"Preview",
 			"Audio",
 			"Mouse",
-			"GasEvent",
-			"Sprite5",
-			"Sprite6",
-			"Sprite7",
-			"Sprite8",
-			"Sprite9"
+			"Text"
 		],
 		"subfolders": [
 			{
@@ -150,7 +145,10 @@
 					"BlackCircle",
 					"ColorMachine",
 					"GasLeak",
-					"GasLeakGround"
+					"GasLeakGround",
+					"PlayerTube",
+					"Father",
+					"AutonomyBoard"
 				],
 				"subfolders": [
 					{
@@ -175,9 +173,7 @@
 					"WhiteSpikes",
 					"BlackSpikes",
 					"BlackLazer",
-					"WhiteLazer",
-					"BlueSpike",
-					"GreenSpike"
+					"WhiteLazer"
 				],
 				"subfolders": [],
 				"name": "Hazards"
@@ -192,7 +188,11 @@
 					"BlackColorSpawn",
 					"WhiteColorSpawn",
 					"PlayerCamera",
-					"Checkpoint"
+					"Checkpoint",
+					"GasEvent",
+					"GasEvent2",
+					"GasEvent3",
+					"SpeedChange"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -232,10 +232,23 @@
 					"StartButton",
 					"ControlsTxt",
 					"Exit",
-					"CreditsTxt"
+					"CreditsTxt",
+					"EndAnimation"
 				],
 				"subfolders": [],
 				"name": "Title"
+			},
+			{
+				"items": [
+					"Orange",
+					"Blue",
+					"Green",
+					"Red",
+					"Purple",
+					"Yellow"
+				],
+				"subfolders": [],
+				"name": "Colors"
 			}
 		]
 	},
@@ -252,7 +265,8 @@
 			"Layout 1",
 			"Layout 2",
 			"Layout 3",
-			"Layout 4"
+			"Layout 4",
+			"End Screen"
 		],
 		"subfolders": []
 	},

@@ -1,7 +1,7 @@
 {
-	"name": "BlueSpike",
+	"name": "GasEvent3",
 	"plugin-id": "Sprite",
-	"sid": 958285661708767,
+	"sid": 503259047869022,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,34 +12,22 @@
 			{
 				"frames": [
 					{
-						"width": 47,
-						"height": 40,
-						"originX": 0.5531914893617021,
-						"originY": 0.35,
+						"width": 250,
+						"height": 250,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4351429,
-						"collisionPoly": {
-							"points": [
-								0.2838305651717299,
-								0.026736690967566795,
-								0.6989381017027996,
-								0,
-								1,
-								1,
-								0,
-								1
-							]
-						},
+						"imageSpriteId": 3016361,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 222697332525040,
-				"name": "BlackSpikes",
+				"sid": 786211280476015,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

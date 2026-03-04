@@ -1,7 +1,7 @@
 {
-	"name": "GreenSpike",
+	"name": "SpeedChange",
 	"plugin-id": "Sprite",
-	"sid": 860163668587577,
+	"sid": 828074842326190,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,34 +12,22 @@
 			{
 				"frames": [
 					{
-						"width": 47,
-						"height": 40,
-						"originX": 0.5531914893617021,
-						"originY": 0.35,
+						"width": 50,
+						"height": 50,
+						"originX": 0.5,
+						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9696686,
-						"collisionPoly": {
-							"points": [
-								0.2838305651717299,
-								0.026736690967566795,
-								0.6989381017027996,
-								0,
-								1,
-								1,
-								0,
-								1
-							]
-						},
+						"imageSpriteId": 111952,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 739924043000986,
-				"name": "BlackSpikes",
+				"sid": 205877765391452,
+				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
