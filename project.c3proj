@@ -107,7 +107,10 @@
 			"Mouse",
 			"GasEvent",
 			"Sprite5",
-			"Sprite6"
+			"Sprite6",
+			"Sprite7",
+			"Sprite8",
+			"Sprite9"
 		],
 		"subfolders": [
 			{
