@@ -26941,6 +26941,96 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "UpgradeScreen2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1890,
+					"sid": 615110935556200,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 615110935556200,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1284,
+						"y": 208,
+						"width": 70.84516914761701,
+						"height": 44.08295045786579,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NoteInTable2",
+					"properties": {
+						"text": "Philip Jinbu \nMarch 1st- Clinical trials are done– are test subject Alex Jinbu. Is a success in a way. We didn't add physical enhancements; higher ups said it would be \"perfect\" to promote her to the military. However due to my wishes as head of the experiment it was rejected. It would have added major growth to her body. \nHER BODY AS PERFECT AS IS! Even before the experiments. ",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 2,
+						"line-height": -2,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 1891,
+					"sid": 630382162223167,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 630382162223167,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1250,
+						"y": 186,
+						"width": 69.13742744271394,
+						"height": 45.18501025030537,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 272240592981895,

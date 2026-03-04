@@ -5944,6 +5944,20 @@
 										"animation": "\"Off\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 435398187811391,
+									"parameters": {
+										"audio-file": {
+											"path": "Light Swicth FX"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 546834894053527
@@ -5993,6 +6007,20 @@
 									"parameters": {
 										"animation": "\"On\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 120980177549549,
+									"parameters": {
+										"audio-file": {
+											"path": "Light Swicth FX"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
@@ -8209,11 +8237,17 @@
 									],
 									"actions": [
 										{
-											"id": "set-visible",
-											"objectClass": "WhiteX",
-											"sid": 439692244459509,
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 254919255954295,
 											"parameters": {
-												"visibility": "visible"
+												"audio-file": {
+													"path": "Nothing in desk SFX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -8273,6 +8307,20 @@
 											"parameters": {
 												"visibility": "visible"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 747810979541919,
+											"parameters": {
+												"audio-file": {
+													"path": "Nothing in desk SFX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 575705062491440
@@ -8321,6 +8369,20 @@
 											"parameters": {
 												"visibility": "visible"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 114529916310934,
+											"parameters": {
+												"audio-file": {
+													"path": "Nothing in desk SFX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 296700759695701
@@ -8354,20 +8416,119 @@
 										},
 										{
 											"id": "pick-by-unique-id",
-											"objectClass": "WhiteX",
-											"sid": 142076190575264,
+											"objectClass": "NoteInTable2",
+											"sid": 661075482457879,
 											"parameters": {
-												"unique-id": "918"
+												"unique-id": "1891"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "UpgradeScreen2",
+											"sid": 203539865178596,
+											"parameters": {
+												"unique-id": "1890"
 											}
 										}
 									],
 									"actions": [
 										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 260445690901239,
+											"parameters": {
+												"seconds": "0.3",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "UpgradeScreen",
+											"sid": 293624085724433,
+											"parameters": {
+												"object": "Player",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "NoteInTable1",
+											"sid": 913977257574111,
+											"parameters": {
+												"object": "Player",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "set-x",
+											"objectClass": "NoteInTable1",
+											"sid": 208056103956228,
+											"parameters": {
+												"x": "NoteInTable1.X - 28"
+											}
+										},
+										{
+											"id": "set-y",
+											"objectClass": "NoteInTable1",
+											"sid": 665883521413070,
+											"parameters": {
+												"y": "NoteInTable1.Y - 29"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 500127143210054,
+											"parameters": {
+												"variable": "Note1",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 254669093522035,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										},
+										{
 											"id": "set-visible",
-											"objectClass": "WhiteX",
-											"sid": 810343860266837,
+											"objectClass": "UpgradeScreen",
+											"sid": 632235681722198,
 											"parameters": {
 												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "NoteInTable1",
+											"sid": 448320221045702,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "UpgradeScreen2",
+											"sid": 512812725363510,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 966369559848624,
+											"parameters": {
+												"audio-file": {
+													"path": "Found_level up SFX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -8427,6 +8588,20 @@
 											"parameters": {
 												"visibility": "visible"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 528649029924432,
+											"parameters": {
+												"audio-file": {
+													"path": "Nothing in desk SFX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 956901054398905
@@ -8474,6 +8649,20 @@
 											"sid": 876214543616735,
 											"parameters": {
 												"visibility": "visible"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 591545148584799,
+											"parameters": {
+												"audio-file": {
+													"path": "Nothing in desk SFX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										}
 									],
@@ -8523,6 +8712,20 @@
 											"parameters": {
 												"visibility": "visible"
 											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 441834221415874,
+											"parameters": {
+												"audio-file": {
+													"path": "Nothing in desk SFX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 671355611986867
@@ -8556,24 +8759,134 @@
 										},
 										{
 											"id": "pick-by-unique-id",
-											"objectClass": "BlackX",
-											"sid": 275669108990903,
+											"objectClass": "UpgradeScreen3",
+											"sid": 460698035374942,
 											"parameters": {
-												"unique-id": "1700"
+												"unique-id": "1691"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "NoteInTable3",
+											"sid": 461468344785366,
+											"parameters": {
+												"unique-id": "1893"
 											}
 										}
 									],
 									"actions": [
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 394067569580328,
+											"parameters": {
+												"audio-file": {
+													"path": "Found_level up SFX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
 											"id": "set-visible",
-											"objectClass": "BlackX",
-											"sid": 484837648060657,
+											"objectClass": "NoteInTable3",
+											"sid": 104074645383476,
+											"parameters": {
+												"visibility": "visible"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "UpgradeScreen3",
+											"sid": 333129810290674,
 											"parameters": {
 												"visibility": "visible"
 											}
 										}
 									],
 									"sid": 252217816980647
+								},
+								{
+									"eventType": "group",
+									"disabled": false,
+									"title": "TableLvl4",
+									"description": "",
+									"isActiveOnStart": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-pressed",
+													"objectClass": "Keyboard",
+													"sid": 141407162477442,
+													"parameters": {
+														"key": 32
+													}
+												},
+												{
+													"id": "is-overlapping-another-object",
+													"objectClass": "Player",
+													"sid": 694066882949536,
+													"parameters": {
+														"object": "BlackTable"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "BlackTable",
+													"sid": 597939006711170,
+													"parameters": {
+														"unique-id": "1557"
+													}
+												},
+												{
+													"id": "pick-by-unique-id",
+													"objectClass": "NoteInTable4",
+													"sid": 762112079813944,
+													"parameters": {
+														"unique-id": "1894"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 154341328456866,
+													"parameters": {
+														"audio-file": {
+															"path": "Found_level up SFX"
+														},
+														"loop": "not-looping",
+														"volume": "0",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "NoteInTable4",
+													"sid": 411197458079717,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "UpgradeScreen4",
+													"sid": 697386986957758,
+													"parameters": {
+														"visibility": "visible"
+													}
+												}
+											],
+											"sid": 166688733498510
+										}
+									],
+									"sid": 580146298993714
 								}
 							],
 							"sid": 358683546999181

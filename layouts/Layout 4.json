@@ -7013,7 +7013,7 @@
 					"world": {
 						"x": 824.6078835576957,
 						"y": 2397.615148495068,
-						"width": 149.62486300033385,
+						"width": 149.62486300033382,
 						"height": 42.523893259538426,
 						"originX": 0.49829351535836175,
 						"originY": 0.6333333333333333,
@@ -26818,7 +26818,7 @@
 					"world": {
 						"x": 921.22828289829,
 						"y": 2370.9072270116626,
-						"width": 7.899027193258348,
+						"width": 7.899027193258349,
 						"height": 7.404928081944945,
 						"originX": 0.4939759036144578,
 						"originY": 0.4939759036144578,
@@ -33597,7 +33597,7 @@
 						"x": 76.06215845455628,
 						"y": 2426.5152957987375,
 						"width": 3.9511938535932956,
-						"height": 3.1646296422815112,
+						"height": 3.164629642281511,
 						"originX": 0.4939759036144578,
 						"originY": 0.4939759036144578,
 						"color": [
@@ -34939,6 +34939,131 @@
 				1,
 				1,
 				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Text Box",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "UpgradeScreen4",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1895,
+					"sid": 582328843253372,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 582328843253372,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1027.8022865550402,
+						"y": 653.627930852132,
+						"width": 85.82521653123848,
+						"height": 40.326504694875524,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NoteInTable4",
+					"properties": {
+						"text": "Philip Jinbu \nMarch 5th- My daughter is gone, and I take the responsibility of doing this to her.\nMy worries of her being stuck in a life of onism, I'm not even her yet I've seen it develop for years. She knew it when she was young. And as she is now. I apologize as a person to you. Because I’m not man enough to face you.\n",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 2,
+						"line-height": -1,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 1894,
+					"sid": 512392154449212,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 512392154449212,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 986.9066324001337,
+						"y": 634.03604727226,
+						"width": 80.9177763238747,
+						"height": 41.206760035575144,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 538790135760590,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
 				1
 			],
 			"isTransparent": true,
