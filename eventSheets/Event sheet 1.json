@@ -31,30 +31,6 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Black",
-			"type": "number",
-			"initialValue": "1",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 709071594973506
-		},
-		{
-			"eventType": "variable",
-			"name": "White",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 232138224645151
-		},
-		{
-			"eventType": "comment",
-			"text": "Black and White, put 0 on the color you dont want and put 1 on the shade you want to be when testing (You usually shouldnt need to touch this one)"
-		},
-		{
-			"eventType": "variable",
 			"name": "Vault",
 			"type": "number",
 			"initialValue": "0",
@@ -96,6 +72,30 @@
 		{
 			"eventType": "comment",
 			"text": "Music, if testing on floors use numbers to connect it to the layouts music. 0 = Title theme, 1 = layout 1 music, 2 = layout 2 music, 3 = layout 3 and 4 music. But if you starting from Title you shouldnt need to worry about this"
+		},
+		{
+			"eventType": "variable",
+			"name": "Black",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 569712432495020
+		},
+		{
+			"eventType": "variable",
+			"name": "White",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 368740203441358
+		},
+		{
+			"eventType": "comment",
+			"text": "Black and White, put 0 on the color you dont want and put 1 on the shade you want to be when testing (You usually shouldnt need to touch this one)"
 		},
 		{
 			"eventType": "variable",
@@ -1815,12 +1815,17 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "on-collision-with-another-object",
+											"id": "is-overlapping-another-object",
 											"objectClass": "Player",
-											"sid": 304542390533490,
+											"sid": 462089748287889,
 											"parameters": {
 												"object": "BlackSpikes"
 											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 901174500899748
 										},
 										{
 											"id": "compare-eventvar",
@@ -1989,12 +1994,17 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "on-collision-with-another-object",
+											"id": "is-overlapping-another-object",
 											"objectClass": "Player",
-											"sid": 134639500726698,
+											"sid": 123967512471236,
 											"parameters": {
 												"object": "BlackSpikes"
 											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 362823503076341
 										},
 										{
 											"id": "compare-eventvar",
@@ -2163,12 +2173,17 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "on-collision-with-another-object",
+											"id": "is-overlapping-another-object",
 											"objectClass": "Player",
-											"sid": 756893440186728,
+											"sid": 718549823207461,
 											"parameters": {
 												"object": "WhiteSpikes"
 											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 718854478766751
 										},
 										{
 											"id": "compare-eventvar",
@@ -2337,12 +2352,17 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "on-collision-with-another-object",
+											"id": "is-overlapping-another-object",
 											"objectClass": "Player",
-											"sid": 368911921992529,
+											"sid": 954550715196021,
 											"parameters": {
 												"object": "WhiteSpikes"
 											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 590916228980222
 										},
 										{
 											"id": "compare-eventvar",
@@ -13168,6 +13188,7 @@
 					"id": "set-position-to-another-object",
 					"objectClass": "Player",
 					"sid": 220402096348255,
+					"disabled": true,
 					"parameters": {
 						"object": "Spawn",
 						"image-point-optional": "0"
