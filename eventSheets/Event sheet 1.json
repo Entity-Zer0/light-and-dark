@@ -291,6 +291,15 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
+							"sid": 812614809847772,
+							"parameters": {
+								"variable": "Skip",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
 							"sid": 788092823264993,
 							"parameters": {
 								"variable": "Music",
