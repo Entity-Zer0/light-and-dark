@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "WallJump",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -19,7 +19,7 @@
 			"eventType": "variable",
 			"name": "ColorSwitch",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -94,6 +94,10 @@
 			"sid": 362653085234397
 		},
 		{
+			"eventType": "comment",
+			"text": "Music, if testing on floors use numbers to connect it to the layouts music. 0 = Title theme, 1 = layout 1 music, 2 = layout 2 music, 3 = layout 3 and 4 music. But if you starting from Title you shouldnt need to worry about this"
+		},
+		{
 			"eventType": "variable",
 			"name": "IsBusy",
 			"type": "number",
@@ -134,8 +138,24 @@
 			"sid": 478015914207344
 		},
 		{
-			"eventType": "comment",
-			"text": "Music, if testing on floors use numbers to connect it to the layouts music. 0 = Title theme, 1 = layout 1 music, 2 = layout 2 music, 3 = layout 3 and 4 music. But if you starting from Title you shouldnt need to worry about this"
+			"eventType": "variable",
+			"name": "EnemyRespawnX",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 675381972538906
+		},
+		{
+			"eventType": "variable",
+			"name": "EnemyRespawnY",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 876461734394449
 		},
 		{
 			"eventType": "group",
@@ -958,132 +978,1332 @@
 					"isActiveOnStart": true,
 					"children": [
 						{
-							"eventType": "block",
-							"conditions": [
+							"eventType": "group",
+							"disabled": false,
+							"title": "EnemyKillPlayer",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
 								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Player",
-									"sid": 473999373510003,
-									"parameters": {
-										"object": "BlackSpikes"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 721668093069066,
+											"parameters": {
+												"object": "ShadowEnemy"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 629680624120104
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 176607996217634,
+											"parameters": {
+												"variable": "Black",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 632620372724054,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 903089999074697,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 640944509260899,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 723981062694912,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 894372479625626,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "start-ignoring"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 731106278661306,
+											"parameters": {
+												"animation": "\"BlackDeath\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 452692181663703,
+											"parameters": {
+												"seconds": "2",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Player",
+											"sid": 794363013234181
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 607416399348264,
+											"parameters": {
+												"seconds": "1",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 146799685672770,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 738644190802481,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "stop-ignoring"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Spawn",
+											"sid": 870651492141286,
+											"parameters": {
+												"object": "Player",
+												"layer": "Spawn.LayerName",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 225639882096942,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 577613278591174,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 906509815673908,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 380498477504050
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 605463975191753,
+											"parameters": {
+												"object": "ShadowEnemy"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 726402675411269
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 645346239675903,
+											"parameters": {
+												"variable": "White",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 360860087619716,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 558372835864013,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 284787229203476,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 364439650648526,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 574316213269586,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "start-ignoring"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 427599595387052,
+											"parameters": {
+												"animation": "\"WhiteDeath\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 355062265758044,
+											"parameters": {
+												"seconds": "2",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Player",
+											"sid": 403129874033843
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 748801692158576,
+											"parameters": {
+												"seconds": "1",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 625934284173685,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 744962276057754,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "stop-ignoring"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Spawn",
+											"sid": 630256969299669,
+											"parameters": {
+												"object": "Player",
+												"layer": "Spawn.LayerName",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 199213494175157,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 958407685746255,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 388911779007799,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 565799339827974
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 916694384822523,
+											"parameters": {
+												"object": "WhiteEnemy"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 587625050809284
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 671670501395788,
+											"parameters": {
+												"variable": "Black",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 679037836376683,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 588927643132756,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 877328603311202,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 871421841731388,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 326132426566465,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "start-ignoring"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 675513953422573,
+											"parameters": {
+												"animation": "\"BlackDeath\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 358140402154398,
+											"parameters": {
+												"seconds": "2",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Player",
+											"sid": 868368486767300
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 749487888553323,
+											"parameters": {
+												"seconds": "1",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 862538729625388,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 988294605083473,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "stop-ignoring"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Spawn",
+											"sid": 865215453974550,
+											"parameters": {
+												"object": "Player",
+												"layer": "Spawn.LayerName",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 236420090045596,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 892200094542157,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 323147896753864,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 237961744338302
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 166053460860768,
+											"parameters": {
+												"object": "WhiteEnemy"
+											}
+										},
+										{
+											"id": "trigger-once-while-true",
+											"objectClass": "System",
+											"sid": 150288022386678
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 489196168033629,
+											"parameters": {
+												"variable": "White",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 461915218142302,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 190740390119248,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 602508607963409,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 317423703565831,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 176691653544573,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "start-ignoring"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 294158008079697,
+											"parameters": {
+												"animation": "\"WhiteDeath\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 344017620344292,
+											"parameters": {
+												"seconds": "2",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Player",
+											"sid": 260856859990417
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 181603794459205,
+											"parameters": {
+												"seconds": "1",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 395020094233044,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 729134298075324,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "stop-ignoring"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Spawn",
+											"sid": 531412645771143,
+											"parameters": {
+												"object": "Player",
+												"layer": "Spawn.LayerName",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 698577418550984,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 182706775084977,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 574944102086326,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 587206204280489
 								}
 							],
-							"actions": [
+							"sid": 868784104819907
+						},
+						{
+							"eventType": "group",
+							"disabled": false,
+							"title": "SpikeDeath",
+							"description": "",
+							"isActiveOnStart": true,
+							"children": [
 								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 211570512276749,
-									"parameters": {
-										"group-name": "\"Camera\"",
-										"state": "deactivated"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Player",
+											"sid": 304542390533490,
+											"parameters": {
+												"object": "BlackSpikes"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 271730616757507,
+											"parameters": {
+												"variable": "Black",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 358105721348981,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 999836658059829,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 439885423670665,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 507613098017093,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 361928543993375,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "start-ignoring"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 833941927928521,
+											"parameters": {
+												"animation": "\"BlackDeath\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 754683371150309,
+											"parameters": {
+												"seconds": "2",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Player",
+											"sid": 438795505223724
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 501162810593646,
+											"parameters": {
+												"seconds": "1",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 723779179465391,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 586315501487888,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "stop-ignoring"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Spawn",
+											"sid": 180608926968722,
+											"parameters": {
+												"object": "Player",
+												"layer": "Spawn.LayerName",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 727538033053935,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 773380294723652,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 312341367229808,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 868737246799004
 								},
 								{
-									"id": "destroy",
-									"objectClass": "Player",
-									"sid": 208602113725979
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Player",
+											"sid": 134639500726698,
+											"parameters": {
+												"object": "BlackSpikes"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 632413736409916,
+											"parameters": {
+												"variable": "White",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 861187904803335,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 383392792746660,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 131390156807628,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 628769498518406,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 519918783562885,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "start-ignoring"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 887657835478592,
+											"parameters": {
+												"animation": "\"WhiteDeath\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 169691046409071,
+											"parameters": {
+												"seconds": "2",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Player",
+											"sid": 253787543916069
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 106189743493145,
+											"parameters": {
+												"seconds": "1",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 990514598786550,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 977671685352840,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "stop-ignoring"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Spawn",
+											"sid": 588133240248949,
+											"parameters": {
+												"object": "Player",
+												"layer": "Spawn.LayerName",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 816874259744255,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 502720751201980,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 221028239722774,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 257238013495427
 								},
 								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 488465550392206,
-									"parameters": {
-										"seconds": "3",
-										"use-timescale": true
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Player",
+											"sid": 756893440186728,
+											"parameters": {
+												"object": "WhiteSpikes"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 431336046041598,
+											"parameters": {
+												"variable": "Black",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 105120039706005,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 239301913953553,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 990705432113752,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 997976778773134,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 566632895410039,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "start-ignoring"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 895816725517695,
+											"parameters": {
+												"animation": "\"BlackDeath\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 915397923902391,
+											"parameters": {
+												"seconds": "2",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Player",
+											"sid": 732778934417393
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 986857422155743,
+											"parameters": {
+												"seconds": "1",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 514596435073635,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 481331041434468,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "stop-ignoring"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Spawn",
+											"sid": 945939158924486,
+											"parameters": {
+												"object": "Player",
+												"layer": "Spawn.LayerName",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 340134106333793,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 470419967433783,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 814654819294027,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 482697826099551
 								},
 								{
-									"id": "spawn-another-object",
-									"objectClass": "Spawn",
-									"sid": 606706336863230,
-									"parameters": {
-										"object": "Player",
-										"layer": "Spawn.LayerName",
-										"image-point": "0",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 298090828802982,
-									"parameters": {
-										"group-name": "\"Camera\"",
-										"state": "activated"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-collision-with-another-object",
+											"objectClass": "Player",
+											"sid": 368911921992529,
+											"parameters": {
+												"object": "WhiteSpikes"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 215325316778325,
+											"parameters": {
+												"variable": "White",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 584376381303751,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 757495042519362,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 393727249549752,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "deactivated"
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 121992024340951,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "disabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 785426058845535,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "start-ignoring"
+											}
+										},
+										{
+											"id": "set-animation",
+											"objectClass": "Player",
+											"sid": 196573189072430,
+											"parameters": {
+												"animation": "\"WhiteDeath\"",
+												"from": "beginning"
+											}
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 440219972126015,
+											"parameters": {
+												"seconds": "2",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "destroy",
+											"objectClass": "Player",
+											"sid": 471440438227221
+										},
+										{
+											"id": "wait",
+											"objectClass": "System",
+											"sid": 219077586750664,
+											"parameters": {
+												"seconds": "1",
+												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-enabled",
+											"objectClass": "Player",
+											"sid": 428254888494923,
+											"behaviorType": "Platform",
+											"parameters": {
+												"state": "enabled"
+											}
+										},
+										{
+											"id": "set-ignoring-input",
+											"objectClass": "Player",
+											"sid": 897454404493911,
+											"behaviorType": "Platform",
+											"parameters": {
+												"input": "stop-ignoring"
+											}
+										},
+										{
+											"id": "spawn-another-object",
+											"objectClass": "Spawn",
+											"sid": 518825464762362,
+											"parameters": {
+												"object": "Player",
+												"layer": "Spawn.LayerName",
+												"image-point": "0",
+												"create-hierarchy": false,
+												"template-name": "\"\""
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 282260298978089,
+											"parameters": {
+												"group-name": "\"Sprite\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-group-active",
+											"objectClass": "System",
+											"sid": 820451847245139,
+											"parameters": {
+												"group-name": "\"Camera\"",
+												"state": "activated"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 200627194230961,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 259290725244065
 								}
 							],
-							"sid": 801695085646876
+							"sid": 546331817415573
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-collision-with-another-object",
+									"id": "is-overlapping-another-object",
 									"objectClass": "Player",
-									"sid": 238196329192602,
-									"parameters": {
-										"object": "WhiteSpikes"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 135555053030783,
-									"parameters": {
-										"group-name": "\"Camera\"",
-										"state": "deactivated"
-									}
-								},
-								{
-									"id": "destroy",
-									"objectClass": "Player",
-									"sid": 615943352876578
-								},
-								{
-									"id": "wait",
-									"objectClass": "System",
-									"sid": 900928395113568,
-									"parameters": {
-										"seconds": "3",
-										"use-timescale": true
-									}
-								},
-								{
-									"id": "spawn-another-object",
-									"objectClass": "Spawn",
-									"sid": 308649609307875,
-									"parameters": {
-										"object": "Player",
-										"layer": "Spawn.LayerName",
-										"image-point": "0",
-										"create-hierarchy": false,
-										"template-name": "\"\""
-									}
-								},
-								{
-									"id": "set-group-active",
-									"objectClass": "System",
-									"sid": 608272035429650,
-									"parameters": {
-										"group-name": "\"Camera\"",
-										"state": "activated"
-									}
-								}
-							],
-							"sid": 424279537943062
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Player",
-									"sid": 827569344709735,
+									"sid": 291527888966834,
 									"parameters": {
 										"object": "BlackLazer"
 									}
@@ -1098,9 +2318,23 @@
 										"value": "1"
 									},
 									"isInverted": true
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 393543281687484
 								}
 							],
 							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 435388877540772,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "1"
+									}
+								},
 								{
 									"id": "set-group-active",
 									"objectClass": "System",
@@ -1111,23 +2345,86 @@
 									}
 								},
 								{
-									"id": "destroy",
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 946732721252223,
+									"parameters": {
+										"group-name": "\"Sprite\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-enabled",
 									"objectClass": "Player",
-									"sid": 796467070795175
+									"sid": 545003131236811,
+									"behaviorType": "Platform",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-ignoring-input",
+									"objectClass": "Player",
+									"sid": 198236411303444,
+									"behaviorType": "Platform",
+									"parameters": {
+										"input": "start-ignoring"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 581915599573798,
+									"parameters": {
+										"animation": "\"WhiteDeath\"",
+										"from": "beginning"
+									}
 								},
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 886146775222728,
+									"sid": 742246176412551,
 									"parameters": {
-										"seconds": "3",
+										"seconds": "2",
 										"use-timescale": true
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Player",
+									"sid": 683607835686190
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 210264597645667,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Player",
+									"sid": 921219051747695,
+									"behaviorType": "Platform",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-ignoring-input",
+									"objectClass": "Player",
+									"sid": 596396253755934,
+									"behaviorType": "Platform",
+									"parameters": {
+										"input": "stop-ignoring"
 									}
 								},
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Spawn",
-									"sid": 873874149706948,
+									"sid": 619292322895594,
 									"parameters": {
 										"object": "Player",
 										"layer": "Spawn.LayerName",
@@ -1139,10 +2436,28 @@
 								{
 									"id": "set-group-active",
 									"objectClass": "System",
-									"sid": 698434876745807,
+									"sid": 971778378366226,
+									"parameters": {
+										"group-name": "\"Sprite\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 917158106346873,
 									"parameters": {
 										"group-name": "\"Camera\"",
 										"state": "activated"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 173741139398184,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "0"
 									}
 								}
 							],
@@ -1152,9 +2467,9 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-collision-with-another-object",
+									"id": "is-overlapping-another-object",
 									"objectClass": "Player",
-									"sid": 417194247487268,
+									"sid": 915386446933031,
 									"parameters": {
 										"object": "WhiteLazer"
 									}
@@ -1169,9 +2484,23 @@
 										"value": "1"
 									},
 									"isInverted": true
+								},
+								{
+									"id": "trigger-once-while-true",
+									"objectClass": "System",
+									"sid": 463674052074648
 								}
 							],
 							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 864622470973388,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "1"
+									}
+								},
 								{
 									"id": "set-group-active",
 									"objectClass": "System",
@@ -1182,23 +2511,86 @@
 									}
 								},
 								{
-									"id": "destroy",
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 251534666949349,
+									"parameters": {
+										"group-name": "\"Sprite\"",
+										"state": "deactivated"
+									}
+								},
+								{
+									"id": "set-enabled",
 									"objectClass": "Player",
-									"sid": 735903050802984
+									"sid": 983067516513566,
+									"behaviorType": "Platform",
+									"parameters": {
+										"state": "disabled"
+									}
+								},
+								{
+									"id": "set-ignoring-input",
+									"objectClass": "Player",
+									"sid": 602992248282138,
+									"behaviorType": "Platform",
+									"parameters": {
+										"input": "start-ignoring"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Player",
+									"sid": 585563918492712,
+									"parameters": {
+										"animation": "\"BlackDeath\"",
+										"from": "beginning"
+									}
 								},
 								{
 									"id": "wait",
 									"objectClass": "System",
-									"sid": 870792671482047,
+									"sid": 554098449706179,
 									"parameters": {
-										"seconds": "3",
+										"seconds": "2",
 										"use-timescale": true
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Player",
+									"sid": 114947854907738
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 501479236131659,
+									"parameters": {
+										"seconds": "1",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-enabled",
+									"objectClass": "Player",
+									"sid": 153597854548795,
+									"behaviorType": "Platform",
+									"parameters": {
+										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-ignoring-input",
+									"objectClass": "Player",
+									"sid": 792321482746776,
+									"behaviorType": "Platform",
+									"parameters": {
+										"input": "stop-ignoring"
 									}
 								},
 								{
 									"id": "spawn-another-object",
 									"objectClass": "Spawn",
-									"sid": 446491257527570,
+									"sid": 995349429435724,
 									"parameters": {
 										"object": "Player",
 										"layer": "Spawn.LayerName",
@@ -1210,10 +2602,28 @@
 								{
 									"id": "set-group-active",
 									"objectClass": "System",
-									"sid": 401900799769432,
+									"sid": 873503068123168,
+									"parameters": {
+										"group-name": "\"Sprite\"",
+										"state": "activated"
+									}
+								},
+								{
+									"id": "set-group-active",
+									"objectClass": "System",
+									"sid": 167066845877915,
 									"parameters": {
 										"group-name": "\"Camera\"",
 										"state": "activated"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 395719475459270,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "0"
 									}
 								}
 							],
@@ -2606,6 +4016,637 @@
 				}
 			],
 			"sid": 474296993635954
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Drones",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 298256788382613,
+									"parameters": {
+										"object": "WhiteDroneHitbox"
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "WhiteDrone",
+									"sid": 120775477503852,
+									"parameters": {
+										"which": "nearest",
+										"x": "Player.X",
+										"y": "Player.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "WhiteDrone",
+									"sid": 500765036988951,
+									"parameters": {
+										"animation": "\"Break\"",
+										"from": "current-frame"
+									}
+								}
+							],
+							"sid": 725262378052783
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 114711772827348,
+									"parameters": {
+										"object": "WhiteDroneHitbox"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-animation",
+									"objectClass": "WhiteDrone",
+									"sid": 622015763865452
+								}
+							],
+							"sid": 666187704184813
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 512446080053135,
+									"parameters": {
+										"object": "BlackDroneHitbox"
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "Drone",
+									"sid": 332528227126460,
+									"parameters": {
+										"which": "nearest",
+										"x": "Player.X",
+										"y": "Player.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "Drone",
+									"sid": 433916220566958,
+									"parameters": {
+										"animation": "\"Break\"",
+										"from": "current-frame"
+									}
+								}
+							],
+							"sid": 615838706820853
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 738801965254348,
+									"parameters": {
+										"object": "BlackDroneHitbox"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "stop-animation",
+									"objectClass": "Drone",
+									"sid": 667860226153913
+								}
+							],
+							"sid": 257669181438956
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-animation-finished",
+									"objectClass": "WhiteDrone",
+									"sid": 600528597742306
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 950050359334148,
+									"parameters": {
+										"variable": "EnemyRespawnX",
+										"value": "WhiteDrone.StartX"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 963959768495057,
+									"parameters": {
+										"variable": "EnemyRespawnY",
+										"value": "WhiteDrone.StartY"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "WhiteDrone",
+									"sid": 852539335400009
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 278779869736223,
+									"parameters": {
+										"seconds": "3",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "EnemyRespawn",
+									"sid": 469175584720799,
+									"parameters": {
+										"object": "WhiteDrone",
+										"layer": "EnemyRespawn.LayerNumber",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 524818314998509
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-any-animation-finished",
+									"objectClass": "Drone",
+									"sid": 335714608184435
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 822946010769995,
+									"parameters": {
+										"variable": "EnemyRespawnX",
+										"value": "Drone.StartX"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 340517048919166,
+									"parameters": {
+										"variable": "EnemyRespawnY",
+										"value": "Drone.StartY"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "Drone",
+									"sid": 643984119583295
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 225968215865640,
+									"parameters": {
+										"seconds": "3",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "EnemyRespawn",
+									"sid": 860075864581124,
+									"parameters": {
+										"object": "Drone",
+										"layer": "EnemyRespawn.LayerNumber",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 539636796343164
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "WhiteDrone",
+									"sid": 758887718191232,
+									"parameters": {
+										"object": "EnemyRespawn"
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "WhiteDrone",
+									"sid": 879102924339795,
+									"parameters": {
+										"which": "nearest",
+										"x": "EnemyRespawn.X",
+										"y": "EnemyRespawn.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "WhiteDrone",
+									"sid": 972138664088928,
+									"parameters": {
+										"x": "EnemyRespawnX",
+										"y": "EnemyRespawnY"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "WhiteDrone",
+									"sid": 938760772253590,
+									"parameters": {
+										"instance-variable": "StartX",
+										"value": "WhiteDrone.X"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "WhiteDrone",
+									"sid": 608970223373839,
+									"parameters": {
+										"instance-variable": "StartY",
+										"value": "WhiteDrone.Y"
+									}
+								}
+							],
+							"sid": 790125315767942
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Drone",
+									"sid": 155857427421264,
+									"parameters": {
+										"object": "EnemyRespawn"
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "Drone",
+									"sid": 355462802417237,
+									"parameters": {
+										"which": "nearest",
+										"x": "EnemyRespawn.X",
+										"y": "EnemyRespawn.Y"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "Drone",
+									"sid": 929359284314245,
+									"parameters": {
+										"x": "EnemyRespawnX",
+										"y": "EnemyRespawnY"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Drone",
+									"sid": 128925532965736,
+									"parameters": {
+										"instance-variable": "StartX",
+										"value": "Drone.X"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "Drone",
+									"sid": 445942563087058,
+									"parameters": {
+										"instance-variable": "StartY",
+										"value": "Drone.Y"
+									}
+								}
+							],
+							"sid": 661020276720804
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 862352760493514,
+									"parameters": {
+										"object": "WhiteDroneHitbox"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 561365472817465,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 879932277776814
+										},
+										{
+											"id": "pick-nearestfurthest",
+											"objectClass": "WhiteDroneHitbox",
+											"sid": 532162609932316,
+											"parameters": {
+												"which": "nearest",
+												"x": "WhiteDrone.X",
+												"y": "WhiteDrone.Y"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "WhiteDroneHitbox",
+											"sid": 230603434855500,
+											"parameters": {
+												"object": "WhiteDrone",
+												"image-point-optional": "0"
+											}
+										}
+									],
+									"sid": 359902837293897
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 898775279960606,
+									"parameters": {
+										"object": "WhiteDroneHitbox"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 896175702942374,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-tick",
+											"objectClass": "System",
+											"sid": 414101167820392
+										},
+										{
+											"id": "pick-nearestfurthest",
+											"objectClass": "BlackDroneHitbox",
+											"sid": 687939521531999,
+											"parameters": {
+												"which": "nearest",
+												"x": "Drone.X",
+												"y": "Drone.Y"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "BlackDroneHitbox",
+											"sid": 801368054298763,
+											"parameters": {
+												"object": "Drone",
+												"image-point-optional": "0"
+											}
+										}
+									],
+									"sid": 118505745932166
+								}
+							]
+						}
+					],
+					"sid": 834289730666736
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 757102947276572
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "Drone",
+							"sid": 367155212384960
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Drone",
+							"sid": 298336691791501,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "WhiteDrone",
+							"sid": 275591733704243
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "WhiteDrone",
+							"sid": 306140237189580,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "WhiteDrone",
+							"sid": 247800784036716,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "WhiteDrone.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "WhiteDrone",
+							"sid": 887215151539172,
+							"parameters": {
+								"instance-variable": "StartY",
+								"value": "WhiteDrone.Y"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Drone",
+							"sid": 972611996279308,
+							"parameters": {
+								"instance-variable": "StartX",
+								"value": "Drone.X"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "Drone",
+							"sid": 763921311978448,
+							"parameters": {
+								"instance-variable": "StartY",
+								"value": "Drone.Y"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "ShadowEnemy",
+							"sid": 460244417821111,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 698129462958771
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "ShadowEnemy",
+							"sid": 272590925509660,
+							"parameters": {
+								"object": "HitboxRight"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "ShadowEnemy",
+							"sid": 392027053713404,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 312281872598371
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "ShadowEnemy",
+							"sid": 790507278160295,
+							"parameters": {
+								"object": "HitboxLeft"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "ShadowEnemy",
+							"sid": 538712083615970,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 952075478904442
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "WhiteEnemy",
+							"sid": 384923183850884,
+							"parameters": {
+								"object": "HitboxRight"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "WhiteEnemy",
+							"sid": 979133426201852,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 272299196031479
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "WhiteEnemy",
+							"sid": 305980373249867,
+							"parameters": {
+								"object": "HitboxLeft"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-mirrored",
+							"objectClass": "WhiteEnemy",
+							"sid": 682610619158720,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 741049556903053
+				}
+			],
+			"sid": 562115832349281
 		},
 		{
 			"eventType": "group",
@@ -9878,6 +11919,7 @@
 					"id": "set-position-to-another-object",
 					"objectClass": "Player",
 					"sid": 220402096348255,
+					"disabled": true,
 					"parameters": {
 						"object": "Spawn",
 						"image-point-optional": "0"
@@ -9894,7 +11936,7 @@
 				{
 					"id": "set-max-speed",
 					"objectClass": "Player",
-					"sid": 785097460721724,
+					"sid": 851416581452282,
 					"behaviorType": "Platform",
 					"parameters": {
 						"max-speed": "125"
@@ -9903,7 +11945,7 @@
 				{
 					"id": "set-acceleration",
 					"objectClass": "Player",
-					"sid": 248637742538701,
+					"sid": 956350890986260,
 					"behaviorType": "Platform",
 					"parameters": {
 						"acceleration": "400"
