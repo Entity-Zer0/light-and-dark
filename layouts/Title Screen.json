@@ -369,10 +369,10 @@
 				{
 					"type": "CreditsTxt",
 					"properties": {
-						"text": "Test",
+						"text": "                                                           Jordan Milton\n                                            Enemy design and programming\n\n                                                         Nico McClendon\n                Programming, 2D Animator, UI Artist, Movement, Layout configuration \n\n                                                         Nicholas Stumpf\n                                                  Level design, playtester\n\n                                                           Bakari Gifted\n                                             Music, Sound design, Story Writer\n \n                                                        Nickolas Zachesky\n         Planning, Programming, Polishing, Organizer, Textures and Concept layout Art\n\n",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 12,
+						"size": 3,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -403,10 +403,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 405.76152337201677,
-						"y": 228.42403578219455,
-						"width": 40.20686133278929,
-						"height": 30,
+						"x": 340.18929731786056,
+						"y": 187.99342492444475,
+						"width": 162.51789346467916,
+						"height": 117.08426319992805,
 						"originX": 0,
 						"originY": 0,
 						"color": [
