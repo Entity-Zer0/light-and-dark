@@ -1,7 +1,7 @@
 {
-	"name": "Sprite5",
+	"name": "Green",
 	"plugin-id": "Sprite",
-	"sid": 935838609777010,
+	"sid": 860163668587577,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,22 +12,34 @@
 			{
 				"frames": [
 					{
-						"width": 83,
-						"height": 83,
-						"originX": 0.4939759036144578,
-						"originY": 0.4939759036144578,
+						"width": 47,
+						"height": 40,
+						"originX": 0.5531914893617021,
+						"originY": 0.35,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8456372,
+						"imageSpriteId": 9696686,
+						"collisionPoly": {
+							"points": [
+								0.2838305651717299,
+								0.026736690967566795,
+								0.6989381017027996,
+								0,
+								1,
+								1,
+								0,
+								1
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 704210257714291,
-				"name": "Animation 1",
+				"sid": 739924043000986,
+				"name": "BlackSpikes",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

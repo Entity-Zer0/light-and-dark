@@ -5135,6 +5135,17 @@
 									],
 									"actions": [
 										{
+											"id": "fade-volume",
+											"objectClass": "Audio",
+											"sid": 162502162227839,
+											"parameters": {
+												"tag": "\"Music\"",
+												"db": "-100",
+												"duration": "3",
+												"ending": "stop"
+											}
+										},
+										{
 											"id": "set-position-to-another-object",
 											"objectClass": "Spawn",
 											"sid": 922088983976906,
@@ -9033,6 +9044,284 @@
 						}
 					],
 					"sid": 477033679755376
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "GasLeak",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 877698338145777,
+									"parameters": {
+										"object": "GasEvent"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layout-effect-parameter",
+									"objectClass": "System",
+									"sid": 342561257108416,
+									"parameters": {
+										"effect": "\"RadialBlur\"",
+										"parameter-index": "0",
+										"value": "40"
+									}
+								},
+								{
+									"id": "set-layout-effect-parameter",
+									"objectClass": "System",
+									"sid": 735942617661987,
+									"parameters": {
+										"effect": "\"RadialBlur\"",
+										"parameter-index": "1",
+										"value": "80"
+									}
+								},
+								{
+									"id": "set-layout-effect-enabled",
+									"objectClass": "System",
+									"sid": 899981839588147,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"RadialBlur\""
+									}
+								}
+							],
+							"sid": 955787451727995
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 896094290741146,
+									"parameters": {
+										"object": "GasEvent3"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 592444588147643,
+									"parameters": {
+										"object": "GasEvent2"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 580179363725572,
+									"parameters": {
+										"object": "GasEvent"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layout-effect-parameter",
+									"objectClass": "System",
+									"sid": 842754971843668,
+									"parameters": {
+										"effect": "\"RadialBlur\"",
+										"parameter-index": "0",
+										"value": "25"
+									}
+								},
+								{
+									"id": "set-layout-effect-parameter",
+									"objectClass": "System",
+									"sid": 515953314326916,
+									"parameters": {
+										"effect": "\"RadialBlur\"",
+										"parameter-index": "1",
+										"value": "65"
+									}
+								},
+								{
+									"id": "set-layout-effect-enabled",
+									"objectClass": "System",
+									"sid": 245070004770871,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"RadialBlur\""
+									}
+								}
+							],
+							"sid": 993627846337202
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 799027534300387,
+									"parameters": {
+										"object": "GasEvent2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layout-effect-parameter",
+									"objectClass": "System",
+									"sid": 774609636134372,
+									"parameters": {
+										"effect": "\"RadialBlur\"",
+										"parameter-index": "0",
+										"value": "15"
+									}
+								},
+								{
+									"id": "set-layout-effect-parameter",
+									"objectClass": "System",
+									"sid": 340102084406061,
+									"parameters": {
+										"effect": "\"RadialBlur\"",
+										"parameter-index": "1",
+										"value": "40"
+									}
+								},
+								{
+									"id": "set-layout-effect-enabled",
+									"objectClass": "System",
+									"sid": 318682667671882,
+									"parameters": {
+										"mode": "enable",
+										"effect": "\"RadialBlur\""
+									}
+								}
+							],
+							"sid": 931290568145639
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 201146276727111,
+									"parameters": {
+										"object": "GasEvent2"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 953601009285829,
+									"parameters": {
+										"object": "GasEvent"
+									},
+									"isInverted": true
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 298183407320551,
+									"parameters": {
+										"object": "GasEvent3"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-layout-effect-parameter",
+									"objectClass": "System",
+									"sid": 129080400625642,
+									"parameters": {
+										"effect": "\"RadialBlur\"",
+										"parameter-index": "0",
+										"value": "40"
+									}
+								},
+								{
+									"id": "set-layout-effect-parameter",
+									"objectClass": "System",
+									"sid": 336869969001452,
+									"parameters": {
+										"effect": "\"RadialBlur\"",
+										"parameter-index": "1",
+										"value": "80"
+									}
+								},
+								{
+									"id": "set-layout-effect-enabled",
+									"objectClass": "System",
+									"sid": 193220047205646,
+									"parameters": {
+										"mode": "disable",
+										"effect": "\"RadialBlur\""
+									}
+								}
+							],
+							"sid": 849164874057856
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 172517159653873,
+									"parameters": {
+										"object": "SpeedChange"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Player",
+									"sid": 666139939330291,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-speed": "70"
+									}
+								}
+							],
+							"sid": 467681375675059
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "Player",
+									"sid": 423920087061654,
+									"parameters": {
+										"object": "SpeedChange"
+									},
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-max-speed",
+									"objectClass": "Player",
+									"sid": 871268606384879,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-speed": "125"
+									}
+								}
+							],
+							"sid": 267003454739737
+						}
+					],
+					"sid": 462063430279112
 				}
 			],
 			"sid": 879497991412662
@@ -9347,6 +9636,151 @@
 				}
 			],
 			"sid": 917762701830548
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "FatherBody",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 300300132610979,
+							"parameters": {
+								"object": "Father"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Father",
+							"sid": 242804523760139,
+							"parameters": {
+								"animation": "\"Highlight\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 967246775712615
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 552768991840508,
+							"parameters": {
+								"object": "Father"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Father",
+							"sid": 408822859985369,
+							"parameters": {
+								"animation": "\"Father\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 993857102531199
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 791770066899564,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 245554196998450,
+							"parameters": {
+								"object": "Father"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 759467257278335,
+							"parameters": {
+								"variable": "Music",
+								"value": "10"
+							}
+						},
+						{
+							"id": "go-to-nextprevious-layout",
+							"objectClass": "System",
+							"sid": 236249438772927,
+							"parameters": {
+								"which": "next"
+							}
+						}
+					],
+					"sid": 901677023783838
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-animation-playing",
+							"objectClass": "EndAnimation",
+							"sid": 729780723813831,
+							"parameters": {
+								"animation": "\"EndScene\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 859352375954092,
+							"parameters": {
+								"tag": "\"Music\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 868954821987049,
+							"parameters": {
+								"seconds": "40",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "stop-animation",
+							"objectClass": "EndAnimation",
+							"sid": 976444911209996
+						},
+						{
+							"id": "destroy",
+							"objectClass": "EndAnimation",
+							"sid": 379722808811065
+						}
+					],
+					"sid": 886996859238039
+				}
+			],
+			"sid": 304729291950676
 		},
 		{
 			"eventType": "block",

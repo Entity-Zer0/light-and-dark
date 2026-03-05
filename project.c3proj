@@ -105,12 +105,16 @@
 			"Preview",
 			"Audio",
 			"Mouse",
+<<<<<<< HEAD
 			"UpgradeScreen2",
 			"NoteInTable2",
 			"NoteInTable3",
 			"UpgradeScreen3",
 			"NoteInTable4",
 			"UpgradeScreen4"
+=======
+			"Text"
+>>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 		],
 		"subfolders": [
 			{
@@ -150,7 +154,10 @@
 					"BlackCircle",
 					"ColorMachine",
 					"GasLeak",
-					"GasLeakGround"
+					"GasLeakGround",
+					"PlayerTube",
+					"Father",
+					"AutonomyBoard"
 				],
 				"subfolders": [
 					{
@@ -190,7 +197,11 @@
 					"BlackColorSpawn",
 					"WhiteColorSpawn",
 					"PlayerCamera",
-					"Checkpoint"
+					"Checkpoint",
+					"GasEvent",
+					"GasEvent2",
+					"GasEvent3",
+					"SpeedChange"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -230,10 +241,23 @@
 					"StartButton",
 					"ControlsTxt",
 					"Exit",
-					"CreditsTxt"
+					"CreditsTxt",
+					"EndAnimation"
 				],
 				"subfolders": [],
 				"name": "Title"
+			},
+			{
+				"items": [
+					"Orange",
+					"Blue",
+					"Green",
+					"Red",
+					"Purple",
+					"Yellow"
+				],
+				"subfolders": [],
+				"name": "Colors"
 			}
 		]
 	},
@@ -250,7 +274,8 @@
 			"Layout 1",
 			"Layout 2",
 			"Layout 3",
-			"Layout 4"
+			"Layout 4",
+			"End Screen"
 		],
 		"subfolders": []
 	},
@@ -276,6 +301,7 @@
 					}
 				},
 				{
+<<<<<<< HEAD
 					"name": "Lab SFX.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 237150648423847,
@@ -287,6 +313,11 @@
 					"name": "Nothing in desk SFX.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 560863443586164,
+=======
+					"name": "Light Swicth FX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 554577234644458,
+>>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 					"file-info": {
 						"purpose": "none"
 					}
@@ -294,7 +325,11 @@
 				{
 					"name": "Found_level up SFX.webm",
 					"type": "audio/webm; codecs=opus",
+<<<<<<< HEAD
 					"sid": 493913274554740,
+=======
+					"sid": 320744127614927,
+>>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 					"file-info": {
 						"purpose": "none"
 					}
@@ -302,15 +337,33 @@
 				{
 					"name": "Elevator FX.webm",
 					"type": "audio/webm; codecs=opus",
+<<<<<<< HEAD
 					"sid": 392666097242694,
+=======
+					"sid": 801692284673647,
+>>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
+<<<<<<< HEAD
 					"name": "Light Swicth FX.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 966897262491877,
+=======
+					"name": "Lab SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 875767448292158,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Nothing in desk SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 233972365130493,
+>>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 					"file-info": {
 						"purpose": "none"
 					}

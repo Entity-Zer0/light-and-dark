@@ -1,0 +1,52 @@
+{
+	"name": "Orange",
+	"plugin-id": "Sprite",
+	"sid": 309986783323773,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 246,
+						"height": 116,
+						"originX": 0.5121951219512195,
+						"originY": 0.31896551724137934,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 100691,
+						"collisionPoly": {
+							"points": [
+								0.0040650406504065045,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.0040650406504065045,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 395576170728986,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

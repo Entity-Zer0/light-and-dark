@@ -1,7 +1,7 @@
 {
-	"name": "Sprite6",
+	"name": "GasEvent3",
 	"plugin-id": "Sprite",
-	"sid": 500851379844758,
+	"sid": 503259047869022,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,21 @@
 			{
 				"frames": [
 					{
-						"width": 50,
-						"height": 50,
+						"width": 250,
+						"height": 250,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4291032,
+						"imageSpriteId": 3016361,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 420145956469303,
+				"sid": 786211280476015,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
