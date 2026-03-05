@@ -3880,7 +3880,7 @@
 						"x": 318.64074397239835,
 						"y": 292.10142865378845,
 						"width": 50.20130314589706,
-						"height": 17.353631187110096,
+						"height": 16.345501571482348,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -28254,6 +28254,59 @@
 						"angle": 0.10195986360224596,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "BlackX",
+					"properties": {
+						"text": "X",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 9,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 1965,
+					"sid": 534846679691393,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 534846679691393,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 325.18643872964526,
+						"y": 270.993993798718,
+						"width": 11.239917790016733,
+						"height": 14.704473151250056,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0.1741175362677853,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 990896598723321,
@@ -34528,65 +34581,6 @@
 					}
 				},
 				{
-					"type": "Player",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "WhiteSpriteIdle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1196,
-					"sid": 671473192001253,
-					"tags": "",
-					"instanceVariables": {
-						"IsWallJumpRight": false,
-						"IsWallJumpLeft": false,
-						"WallJump": 0,
-						"ColorSwitch": 0,
-						"Black": false,
-						"White": false
-					},
-					"behaviors": {
-						"Platform": {
-							"properties": {
-								"max-speed": 150,
-								"acceleration": 1000,
-								"deceleration": 1000,
-								"jump-strength": 240,
-								"gravity": 1000,
-								"max-fall-speed": 700,
-								"double-jump": false,
-								"jump-sustain": 0,
-								"default-controls": true,
-								"enabled": true
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 671473192001253,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1822.8989906319284,
-						"y": 284.6251804245911,
-						"width": 7.167333715891343,
-						"height": 9.062624386962101,
-						"originX": 0.4742268041237113,
-						"originY": 0.5515625,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 6.282321418028263,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Spawn",
 					"properties": {
 						"initially-visible": false,
@@ -34848,6 +34842,65 @@
 							1
 						],
 						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteSpriteIdle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1196,
+					"sid": 671473192001253,
+					"tags": "",
+					"instanceVariables": {
+						"IsWallJumpRight": false,
+						"IsWallJumpLeft": false,
+						"WallJump": 0,
+						"ColorSwitch": 0,
+						"Black": false,
+						"White": false
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 150,
+								"acceleration": 1000,
+								"deceleration": 1000,
+								"jump-strength": 240,
+								"gravity": 1000,
+								"max-fall-speed": 700,
+								"double-jump": false,
+								"jump-sustain": 0,
+								"default-controls": true,
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 671473192001253,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1822.637766878468,
+						"y": 284.73644009459247,
+						"width": 7.167333715891343,
+						"height": 9.062624386962101,
+						"originX": 0.4742268041237113,
+						"originY": 0.5515625,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.282321418028263,
 						"zElevation": 0
 					}
 				}
@@ -36731,12 +36784,12 @@
 			"global": false
 		},
 		{
-			"name": "ResetBar",
+			"name": "Note",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Reset",
+					"type": "UpgradeScreen",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -36745,21 +36798,21 @@
 						"live-preview": false
 					},
 					"uid": 1931,
-					"sid": 359204240245419,
+					"sid": 577054292641057,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 359204240245419,
+						"sid": 577054292641057,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1446,
-						"y": 353,
-						"width": 1494,
-						"height": 560,
+						"x": 334.6066113499025,
+						"y": 292.10925519440383,
+						"width": 103.40325364148421,
+						"height": 50.02341742136667,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -36773,32 +36826,48 @@
 					}
 				},
 				{
-					"type": "Reset",
+					"type": "NoteInTable4",
 					"properties": {
+						"text": "Philip Jinbu \nMarch 5th- My daughter is gone, \nand I take the responsibility of doing this to her. My worries of her being stuck in a life of onism. She knew it when she was young, and as she is now...\nI apologize as a person to you. Because I’m not man enough to face you.\n",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 2,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
 						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 1932,
-					"sid": 839556524823945,
+					"sid": 215733958132019,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 839556524823945,
+						"sid": 215733958132019,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2240,
-						"y": 2359,
-						"width": 1494,
-						"height": 560,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 290.941691492271,
+						"y": 273.2456337382728,
+						"width": 86.47333915711005,
+						"height": 47.55851273084272,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

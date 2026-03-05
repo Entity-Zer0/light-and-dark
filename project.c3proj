@@ -118,8 +118,7 @@
 			"Keyboard",
 			"Preview",
 			"Audio",
-			"Mouse",
-			"Sprite5"
+			"Mouse"
 		],
 		"subfolders": [
 			{
@@ -236,7 +235,10 @@
 					"NoteInTable1",
 					"ColorShardTxt",
 					"RestartTxt",
-					"TheEndTxt"
+					"TheEndTxt",
+					"NoteInTable2",
+					"NoteInTable3",
+					"NoteInTable4"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -255,7 +257,8 @@
 					"EndAnimation",
 					"Reset",
 					"TitleScrnButton",
-					"TheEnd"
+					"TheEnd",
+					"SpaceSkipTxt"
 				],
 				"subfolders": [],
 				"name": "Title"
@@ -364,6 +367,30 @@
 					"name": "Nothing in desk SFX.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 233972365130493,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Electric shock FX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 698465875315875,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Explosion 3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 335339332111855,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Ending theme.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 628440951325426,
 					"file-info": {
 						"purpose": "none"
 					}

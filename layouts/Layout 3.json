@@ -5142,6 +5142,59 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "BlackX",
+					"properties": {
+						"text": "X",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 9,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 1963,
+					"sid": 835319459932749,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 835319459932749,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1091.9938989147047,
+						"y": 450.0343924497277,
+						"width": 11.239917790016733,
+						"height": 14.704473151250056,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 848637096560383,
@@ -7110,8 +7163,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 287.65672410339414,
-						"y": 102.43504401392505,
+						"x": 287.320215777091,
+						"y": 102.40876473440487,
 						"width": 7.167333715891343,
 						"height": 9.062624386962101,
 						"originX": 0.4742268041237113,
@@ -7791,12 +7844,12 @@
 			"global": false
 		},
 		{
-			"name": "ResetBar",
+			"name": "Note",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Reset",
+					"type": "UpgradeScreen",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -7805,23 +7858,76 @@
 						"live-preview": false
 					},
 					"uid": 1711,
-					"sid": 554992647013204,
+					"sid": 623875735710750,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 554992647013204,
+						"sid": 623875735710750,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 823,
-						"y": 268,
-						"width": 1494,
-						"height": 560,
+						"x": 1100.1149950086453,
+						"y": 463.39259876206404,
+						"width": 83.4044947841783,
+						"height": 53.71785502767676,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "NoteInTable3",
+					"properties": {
+						"text": "Philip Jinbu \n\nMarch 1st- Clinical trials are done– Alex Jinbu is a success in a way. We didn't add physical enhancements due to my wishes. It would have added major growth to her body. \n\nShe is perfect as is.  \n",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 2,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 1964,
+					"sid": 512555456795043,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 512555456795043,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1065.7655621896643,
+						"y": 440.32397988674927,
+						"width": 69.44675390384896,
+						"height": 47.68382824623785,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

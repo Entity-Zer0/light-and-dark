@@ -14539,6 +14539,59 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "WhiteX",
+					"properties": {
+						"text": "X\n",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 5,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 1962,
+					"sid": 623197299619219,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 623197299619219,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1236.2118298026799,
+						"y": 223.09480246722208,
+						"width": 7.921385983381157,
+						"height": 11.127373042421823,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 659872387837791,
@@ -22887,8 +22940,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 38.34078305212053,
-						"y": 116.0470103091223,
+						"x": 1259.7232959532562,
+						"y": 238.04671686450092,
 						"width": 7.167333715891343,
 						"height": 9.062624386962101,
 						"originX": 0.4742268041237113,
@@ -27254,12 +27307,12 @@
 			"global": false
 		},
 		{
-			"name": "ResetBar",
+			"name": "Note",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Reset",
+					"type": "UpgradeScreen",
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -27268,21 +27321,21 @@
 						"live-preview": false
 					},
 					"uid": 1699,
-					"sid": 835325701411695,
+					"sid": 946070356300442,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 835325701411695,
+						"sid": 946070356300442,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 401,
-						"y": 228,
-						"width": 1494,
-						"height": 560,
+						"x": 1247.9852926724257,
+						"y": 221.37348162306066,
+						"width": 89.56699493629665,
+						"height": 53.09740599098376,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -27296,32 +27349,48 @@
 					}
 				},
 				{
-					"type": "Reset",
+					"type": "NoteInTable2",
 					"properties": {
+						"text": "February 7th- The test subject is holding up as we continue clinical trials. She hasn't become ill from the injection from Sunday. Although, mentally she has become “wondering” \n\nthis day I'd got her peach ice cream. Usually she would be so excited for it because it was hard to find. her only response was “Oh.” After staring at it for a minute she ate it.\n",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 2,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
 						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"origin": "top-left",
+						"read-aloud": false
 					},
 					"uid": 1700,
-					"sid": 619843244171551,
+					"sid": 955468634234164,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 619843244171551,
+						"sid": 955468634234164,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 2094,
-						"y": 238,
-						"width": 1494,
-						"height": 560,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1211.0539005645808,
+						"y": 200.11168238535706,
+						"width": 76.68330558382604,
+						"height": 47.43767342493888,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
