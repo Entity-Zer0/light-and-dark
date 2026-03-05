@@ -1,0 +1,78 @@
+{
+	"name": "WhiteLazer",
+	"plugin-id": "Sprite",
+	"sid": 109280167468980,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 15,
+						"height": 52,
+						"originX": 0.4666666666666667,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4953777,
+						"collisionPoly": {
+							"points": [
+								0.060000000000000005,
+								0.013461538461538462,
+								0.8733333333333329,
+								0.015384615384615385,
+								0.886666666666666,
+								0.9807692307692307,
+								0.07333333333333333,
+								0.9826921903170072
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 15,
+						"height": 52,
+						"originX": 0.5333333333333333,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2026960,
+						"collisionPoly": {
+							"points": [
+								0.8933333333333326,
+								0.9807692307692307,
+								0.12666666666666668,
+								0.9826923076923076,
+								0.12666666666666668,
+								0.01730769230769231,
+								0.8666666666666661,
+								0.01730769230769231
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 699405955919606,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

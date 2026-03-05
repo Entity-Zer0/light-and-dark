@@ -1,0 +1,78 @@
+{
+	"name": "BlackLazer",
+	"plugin-id": "Sprite",
+	"sid": 858641700915450,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 15,
+						"height": 52,
+						"originX": 0.4666666666666667,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9929661,
+						"collisionPoly": {
+							"points": [
+								0.1400004069010417,
+								0.023076923076923078,
+								0.8666666666666664,
+								0.025,
+								0.8733333333333327,
+								0.9769231942983774,
+								0.13999999999999999,
+								0.9769230769230769
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					},
+					{
+						"width": 15,
+						"height": 52,
+						"originX": 0.5333333333333333,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7547592,
+						"collisionPoly": {
+							"points": [
+								0.866666666666666,
+								0.9769233116736779,
+								0.11999959309895834,
+								0.9788460364708533,
+								0.06000040690104167,
+								0.023076923076923078,
+								0.8666666666666658,
+								0.021153846153846155
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 750911687431824,
+				"name": "Animation 1",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

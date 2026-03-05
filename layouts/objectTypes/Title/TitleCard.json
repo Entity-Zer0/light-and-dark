@@ -1,0 +1,56 @@
+{
+	"name": "TitleCard",
+	"plugin-id": "Sprite",
+	"sid": 569947921718568,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1966,
+						"height": 1031,
+						"originX": 0.4979654120040692,
+						"originY": 0.3239573229873909,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7915180,
+						"collisionPoly": {
+							"points": [
+								0.474059003051882,
+								0.0009699321047526673,
+								0.9806714140386572,
+								0.469447138700291,
+								0.9852492370295015,
+								0.9515033947623667,
+								0.3423194303153611,
+								0.9922405431619786,
+								0.03967446592065107,
+								0.5848690591658584,
+								0.001525940996948118,
+								0.09699321047526673
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 897026458687444,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

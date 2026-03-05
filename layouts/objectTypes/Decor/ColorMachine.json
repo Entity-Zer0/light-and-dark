@@ -1,0 +1,52 @@
+{
+	"name": "ColorMachine",
+	"plugin-id": "Sprite",
+	"sid": 208980296076734,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 586,
+						"height": 210,
+						"originX": 0.49829351535836175,
+						"originY": 0.6333333333333333,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7962858,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.004761904761904762,
+								1,
+								0.004761904761904762,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 836522280459369,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

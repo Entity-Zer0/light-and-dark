@@ -119,7 +119,20 @@
 			"Preview",
 			"Audio",
 			"Mouse",
+<<<<<<< HEAD
+<<<<<<< HEAD
+			"UpgradeScreen2",
+			"NoteInTable2",
+			"NoteInTable3",
+			"UpgradeScreen3",
+			"NoteInTable4",
+			"UpgradeScreen4"
+=======
+			"Text"
+>>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
+=======
 			"Sprite5"
+>>>>>>> 9d7d9f8fac0d3d13fec11dc8c9cb3d3a3721cd0b
 		],
 		"subfolders": [
 			{
@@ -329,9 +342,23 @@
 					}
 				},
 				{
+<<<<<<< HEAD
+					"name": "Lab SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 237150648423847,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Nothing in desk SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 560863443586164,
+=======
 					"name": "Light Swicth FX.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 554577234644458,
+>>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 					"file-info": {
 						"purpose": "none"
 					}
@@ -339,7 +366,11 @@
 				{
 					"name": "Found_level up SFX.webm",
 					"type": "audio/webm; codecs=opus",
+<<<<<<< HEAD
+					"sid": 493913274554740,
+=======
 					"sid": 320744127614927,
+>>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 					"file-info": {
 						"purpose": "none"
 					}
@@ -347,12 +378,21 @@
 				{
 					"name": "Elevator FX.webm",
 					"type": "audio/webm; codecs=opus",
+<<<<<<< HEAD
+					"sid": 392666097242694,
+=======
 					"sid": 801692284673647,
+>>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
+<<<<<<< HEAD
+					"name": "Light Swicth FX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 966897262491877,
+=======
 					"name": "Lab SFX.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 875767448292158,
@@ -364,6 +404,7 @@
 					"name": "Nothing in desk SFX.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 233972365130493,
+>>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 					"file-info": {
 						"purpose": "none"
 					}

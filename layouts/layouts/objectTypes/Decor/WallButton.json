@@ -1,0 +1,89 @@
+{
+	"name": "WallButton",
+	"plugin-id": "Sprite",
+	"sid": 224025470048627,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 17,
+						"height": 22,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6603825,
+						"collisionPoly": {
+							"points": [
+								0.058823529411764705,
+								0.045454545454545456,
+								0.9411764705882353,
+								0.045454545454545456,
+								0.9411764705882353,
+								0.9545454545454546,
+								0.058823529411764705,
+								0.9545454545454546
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 492243945470490,
+				"name": "Off",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 17,
+						"height": 22,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4495417,
+						"collisionPoly": {
+							"points": [
+								0.058823529411764705,
+								0.045454545454545456,
+								0.9411764705882353,
+								0.045454545454545456,
+								0.9411764705882353,
+								0.9545454545454546,
+								0.058823529411764705,
+								0.9545454545454546
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 806725505507133,
+				"name": "On",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
