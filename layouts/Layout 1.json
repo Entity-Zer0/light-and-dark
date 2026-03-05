@@ -14520,10 +14520,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 165.944942723233,
-						"y": 326.0775776885779,
+						"x": 166.19728383414474,
+						"y": 327.9842530056418,
 						"width": 67.66515255409467,
-						"height": 33.43070769798112,
+						"height": 42.4920475898121,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -14539,11 +14539,11 @@
 				{
 					"type": "NoteInTable1",
 					"properties": {
-						"text": "Philip Jinbu                                                           February 1st- A color changing cloak made with light fibers drenched in chromatophores. \nFifty cuttlefish had to be extracted for the suits  creatiing A willing participant for are clinical trials will be Alex Jinbu.                  ",
+						"text": "Philip Jinbu                                                           February 1st- ...color changing cloak made with light fibers drenched in chromatophores. \nFifty cuttlefish had to be extracted for the suits  creati... A willing participant for are clinical trials will be Alex Jinbu.                  ",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 2,
-						"line-height": -2,
+						"line-height": 0,
 						"bold": false,
 						"italic": false,
 						"color": [
@@ -14576,7 +14576,7 @@
 						"x": 138.2935650855564,
 						"y": 298.2341614386611,
 						"width": 56.77079461379421,
-						"height": 54.70839244004563,
+						"height": 59.27003721633744,
 						"originX": 0,
 						"originY": 0,
 						"color": [

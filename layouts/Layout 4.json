@@ -36548,20 +36548,12 @@
 			"global": false
 		},
 		{
-<<<<<<< HEAD
-			"name": "Text Box",
-=======
 			"name": "Gas",
->>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-<<<<<<< HEAD
-					"type": "UpgradeScreen4",
-=======
 					"type": "SpeedChange",
->>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -36569,38 +36561,22 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
-					"uid": 1895,
-					"sid": 582328843253372,
-=======
 					"uid": 1914,
 					"sid": 932272311347890,
->>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-<<<<<<< HEAD
-						"sid": 582328843253372,
-=======
 						"sid": 932272311347890,
->>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-<<<<<<< HEAD
-						"x": 1027.8022865550402,
-						"y": 653.627930852132,
-						"width": 85.82521653123848,
-						"height": 40.326504694875524,
-=======
 						"x": 1928.7898999123267,
 						"y": 2401.3528435203734,
 						"width": 1607.5460946686053,
 						"height": 64.29728981958624,
->>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -36614,17 +36590,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
-					"type": "NoteInTable4",
-					"properties": {
-						"text": "Philip Jinbu \nMarch 5th- My daughter is gone, and I take the responsibility of doing this to her.\nMy worries of her being stuck in a life of onism, I'm not even her yet I've seen it develop for years. She knew it when she was young. And as she is now. I apologize as a person to you. Because I’m not man enough to face you.\n",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 2,
-						"line-height": -1,
-						"bold": false,
-						"italic": false,
-=======
 					"type": "GasEvent",
 					"properties": {
 						"initially-visible": false,
@@ -36651,26 +36616,12 @@
 						"height": 62.63110186993118,
 						"originX": 0.5,
 						"originY": 0.5,
->>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-<<<<<<< HEAD
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 1894,
-					"sid": 512392154449212,
-=======
 						"angle": 0,
 						"zElevation": 0
 					}
@@ -36686,29 +36637,16 @@
 					},
 					"uid": 1915,
 					"sid": 617168505318080,
->>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-<<<<<<< HEAD
-						"sid": 512392154449212,
-=======
 						"sid": 617168505318080,
->>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-<<<<<<< HEAD
-						"x": 986.9066324001337,
-						"y": 634.03604727226,
-						"width": 80.9177763238747,
-						"height": 41.206760035575144,
-						"originX": 0,
-						"originY": 0,
-=======
 						"x": 2534.38893864762,
 						"y": 2402.134948015728,
 						"width": 271.75706317551794,
@@ -36752,7 +36690,6 @@
 						"height": 65.72682610133324,
 						"originX": 0.5,
 						"originY": 0.5,
->>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 						"color": [
 							1,
 							1,
@@ -36764,11 +36701,7 @@
 					}
 				}
 			],
-<<<<<<< HEAD
-			"sid": 538790135760590,
-=======
 			"sid": 624485260822660,
->>>>>>> 7a95b13b89fc62e05e4c3404c629ce4df595b161
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,

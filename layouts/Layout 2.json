@@ -27114,11 +27114,7 @@
 					}
 				},
 				{
-<<<<<<< HEAD
-					"type": "UpgradeScreen2",
-=======
 					"type": "TextBox",
->>>>>>> 9d7d9f8fac0d3d13fec11dc8c9cb3d3a3721cd0b
 					"properties": {
 						"initially-visible": false,
 						"initial-animation": "Animation 1",
@@ -27126,15 +27122,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-<<<<<<< HEAD
-					"uid": 1890,
-					"sid": 615110935556200,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 615110935556200,
-=======
 					"uid": 78,
 					"sid": 213493150064345,
 					"tags": "",
@@ -27152,23 +27139,15 @@
 					},
 					"instanceFolderItem": {
 						"sid": 213493150064345,
->>>>>>> 9d7d9f8fac0d3d13fec11dc8c9cb3d3a3721cd0b
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-<<<<<<< HEAD
-						"x": 1284,
-						"y": 208,
-						"width": 70.84516914761701,
-						"height": 44.08295045786579,
-=======
 						"x": 46.823685293615846,
 						"y": 461.20494235205416,
 						"width": 67.56056783168383,
 						"height": 18.836160882555646,
->>>>>>> 9d7d9f8fac0d3d13fec11dc8c9cb3d3a3721cd0b
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -27182,15 +27161,6 @@
 					}
 				},
 				{
-<<<<<<< HEAD
-					"type": "NoteInTable2",
-					"properties": {
-						"text": "Philip Jinbu \nMarch 1st- Clinical trials are done– are test subject Alex Jinbu. Is a success in a way. We didn't add physical enhancements; higher ups said it would be \"perfect\" to promote her to the military. However due to my wishes as head of the experiment it was rejected. It would have added major growth to her body. \nHER BODY AS PERFECT AS IS! Even before the experiments. ",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 2,
-						"line-height": -2,
-=======
 					"type": "NothingFoundTxt",
 					"properties": {
 						"text": "* Nothing found",
@@ -27198,7 +27168,6 @@
 						"font": "Arial",
 						"size": 4,
 						"line-height": 0,
->>>>>>> 9d7d9f8fac0d3d13fec11dc8c9cb3d3a3721cd0b
 						"bold": false,
 						"italic": false,
 						"color": [
@@ -27216,15 +27185,6 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-<<<<<<< HEAD
-					"uid": 1891,
-					"sid": 630382162223167,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 630382162223167,
-=======
 					"uid": 617,
 					"sid": 536416623380881,
 					"tags": "",
@@ -27242,23 +27202,15 @@
 					},
 					"instanceFolderItem": {
 						"sid": 536416623380881,
->>>>>>> 9d7d9f8fac0d3d13fec11dc8c9cb3d3a3721cd0b
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-<<<<<<< HEAD
-						"x": 1250,
-						"y": 186,
-						"width": 69.13742744271394,
-						"height": 45.18501025030537,
-=======
 						"x": 19.85520898628242,
 						"y": 457.8682310323083,
 						"width": 38.789886525858975,
 						"height": 7.712544264124745,
->>>>>>> 9d7d9f8fac0d3d13fec11dc8c9cb3d3a3721cd0b
 						"originX": 0,
 						"originY": 0,
 						"color": [
