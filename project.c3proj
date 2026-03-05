@@ -50,6 +50,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
@@ -105,7 +112,7 @@
 			"Preview",
 			"Audio",
 			"Mouse",
-			"Text"
+			"Sprite5"
 		],
 		"subfolders": [
 			{
@@ -192,7 +199,10 @@
 					"GasEvent",
 					"GasEvent2",
 					"GasEvent3",
-					"SpeedChange"
+					"SpeedChange",
+					"TextBox",
+					"NothingFoundTxt",
+					"Spawn2"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -217,7 +227,9 @@
 					"WhiteX",
 					"BlackX",
 					"NoteInTable1",
-					"ColorShardTxt"
+					"ColorShardTxt",
+					"RestartTxt",
+					"TheEndTxt"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -233,7 +245,10 @@
 					"ControlsTxt",
 					"Exit",
 					"CreditsTxt",
-					"EndAnimation"
+					"EndAnimation",
+					"Reset",
+					"TitleScrnButton",
+					"TheEnd"
 				],
 				"subfolders": [],
 				"name": "Title"

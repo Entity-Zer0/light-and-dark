@@ -1,0 +1,10 @@
+{
+	"name": "RestartTxt",
+	"plugin-id": "Text",
+	"sid": 921596092026086,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

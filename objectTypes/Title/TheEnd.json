@@ -1,0 +1,60 @@
+{
+	"name": "TheEnd",
+	"plugin-id": "Sprite",
+	"sid": 676462924684663,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2079,
+						"height": 1254,
+						"originX": 0.5108225108225108,
+						"originY": 0.49521531100478466,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1311886,
+						"collisionPoly": {
+							"points": [
+								0.5998075998075998,
+								0.0007974481658692185,
+								0.9918229918229918,
+								0.4098883572567783,
+								0.9754689754689755,
+								0.7376395534290271,
+								0.43386243386243384,
+								0.9960127591706539,
+								0.19047619047619047,
+								0.7097288676236044,
+								0.000962000962000962,
+								0.3078149920255183,
+								0.01924001924001924,
+								0.2567783094098884,
+								0.10485810485810486,
+								0.17543859649122806
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 720647478796336,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -651,20 +651,20 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 1711,
-					"sid": 958232222765371,
+					"uid": 678,
+					"sid": 490253169165791,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 958232222765371,
+						"sid": 490253169165791,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 425.5376675078985,
-						"y": 245.30807807685818,
+						"x": 424.7050163635907,
+						"y": 245.2592638689066,
 						"width": 247.92286978466905,
 						"height": 152.9482846668027,
 						"originX": 0.5,
