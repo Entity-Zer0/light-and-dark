@@ -5877,6 +5877,62 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 655107691440186
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 378473903040250,
+							"parameters": {
+								"variable": "Music",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 681562444589909,
+							"parameters": {
+								"tag": "\"Music\"",
+								"db": "-100",
+								"duration": "1",
+								"ending": "stop"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 810595364918651,
+							"parameters": {
+								"tag": "\"Music\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 692834049324177,
+							"parameters": {
+								"audio-file": {
+									"path": "Ending theme"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"Music\""
+							}
+						}
+					],
+					"sid": 848095657417235
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "on-destroyed",
 							"objectClass": "Drone",
 							"sid": 873387003174507
