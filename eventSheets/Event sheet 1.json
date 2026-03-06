@@ -8190,6 +8190,13 @@
 											"parameters": {
 												"unique-id": "1291"
 											}
+										},
+										{
+											"id": "is-moving",
+											"objectClass": "Player",
+											"sid": 585776227828376,
+											"behaviorType": "Platform",
+											"isInverted": true
 										}
 									],
 									"actions": [
@@ -8230,18 +8237,9 @@
 											}
 										},
 										{
-											"id": "set-max-speed",
-											"objectClass": "Player",
-											"sid": 521862385970856,
-											"behaviorType": "Platform",
-											"parameters": {
-												"max-speed": "0"
-											}
-										},
-										{
 											"id": "set-enabled",
 											"objectClass": "Player",
-											"sid": 199484564020808,
+											"sid": 760332209862656,
 											"behaviorType": "Platform",
 											"parameters": {
 												"state": "disabled"
@@ -8277,34 +8275,25 @@
 										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 754953189986545,
+											"sid": 701355004655541,
 											"parameters": {
-												"seconds": "2",
+												"seconds": "1.7",
 												"use-timescale": true
 											}
 										},
 										{
 											"id": "set-enabled",
 											"objectClass": "Player",
-											"sid": 726819559175776,
+											"sid": 504273837469270,
 											"behaviorType": "Platform",
 											"parameters": {
 												"state": "enabled"
 											}
 										},
 										{
-											"id": "set-max-speed",
-											"objectClass": "Player",
-											"sid": 566915363510507,
-											"behaviorType": "Platform",
-											"parameters": {
-												"max-speed": "125"
-											}
-										},
-										{
 											"id": "wait",
 											"objectClass": "System",
-											"sid": 575029613912935,
+											"sid": 766211903333211,
 											"parameters": {
 												"seconds": "1",
 												"use-timescale": true
@@ -8415,9 +8404,9 @@
 										{
 											"id": "pick-by-unique-id",
 											"objectClass": "ColorChangerWhite",
-											"sid": 293373790864000,
+											"sid": 239924702896650,
 											"parameters": {
-												"unique-id": "59"
+												"unique-id": "641"
 											}
 										}
 									],
