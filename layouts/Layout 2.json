@@ -27675,6 +27675,53 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "LayoutTitle2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1973,
+					"sid": 253368088069248,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-right",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 253368088069248,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 726.7117344273528,
+						"y": 17.450148264468645,
+						"width": 110.64549978579066,
+						"height": 26.976455231808814,
+						"originX": 0.4878048780487805,
+						"originY": 0.5128205128205128,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 179961582691044,

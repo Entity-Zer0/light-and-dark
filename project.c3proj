@@ -118,7 +118,8 @@
 			"Keyboard",
 			"Preview",
 			"Audio",
-			"Mouse"
+			"Mouse",
+			"Text"
 		],
 		"subfolders": [
 			{
@@ -208,7 +209,11 @@
 					"SpeedChange",
 					"TextBox",
 					"NothingFoundTxt",
-					"Spawn2"
+					"Spawn2",
+					"LayoutTitle1",
+					"LayoutTitle2",
+					"LayoutTitle3",
+					"LayoutTitle4"
 				],
 				"subfolders": [],
 				"name": "Player"

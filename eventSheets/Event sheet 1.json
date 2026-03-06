@@ -13035,6 +13035,436 @@
 			"sid": 291880399754274
 		},
 		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "LayoutTitle",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 153336258569219
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle1",
+							"sid": 823142125480633,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LayoutTitle1",
+							"sid": 536629435535926,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 200626666507021,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle1",
+							"sid": 876378861688639,
+							"parameters": {
+								"opacity": "60"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 956582955078231,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle1",
+							"sid": 655502293334032,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 704488239289761,
+							"parameters": {
+								"seconds": "3.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle1",
+							"sid": 156088530513102,
+							"parameters": {
+								"opacity": "60"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 854528182062578,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle1",
+							"sid": 826776569288777,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LayoutTitle1",
+							"sid": 210831948880069,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 269063661040712
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 648654221308708
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle2",
+							"sid": 244249733561950,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LayoutTitle2",
+							"sid": 377347672901490,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 454722517374372,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle2",
+							"sid": 775924620295211,
+							"parameters": {
+								"opacity": "60"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 600712978666736,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle2",
+							"sid": 102407583232322,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 537257265579526,
+							"parameters": {
+								"seconds": "3.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle2",
+							"sid": 889510521375952,
+							"parameters": {
+								"opacity": "60"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 533536405847711,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle2",
+							"sid": 551680475178058,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LayoutTitle2",
+							"sid": 383056254789976,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 670063921919541
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 492401463015370
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle3",
+							"sid": 501935829658037,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LayoutTitle3",
+							"sid": 597112048865651,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 830383695665421,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle3",
+							"sid": 452855269664530,
+							"parameters": {
+								"opacity": "60"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 621878515698929,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle3",
+							"sid": 199036854630427,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 508453066481761,
+							"parameters": {
+								"seconds": "3.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle3",
+							"sid": 918415157014982,
+							"parameters": {
+								"opacity": "60"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 524486624961209,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle3",
+							"sid": 514236204427563,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LayoutTitle3",
+							"sid": 927834517250486,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 135355328006065
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 340236153307668
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle4",
+							"sid": 590542218526184,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LayoutTitle4",
+							"sid": 326547854073216,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 891553338178900,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle4",
+							"sid": 745526812684507,
+							"parameters": {
+								"opacity": "60"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 963481819204610,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle4",
+							"sid": 556692429078143,
+							"parameters": {
+								"opacity": "100"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 600280892225155,
+							"parameters": {
+								"seconds": "3.5",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle4",
+							"sid": 197607921171687,
+							"parameters": {
+								"opacity": "60"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 333303864691693,
+							"parameters": {
+								"seconds": "0.2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-opacity",
+							"objectClass": "LayoutTitle4",
+							"sid": 472835712208652,
+							"parameters": {
+								"opacity": "30"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LayoutTitle4",
+							"sid": 598289620929064,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 941298563066935
+				}
+			],
+			"sid": 423244088461613
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
