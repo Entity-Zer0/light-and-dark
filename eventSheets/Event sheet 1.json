@@ -13074,7 +13074,6 @@
 					"id": "set-position-to-another-object",
 					"objectClass": "Player",
 					"sid": 220402096348255,
-					"disabled": true,
 					"parameters": {
 						"object": "Spawn",
 						"image-point-optional": "0"
