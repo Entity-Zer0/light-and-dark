@@ -9010,6 +9010,117 @@
 						"angle": 1.5707963267948966,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "BlackSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "BlackSpikes",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1978,
+					"sid": 695126285807618,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 695126285807618,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 725.8568906229243,
+						"y": 111,
+						"width": 9.4,
+						"height": 8.265856097995183,
+						"originX": 0.5531914893617021,
+						"originY": 0.35,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BlackSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "BlackSpikes",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1979,
+					"sid": 182544859121050,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 182544859121050,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 734.8568906229243,
+						"y": 111,
+						"width": 9.4,
+						"height": 8.265856097995183,
+						"originX": 0.5531914893617021,
+						"originY": 0.35,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BlackSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "BlackSpikes",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1980,
+					"sid": 777447879904126,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 777447879904126,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 743.8714668880493,
+						"y": 111,
+						"width": 9.4,
+						"height": 8.265856097995183,
+						"originX": 0.5531914893617021,
+						"originY": 0.35,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 851935041503846,
@@ -12237,7 +12348,7 @@
 						"x": 399,
 						"y": 334.5038332058679,
 						"width": 102.0542836349822,
-						"height": 0.9184047539146718,
+						"height": 1.4886374235712196,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12328,10 +12439,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 657.5343984237165,
-						"y": 334.5910009940174,
-						"width": 173.35543460873862,
-						"height": 1.486442358682197,
+						"x": 511.1963207302324,
+						"y": 335.8782052625818,
+						"width": 321.5530600145495,
+						"height": 1.0587662249847511,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12519,7 +12630,7 @@
 						"x": 112,
 						"y": 189,
 						"width": 735.409688031727,
-						"height": 1.6806064324256909,
+						"height": 0.6121261705341396,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -14262,7 +14373,7 @@
 			"global": false
 		},
 		{
-			"name": "Upgrade Sign & Text",
+			"name": "Upgrade Sign & Lab Note",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -14357,94 +14468,6 @@
 					}
 				},
 				{
-					"type": "SPACEobjects",
-					"properties": {
-						"text": "Press SPACE to interact with objects",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 4,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 176,
-					"sid": 987974762987448,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 987974762987448,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 673.074925692336,
-						"y": 72.54516069436522,
-						"width": 89.37793791891272,
-						"height": 9.027462958183307,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 171423124302959,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"isHTMLElementsLayer": false,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "Note & Text",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [
-				{
 					"type": "UpgradeScreen",
 					"properties": {
 						"initially-visible": false,
@@ -14533,60 +14556,42 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "ColorShardTxt",
-					"properties": {
-						"text": "Shade shards like this can change your shade",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 2,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 1742,
-					"sid": 906143053374865,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 906143053374865,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1148.4679942354182,
-						"y": 115.89609717674611,
-						"width": 57.765377099678176,
-						"height": 2.834561025091162,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
+				}
+			],
+			"sid": 171423124302959,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Level Title (Breached Complex)",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
 				{
 					"type": "LayoutTitle1",
 					"properties": {
@@ -14663,6 +14668,328 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "Tutorial Texts",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "ColorShardTxt",
+					"properties": {
+						"text": "Shade shards like this can change your shade",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 2,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 1742,
+					"sid": 906143053374865,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 906143053374865,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1148.4679942354182,
+						"y": 115.89609717674611,
+						"width": 57.765377099678176,
+						"height": 2.834561025091162,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "SPACEobjects",
+					"properties": {
+						"text": "Press SPACE to interact with objects",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 4,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 176,
+					"sid": 987974762987448,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 987974762987448,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 673.074925692336,
+						"y": 72.54516069436522,
+						"width": 89.37793791891272,
+						"height": 9.027462958183307,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 755092928548444,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "EnemyLayer",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "ShadowEnemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 64,
+					"sid": 353937748561218,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 20,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 40,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 353937748561218,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 475.4765556815157,
+						"y": 374.582693545685,
+						"width": 27.040266366699257,
+						"height": 20.358742935294543,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 6.277367471988643,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HitboxRight",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1976,
+					"sid": 844825505335309,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 844825505335309,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 528.7483707831032,
+						"y": 356.4573747438011,
+						"width": 4.472151767269565,
+						"height": 28.498318329518227,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "HitboxLeft",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1977,
+					"sid": 283121276528872,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 283121276528872,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 419.1816771872027,
+						"y": 355.90749615519854,
+						"width": 3.75544058569011,
+						"height": 28.573258142960256,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 388704480223574,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
 	"scene-graphs-folder-root": {
@@ -14676,7 +15003,7 @@
 			"effectId": "blacknwhite",
 			"name": "BlackWhite",
 			"instance": {
-				"isEnabled": false,
+				"isEnabled": true,
 				"parameters": {
 					"threshold": 0.5
 				}
