@@ -3905,61 +3905,6 @@
 						"blend-margin-x": 0.1,
 						"blend-margin-y": 0.1
 					},
-					"uid": 64,
-					"sid": 921561023328707,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"use-instance-tags": true,
-								"tags": ""
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 921561023328707,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 399,
-						"y": 305,
-						"width": 11.808658109249393,
-						"height": 11.281290086349117,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BlackWallsSolid",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
-					},
 					"uid": 602,
 					"sid": 434274873200793,
 					"tags": "",
@@ -9855,8 +9800,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 364.4831104185612,
-						"y": 300.34259182714493,
+						"x": 365.0227696197617,
+						"y": 299.53311674944774,
 						"width": 17.25045656698603,
 						"height": 4.082558968760452,
 						"originX": 0,
@@ -10967,7 +10912,7 @@
 					"type": "WhiteDoor",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Door",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -14078,8 +14023,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 163.56435838130835,
-						"y": 111.84519245710861,
+						"x": 164.20430491171598,
+						"y": 111.82398680171232,
 						"width": 7.167333715891343,
 						"height": 9.062624386962101,
 						"originX": 0.4742268041237113,

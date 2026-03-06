@@ -5057,7 +5057,7 @@
 					"type": "WhiteDoor",
 					"properties": {
 						"initially-visible": false,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Door",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -5847,7 +5847,7 @@
 					"world": {
 						"x": 361.8701471829912,
 						"y": 129.88560872995862,
-						"width": 6.621096465606858,
+						"width": 6.6210964656068585,
 						"height": 9.982240462675485,
 						"originX": 0.5531914893617021,
 						"originY": 0.35,

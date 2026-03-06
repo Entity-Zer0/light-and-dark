@@ -26016,7 +26016,7 @@
 					"type": "WhiteDoor",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Door",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -26053,7 +26053,7 @@
 					"type": "WhiteDoor",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Door",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -26090,7 +26090,7 @@
 					"type": "WhiteDoor",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Door",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
