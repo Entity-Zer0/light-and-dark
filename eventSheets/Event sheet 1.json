@@ -8021,6 +8021,20 @@
 											}
 										},
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 189453709437389,
+											"parameters": {
+												"audio-file": {
+													"path": "Lab SFX"
+												},
+												"loop": "looping",
+												"volume": "-5",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
 											"id": "set-animation",
 											"objectClass": "Player",
 											"sid": 106842702080207,
@@ -12789,12 +12803,9 @@
 					],
 					"actions": [
 						{
-							"id": "stop",
+							"id": "stop-all",
 							"objectClass": "Audio",
-							"sid": 349404902809095,
-							"parameters": {
-								"tag": "\"Music\""
-							}
+							"sid": 107871974771836
 						},
 						{
 							"id": "wait",
@@ -13063,6 +13074,7 @@
 					"id": "set-position-to-another-object",
 					"objectClass": "Player",
 					"sid": 220402096348255,
+					"disabled": true,
 					"parameters": {
 						"object": "Spawn",
 						"image-point-optional": "0"
