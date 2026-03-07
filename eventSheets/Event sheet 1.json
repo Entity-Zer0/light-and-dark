@@ -5877,62 +5877,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-start-of-layout",
-							"objectClass": "System",
-							"sid": 655107691440186
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 378473903040250,
-							"parameters": {
-								"variable": "Music",
-								"comparison": 0,
-								"value": "5"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "fade-volume",
-							"objectClass": "Audio",
-							"sid": 681562444589909,
-							"parameters": {
-								"tag": "\"Music\"",
-								"db": "-100",
-								"duration": "1",
-								"ending": "stop"
-							}
-						},
-						{
-							"id": "stop",
-							"objectClass": "Audio",
-							"sid": 810595364918651,
-							"parameters": {
-								"tag": "\"Music\""
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 692834049324177,
-							"parameters": {
-								"audio-file": {
-									"path": "Ending theme"
-								},
-								"loop": "not-looping",
-								"volume": "0",
-								"stereo-pan": "0",
-								"tag-optional": "\"Music\""
-							}
-						}
-					],
-					"sid": 848095657417235
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-destroyed",
 							"objectClass": "Drone",
 							"sid": 873387003174507
@@ -13719,7 +13663,7 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 777907730545931,
+							"sid": 418874121622831,
 							"parameters": {
 								"audio-file": {
 									"path": "Ending theme"
@@ -13742,7 +13686,7 @@
 						{
 							"id": "set-volume",
 							"objectClass": "Audio",
-							"sid": 237777130653937,
+							"sid": 688419350170903,
 							"parameters": {
 								"tag": "\"\"",
 								"db": "-40"
@@ -13751,19 +13695,37 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 356994883829886,
+							"sid": 767335324725830,
 							"parameters": {
-								"seconds": "5",
+								"seconds": "3",
 								"use-timescale": true
 							}
 						},
 						{
 							"id": "set-volume",
 							"objectClass": "Audio",
-							"sid": 959897098797484,
+							"sid": 369823425790091,
 							"parameters": {
 								"tag": "\"\"",
-								"db": "-30"
+								"db": "-33"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 858505216435288,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-volume",
+							"objectClass": "Audio",
+							"sid": 966697695256799,
+							"parameters": {
+								"tag": "\"\"",
+								"db": "-27"
 							}
 						},
 						{

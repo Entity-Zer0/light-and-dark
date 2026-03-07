@@ -2955,7 +2955,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 308,
+						"x": 364.08186759981385,
 						"y": 86,
 						"width": 13.37632247187747,
 						"height": 25.217146844899133,
@@ -8043,10 +8043,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 735.4175207412762,
-						"y": 14.94191876496884,
-						"width": 80.61530402762446,
-						"height": 15.830234229676066,
+						"x": 732.4149893419693,
+						"y": 16.419813112155172,
+						"width": 86.37909198165119,
+						"height": 18.712128206689414,
 						"originX": 0.4790697674418605,
 						"originY": 0.5128205128205128,
 						"color": [
@@ -8101,7 +8101,7 @@
 			"effectId": "blacknwhite",
 			"name": "BlackWhite",
 			"instance": {
-				"isEnabled": false,
+				"isEnabled": true,
 				"parameters": {
 					"threshold": 0.5
 				}
