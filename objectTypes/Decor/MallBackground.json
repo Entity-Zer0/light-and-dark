@@ -1,5 +1,5 @@
 {
-	"name": "Sprite5",
+	"name": "MallBackground",
 	"plugin-id": "Sprite",
 	"sid": 366185718542706,
 	"isGlobal": false,
@@ -20,7 +20,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6588202,
+						"imageSpriteId": 8185248,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

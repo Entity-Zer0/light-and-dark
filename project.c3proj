@@ -162,7 +162,8 @@
 					"GasLeakGround",
 					"PlayerTube",
 					"Father",
-					"AutonomyBoard"
+					"AutonomyBoard",
+					"MallBackground"
 				],
 				"subfolders": [
 					{
@@ -213,7 +214,8 @@
 					"LayoutTitle1",
 					"LayoutTitle2",
 					"LayoutTitle3",
-					"LayoutTitle4"
+					"LayoutTitle4",
+					"Sprite5"
 				],
 				"subfolders": [],
 				"name": "Player"

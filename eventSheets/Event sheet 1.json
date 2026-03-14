@@ -9258,6 +9258,14 @@
 											"parameters": {
 												"unique-id": "842"
 											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Checkpoint",
+											"sid": 821597026701777,
+											"parameters": {
+												"unique-id": "1840"
+											}
 										}
 									],
 									"actions": [
@@ -9290,6 +9298,47 @@
 										}
 									],
 									"sid": 895380361195994
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 239482208892492,
+											"parameters": {
+												"object": "Sprite5"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Sprite5",
+											"sid": 769263008155850,
+											"parameters": {
+												"unique-id": "2138"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "Checkpoint",
+											"sid": 968653943343847,
+											"parameters": {
+												"unique-id": "2139"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "Spawn",
+											"sid": 852822759821973,
+											"parameters": {
+												"object": "Checkpoint",
+												"image-point-optional": "0"
+											}
+										}
+									],
+									"sid": 169798720670259
 								},
 								{
 									"eventType": "block",
@@ -14435,6 +14484,47 @@
 				}
 			],
 			"sid": 519453194365882
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 976469474572219,
+					"parameters": {
+						"object": "ColorChangerWhite"
+					}
+				},
+				{
+					"id": "pick-by-unique-id",
+					"objectClass": "ColorChangerWhite",
+					"sid": 891794914857885,
+					"parameters": {
+						"unique-id": "84"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 198653993895893,
+					"parameters": {
+						"seconds": "10",
+						"use-timescale": true
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ColorShardTxt",
+					"sid": 557726911459291,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 198387520489600
 		}
 	],
 	"sid": 285828799823789
