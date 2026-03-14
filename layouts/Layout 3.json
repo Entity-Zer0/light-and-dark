@@ -7212,7 +7212,8 @@
 						"WallJump": 0,
 						"ColorSwitch": 0,
 						"Black": false,
-						"White": false
+						"White": false,
+						"ConstantJump": false
 					},
 					"behaviors": {
 						"Platform": {

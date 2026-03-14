@@ -46,6 +46,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 561442242312786
+		},
+		{
+			"name": "ConstantJump",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 523423185775675
 		}
 	],
 	"behaviorTypes": [

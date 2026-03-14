@@ -4637,6 +4637,13 @@
 												"comparison": 0,
 												"value": "1"
 											}
+										},
+										{
+											"id": "is-on-floor",
+											"objectClass": "Player",
+											"sid": 136067041970360,
+											"behaviorType": "Platform",
+											"isInverted": true
 										}
 									],
 									"actions": [],
@@ -4690,6 +4697,13 @@
 												"comparison": 0,
 												"value": "1"
 											}
+										},
+										{
+											"id": "is-on-floor",
+											"objectClass": "Player",
+											"sid": 331723678498735,
+											"behaviorType": "Platform",
+											"isInverted": true
 										}
 									],
 									"actions": [],
@@ -4808,7 +4822,7 @@
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "WASD",
+					"title": "WASD and ARROWS",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
@@ -4818,9 +4832,17 @@
 								{
 									"id": "key-is-down",
 									"objectClass": "Keyboard",
-									"sid": 159669598549758,
+									"sid": 259288342416894,
 									"parameters": {
 										"key": 68
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 466963864244436,
+									"parameters": {
+										"key": 39
 									}
 								}
 							],
@@ -4828,14 +4850,15 @@
 								{
 									"id": "simulate-control",
 									"objectClass": "Player",
-									"sid": 877105705796970,
+									"sid": 214939537324101,
 									"behaviorType": "Platform",
 									"parameters": {
 										"control": "right"
 									}
 								}
 							],
-							"sid": 655358558000898
+							"sid": 142914149426081,
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
@@ -4843,9 +4866,17 @@
 								{
 									"id": "key-is-down",
 									"objectClass": "Keyboard",
-									"sid": 738048636311304,
+									"sid": 730970829708396,
 									"parameters": {
 										"key": 65
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 881503344643861,
+									"parameters": {
+										"key": 37
 									}
 								}
 							],
@@ -4853,39 +4884,64 @@
 								{
 									"id": "simulate-control",
 									"objectClass": "Player",
-									"sid": 823047482920748,
+									"sid": 379457207562064,
 									"behaviorType": "Platform",
 									"parameters": {
 										"control": "left"
 									}
 								}
 							],
-							"sid": 947555282499595
+							"sid": 333229796815215,
+							"isOrBlock": true
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "key-is-down",
-									"objectClass": "Keyboard",
-									"sid": 301119240999751,
-									"parameters": {
-										"key": 87
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "simulate-control",
+									"id": "is-on-floor",
 									"objectClass": "Player",
-									"sid": 144689714600559,
-									"behaviorType": "Platform",
-									"parameters": {
-										"control": "jump"
-									}
+									"sid": 294872125854352,
+									"behaviorType": "Platform"
 								}
 							],
-							"sid": 298165424916170
+							"actions": [],
+							"sid": 658666632745176,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 515688934544744,
+											"parameters": {
+												"key": 87
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 274805765304917,
+											"parameters": {
+												"key": 38
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player",
+											"sid": 544589436162345,
+											"behaviorType": "Platform",
+											"parameters": {
+												"control": "jump"
+											}
+										}
+									],
+									"sid": 763367505129087,
+									"isOrBlock": true
+								}
+							]
 						}
 					],
 					"sid": 447217960186012
@@ -14467,7 +14523,7 @@
 				{
 					"id": "set-gravity",
 					"objectClass": "Player",
-					"sid": 781233054204922,
+					"sid": 528580033772040,
 					"behaviorType": "Platform",
 					"parameters": {
 						"gravity": "600"
