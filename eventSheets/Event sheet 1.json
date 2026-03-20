@@ -3761,6 +3761,15 @@
 											}
 										},
 										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 705542287482012,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "0"
+											}
+										},
+										{
 											"id": "set-max-fall-speed",
 											"objectClass": "Player",
 											"sid": 124601279115238,
@@ -3911,6 +3920,15 @@
 											}
 										},
 										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 404399612945316,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "0"
+											}
+										},
+										{
 											"id": "set-max-fall-speed",
 											"objectClass": "Player",
 											"sid": 156571483902753,
@@ -3983,33 +4001,139 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-on-floor",
+									"id": "is-by-wall",
 									"objectClass": "Player",
-									"sid": 732841285412151,
-									"behaviorType": "Platform"
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Player",
-									"sid": 721152076055997,
+									"sid": 390586810519714,
+									"behaviorType": "Platform",
 									"parameters": {
-										"instance-variable": "IsWallJumpLeft",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Player",
-									"sid": 976465622981952,
-									"parameters": {
-										"instance-variable": "IsWallJumpRight",
-										"value": "false"
+										"side": "left"
 									}
 								}
 							],
-							"sid": 306002653396911
+							"actions": [],
+							"sid": 544257427628012,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-on-floor",
+											"objectClass": "Player",
+											"sid": 715670941650040,
+											"behaviorType": "Platform",
+											"isInverted": true
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 402075384330568,
+											"parameters": {
+												"instance-variable": "WallJump",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 318658874560883,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-max-fall-speed",
+											"objectClass": "Player",
+											"sid": 634478470269052,
+											"behaviorType": "Platform",
+											"parameters": {
+												"max-fall-speed": "90"
+											}
+										},
+										{
+											"id": "set-mirrored",
+											"objectClass": "Player",
+											"sid": 662954705167691,
+											"parameters": {
+												"state": "not-mirrored"
+											}
+										}
+									],
+									"sid": 540502354884537
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 469054108017610,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "right"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 672110955308133,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-on-floor",
+											"objectClass": "Player",
+											"sid": 915643899707682,
+											"behaviorType": "Platform",
+											"isInverted": true
+										},
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Player",
+											"sid": 576580538887621,
+											"parameters": {
+												"instance-variable": "WallJump",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 341050942420961,
+											"parameters": {
+												"variable": "IsBusy",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-max-fall-speed",
+											"objectClass": "Player",
+											"sid": 976883001649498,
+											"behaviorType": "Platform",
+											"parameters": {
+												"max-fall-speed": "90"
+											}
+										},
+										{
+											"id": "set-mirrored",
+											"objectClass": "Player",
+											"sid": 309254707867697,
+											"parameters": {
+												"state": "mirrored"
+											}
+										}
+									],
+									"sid": 346453118502038
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -4017,14 +4141,14 @@
 								{
 									"id": "is-on-floor",
 									"objectClass": "Player",
-									"sid": 696827502312434,
+									"sid": 965366720110058,
 									"behaviorType": "Platform",
 									"isInverted": true
 								},
 								{
 									"id": "is-by-wall",
 									"objectClass": "Player",
-									"sid": 181274021544110,
+									"sid": 653257651744329,
 									"behaviorType": "Platform",
 									"parameters": {
 										"side": "left"
@@ -4034,7 +4158,7 @@
 								{
 									"id": "is-by-wall",
 									"objectClass": "Player",
-									"sid": 873712418740414,
+									"sid": 826991014758179,
 									"behaviorType": "Platform",
 									"parameters": {
 										"side": "right"
@@ -4046,7 +4170,7 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Player",
-									"sid": 278128171940600,
+									"sid": 880617302574105,
 									"parameters": {
 										"instance-variable": "IsWallJumpLeft",
 										"value": "false"
@@ -4055,14 +4179,55 @@
 								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Player",
-									"sid": 381268033011722,
+									"sid": 738638362351310,
+									"parameters": {
+										"instance-variable": "IsWallJumpRight",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 184113640647639,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 864795160907219
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-floor",
+									"objectClass": "Player",
+									"sid": 178797018102178,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 296433325041617,
+									"parameters": {
+										"instance-variable": "IsWallJumpLeft",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 554448178973319,
 									"parameters": {
 										"instance-variable": "IsWallJumpRight",
 										"value": "false"
 									}
 								}
 							],
-							"sid": 756827597213380
+							"sid": 432562234269401
 						}
 					],
 					"sid": 970745345337742
@@ -4355,6 +4520,16 @@
 												"comparison": 0,
 												"value": "1"
 											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 645345320611882,
+											"parameters": {
+												"variable": "IsBusy",
+												"comparison": 0,
+												"value": "0"
+											}
 										}
 									],
 									"actions": [],
@@ -4457,6 +4632,16 @@
 												"variable": "Black",
 												"comparison": 0,
 												"value": "1"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 530255399279395,
+											"parameters": {
+												"variable": "IsBusy",
+												"comparison": 0,
+												"value": "0"
 											}
 										}
 									],
@@ -4981,7 +5166,8 @@
 									"parameters": {
 										"which": "nearest",
 										"x": "Player.X",
-										"y": "Player.Y"
+										"y": "Player.Y",
+										"pick-all-tied": false
 									}
 								}
 							],
@@ -5038,7 +5224,8 @@
 									"parameters": {
 										"which": "nearest",
 										"x": "Player.X",
-										"y": "Player.Y"
+										"y": "Player.Y",
+										"pick-all-tied": false
 									}
 								}
 							],
@@ -5209,7 +5396,8 @@
 									"parameters": {
 										"which": "nearest",
 										"x": "EnemyRespawn.X",
-										"y": "EnemyRespawn.Y"
+										"y": "EnemyRespawn.Y",
+										"pick-all-tied": false
 									}
 								}
 							],
@@ -5262,7 +5450,8 @@
 									"parameters": {
 										"which": "nearest",
 										"x": "EnemyRespawn.X",
-										"y": "EnemyRespawn.Y"
+										"y": "EnemyRespawn.Y",
+										"pick-all-tied": false
 									}
 								}
 							],
@@ -5327,7 +5516,8 @@
 											"parameters": {
 												"which": "nearest",
 												"x": "WhiteDrone.X",
-												"y": "WhiteDrone.Y"
+												"y": "WhiteDrone.Y",
+												"pick-all-tied": false
 											}
 										}
 									],
@@ -5376,7 +5566,8 @@
 											"parameters": {
 												"which": "nearest",
 												"x": "Drone.X",
-												"y": "Drone.Y"
+												"y": "Drone.Y",
+												"pick-all-tied": false
 											}
 										}
 									],
@@ -5650,7 +5841,8 @@
 									"parameters": {
 										"which": "nearest",
 										"x": "Player.X",
-										"y": "Player.Y"
+										"y": "Player.Y",
+										"pick-all-tied": false
 									}
 								}
 							],
