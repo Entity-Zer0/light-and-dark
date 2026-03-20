@@ -28937,11 +28937,11 @@
 								"max-speed": 150,
 								"acceleration": 1000,
 								"deceleration": 1000,
-								"jump-strength": 240,
+								"jump-strength": 185,
 								"gravity": 1000,
 								"max-fall-speed": 700,
 								"double-jump": false,
-								"jump-sustain": 0,
+								"jump-sustain": 200,
 								"default-controls": true,
 								"enabled": true
 							}

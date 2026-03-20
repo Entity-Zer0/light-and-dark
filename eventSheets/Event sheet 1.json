@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "WallJump",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -156,6 +156,26 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 876461734394449
+		},
+		{
+			"eventType": "variable",
+			"name": "Timing",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 692853247724868
+		},
+		{
+			"eventType": "variable",
+			"name": "Jump",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 542719135042007
 		},
 		{
 			"eventType": "group",
@@ -4824,6 +4844,16 @@
 											}
 										},
 										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 598809509934293,
+											"parameters": {
+												"variable": "IsBusy",
+												"comparison": 0,
+												"value": "0"
+											}
+										},
+										{
 											"id": "is-on-floor",
 											"objectClass": "Player",
 											"sid": 136067041970360,
@@ -4881,6 +4911,16 @@
 												"variable": "Black",
 												"comparison": 0,
 												"value": "1"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 455625666788978,
+											"parameters": {
+												"variable": "IsBusy",
+												"comparison": 0,
+												"value": "0"
 											}
 										},
 										{
@@ -5083,50 +5123,35 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-on-floor",
-									"objectClass": "Player",
-									"sid": 294872125854352,
-									"behaviorType": "Platform"
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 221783709377709,
+									"parameters": {
+										"key": 87
+									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 625915499264416,
+									"parameters": {
+										"key": 38
+									}
 								}
 							],
-							"actions": [],
-							"sid": 658666632745176,
-							"children": [
+							"actions": [
 								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "key-is-down",
-											"objectClass": "Keyboard",
-											"sid": 515688934544744,
-											"parameters": {
-												"key": 87
-											}
-										},
-										{
-											"id": "key-is-down",
-											"objectClass": "Keyboard",
-											"sid": 274805765304917,
-											"parameters": {
-												"key": 38
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "simulate-control",
-											"objectClass": "Player",
-											"sid": 544589436162345,
-											"behaviorType": "Platform",
-											"parameters": {
-												"control": "jump"
-											}
-										}
-									],
-									"sid": 763367505129087,
-									"isOrBlock": true
+									"id": "simulate-control",
+									"objectClass": "Player",
+									"sid": 708079480889096,
+									"behaviorType": "Platform",
+									"parameters": {
+										"control": "jump"
+									}
 								}
-							]
+							],
+							"sid": 533146800633115,
+							"isOrBlock": true
 						}
 					],
 					"sid": 447217960186012
@@ -14706,10 +14731,10 @@
 				{
 					"id": "set-jump-strength",
 					"objectClass": "Player",
-					"sid": 882334582317323,
+					"sid": 112968369368343,
 					"behaviorType": "Platform",
 					"parameters": {
-						"jump-strength": "185"
+						"jump-strength": "102"
 					}
 				},
 				{
@@ -14728,6 +14753,15 @@
 					"behaviorType": "Platform",
 					"parameters": {
 						"max-fall-speed": "300"
+					}
+				},
+				{
+					"id": "set-jump-sustain",
+					"objectClass": "Player",
+					"sid": 329826594485967,
+					"behaviorType": "Platform",
+					"parameters": {
+						"jump-sustain": "200"
 					}
 				}
 			],
