@@ -1,0 +1,52 @@
+{
+	"name": "PlayerTube",
+	"plugin-id": "Sprite",
+	"sid": 468734771136783,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 212,
+						"height": 172,
+						"originX": 0.4716981132075472,
+						"originY": 0.7325581395348837,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5658748,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.005813953488372093,
+								1,
+								0.005813953488372093,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 881042681332075,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

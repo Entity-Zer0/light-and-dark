@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 46602,
+	"savedWithRelease": 47602,
 	"name": "Light and Dark",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -45,6 +45,20 @@
 			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -105,12 +119,7 @@
 			"Preview",
 			"Audio",
 			"Mouse",
-			"UpgradeScreen2",
-			"NoteInTable2",
-			"NoteInTable3",
-			"UpgradeScreen3",
-			"NoteInTable4",
-			"UpgradeScreen4"
+			"Text"
 		],
 		"subfolders": [
 			{
@@ -150,7 +159,11 @@
 					"BlackCircle",
 					"ColorMachine",
 					"GasLeak",
-					"GasLeakGround"
+					"GasLeakGround",
+					"PlayerTube",
+					"Father",
+					"AutonomyBoard",
+					"MallBackground"
 				],
 				"subfolders": [
 					{
@@ -190,7 +203,19 @@
 					"BlackColorSpawn",
 					"WhiteColorSpawn",
 					"PlayerCamera",
-					"Checkpoint"
+					"Checkpoint",
+					"GasEvent",
+					"GasEvent2",
+					"GasEvent3",
+					"SpeedChange",
+					"TextBox",
+					"NothingFoundTxt",
+					"Spawn2",
+					"LayoutTitle1",
+					"LayoutTitle2",
+					"LayoutTitle3",
+					"LayoutTitle4",
+					"Sprite5"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -215,7 +240,12 @@
 					"WhiteX",
 					"BlackX",
 					"NoteInTable1",
-					"ColorShardTxt"
+					"ColorShardTxt",
+					"RestartTxt",
+					"TheEndTxt",
+					"NoteInTable2",
+					"NoteInTable3",
+					"NoteInTable4"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -230,10 +260,42 @@
 					"StartButton",
 					"ControlsTxt",
 					"Exit",
-					"CreditsTxt"
+					"CreditsTxt",
+					"EndAnimation",
+					"Reset",
+					"TitleScrnButton",
+					"TheEnd",
+					"SpaceSkipTxt"
 				],
 				"subfolders": [],
 				"name": "Title"
+			},
+			{
+				"items": [
+					"Orange",
+					"Blue",
+					"Green",
+					"Red",
+					"Purple",
+					"Yellow"
+				],
+				"subfolders": [],
+				"name": "Colors"
+			},
+			{
+				"items": [
+					"Drone",
+					"ShadowEnemy",
+					"HitboxLeft",
+					"WhiteDrone",
+					"WhiteEnemy",
+					"EnemyRespawn",
+					"WhiteDroneHitbox",
+					"BlackDroneHitbox",
+					"HitboxRight"
+				],
+				"subfolders": [],
+				"name": "Enemy"
 			}
 		]
 	},
@@ -250,7 +312,8 @@
 			"Layout 1",
 			"Layout 2",
 			"Layout 3",
-			"Layout 4"
+			"Layout 4",
+			"End Screen"
 		],
 		"subfolders": []
 	},
@@ -276,17 +339,9 @@
 					}
 				},
 				{
-					"name": "Lab SFX.webm",
+					"name": "Light Swicth FX.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 237150648423847,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
-					"name": "Nothing in desk SFX.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 560863443586164,
+					"sid": 554577234644458,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -294,7 +349,7 @@
 				{
 					"name": "Found_level up SFX.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 493913274554740,
+					"sid": 320744127614927,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -302,15 +357,47 @@
 				{
 					"name": "Elevator FX.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 392666097242694,
+					"sid": 801692284673647,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "Light Swicth FX.webm",
+					"name": "Lab SFX.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 966897262491877,
+					"sid": 875767448292158,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Nothing in desk SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 233972365130493,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Electric shock FX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 698465875315875,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Explosion 3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 335339332111855,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Ending theme.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 628440951325426,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -446,6 +533,10 @@
 		],
 		"subfolders": []
 	},
+	"models3d": {
+		"items": [],
+		"subfolders": []
+	},
 	"properties": {
 		"description": "",
 		"version": "1.0.0.0",
@@ -485,6 +576,7 @@
 		"multitexturing": "auto",
 		"gpuPreference": "high-performance",
 		"framerateMode": "vsync",
+		"fixedFramerate": 30,
 		"sampling": "trilinear",
 		"downscaling": "medium",
 		"renderingMode": "auto",

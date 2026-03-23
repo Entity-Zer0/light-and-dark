@@ -24,6 +24,7 @@
 				1
 			],
 			"isTransparent": false,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -71,9 +72,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 3,
+						"x": -5.392502897883389,
 						"y": -5,
-						"width": 108.23086244907066,
+						"width": 116.62336534695405,
 						"height": 512.0657269911623,
 						"originX": 0,
 						"originY": 0,
@@ -83,8 +84,82 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "BackgroundTowers",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 105,
+					"sid": 985926803520443,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 985926803520443,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 6.541480334340264,
+						"y": 178.96248781038574,
+						"width": 24.639505087421362,
+						"height": 168.6239036743381,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2009,
+					"sid": 504365786795936,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 504365786795936,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 12.114234125685371,
+						"y": 175.19888534381454,
+						"width": 6.480813827959132,
+						"height": 11.761995417317031,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -120,8 +195,82 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 95,
+					"sid": 670141343475862,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 670141343475862,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 47.06588003088771,
+						"y": 179.86932344360338,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 97,
+					"sid": 946067695149430,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 946067695149430,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 61.86070644023278,
+						"y": 179.99288460415502,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -167,8 +316,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -204,8 +353,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -241,8 +390,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -278,8 +427,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -315,8 +464,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -352,8 +501,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -389,8 +538,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -426,8 +575,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -463,8 +612,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -500,8 +649,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -537,8 +686,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -574,8 +723,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -611,8 +760,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -648,8 +797,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -685,8 +834,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -722,8 +871,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -759,8 +908,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -796,8 +945,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -833,8 +982,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -870,8 +1019,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -907,8 +1056,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -944,156 +1093,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BlackWindow",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "BlackWindow",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 95,
-					"sid": 731868912201785,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 731868912201785,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 47,
-						"y": 179,
-						"width": 5.823817643338087,
-						"height": 8.849378872553515,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BlackWindow",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "BlackWindow",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 96,
-					"sid": 517998206882579,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 517998206882579,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 62,
-						"y": 180,
-						"width": 5.823817643338087,
-						"height": 10.633041414575999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BlackWindow",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "BlackWindow",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 97,
-					"sid": 967323484086525,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 967323484086525,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 78,
-						"y": 180,
-						"width": 5.823817643338087,
-						"height": 10.633041414575999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BlackWindow",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "BlackWindow",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 100,
-					"sid": 856176622949841,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 856176622949841,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 78,
-						"y": 198,
-						"width": 5.823817643338087,
-						"height": 10.633041414575999,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1129,8 +1130,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1166,8 +1167,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1213,8 +1214,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1250,8 +1251,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1287,8 +1288,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1324,45 +1325,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BackgroundTowers",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 105,
-					"sid": 985926803520443,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 985926803520443,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 11,
-						"y": 137,
-						"width": 15.72246575610189,
-						"height": 84.69892805356662,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1398,8 +1362,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1435,8 +1399,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1472,35 +1436,35 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
-					"type": "BlackWindow",
+					"type": "WhiteWindow",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "BlackWindow",
+						"initial-animation": "WhiteWindow",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 109,
-					"sid": 881215324921810,
+					"uid": 1991,
+					"sid": 373139652179890,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 881215324921810,
+						"sid": 373139652179890,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 12,
-						"y": 175,
-						"width": 6.493764257429502,
-						"height": 11.696587693069397,
+						"x": 78.02510157707937,
+						"y": 197.9380883999309,
+						"width": 5.886295323170778,
+						"height": 10.703947936563047,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -1509,8 +1473,711 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 100,
+					"sid": 637403410791977,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 637403410791977,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 78.0970502719234,
+						"y": 179.94417287189322,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 96,
+					"sid": 218988663445979,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 218988663445979,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 47.22695304605141,
+						"y": 160.13309523227096,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1992,
+					"sid": 301493296111838,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 301493296111838,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 62.021779455396484,
+						"y": 160.2566563928226,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1993,
+					"sid": 477318170584205,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 477318170584205,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 78.2581232870871,
+						"y": 160.2079446605608,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1994,
+					"sid": 996631863797236,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 996631863797236,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 47.218939763411235,
+						"y": 140.16317785395998,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1995,
+					"sid": 279746559066352,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 279746559066352,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 62.013766172756306,
+						"y": 140.28673901451162,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1996,
+					"sid": 771873784742509,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 771873784742509,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 78.25011000444692,
+						"y": 140.23802728224982,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1997,
+					"sid": 612067135556142,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 612067135556142,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 47.21890785160118,
+						"y": 120.03511051500027,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1998,
+					"sid": 506450622465529,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 506450622465529,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 62.01373426094625,
+						"y": 120.15867167555191,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1999,
+					"sid": 690732231277658,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 690732231277658,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 78.25007809263687,
+						"y": 120.10995994329011,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2000,
+					"sid": 309385083279339,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 309385083279339,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 47.47374120439208,
+						"y": 100.33125718647355,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2001,
+					"sid": 132333983776558,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 132333983776558,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 62.26856761373715,
+						"y": 100.4548183470252,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2002,
+					"sid": 594347667235487,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 594347667235487,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 78.50491144542777,
+						"y": 100.40610661476339,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2003,
+					"sid": 861533546735436,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 861533546735436,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 47.558671084397076,
+						"y": 81.13695871645962,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2004,
+					"sid": 303736199185115,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 303736199185115,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 62.35349749374215,
+						"y": 81.26051987701126,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2005,
+					"sid": 380046489896461,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 380046489896461,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 78.58984132543276,
+						"y": 81.21180814474945,
+						"width": 5.886295323170778,
+						"height": 10.488021638685659,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2006,
+					"sid": 171386469827084,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 171386469827084,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 12.052486857881597,
+						"y": 105.12232119850796,
+						"width": 6.480813827959132,
+						"height": 11.761995417317031,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2007,
+					"sid": 976054474918088,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 976054474918088,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 11.959802736581949,
+						"y": 129.18975209072977,
+						"width": 6.480813827959132,
+						"height": 11.761995417317031,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "WhiteWindow",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2008,
+					"sid": 306924288963476,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 306924288963476,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 11.950033378311609,
+						"y": 153.23777459920478,
+						"width": 6.480813827959132,
+						"height": 11.761995417317031,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -1532,6 +2199,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -1591,8 +2259,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1638,8 +2306,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1685,8 +2353,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -1708,6 +2376,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -1767,8 +2436,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1814,8 +2483,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1861,8 +2530,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1908,8 +2577,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -1955,8 +2624,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2002,8 +2671,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2049,8 +2718,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2096,8 +2765,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2143,8 +2812,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2190,8 +2859,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2237,8 +2906,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2284,8 +2953,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2331,8 +3000,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2378,8 +3047,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2425,8 +3094,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2480,8 +3149,8 @@
 							1,
 							1
 						],
-						"angle": 0.00008575266944821358,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.00008575266944821358
 					}
 				},
 				{
@@ -2527,8 +3196,102 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteBackground",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1984,
+					"sid": 197484872333294,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 197484872333294,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 3.2231332642871493,
+						"y": 178.25560473921075,
+						"width": 61.532539417480194,
+						"height": -1.0808324084822232,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteBackground",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1985,
+					"sid": 942389390932814,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 942389390932814,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 74.29956455428427,
+						"y": 207.31020584069287,
+						"width": 20.67990501971805,
+						"height": -1.0808324084822232,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -2550,6 +3313,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -2617,8 +3381,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2672,8 +3436,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2727,8 +3491,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2782,8 +3546,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2837,8 +3601,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2892,8 +3656,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -2947,8 +3711,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3002,8 +3766,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3057,8 +3821,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3112,8 +3876,8 @@
 							1,
 							1
 						],
-						"angle": 6.28154805438357,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.28154805438357
 					}
 				},
 				{
@@ -3167,8 +3931,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3222,8 +3986,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3277,8 +4041,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3332,8 +4096,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3387,8 +4151,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3442,8 +4206,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3497,8 +4261,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3552,8 +4316,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3607,8 +4371,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3662,8 +4426,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3717,8 +4481,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3772,8 +4536,8 @@
 							1,
 							1
 						],
-						"angle": 1.319035896131672,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.319035896131672
 					}
 				},
 				{
@@ -3827,8 +4591,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3882,63 +4646,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BlackWallsSolid",
-					"properties": {
-						"initially-visible": true,
-						"origin": "top-left",
-						"wrap-horizontal": "repeat",
-						"wrap-vertical": "repeat",
-						"image-offset-x": 0,
-						"image-offset-y": 0,
-						"image-scale-x": 1,
-						"image-scale-y": 1,
-						"image-angle": 0,
-						"enable-tile-randomization": false,
-						"x-random": 1,
-						"y-random": 1,
-						"angle-random": 1,
-						"blend-margin-x": 0.1,
-						"blend-margin-y": 0.1
-					},
-					"uid": 64,
-					"sid": 921561023328707,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"use-instance-tags": true,
-								"tags": ""
-							}
-						}
-					},
-					"instanceFolderItem": {
-						"sid": 921561023328707,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 399,
-						"y": 305,
-						"width": 11.808658109249393,
-						"height": 11.281290086349117,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -3992,8 +4701,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4047,8 +4756,8 @@
 							1,
 							1
 						],
-						"angle": 6.28154805438357,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.28154805438357
 					}
 				},
 				{
@@ -4102,8 +4811,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4149,8 +4858,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4204,8 +4913,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4259,8 +4968,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4314,8 +5023,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4369,8 +5078,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4412,8 +5121,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4467,8 +5176,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4522,8 +5231,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4577,8 +5286,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4632,8 +5341,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4687,8 +5396,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4742,8 +5451,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4797,8 +5506,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4852,8 +5561,118 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWallsSolid",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 919,
+					"sid": 789793700472104,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": false,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 789793700472104,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1039.2564134270874,
+						"y": 113.91228578555538,
+						"width": 7.9312096541173105,
+						"height": 1.4530983931265027,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteWallsSolid",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1937,
+					"sid": 847169780297241,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"use-instance-tags": false,
+								"tags": ""
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 847169780297241,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1026.9892371448502,
+						"y": 117.17160401710223,
+						"width": 12.763913060426308,
+						"height": 1.4530983931265027,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 6.024874968655939
 					}
 				}
 			],
@@ -4875,6 +5694,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -4924,8 +5744,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4961,8 +5781,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -4998,8 +5818,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5035,8 +5855,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5072,8 +5892,8 @@
 							1,
 							1
 						],
-						"angle": 1.2516848419409303,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.2516848419409303
 					}
 				},
 				{
@@ -5109,8 +5929,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5146,8 +5966,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5172,9 +5992,9 @@
 					"locked": false,
 					"world": {
 						"x": 658,
-						"y": 360.3476439275777,
+						"y": 360.1574911374105,
 						"width": 48.76485317294271,
-						"height": 49.97136959026375,
+						"height": 49.591064009929426,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -5183,8 +6003,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5220,8 +6040,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5257,8 +6077,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5294,8 +6114,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5331,8 +6151,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5368,8 +6188,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5405,8 +6225,8 @@
 							1,
 							1
 						],
-						"angle": 5.088832018851425,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.088832018851425
 					}
 				},
 				{
@@ -5442,8 +6262,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5479,8 +6299,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5516,8 +6336,8 @@
 							1,
 							1
 						],
-						"angle": 5.247361281465186,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.247361281465186
 					}
 				},
 				{
@@ -5553,8 +6373,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5590,8 +6410,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5627,8 +6447,8 @@
 							1,
 							1
 						],
-						"angle": 5.958851741635295,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.958851741635295
 					}
 				}
 			],
@@ -5650,6 +6470,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -5699,8 +6520,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5736,8 +6557,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5761,8 +6582,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 957,
-						"y": 362.6235957066277,
+						"x": 956.0393869968474,
+						"y": 361.6629689615862,
 						"width": 15.518087000000001,
 						"height": 29.063196413255394,
 						"originX": 0.5,
@@ -5773,8 +6594,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5810,8 +6631,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5847,8 +6668,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5884,8 +6705,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5921,8 +6742,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5958,8 +6779,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -5995,8 +6816,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6032,8 +6853,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6069,8 +6890,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6106,8 +6927,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6143,8 +6964,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6168,8 +6989,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 656,
-						"y": 365,
+						"x": 655.6318353342434,
+						"y": 362.422963200874,
 						"width": 15.518087000000001,
 						"height": 27.816005,
 						"originX": 0.5,
@@ -6180,8 +7001,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6205,8 +7026,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 579,
-						"y": 365,
+						"x": 578.6318353342434,
+						"y": 362.422963200874,
 						"width": 15.518087000000001,
 						"height": 27.816005,
 						"originX": 0.5,
@@ -6217,8 +7038,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6242,8 +7063,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 311,
-						"y": 87,
+						"x": 310.13485828982874,
+						"y": 91.32565285981832,
 						"width": 15.970360181480828,
 						"height": 27.816004879589116,
 						"originX": 0.5,
@@ -6254,8 +7075,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6279,8 +7100,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 435,
-						"y": 87,
+						"x": 434.7837207603503,
+						"y": 91.7582329967436,
 						"width": 15.518087000000001,
 						"height": 27.816005,
 						"originX": 0.5,
@@ -6291,8 +7112,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6316,8 +7137,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 588,
-						"y": 87,
+						"x": 589.2977249410432,
+						"y": 91.9744812969278,
 						"width": 15.518087000000001,
 						"height": 27.816005,
 						"originX": 0.5,
@@ -6328,45 +7149,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "BrokenWindow",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 47,
-					"sid": 199290254180359,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 199290254180359,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 210,
-						"y": 91,
-						"width": 15.25492365424654,
-						"height": 27.676692136434326,
-						"originX": 0.5,
-						"originY": 0.5166666666666667,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6390,8 +7174,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 832,
-						"y": 87,
+						"x": 821.8415967591213,
+						"y": 91.79702823773071,
 						"width": 15.518087000000001,
 						"height": 27.816005,
 						"originX": 0.5,
@@ -6402,8 +7186,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6439,8 +7223,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6476,8 +7260,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6513,8 +7297,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -6550,8 +7334,45 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "BrokenBlackWindow",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 713,
+					"sid": 706573858575149,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 706573858575149,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 163.98528481427144,
+						"y": 91.22684162558892,
+						"width": 15.373620522015306,
+						"height": 27.785976711456634,
+						"originX": 0.5,
+						"originY": 0.5166666666666667,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -6573,6 +7394,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -6622,8 +7444,8 @@
 							1,
 							1
 						],
-						"angle": 6.276780436274065,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.276780436274065
 					}
 				},
 				{
@@ -6659,8 +7481,8 @@
 							1,
 							1
 						],
-						"angle": 6.276380578176807,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.276380578176807
 					}
 				},
 				{
@@ -6696,8 +7518,8 @@
 							1,
 							1
 						],
-						"angle": 0.0037325486078317316,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0037325486078317316
 					}
 				},
 				{
@@ -6733,8 +7555,8 @@
 							1,
 							1
 						],
-						"angle": 0.0037325486078317316,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0037325486078317316
 					}
 				},
 				{
@@ -6770,8 +7592,8 @@
 							1,
 							1
 						],
-						"angle": 0.0037325486078317316,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0037325486078317316
 					}
 				},
 				{
@@ -6807,8 +7629,8 @@
 							1,
 							1
 						],
-						"angle": 6.276380578176807,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.276380578176807
 					}
 				},
 				{
@@ -6844,8 +7666,8 @@
 							1,
 							1
 						],
-						"angle": 0.0037325486078317316,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0037325486078317316
 					}
 				},
 				{
@@ -6881,8 +7703,8 @@
 							1,
 							1
 						],
-						"angle": 0.0037325486078317316,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0037325486078317316
 					}
 				},
 				{
@@ -6918,8 +7740,8 @@
 							1,
 							1
 						],
-						"angle": 6.276780436274065,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.276780436274065
 					}
 				},
 				{
@@ -6955,8 +7777,8 @@
 							1,
 							1
 						],
-						"angle": 6.276380578176807,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.276380578176807
 					}
 				},
 				{
@@ -6992,8 +7814,8 @@
 							1,
 							1
 						],
-						"angle": 0.0037325486078317316,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0037325486078317316
 					}
 				},
 				{
@@ -7029,8 +7851,8 @@
 							1,
 							1
 						],
-						"angle": 0.0037325486078317316,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0037325486078317316
 					}
 				},
 				{
@@ -7066,8 +7888,8 @@
 							1,
 							1
 						],
-						"angle": 0.0037325486078317316,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0037325486078317316
 					}
 				},
 				{
@@ -7103,8 +7925,8 @@
 							1,
 							1
 						],
-						"angle": 6.276380578176807,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.276380578176807
 					}
 				},
 				{
@@ -7140,8 +7962,8 @@
 							1,
 							1
 						],
-						"angle": 0.0037325486078317316,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.0037325486078317316
 					}
 				},
 				{
@@ -7177,8 +7999,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7214,8 +8036,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7251,8 +8073,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7288,8 +8110,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7325,8 +8147,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7362,8 +8184,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7399,8 +8221,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7436,8 +8258,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7473,8 +8295,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7510,8 +8332,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7547,8 +8369,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7584,8 +8406,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7621,8 +8443,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7658,8 +8480,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7695,8 +8517,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7732,8 +8554,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7769,8 +8591,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7806,8 +8628,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7843,8 +8665,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7880,8 +8702,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7935,8 +8757,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -7972,8 +8794,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8009,8 +8831,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8046,8 +8868,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8083,8 +8905,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8120,8 +8942,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8157,8 +8979,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8194,8 +9016,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -8231,8 +9053,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8268,8 +9090,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8323,8 +9145,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8360,8 +9182,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8397,8 +9219,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8434,8 +9256,8 @@
 							1,
 							1
 						],
-						"angle": 4.725441548702884,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.725441548702884
 					}
 				},
 				{
@@ -8471,8 +9293,8 @@
 							1,
 							1
 						],
-						"angle": 4.725441548702884,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.725441548702884
 					}
 				},
 				{
@@ -8508,8 +9330,8 @@
 							1,
 							1
 						],
-						"angle": 4.725441548702884,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.725441548702884
 					}
 				},
 				{
@@ -8545,8 +9367,8 @@
 							1,
 							1
 						],
-						"angle": 4.725441548702884,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.725441548702884
 					}
 				},
 				{
@@ -8582,8 +9404,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8619,8 +9441,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8656,8 +9478,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8693,8 +9515,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8730,8 +9552,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8767,8 +9589,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8804,8 +9626,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8841,8 +9663,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8878,8 +9700,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -8915,8 +9737,8 @@
 							1,
 							1
 						],
-						"angle": 4.71238898038469,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.71238898038469
 					}
 				},
 				{
@@ -8952,8 +9774,119 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
+					}
+				},
+				{
+					"type": "BlackSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "BlackSpikes",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1978,
+					"sid": 695126285807618,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 695126285807618,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 725.8568906229243,
+						"y": 111,
+						"width": 9.4,
+						"height": 8.265856097995183,
+						"originX": 0.5531914893617021,
+						"originY": 0.35,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "BlackSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "BlackSpikes",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1979,
+					"sid": 182544859121050,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 182544859121050,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 734.8568906229243,
+						"y": 111,
+						"width": 9.4,
+						"height": 8.265856097995183,
+						"originX": 0.5531914893617021,
+						"originY": 0.35,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "BlackSpikes",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "BlackSpikes",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1980,
+					"sid": 777447879904126,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 777447879904126,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 743.8714668880493,
+						"y": 111,
+						"width": 9.4,
+						"height": 8.265856097995183,
+						"originX": 0.5531914893617021,
+						"originY": 0.35,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -8975,6 +9908,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -9042,8 +9976,8 @@
 							1,
 							1
 						],
-						"angle": 6.158623973865035,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.158623973865035
 					}
 				},
 				{
@@ -9097,8 +10031,8 @@
 							1,
 							1
 						],
-						"angle": 6.158623973865035,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.158623973865035
 					}
 				},
 				{
@@ -9152,8 +10086,8 @@
 							1,
 							1
 						],
-						"angle": 0.6602225390237346,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.6602225390237346
 					}
 				},
 				{
@@ -9207,8 +10141,8 @@
 							1,
 							1
 						],
-						"angle": 0.6602225390237346,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0.6602225390237346
 					}
 				},
 				{
@@ -9262,8 +10196,8 @@
 							1,
 							1
 						],
-						"angle": 5.288535078288746,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.288535078288746
 					}
 				},
 				{
@@ -9317,8 +10251,8 @@
 							1,
 							1
 						],
-						"angle": 5.288535078288746,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.288535078288746
 					}
 				},
 				{
@@ -9372,8 +10306,8 @@
 							1,
 							1
 						],
-						"angle": 5.288535078288746,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.288535078288746
 					}
 				},
 				{
@@ -9427,8 +10361,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -9482,8 +10416,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -9537,8 +10471,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -9592,8 +10526,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -9647,8 +10581,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -9702,8 +10636,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -9745,8 +10679,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 364.4831104185612,
-						"y": 300.34259182714493,
+						"x": 365.0227696197617,
+						"y": 299.53311674944774,
 						"width": 17.25045656698603,
 						"height": 4.082558968760452,
 						"originX": 0,
@@ -9757,8 +10691,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -9816,8 +10750,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -9871,8 +10805,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -9926,8 +10860,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -9985,8 +10919,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10044,8 +10978,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10099,8 +11033,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10154,8 +11088,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10209,8 +11143,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10264,8 +11198,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10323,8 +11257,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10382,8 +11316,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10441,8 +11375,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -10464,6 +11398,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -10513,8 +11448,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10550,8 +11485,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10587,14 +11522,14 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
 					"type": "WhiteX",
 					"properties": {
-						"text": "Y\n",
+						"text": "X\n",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 5,
@@ -10640,61 +11575,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "WhiteX",
-					"properties": {
-						"text": "X\n",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 9,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": false,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 617,
-					"sid": 376910441151373,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 376910441151373,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 210.86497719733245,
-						"y": 320.05484450189596,
-						"width": 9.567267654697702,
-						"height": 13.870503929185702,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10736,8 +11618,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10779,8 +11661,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10822,8 +11704,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10865,8 +11747,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -10902,68 +11784,15 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "WhiteX",
-					"properties": {
-						"text": "X\n",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 9,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": false,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 78,
-					"sid": 482336418944310,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 482336418944310,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 147.76973116830848,
-						"y": 273.9455455161433,
-						"width": 9.567267654697702,
-						"height": 13.870503929185702,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
 					"type": "WhiteDoor",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Door",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -10992,8 +11821,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11029,8 +11858,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11072,61 +11901,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "WhiteX",
-					"properties": {
-						"text": "X\n",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 9,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": false,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 618,
-					"sid": 287021990627460,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 287021990627460,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 511.96952975229294,
-						"y": 260.21189052923904,
-						"width": 9.567267654697702,
-						"height": 13.870503929185702,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11162,14 +11938,14 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
 					"type": "WhiteX",
 					"properties": {
-						"text": "Y\n",
+						"text": "X\n",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 5,
@@ -11215,8 +11991,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11252,8 +12028,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11289,8 +12065,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11326,14 +12102,14 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
 					"type": "Checkpoint",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -11363,8 +12139,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -11386,6 +12162,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -11453,8 +12230,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11508,8 +12285,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -11531,6 +12308,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -11579,9 +12357,9 @@
 					"locked": false,
 					"world": {
 						"x": 159,
-						"y": 264,
+						"y": 263.25299011474476,
 						"width": 54.15714055641672,
-						"height": 0.2903195478548639,
+						"height": 1.0373294331101022,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -11590,8 +12368,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11628,7 +12406,7 @@
 						"x": 159,
 						"y": 260,
 						"width": 79.91397863282424,
-						"height": 0.2903195478548639,
+						"height": 0.8921909533896439,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -11637,8 +12415,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11672,10 +12450,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 139.91615501920566,
-						"y": 210.75755098616713,
-						"width": 99.11908465754385,
-						"height": 0.40191721729215146,
+						"x": 140.71665375471676,
+						"y": 204.17415741484584,
+						"width": 98.41597521272513,
+						"height": 0.7846709661922375,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -11684,8 +12462,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11722,7 +12500,7 @@
 						"x": 140,
 						"y": 346,
 						"width": 104.549973912826,
-						"height": 0.42223795978259204,
+						"height": 0.7551903161064502,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -11731,8 +12509,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11769,7 +12547,7 @@
 						"x": 140,
 						"y": 302,
 						"width": 101.64776885041499,
-						"height": 0.42223997269780966,
+						"height": 0.8034267345731791,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -11778,8 +12556,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11814,9 +12592,9 @@
 					"locked": false,
 					"world": {
 						"x": 140,
-						"y": 308,
+						"y": 307.61880778517303,
 						"width": 71.57037093088275,
-						"height": 0.42223795978259204,
+						"height": 0.8034301746095593,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -11825,8 +12603,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11880,8 +12658,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11927,8 +12705,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -11974,8 +12752,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12021,8 +12799,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12068,8 +12846,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12104,9 +12882,9 @@
 					"locked": false,
 					"world": {
 						"x": 881,
-						"y": 64,
+						"y": 63.621300942247586,
 						"width": 390.75796182277406,
-						"height": 0.3443061154116549,
+						"height": 0.7230051731640685,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12115,8 +12893,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12153,7 +12931,7 @@
 						"x": 881,
 						"y": 116,
 						"width": 133.9629858658866,
-						"height": 0.32552320090086084,
+						"height": 0.6157912451620575,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12162,8 +12940,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12200,7 +12978,7 @@
 						"x": 1147,
 						"y": 90,
 						"width": 124.9355653964252,
-						"height": 0.32552320090086084,
+						"height": 0.9060592894232542,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12209,8 +12987,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12245,9 +13023,9 @@
 					"locked": false,
 					"world": {
 						"x": 466,
-						"y": 233,
+						"y": 232.75191660293396,
 						"width": 52.291413481741984,
-						"height": 0.348816058562619,
+						"height": 0.5968994556286589,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12256,8 +13034,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12303,8 +13081,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12339,9 +13117,9 @@
 					"locked": false,
 					"world": {
 						"x": 399,
-						"y": 335,
+						"y": 334.5038332058679,
 						"width": 102.0542836349822,
-						"height": 0.42223795978259204,
+						"height": 1.4886374235712196,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12350,8 +13128,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12385,10 +13163,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 683,
+						"x": 682.6196944196656,
 						"y": 385,
-						"width": 177.91703047182568,
-						"height": 0.32552320090086084,
+						"width": 178.29733605216006,
+						"height": 1.028176787349068,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12397,8 +13175,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12432,10 +13210,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 657.5343984237165,
-						"y": 335.8314144304828,
-						"width": 173.35543460873862,
-						"height": 0.4941087704180376,
+						"x": 511.1963207302324,
+						"y": 335.8782052625818,
+						"width": 321.5530600145495,
+						"height": 1.0587662249847511,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12444,8 +13222,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12482,7 +13260,7 @@
 						"x": 385,
 						"y": 385,
 						"width": 145.4812366362529,
-						"height": 0.32552320090086084,
+						"height": 1.0697627455044625,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12491,8 +13269,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12529,7 +13307,7 @@
 						"x": 398.8213954670177,
 						"y": 286,
 						"width": 139.95334825404592,
-						"height": 0.42223795978259204,
+						"height": 1.1664846021158723,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12538,8 +13316,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12585,8 +13363,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12623,7 +13401,7 @@
 						"x": 112,
 						"y": 189,
 						"width": 735.409688031727,
-						"height": 0.348816058562619,
+						"height": 0.6121261705341396,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12632,8 +13410,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12679,8 +13457,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12717,7 +13495,7 @@
 						"x": 131.63172769085702,
 						"y": 80.10764305371174,
 						"width": 6.457199822455593,
-						"height": 0.348816058562619,
+						"height": 0.9204831342085242,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -12726,8 +13504,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12773,8 +13551,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12820,8 +13598,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -12867,8 +13645,8 @@
 							1,
 							1
 						],
-						"angle": 5.238020702804001,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.238020702804001
 					}
 				},
 				{
@@ -12914,8 +13692,8 @@
 							1,
 							1
 						],
-						"angle": 5.3927469377988855,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.3927469377988855
 					}
 				},
 				{
@@ -12961,8 +13739,8 @@
 							1,
 							1
 						],
-						"angle": 5.255625887030933,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.255625887030933
 					}
 				},
 				{
@@ -13016,8 +13794,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -13063,8 +13841,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -13110,8 +13888,8 @@
 							1,
 							1
 						],
-						"angle": 2.030602852672724,
-						"zElevation": 0
+						"z": 0,
+						"angle": 2.030602852672724
 					}
 				},
 				{
@@ -13157,8 +13935,8 @@
 							1,
 							1
 						],
-						"angle": 2.056071652009894,
-						"zElevation": 0
+						"z": 0,
+						"angle": 2.056071652009894
 					}
 				},
 				{
@@ -13204,8 +13982,8 @@
 							1,
 							1
 						],
-						"angle": 2.1294668070078044,
-						"zElevation": 0
+						"z": 0,
+						"angle": 2.1294668070078044
 					}
 				},
 				{
@@ -13259,8 +14037,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -13297,7 +14075,7 @@
 						"x": 986.9862066161215,
 						"y": 118.29725582327438,
 						"width": 31.70759441107589,
-						"height": 0.32552320090086084,
+						"height": 0.47065929919226335,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -13306,8 +14084,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -13353,8 +14131,8 @@
 							1,
 							1
 						],
-						"angle": 5.239503732318223,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.239503732318223
 					}
 				},
 				{
@@ -13400,8 +14178,8 @@
 							1,
 							1
 						],
-						"angle": 5.239503732318223,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.239503732318223
 					}
 				},
 				{
@@ -13447,8 +14225,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -13494,8 +14272,8 @@
 							1,
 							1
 						],
-						"angle": 1.5707963267948966,
-						"zElevation": 0
+						"z": 0,
+						"angle": 1.5707963267948966
 					}
 				},
 				{
@@ -13541,8 +14319,8 @@
 							1,
 							1
 						],
-						"angle": 5.239503732318223,
-						"zElevation": 0
+						"z": 0,
+						"angle": 5.239503732318223
 					}
 				},
 				{
@@ -13588,8 +14366,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -13635,8 +14413,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -13682,8 +14460,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -13729,8 +14507,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -13776,8 +14554,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -13813,7 +14591,7 @@
 					"world": {
 						"x": 1146.999943736398,
 						"y": 90.186869928007,
-						"width": 0.4887966775939958,
+						"width": 0.924200820146666,
 						"height": 6.618209362898099,
 						"originX": 0,
 						"originY": 0,
@@ -13823,8 +14601,149 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteBackground",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1981,
+					"sid": 433712594982623,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 433712594982623,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 74.1206674097188,
+						"y": 206.30805147601242,
+						"width": 0.7761421166084332,
+						"height": 56.700141812383606,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteBackground",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1982,
+					"sid": 713993968786993,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 713993968786993,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 64.0335389767995,
+						"y": 177.38309153196175,
+						"width": 0.7761421166084332,
+						"height": 85.58601772679205,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteBackground",
+					"properties": {
+						"initially-visible": true,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1983,
+					"sid": 645763697546078,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 645763697546078,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 3.1908757243576815,
+						"y": 177.38315522654372,
+						"width": 0.6365953908068178,
+						"height": 85.58601772679205,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -13846,6 +14765,149 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Tutorial Texts",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "ColorShardTxt",
+					"properties": {
+						"text": "Shade shards like this can change your shade",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 2,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 1742,
+					"sid": 906143053374865,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 906143053374865,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1148.4679942354182,
+						"y": 115.89609717674611,
+						"width": 57.765377099678176,
+						"height": 2.834561025091162,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "SPACEobjects",
+					"properties": {
+						"text": "Press SPACE to interact with objects",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 4,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 176,
+					"sid": 987974762987448,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 987974762987448,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 673.074925692336,
+						"y": 72.54516069436522,
+						"width": 89.37793791891272,
+						"height": 9.027462958183307,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				}
+			],
+			"sid": 755092928548444,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -13862,6 +14924,43 @@
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
+				{
+					"type": "Spawn2",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1933,
+					"sid": 210598625802416,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 210598625802416,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 163.86150444693212,
+						"y": 112.20628386739955,
+						"width": 6.1627673345654586,
+						"height": 5.4650927057127205,
+						"originX": 0.4666666666666667,
+						"originY": 0.5333333333333333,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
 				{
 					"type": "ColorChangerWhite",
 					"properties": {
@@ -13895,8 +14994,8 @@
 							1,
 							1
 						],
-						"angle": 4.713576876743349,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.713576876743349
 					}
 				},
 				{
@@ -13932,8 +15031,8 @@
 							1,
 							1
 						],
-						"angle": 4.713576876743349,
-						"zElevation": 0
+						"z": 0,
+						"angle": 4.713576876743349
 					}
 				},
 				{
@@ -13969,8 +15068,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -14006,8 +15105,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -14043,8 +15142,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -14065,7 +15164,8 @@
 						"WallJump": 0,
 						"ColorSwitch": 0,
 						"Black": false,
-						"White": false
+						"White": false,
+						"ConstantJump": false
 					},
 					"behaviors": {
 						"Platform": {
@@ -14090,8 +15190,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 163,
-						"y": 111,
+						"x": 164.20430491171598,
+						"y": 111.82398680171232,
 						"width": 7.167333715891343,
 						"height": 9.062624386962101,
 						"originX": 0.4742268041237113,
@@ -14102,8 +15202,118 @@
 							1,
 							1
 						],
-						"angle": 6.282321418028263,
-						"zElevation": 0
+						"z": 0,
+						"angle": 6.282321418028263
+					}
+				},
+				{
+					"type": "TextBox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1927,
+					"sid": 544383147662519,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-bottom",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 544383147662519,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 50.098206064292306,
+						"y": 458.6593695156989,
+						"width": 67.56056783168383,
+						"height": 18.836160882555646,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "NothingFoundTxt",
+					"properties": {
+						"text": "* Nothing found",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 4,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": false,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 1926,
+					"sid": 395496987428867,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-bottom",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 395496987428867,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 23.12972975695888,
+						"y": 455.32265819595307,
+						"width": 38.789886525858975,
+						"height": 7.712544264124745,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -14125,6 +15335,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -14184,8 +15395,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -14207,6 +15418,7 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -14219,7 +15431,7 @@
 			"global": false
 		},
 		{
-			"name": "Upgrade Sign & Text",
+			"name": "Upgrade Sign & Lab Note",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
@@ -14256,8 +15468,8 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
@@ -14309,98 +15521,10 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
-				{
-					"type": "SPACEobjects",
-					"properties": {
-						"text": "Press SPACE to interact with objects",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 4,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 176,
-					"sid": 987974762987448,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 987974762987448,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 673.074925692336,
-						"y": 72.54516069436522,
-						"width": 89.37793791891272,
-						"height": 9.027462958183307,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				}
-			],
-			"sid": 171423124302959,
-			"effectTypes": [],
-			"isInitiallyVisible": true,
-			"isInitiallyInteractive": true,
-			"isHTMLElementsLayer": false,
-			"color": [
-				1,
-				1,
-				1,
-				1
-			],
-			"backgroundColor": [
-				0.3686274509803922,
-				0.3686274509803922,
-				0.3686274509803922,
-				1
-			],
-			"isTransparent": true,
-			"parallaxX": 1,
-			"parallaxY": 1,
-			"scaleRate": 1,
-			"forceOwnTexture": false,
-			"renderingMode": "3d",
-			"drawOrder": "z-order",
-			"useRenderCells": false,
-			"blendMode": "normal",
-			"zElevation": 0,
-			"global": false
-		},
-		{
-			"name": "Note & Text",
-			"overriden": 0,
-			"subLayers": [],
-			"instances": [
 				{
 					"type": "UpgradeScreen",
 					"properties": {
@@ -14422,10 +15546,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 165.944942723233,
-						"y": 326.0775776885779,
+						"x": 166.19728383414474,
+						"y": 327.9842530056418,
 						"width": 67.66515255409467,
-						"height": 33.43070769798112,
+						"height": 42.4920475898121,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -14434,18 +15558,18 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				},
 				{
 					"type": "NoteInTable1",
 					"properties": {
-						"text": "Philip Jinbu                                                           February 1st- A color changing cloak made with light fibers drenched in chromatophores. \nFifty cuttlefish had to be extracted for the suits  creatiing A willing participant for are clinical trials will be Alex Jinbu.                  ",
+						"text": "Philip Jinbu                                                           February 1st- A color changing cloak made with light fibers drenched in chromatophores. \nFifty cuttlefish had to be extracted for the suits  creation A willing participant for are the clinical  trials will be Alex Jinbu.                  ",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 2,
-						"line-height": -2,
+						"line-height": 0,
 						"bold": false,
 						"italic": false,
 						"color": [
@@ -14477,8 +15601,8 @@
 					"world": {
 						"x": 138.2935650855564,
 						"y": 298.2341614386611,
-						"width": 56.77079461379421,
-						"height": 54.70839244004563,
+						"width": 56.33824851028098,
+						"height": 59.27003721633744,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -14487,61 +15611,91 @@
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
-				},
+				}
+			],
+			"sid": 171423124302959,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"sampling": "auto",
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Level Title (Breached Complex)",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
 				{
-					"type": "ColorShardTxt",
+					"type": "LayoutTitle1",
 					"properties": {
-						"text": "Shade shards like this can change your shade",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 2,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 1742,
-					"sid": 906143053374865,
+					"uid": 1698,
+					"sid": 726539105364020,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-right",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
 					"instanceFolderItem": {
-						"sid": 906143053374865,
+						"sid": 726539105364020,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1148.4679942354182,
-						"y": 115.89609717674611,
-						"width": 57.765377099678176,
-						"height": 2.834561025091162,
-						"originX": 0,
-						"originY": 0,
+						"x": 743.4363456909996,
+						"y": 15.765920020861241,
+						"width": 101.78485086948706,
+						"height": 19.445598996008727,
+						"originX": 0.5112107623318386,
+						"originY": 0.5128205128205128,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
@@ -14563,6 +15717,189 @@
 				1
 			],
 			"isTransparent": true,
+			"sampling": "auto",
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "EnemyLayer",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "ShadowEnemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 64,
+					"sid": 353937748561218,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 20,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 40,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 353937748561218,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 475.4765556815157,
+						"y": 374.582693545685,
+						"width": 27.040266366699257,
+						"height": 20.358742935294543,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 6.277367471988643
+					}
+				},
+				{
+					"type": "HitboxRight",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1976,
+					"sid": 844825505335309,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 844825505335309,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 528.7483707831032,
+						"y": 356.4573747438011,
+						"width": 4.472151767269565,
+						"height": 28.498318329518227,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "HitboxLeft",
+					"properties": {
+						"initially-visible": false,
+						"origin": "top-left",
+						"wrap-horizontal": "repeat",
+						"wrap-vertical": "repeat",
+						"image-offset-x": 0,
+						"image-offset-y": 0,
+						"image-scale-x": 1,
+						"image-scale-y": 1,
+						"image-angle": 0,
+						"enable-tile-randomization": false,
+						"x-random": 1,
+						"y-random": 1,
+						"angle-random": 1,
+						"blend-margin-x": 0.1,
+						"blend-margin-y": 0.1
+					},
+					"uid": 1977,
+					"sid": 283121276528872,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 283121276528872,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 419.1816771872027,
+						"y": 355.90749615519854,
+						"width": 3.75544058569011,
+						"height": 28.573258142960256,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				}
+			],
+			"sid": 388704480223574,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"sampling": "auto",
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
@@ -14586,7 +15923,7 @@
 			"effectId": "blacknwhite",
 			"name": "BlackWhite",
 			"instance": {
-				"isEnabled": false,
+				"isEnabled": true,
 				"parameters": {
 					"threshold": 0.5
 				}
@@ -14596,6 +15933,7 @@
 	"width": 1700,
 	"height": 1000,
 	"unboundedScrolling": false,
+	"sampling": "auto",
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
