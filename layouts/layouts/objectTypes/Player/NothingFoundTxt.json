@@ -1,0 +1,16 @@
+{
+	"name": "NothingFoundTxt",
+	"plugin-id": "Text",
+	"sid": 488698868722914,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 968156975154604
+		}
+	],
+	"effectTypes": []
+}

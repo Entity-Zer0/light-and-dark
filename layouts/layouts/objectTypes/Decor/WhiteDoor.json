@@ -27,7 +27,32 @@
 					}
 				],
 				"sid": 524773784776019,
-				"name": "Animation 1",
+				"name": "Door",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 50,
+						"height": 75,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7718169,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 999254215676615,
+				"name": "Highlight",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
