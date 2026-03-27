@@ -5405,34 +5405,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-landed",
-							"objectClass": "Player",
-							"sid": 909354632489895,
-							"behaviorType": "Platform"
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 532202915137155,
-							"parameters": {
-								"audio-file": {
-									"path": "Landing SFX"
-								},
-								"loop": "not-looping",
-								"volume": "1",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
-						}
-					],
-					"sid": 744593919953519
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "is-flipped",
 							"objectClass": "BlackLightSwitch",
 							"sid": 979421169774543
@@ -5461,9 +5433,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-jumping",
+							"id": "on-jump",
 							"objectClass": "Player",
-							"sid": 225947937597530,
+							"sid": 891965669493805,
 							"behaviorType": "Platform"
 						}
 					],
@@ -5471,10 +5443,10 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 916426939593871,
+							"sid": 413519335437233,
 							"parameters": {
 								"audio-file": {
-									"path": "Jump"
+									"path": "Jump (1)"
 								},
 								"loop": "not-looping",
 								"volume": "0",
@@ -5483,7 +5455,35 @@
 							}
 						}
 					],
-					"sid": 929745296068560
+					"sid": 311840130376875
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "Player",
+							"sid": 289839992118732,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 522789970550614,
+							"parameters": {
+								"audio-file": {
+									"path": "Landing SFX"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 332758317865690
 				}
 			],
 			"sid": 896922991434917
