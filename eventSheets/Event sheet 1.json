@@ -5133,10 +5133,10 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 513791768778808,
+							"sid": 169110722226966,
 							"parameters": {
 								"audio-file": {
-									"path": "City rooftop theme - 2_13_26, 9.37 AM"
+									"path": "City rooftop theme V2"
 								},
 								"loop": "looping",
 								"volume": "-20",
@@ -5245,15 +5245,15 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 498262409897252,
+							"sid": 800134870451157,
 							"parameters": {
 								"audio-file": {
 									"path": "Finial stage 2"
 								},
 								"loop": "looping",
-								"volume": "0",
+								"volume": "-20",
 								"stereo-pan": "0",
-								"tag-optional": "\"\""
+								"tag-optional": "\"Music\""
 							}
 						}
 					],
@@ -5400,6 +5400,90 @@
 						}
 					],
 					"sid": 703880613072478
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "Player",
+							"sid": 909354632489895,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 532202915137155,
+							"parameters": {
+								"audio-file": {
+									"path": "Landing SFX"
+								},
+								"loop": "not-looping",
+								"volume": "1",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 744593919953519
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-flipped",
+							"objectClass": "BlackLightSwitch",
+							"sid": 979421169774543
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 948537255611535,
+							"parameters": {
+								"audio-file": {
+									"path": "Light Swicth FX"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 728306447388563,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-jumping",
+							"objectClass": "Player",
+							"sid": 225947937597530,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 916426939593871,
+							"parameters": {
+								"audio-file": {
+									"path": "Jump"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 929745296068560
 				}
 			],
 			"sid": 896922991434917
@@ -9243,6 +9327,20 @@
 										"animation": "\"Off\"",
 										"from": "beginning"
 									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 319028501746684,
+									"parameters": {
+										"audio-file": {
+											"path": "Light Swicth FX"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
 								}
 							],
 							"sid": 546834894053527
@@ -9292,6 +9390,20 @@
 									"parameters": {
 										"animation": "\"On\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 967794316647776,
+									"parameters": {
+										"audio-file": {
+											"path": "Light Swicth FX"
+										},
+										"loop": "not-looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
