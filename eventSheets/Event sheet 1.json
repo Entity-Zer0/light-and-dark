@@ -5073,6 +5073,20 @@
 								"stereo-pan": "0",
 								"tag-optional": "\"Music\""
 							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 167670882905182,
+							"parameters": {
+								"audio-file": {
+									"path": "Glass SFX"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
 						}
 					],
 					"sid": 747385423225178
@@ -5188,6 +5202,118 @@
 						}
 					],
 					"sid": 538929124378252
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 247374997691513
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 466556421917264,
+							"parameters": {
+								"variable": "Music",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 184813010579405,
+							"parameters": {
+								"tag": "\"Music\"",
+								"db": "-100",
+								"duration": "1",
+								"ending": "stop"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 737185381184561,
+							"parameters": {
+								"tag": "\"Music\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 498262409897252,
+							"parameters": {
+								"audio-file": {
+									"path": "Finial stage 2"
+								},
+								"loop": "looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						}
+					],
+					"sid": 226552650997439
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 103496321762847
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 717666348269345,
+							"parameters": {
+								"variable": "Music",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 405016090719277,
+							"parameters": {
+								"tag": "\"Music\"",
+								"db": "-100",
+								"duration": "1",
+								"ending": "stop"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 976919649893978,
+							"parameters": {
+								"tag": "\"Music\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 279570912755457,
+							"parameters": {
+								"audio-file": {
+									"path": "Ending theme"
+								},
+								"loop": "not-looping",
+								"volume": "-20",
+								"stereo-pan": "0",
+								"tag-optional": "\"Music\""
+							}
+						}
+					],
+					"sid": 687850679975817
 				},
 				{
 					"eventType": "block",
