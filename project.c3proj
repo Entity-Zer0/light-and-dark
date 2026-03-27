@@ -417,6 +417,30 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "City rooftop theme V2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 359009118470946,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Landing SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 123426663417668,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Jump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 285710608598249,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
