@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "WallJump",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -19,7 +19,7 @@
 			"eventType": "variable",
 			"name": "ColorSwitch",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -2863,15 +2863,6 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Player",
-									"sid": 138602847483604,
-									"parameters": {
-										"instance-variable": "IsWallJumpRight"
-									},
-									"isInverted": true
-								},
-								{
 									"id": "is-by-wall",
 									"objectClass": "Player",
 									"sid": 628703873885109,
@@ -2922,24 +2913,6 @@
 										}
 									],
 									"actions": [
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Player",
-											"sid": 586254377044930,
-											"parameters": {
-												"instance-variable": "IsWallJumpLeft",
-												"value": "false"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Player",
-											"sid": 560376435986036,
-											"parameters": {
-												"instance-variable": "IsWallJumpRight",
-												"value": "true"
-											}
-										},
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
@@ -2993,24 +2966,6 @@
 											"parameters": {
 												"max-fall-speed": "200"
 											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Player",
-											"sid": 635784798457103,
-											"parameters": {
-												"instance-variable": "IsWallJumpLeft",
-												"value": "true"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Player",
-											"sid": 280309787888596,
-											"parameters": {
-												"instance-variable": "IsWallJumpRight",
-												"value": "false"
-											}
 										}
 									],
 									"sid": 106454034316978,
@@ -3021,15 +2976,6 @@
 						{
 							"eventType": "block",
 							"conditions": [
-								{
-									"id": "is-boolean-instance-variable-set",
-									"objectClass": "Player",
-									"sid": 298514165076888,
-									"parameters": {
-										"instance-variable": "IsWallJumpLeft"
-									},
-									"isInverted": true
-								},
 								{
 									"id": "is-by-wall",
 									"objectClass": "Player",
@@ -3081,24 +3027,6 @@
 										}
 									],
 									"actions": [
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Player",
-											"sid": 424630678625894,
-											"parameters": {
-												"instance-variable": "IsWallJumpLeft",
-												"value": "true"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Player",
-											"sid": 865998912860603,
-											"parameters": {
-												"instance-variable": "IsWallJumpRight",
-												"value": "false"
-											}
-										},
 										{
 											"id": "set-eventvar-value",
 											"objectClass": "System",
@@ -3152,30 +3080,208 @@
 											"parameters": {
 												"max-fall-speed": "200"
 											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Player",
-											"sid": 897925994967484,
-											"parameters": {
-												"instance-variable": "IsWallJumpLeft",
-												"value": "false"
-											}
-										},
-										{
-											"id": "set-boolean-instvar",
-											"objectClass": "Player",
-											"sid": 395160253710704,
-											"parameters": {
-												"instance-variable": "IsWallJumpRight",
-												"value": "true"
-											}
 										}
 									],
 									"sid": 449883760064148,
 									"isOrBlock": true
 								}
 							]
+						},
+						{
+							"eventType": "comment",
+							"text": "Wall Jump Slide"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 672090179735894,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "right"
+									}
+								},
+								{
+									"id": "is-on-floor",
+									"objectClass": "Player",
+									"sid": 432091342578750,
+									"behaviorType": "Platform",
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 901594005953813,
+									"parameters": {
+										"instance-variable": "WallJump",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 620561965111306,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "WallJump",
+									"sid": 200974081419430,
+									"parameters": {
+										"animation": "\"Able\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-max-fall-speed",
+									"objectClass": "Player",
+									"sid": 655835522187854,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-fall-speed": "85"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Player",
+									"sid": 769887265477263,
+									"parameters": {
+										"state": "mirrored"
+									}
+								}
+							],
+							"sid": 767176282266501
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-by-wall",
+									"objectClass": "Player",
+									"sid": 246056134486569,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "left"
+									}
+								},
+								{
+									"id": "is-on-floor",
+									"objectClass": "Player",
+									"sid": 651837612468183,
+									"behaviorType": "Platform",
+									"isInverted": true
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "Player",
+									"sid": 357983820983319,
+									"parameters": {
+										"instance-variable": "WallJump",
+										"comparison": 0,
+										"value": "1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 328236347936377,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "WallJump",
+									"sid": 963095365209668,
+									"parameters": {
+										"animation": "\"Able\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-max-fall-speed",
+									"objectClass": "Player",
+									"sid": 407852460823587,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-fall-speed": "85"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "Player",
+									"sid": 857713827970592,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 309421474922269
+						},
+						{
+							"eventType": "comment",
+							"text": "Wall Jump Resetting"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-floor",
+									"objectClass": "Player",
+									"sid": 110092832710134,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "WallJump",
+									"sid": 158530432253606,
+									"parameters": {
+										"animation": "\"NotAble\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 322769482709668,
+									"parameters": {
+										"instance-variable": "IsWallJumpLeft",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 867855223540299,
+									"parameters": {
+										"instance-variable": "IsWallJumpRight",
+										"value": "false"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 554113059094594,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 802459529985355
 						},
 						{
 							"eventType": "block",
@@ -3210,6 +3316,24 @@
 							],
 							"actions": [
 								{
+									"id": "set-animation",
+									"objectClass": "WallJump",
+									"sid": 682010406534153,
+									"parameters": {
+										"animation": "\"NotAble\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-max-fall-speed",
+									"objectClass": "Player",
+									"sid": 956436382318210,
+									"behaviorType": "Platform",
+									"parameters": {
+										"max-fall-speed": "300"
+									}
+								},
+								{
 									"id": "set-boolean-instvar",
 									"objectClass": "Player",
 									"sid": 880617302574105,
@@ -3238,38 +3362,6 @@
 								}
 							],
 							"sid": 864795160907219
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "is-on-floor",
-									"objectClass": "Player",
-									"sid": 178797018102178,
-									"behaviorType": "Platform"
-								}
-							],
-							"actions": [
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Player",
-									"sid": 296433325041617,
-									"parameters": {
-										"instance-variable": "IsWallJumpLeft",
-										"value": "false"
-									}
-								},
-								{
-									"id": "set-boolean-instvar",
-									"objectClass": "Player",
-									"sid": 554448178973319,
-									"parameters": {
-										"instance-variable": "IsWallJumpRight",
-										"value": "false"
-									}
-								}
-							],
-							"sid": 432562234269401
 						}
 					],
 					"sid": 970745345337742
@@ -3420,12 +3512,28 @@
 									],
 									"actions": [
 										{
+											"id": "rotate-clockwise",
+											"objectClass": "ShadeSwitch",
+											"sid": 945311284888945,
+											"parameters": {
+												"degrees": "90"
+											}
+										},
+										{
 											"id": "wait",
 											"objectClass": "System",
 											"sid": 252617482201320,
 											"parameters": {
 												"seconds": "0.2",
 												"use-timescale": true
+											}
+										},
+										{
+											"id": "rotate-clockwise",
+											"objectClass": "ShadeSwitch",
+											"sid": 396718594908106,
+											"parameters": {
+												"degrees": "90"
 											}
 										},
 										{
@@ -3501,12 +3609,28 @@
 									],
 									"actions": [
 										{
+											"id": "rotate-clockwise",
+											"objectClass": "ShadeSwitch",
+											"sid": 814350599510890,
+											"parameters": {
+												"degrees": "90"
+											}
+										},
+										{
 											"id": "wait",
 											"objectClass": "System",
 											"sid": 573454317853796,
 											"parameters": {
 												"seconds": "0.2",
 												"use-timescale": true
+											}
+										},
+										{
+											"id": "rotate-clockwise",
+											"objectClass": "ShadeSwitch",
+											"sid": 785756278712064,
+											"parameters": {
+												"degrees": "90"
 											}
 										},
 										{
@@ -4142,41 +4266,105 @@
 							"isOrBlock": true
 						},
 						{
+							"eventType": "comment",
+							"text": "Continous Jump and Sustain For W Key"
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "is-by-wall",
-									"objectClass": "Player",
-									"sid": 406255229374552,
-									"behaviorType": "Platform",
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 950775387411504,
 									"parameters": {
-										"side": "right"
-									},
-									"isInverted": true
-								},
+										"key": 87
+									}
+								}
+							],
+							"actions": [
 								{
-									"id": "is-by-wall",
+									"id": "set-boolean-instvar",
 									"objectClass": "Player",
-									"sid": 275513551088028,
-									"behaviorType": "Platform",
+									"sid": 222531006643739,
 									"parameters": {
-										"side": "left"
-									},
-									"isInverted": true
+										"instance-variable": "ConstantJump",
+										"value": "true"
+									}
+								}
+							],
+							"sid": 581538148387768,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-key-released",
+									"objectClass": "Keyboard",
+									"sid": 956786093306097,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-boolean-instvar",
+									"objectClass": "Player",
+									"sid": 587707233982328,
+									"parameters": {
+										"instance-variable": "ConstantJump",
+										"value": "false"
+									}
+								}
+							],
+							"sid": 507622320425110,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 222338317743497
 								}
 							],
 							"actions": [],
-							"sid": 629443815988627,
+							"sid": 327948916538026,
 							"children": [
 								{
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "key-is-down",
-											"objectClass": "Keyboard",
-											"sid": 631886464452230,
+											"id": "is-falling",
+											"objectClass": "Player",
+											"sid": 929812226653912,
+											"behaviorType": "Platform"
+										}
+									],
+									"actions": [
+										{
+											"id": "set-boolean-instvar",
+											"objectClass": "Player",
+											"sid": 267653938618905,
 											"parameters": {
-												"key": 87
+												"instance-variable": "ConstantJump",
+												"value": "false"
+											}
+										}
+									],
+									"sid": 786386711832780
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-boolean-instance-variable-set",
+											"objectClass": "Player",
+											"sid": 462078538050432,
+											"parameters": {
+												"instance-variable": "ConstantJump"
 											}
 										}
 									],
@@ -4184,17 +4372,48 @@
 										{
 											"id": "simulate-control",
 											"objectClass": "Player",
-											"sid": 171860200600644,
+											"sid": 446799207730688,
 											"behaviorType": "Platform",
 											"parameters": {
 												"control": "jump"
 											}
 										}
 									],
-									"sid": 561977349201055,
-									"isOrBlock": true
+									"sid": 958494949703613
 								}
-							]
+							],
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-landed",
+									"objectClass": "Player",
+									"sid": 317996042944996,
+									"behaviorType": "Platform"
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 591324454739207,
+									"parameters": {
+										"key": 87
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Player",
+									"sid": 710687210252417,
+									"behaviorType": "Platform",
+									"parameters": {
+										"control": "jump"
+									}
+								}
+							],
+							"sid": 823208083125148
 						}
 					],
 					"sid": 447217960186012
@@ -7795,6 +8014,14 @@
 												"instance-variable": "WallJump",
 												"value": "1"
 											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "WallJump",
+											"sid": 584087931089220,
+											"parameters": {
+												"visibility": "visible"
+											}
 										}
 									],
 									"sid": 519236431134856
@@ -8053,6 +8280,14 @@
 											"parameters": {
 												"instance-variable": "ColorSwitch",
 												"value": "1"
+											}
+										},
+										{
+											"id": "set-visible",
+											"objectClass": "ShadeSwitch",
+											"sid": 564796879993208,
+											"parameters": {
+												"visibility": "visible"
 											}
 										}
 									],
@@ -8603,8 +8838,8 @@
 									"actions": [
 										{
 											"id": "set-position-to-another-object",
-											"objectClass": "Spawn",
-											"sid": 190579677994553,
+											"objectClass": "Spawn2",
+											"sid": 450610224787921,
 											"parameters": {
 												"object": "Checkpoint",
 												"image-point-optional": "0"
@@ -8654,8 +8889,8 @@
 									"actions": [
 										{
 											"id": "set-position-to-another-object",
-											"objectClass": "Spawn",
-											"sid": 423804567863391,
+											"objectClass": "Spawn2",
+											"sid": 796857317908098,
 											"parameters": {
 												"object": "ColorChangerWhite",
 												"image-point-optional": "0"
@@ -8713,8 +8948,8 @@
 									"actions": [
 										{
 											"id": "set-position-to-another-object",
-											"objectClass": "Spawn",
-											"sid": 250057759460570,
+											"objectClass": "Spawn2",
+											"sid": 979466787909325,
 											"parameters": {
 												"object": "Checkpoint",
 												"image-point-optional": "0"
@@ -8772,8 +9007,8 @@
 									"actions": [
 										{
 											"id": "set-position-to-another-object",
-											"objectClass": "Spawn",
-											"sid": 852822759821973,
+											"objectClass": "Spawn2",
+											"sid": 179659926974042,
 											"parameters": {
 												"object": "Checkpoint",
 												"image-point-optional": "0"
@@ -8805,8 +9040,8 @@
 									"actions": [
 										{
 											"id": "set-position-to-another-object",
-											"objectClass": "Spawn",
-											"sid": 583043350008044,
+											"objectClass": "Spawn2",
+											"sid": 547617237577446,
 											"parameters": {
 												"object": "Checkpoint",
 												"image-point-optional": "0"
@@ -8838,8 +9073,8 @@
 									"actions": [
 										{
 											"id": "set-position-to-another-object",
-											"objectClass": "Spawn",
-											"sid": 632826944280781,
+											"objectClass": "Spawn2",
+											"sid": 978772428201811,
 											"parameters": {
 												"object": "Checkpoint",
 												"image-point-optional": "0"
@@ -13918,10 +14153,10 @@
 				{
 					"id": "set-max-fall-speed",
 					"objectClass": "Player",
-					"sid": 637485031265998,
+					"sid": 753475716635193,
 					"behaviorType": "Platform",
 					"parameters": {
-						"max-fall-speed": "400"
+						"max-fall-speed": " 300"
 					}
 				},
 				{

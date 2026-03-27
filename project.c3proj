@@ -215,7 +215,9 @@
 					"LayoutTitle2",
 					"LayoutTitle3",
 					"LayoutTitle4",
-					"Sprite5"
+					"Sprite5",
+					"ShadeSwitch",
+					"WallJump"
 				],
 				"subfolders": [],
 				"name": "Player"
