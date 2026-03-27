@@ -3588,43 +3588,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "BlackLampLights",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "BlackLights",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 425,
-					"sid": 728261277727672,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 728261277727672,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 38.368925522325966,
-						"y": 154.0841655974009,
-						"width": 48.19831153672804,
-						"height": 52.631757305563895,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
 					"type": "BlackLightAngled",
 					"properties": {
 						"initially-visible": true,
