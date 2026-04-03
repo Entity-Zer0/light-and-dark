@@ -7511,14 +7511,14 @@
 				{
 					"type": "WallJump",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "NotAble",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 245,
-					"sid": 303716951057449,
+					"uid": 55,
+					"sid": 706954239485164,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -7533,16 +7533,16 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 303716951057449,
+						"sid": 706954239485164,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 11.496890203531557,
-						"y": 13.33956409776687,
-						"width": 16.540522283724158,
-						"height": 16.405391712793122,
+						"x": 10.448234402916778,
+						"y": 11.869787793083692,
+						"width": 16.97907148757384,
+						"height": 16.892568941592764,
 						"originX": 0.4989648033126294,
 						"originY": 0.5,
 						"color": [
@@ -7564,8 +7564,8 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 250,
-					"sid": 473590855454819,
+					"uid": 888,
+					"sid": 904076695149068,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {
@@ -7580,17 +7580,17 @@
 						}
 					},
 					"instanceFolderItem": {
-						"sid": 473590855454819,
+						"sid": 904076695149068,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 29.22718860854704,
-						"y": 13.136868241370308,
-						"width": 16,
-						"height": 16,
-						"originX": 0.4892727044935343,
+						"x": 28.747290893082365,
+						"y": 11.998636991824188,
+						"width": 16.72050527531484,
+						"height": 15.927080000971456,
+						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -8201,7 +8201,18 @@
 				}
 			],
 			"sid": 666480709787282,
-			"effectTypes": [],
+			"effectTypes": [
+				{
+					"effectId": "blacknwhite",
+					"name": "BlackWhite",
+					"instance": {
+						"isEnabled": true,
+						"parameters": {
+							"threshold": 0.5
+						}
+					}
+				}
+			],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
 			"isHTMLElementsLayer": false,
@@ -8237,18 +8248,7 @@
 	},
 	"sid": 650982631644914,
 	"nonworld-instances": [],
-	"effectTypes": [
-		{
-			"effectId": "blacknwhite",
-			"name": "BlackWhite",
-			"instance": {
-				"isEnabled": true,
-				"parameters": {
-					"threshold": 0.5
-				}
-			}
-		}
-	],
+	"effectTypes": [],
 	"width": 3000,
 	"height": 1500,
 	"unboundedScrolling": false,

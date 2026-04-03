@@ -302,9 +302,32 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 187761348385837,
+							"sid": 255126051571522,
 							"parameters": {
-								"seconds": "4",
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 162428065293298,
+							"parameters": {
+								"audio-file": {
+									"path": "Glass SFX"
+								},
+								"loop": "not-looping",
+								"volume": "-15",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 348702760412895,
+							"parameters": {
+								"seconds": "2",
 								"use-timescale": true
 							}
 						},
@@ -354,6 +377,123 @@
 						}
 					],
 					"sid": 196606390042896
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 854918706293138,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 720430187597202,
+							"parameters": {
+								"variable": "Skip",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "SpaceSkipTxt",
+							"sid": 461643370352581,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "TextBox",
+							"sid": 499003495757780,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "StartAnimation",
+							"sid": 743765664633141,
+							"parameters": {
+								"frame-number": "24"
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 802743538311063,
+							"parameters": {
+								"audio-file": {
+									"path": "Glass SFX"
+								},
+								"loop": "not-looping",
+								"volume": "-15",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 713061041299910,
+							"parameters": {
+								"seconds": "2",
+								"use-timescale": true
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 912827828877437,
+							"parameters": {
+								"variable": "Skip",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 879242303819801,
+							"parameters": {
+								"variable": "Music",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 851018649615078,
+							"parameters": {
+								"variable": "IsBusy",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 797418665087230,
+							"parameters": {
+								"variable": "Reset",
+								"value": "1"
+							}
+						},
+						{
+							"id": "go-to-nextprevious-layout",
+							"objectClass": "System",
+							"sid": 408677223094178,
+							"parameters": {
+								"which": "next"
+							}
+						}
+					],
+					"sid": 845212361577896
 				},
 				{
 					"eventType": "block",
@@ -430,92 +570,6 @@
 						}
 					],
 					"sid": 254168539360720
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-key-pressed",
-							"objectClass": "Keyboard",
-							"sid": 501531046086478,
-							"parameters": {
-								"key": 32
-							}
-						},
-						{
-							"id": "compare-eventvar",
-							"objectClass": "System",
-							"sid": 712548655843373,
-							"parameters": {
-								"variable": "Skip",
-								"comparison": 0,
-								"value": "1"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-visible",
-							"objectClass": "SpaceSkipTxt",
-							"sid": 368834291379489,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "TextBox",
-							"sid": 424533774809777,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 703821093526884,
-							"parameters": {
-								"variable": "Skip",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 503470028929206,
-							"parameters": {
-								"variable": "Music",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 333258530993357,
-							"parameters": {
-								"variable": "IsBusy",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 789227249892315,
-							"parameters": {
-								"variable": "Reset",
-								"value": "1"
-							}
-						},
-						{
-							"id": "go-to-nextprevious-layout",
-							"objectClass": "System",
-							"sid": 846230248189031,
-							"parameters": {
-								"which": "next"
-							}
-						}
-					],
-					"sid": 586400641942951
 				},
 				{
 					"eventType": "block",
@@ -5292,20 +5346,6 @@
 								"stereo-pan": "0",
 								"tag-optional": "\"Music\""
 							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 167670882905182,
-							"parameters": {
-								"audio-file": {
-									"path": "Glass SFX"
-								},
-								"loop": "not-looping",
-								"volume": "0",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
 						}
 					],
 					"sid": 747385423225178
@@ -5515,20 +5555,6 @@
 							"sid": 976919649893978,
 							"parameters": {
 								"tag": "\"Music\""
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 279570912755457,
-							"parameters": {
-								"audio-file": {
-									"path": "Ending theme"
-								},
-								"loop": "not-looping",
-								"volume": "-20",
-								"stereo-pan": "0",
-								"tag-optional": "\"Music\""
 							}
 						}
 					],
@@ -9378,6 +9404,20 @@
 									"parameters": {
 										"variable": "Reset",
 										"value": "3"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 940981497196046,
+									"parameters": {
+										"audio-file": {
+											"path": "Glass SFX"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
 									}
 								},
 								{
