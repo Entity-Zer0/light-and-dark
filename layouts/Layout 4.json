@@ -34998,6 +34998,43 @@
 						"z": 0,
 						"angle": 0
 					}
+				},
+				{
+					"type": "Blue",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "BlackSpikes",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 542,
+					"sid": 439113270145354,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 439113270145354,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1767.7552221545088,
+						"y": 2382.6635444596313,
+						"width": 30.21444956664907,
+						"height": 21.405141834838204,
+						"originX": 0.5531914893617021,
+						"originY": 0.35,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 2.5419072654084722
+					}
 				}
 			],
 			"sid": 882911262302402,

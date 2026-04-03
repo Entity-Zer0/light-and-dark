@@ -5650,34 +5650,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-flipped",
-							"objectClass": "BlackLightSwitch",
-							"sid": 979421169774543
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 948537255611535,
-							"parameters": {
-								"audio-file": {
-									"path": "Light Swicth FX"
-								},
-								"loop": "not-looping",
-								"volume": "0",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
-						}
-					],
-					"sid": 728306447388563,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "on-jump",
 							"objectClass": "Player",
 							"sid": 891965669493805,
@@ -5688,47 +5660,19 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 413519335437233,
+							"sid": 223127904875687,
 							"parameters": {
 								"audio-file": {
 									"path": "Jump (1)"
 								},
 								"loop": "not-looping",
-								"volume": "0",
+								"volume": "-30",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
 						}
 					],
 					"sid": 311840130376875
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-landed",
-							"objectClass": "Player",
-							"sid": 289839992118732,
-							"behaviorType": "Platform"
-						}
-					],
-					"actions": [
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 522789970550614,
-							"parameters": {
-								"audio-file": {
-									"path": "Landing SFX"
-								},
-								"loop": "not-looping",
-								"volume": "0",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
-						}
-					],
-					"sid": 332758317865690
 				}
 			],
 			"sid": 896922991434917
@@ -8787,24 +8731,6 @@
 									],
 									"actions": [
 										{
-											"id": "set-position-to-another-object",
-											"objectClass": "Spawn",
-											"sid": 368569285716905,
-											"parameters": {
-												"object": "BlackFan",
-												"image-point-optional": "0"
-											}
-										},
-										{
-											"id": "set-position-to-another-object",
-											"objectClass": "BlackColorSpawn",
-											"sid": 698056729259164,
-											"parameters": {
-												"object": "Spawn",
-												"image-point-optional": "0"
-											}
-										},
-										{
 											"id": "set-group-active",
 											"objectClass": "System",
 											"sid": 723260092122963,
@@ -8838,6 +8764,24 @@
 											"parameters": {
 												"seconds": "0.2",
 												"use-timescale": true
+											}
+										},
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "Spawn2",
+											"sid": 229727647091079,
+											"parameters": {
+												"object": "BlackFan",
+												"image-point-optional": "0"
+											}
+										},
+										{
+											"id": "set-position-to-another-object",
+											"objectClass": "BlackColorSpawn",
+											"sid": 266535361029081,
+											"parameters": {
+												"object": "Spawn",
+												"image-point-optional": "0"
 											}
 										},
 										{
@@ -9606,13 +9550,13 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 319028501746684,
+									"sid": 971095557224735,
 									"parameters": {
 										"audio-file": {
 											"path": "Light Swicth FX"
 										},
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-20",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
@@ -9670,13 +9614,13 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 967794316647776,
+									"sid": 111095826536259,
 									"parameters": {
 										"audio-file": {
 											"path": "Light Swicth FX"
 										},
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-20",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
