@@ -5660,13 +5660,13 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 223127904875687,
+							"sid": 777740544092369,
 							"parameters": {
 								"audio-file": {
 									"path": "Jump (1)"
 								},
 								"loop": "not-looping",
-								"volume": "-30",
+								"volume": "-25",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
