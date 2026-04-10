@@ -451,6 +451,14 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "Wall Jump SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 648842907770295,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
@@ -485,6 +493,14 @@
 					"name": "City rooftop theme - 2_13_26, 9.37 AM.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 650232983985430,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Level 1 theme V2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 924884739784977,
 					"file-info": {
 						"purpose": "none"
 					}

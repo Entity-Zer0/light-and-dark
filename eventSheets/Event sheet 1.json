@@ -5899,9 +5899,9 @@
 										{
 											"id": "pick-by-unique-id",
 											"objectClass": "WhiteLampLights",
-											"sid": 181159597985054,
+											"sid": 409075280363089,
 											"parameters": {
-												"unique-id": "250"
+												"unique-id": "577"
 											}
 										}
 									],
@@ -6467,9 +6467,9 @@
 										{
 											"id": "pick-by-unique-id",
 											"objectClass": "WhiteLampLights",
-											"sid": 986073748518019,
+											"sid": 161257866766321,
 											"parameters": {
-												"unique-id": "250"
+												"unique-id": "577"
 											}
 										}
 									],
@@ -14187,9 +14187,9 @@
 				{
 					"id": "set-position-to-another-object",
 					"objectClass": "Player",
-					"sid": 220402096348255,
+					"sid": 324517772007505,
 					"parameters": {
-						"object": "Spawn",
+						"object": "Spawn2",
 						"image-point-optional": "0"
 					}
 				},
