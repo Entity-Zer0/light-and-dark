@@ -1153,6 +1153,49 @@
 					"isActiveOnStart": true,
 					"children": [
 						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "Player",
+									"sid": 891182263848301
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "Spawn",
+									"sid": 197568178513501
+								}
+							],
+							"sid": 416730963793587
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-destroyed",
+									"objectClass": "Player",
+									"sid": 746799018036075
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "Spawn2",
+									"sid": 473479797736410,
+									"parameters": {
+										"object": "Spawn",
+										"layer": "Spawn2.LayerName",
+										"image-point": "0",
+										"create-hierarchy": false,
+										"template-name": "\"\""
+									}
+								}
+							],
+							"sid": 338475312925747
+						},
+						{
 							"eventType": "group",
 							"disabled": false,
 							"title": "Spike and Enemy Deathtouch",
@@ -2201,13 +2244,13 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 331512852072773,
+									"sid": 119658307824329,
 									"parameters": {
 										"audio-file": {
 											"path": "Electric shock FX"
 										},
 										"loop": "not-looping",
-										"volume": "-40",
+										"volume": "-45",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
@@ -2427,13 +2470,13 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 540231744354954,
+									"sid": 412810035025464,
 									"parameters": {
 										"audio-file": {
 											"path": "Electric shock FX"
 										},
 										"loop": "not-looping",
-										"volume": "-40",
+										"volume": "-45",
 										"stereo-pan": "0",
 										"tag-optional": "\"\""
 									}
@@ -2565,74 +2608,6 @@
 								}
 							],
 							"sid": 307935997938297
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Player",
-									"sid": 622957622332894,
-									"parameters": {
-										"object": "ColorChangerBlack"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 279700408212852,
-									"parameters": {
-										"variable": "White",
-										"value": "0"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 732951213599795,
-									"parameters": {
-										"variable": "Black",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 528811736242822
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "on-collision-with-another-object",
-									"objectClass": "Player",
-									"sid": 849152464850818,
-									"parameters": {
-										"object": "ColorChangerWhite"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 522286698265062,
-									"parameters": {
-										"variable": "Black",
-										"value": "0"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 947748417961573,
-									"parameters": {
-										"variable": "White",
-										"value": "1"
-									}
-								}
-							],
-							"sid": 879741208062082
 						}
 					],
 					"sid": 327126743840666
@@ -2674,6 +2649,74 @@
 								}
 							],
 							"sid": 572637564359687
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 133795854934117,
+									"parameters": {
+										"object": "ColorChangerBlack"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 349980832095029,
+									"parameters": {
+										"variable": "White",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 562806625168053,
+									"parameters": {
+										"variable": "Black",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 350378256978773
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-collision-with-another-object",
+									"objectClass": "Player",
+									"sid": 393156220190604,
+									"parameters": {
+										"object": "ColorChangerWhite"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 413352114459627,
+									"parameters": {
+										"variable": "Black",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 444460485707481,
+									"parameters": {
+										"variable": "White",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 945737800412630
 						},
 						{
 							"eventType": "group",
@@ -2977,6 +3020,20 @@
 											}
 										},
 										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 315169470234757,
+											"parameters": {
+												"audio-file": {
+													"path": "Wall Jump SFX"
+												},
+												"loop": "not-looping",
+												"volume": "-35",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+										},
+										{
 											"id": "set-max-fall-speed",
 											"objectClass": "Player",
 											"sid": 124601279115238,
@@ -3088,6 +3145,20 @@
 											"parameters": {
 												"variable": "IsBusy",
 												"value": "0"
+											}
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 937013047689621,
+											"parameters": {
+												"audio-file": {
+													"path": "Wall Jump SFX"
+												},
+												"loop": "not-looping",
+												"volume": "-35",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
 											}
 										},
 										{
@@ -5392,13 +5463,13 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 169110722226966,
+							"sid": 560699263079199,
 							"parameters": {
 								"audio-file": {
 									"path": "City rooftop theme V2"
 								},
 								"loop": "looping",
-								"volume": "-20",
+								"volume": "-25",
 								"stereo-pan": "0",
 								"tag-optional": "\"Music\""
 							}
@@ -5660,13 +5731,13 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 777740544092369,
+							"sid": 994346825237270,
 							"parameters": {
 								"audio-file": {
-									"path": "Jump (1)"
+									"path": "Wall Jump SFX"
 								},
 								"loop": "not-looping",
-								"volume": "-25",
+								"volume": "-35",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
@@ -14266,49 +14337,6 @@
 				}
 			],
 			"sid": 519453194365882
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-created",
-					"objectClass": "Player",
-					"sid": 565636551618671
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Spawn",
-					"sid": 647866924974718
-				}
-			],
-			"sid": 685619710876320
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-destroyed",
-					"objectClass": "Player",
-					"sid": 525907622872079
-				}
-			],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "Spawn2",
-					"sid": 830538634278537,
-					"parameters": {
-						"object": "Spawn",
-						"layer": "Spawn2.LayerName",
-						"image-point": "0",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				}
-			],
-			"sid": 964484210786951
 		},
 		{
 			"eventType": "block",
