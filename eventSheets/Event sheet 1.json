@@ -5463,15 +5463,15 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 560699263079199,
+							"sid": 484792144628108,
 							"parameters": {
 								"audio-file": {
 									"path": "City rooftop theme V2"
 								},
-								"loop": "looping",
-								"volume": "-25",
+								"loop": "not-looping",
+								"volume": "0",
 								"stereo-pan": "0",
-								"tag-optional": "\"Music\""
+								"tag-optional": "\"\""
 							}
 						}
 					],
@@ -5626,6 +5626,20 @@
 							"sid": 976919649893978,
 							"parameters": {
 								"tag": "\"Music\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 282808771659088,
+							"parameters": {
+								"audio-file": {
+									"path": "Ending theme"
+								},
+								"loop": "not-looping",
+								"volume": "0",
+								"stereo-pan": "0",
+								"tag-optional": "\"\""
 							}
 						}
 					],

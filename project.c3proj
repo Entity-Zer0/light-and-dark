@@ -421,14 +421,6 @@
 					}
 				},
 				{
-					"name": "City rooftop theme V2.webm",
-					"type": "audio/webm; codecs=opus",
-					"sid": 359009118470946,
-					"file-info": {
-						"purpose": "none"
-					}
-				},
-				{
 					"name": "Landing SFX.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 123426663417668,
@@ -493,6 +485,14 @@
 					"name": "Level 1 theme V2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 924884739784977,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "City rooftop theme V2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 519948725814859,
 					"file-info": {
 						"purpose": "none"
 					}
