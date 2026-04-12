@@ -1298,10 +1298,10 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 391371556371310,
+													"sid": 720494304319051,
 													"parameters": {
 														"audio-file": {
-															"path": "Electric shock FX"
+															"path": "Death SFX"
 														},
 														"loop": "not-looping",
 														"volume": "-40",
@@ -2012,10 +2012,10 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 780291224993319,
+													"sid": 654851271317951,
 													"parameters": {
 														"audio-file": {
-															"path": "Electric shock FX"
+															"path": "Death SFX"
 														},
 														"loop": "not-looping",
 														"volume": "-40",

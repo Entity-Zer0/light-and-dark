@@ -451,6 +451,14 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "Death SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 588071655946509,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
@@ -493,6 +501,14 @@
 					"name": "City rooftop theme V2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 519948725814859,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "City rooftop theme - 2_13_26, 9.37 AM.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 854529185873822,
 					"file-info": {
 						"purpose": "none"
 					}
