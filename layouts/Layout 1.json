@@ -15738,7 +15738,11 @@
 					"type": "ShadowEnemy",
 					"properties": {
 						"initially-visible": true,
+<<<<<<< Updated upstream
 						"initial-animation": "Animation 1",
+=======
+						"initial-animation": "Idle",
+>>>>>>> Stashed changes
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false

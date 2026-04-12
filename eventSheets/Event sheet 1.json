@@ -3692,6 +3692,23 @@
 												"seconds": "0.5",
 												"use-timescale": true
 											}
+<<<<<<< Updated upstream
+=======
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 589287238890671,
+											"parameters": {
+												"audio-file": {
+													"path": "Wall Jump SFX"
+												},
+												"loop": "not-looping",
+												"volume": "0",
+												"stereo-pan": "0",
+												"tag-optional": "\"\""
+											}
+>>>>>>> Stashed changes
 										}
 									],
 									"sid": 184856421332579,
@@ -6020,10 +6037,10 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 361828190623812,
+							"sid": 662931842941252,
 							"parameters": {
 								"audio-file": {
-									"path": "Level 1 theme"
+									"path": "Level 1 theme V2"
 								},
 								"loop": "looping",
 								"volume": "-20",
@@ -6076,7 +6093,11 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
+<<<<<<< Updated upstream
 							"sid": 513791768778808,
+=======
+							"sid": 141808431711905,
+>>>>>>> Stashed changes
 							"parameters": {
 								"audio-file": {
 									"path": "City rooftop theme - 2_13_26, 9.37 AM"
@@ -6150,6 +6171,65 @@
 					"eventType": "block",
 					"conditions": [
 						{
+<<<<<<< Updated upstream
+=======
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 765269930584331
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 304874841893484,
+							"parameters": {
+								"variable": "Music",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "fade-volume",
+							"objectClass": "Audio",
+							"sid": 282355693993400,
+							"parameters": {
+								"tag": "\"Music\"",
+								"db": "-100",
+								"duration": "1",
+								"ending": "stop"
+							}
+						},
+						{
+							"id": "stop",
+							"objectClass": "Audio",
+							"sid": 296705038696284,
+							"parameters": {
+								"tag": "\"Music\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 938166350654197,
+							"parameters": {
+								"audio-file": {
+									"path": "Finial stage 2"
+								},
+								"loop": "looping",
+								"volume": "-20",
+								"stereo-pan": "0",
+								"tag-optional": "\"Music\""
+							}
+						}
+					],
+					"sid": 126173891341162
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+>>>>>>> Stashed changes
 							"id": "on-destroyed",
 							"objectClass": "Drone",
 							"sid": 873387003174507
