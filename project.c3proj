@@ -459,6 +459,22 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "Enemy SFX2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 522469673608652,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Enemy SFX 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 599071240411110,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []

@@ -5193,6 +5193,146 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "Enemy Sound Effect",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-animation-playing",
+									"objectClass": "ShadowEnemy",
+									"sid": 796618967786095,
+									"parameters": {
+										"animation": "\"Walking\""
+									}
+								},
+								{
+									"id": "is-animation-playing",
+									"objectClass": "WhiteEnemy",
+									"sid": 890350155818563,
+									"parameters": {
+										"animation": "\"Walking\""
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "ShadowEnemy",
+									"sid": 760092921746559
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "WhiteEnemy",
+									"sid": 420618656631701
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 805113639529259,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX 1"
+										},
+										"loop": "looping",
+										"volume": "0",
+										"stereo-pan": "0",
+										"tag-optional": "\"EnemySFX1Sound\""
+									}
+								}
+							],
+							"sid": 507092518641050
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 770850050189773
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "ShadowEnemy",
+									"sid": 173414869430571,
+									"parameters": {
+										"which": "nearest",
+										"x": "Player.X",
+										"y": "Player.Y",
+										"pick-all-tied": false
+									}
+								},
+								{
+									"id": "pick-nearestfurthest",
+									"objectClass": "WhiteEnemy",
+									"sid": 373445689499984,
+									"parameters": {
+										"which": "nearest",
+										"x": "Player.X",
+										"y": "Player.Y",
+										"pick-all-tied": false
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 738891164013681,
+									"parameters": {
+										"variable": "dist",
+										"value": "distance(Player.X, Player.Y, BlackLazer.X, BlackLazer.Y)"
+									}
+								},
+								{
+									"id": "set-volume",
+									"objectClass": "Audio",
+									"sid": 798001362316291,
+									"parameters": {
+										"tag": "\"EnemySFX1Sound\"",
+										"db": "lerp(-60, -13, clamp(1- dist/250, 0, 1))"
+									}
+								}
+							],
+							"sid": 610761859005606
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 233028025678035
+								}
+							],
+							"actions": [
+								{
+									"id": "set-listener-object",
+									"objectClass": "Audio",
+									"sid": 571542728055304,
+									"parameters": {
+										"object": "Player"
+									}
+								},
+								{
+									"id": "set-listener-z",
+									"objectClass": "Audio",
+									"sid": 834897605484784,
+									"parameters": {
+										"z": "0"
+									}
+								}
+							],
+							"sid": 518134354084995
+						}
+					],
+					"sid": 460647434598410
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "LazerSoundEffect",
 					"description": "",
 					"isActiveOnStart": true,
