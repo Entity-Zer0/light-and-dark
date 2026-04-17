@@ -206,6 +206,16 @@
 								"comparison": 0,
 								"value": "0"
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 680127077251925,
+							"parameters": {
+								"variable": "Layer",
+								"comparison": 0,
+								"value": "0"
+							}
 						}
 					],
 					"actions": [],
@@ -228,6 +238,7 @@
 									"id": "on-button-pressed",
 									"objectClass": "Gamepad",
 									"sid": 227936745931003,
+									"disabled": true,
 									"parameters": {
 										"gamepad": "0",
 										"button": "start-menu"
@@ -428,6 +439,16 @@
 								"comparison": 0,
 								"value": "1"
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 936843332466905,
+							"parameters": {
+								"variable": "Layer",
+								"comparison": 0,
+								"value": "0"
+							}
 						}
 					],
 					"actions": [],
@@ -448,6 +469,7 @@
 									"id": "on-button-pressed",
 									"objectClass": "Gamepad",
 									"sid": 482111859856102,
+									"disabled": true,
 									"parameters": {
 										"gamepad": "0",
 										"button": "button-b"
@@ -571,6 +593,16 @@
 							"parameters": {
 								"unique-id": "1961"
 							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 128344993543862,
+							"parameters": {
+								"variable": "Layer",
+								"comparison": 0,
+								"value": "0"
+							}
 						}
 					],
 					"actions": [],
@@ -593,6 +625,7 @@
 									"id": "on-button-pressed",
 									"objectClass": "Gamepad",
 									"sid": 140464138148114,
+									"disabled": true,
 									"parameters": {
 										"gamepad": "0",
 										"button": "start-menu"
@@ -706,6 +739,7 @@
 									"id": "on-button-pressed",
 									"objectClass": "Gamepad",
 									"sid": 893200130347886,
+									"disabled": true,
 									"parameters": {
 										"gamepad": "0",
 										"button": "back-view"
@@ -809,6 +843,16 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 927932520094894,
+							"parameters": {
+								"variable": "Layer",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
 							"id": "pick-by-unique-id",
 							"objectClass": "BlackBackground",
 							"sid": 379551764093184,
@@ -845,6 +889,7 @@
 									"id": "on-button-pressed",
 									"objectClass": "Gamepad",
 									"sid": 451946293759344,
+									"disabled": true,
 									"parameters": {
 										"gamepad": "0",
 										"button": "button-b"
@@ -994,6 +1039,7 @@
 									"id": "on-button-pressed",
 									"objectClass": "Gamepad",
 									"sid": 432891124127255,
+									"disabled": true,
 									"parameters": {
 										"gamepad": "0",
 										"button": "button-a"
@@ -1097,6 +1143,16 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 709629972495300,
+							"parameters": {
+								"variable": "Layer",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
 							"id": "pick-by-unique-id",
 							"objectClass": "BlackBackground",
 							"sid": 555741171779147,
@@ -1133,6 +1189,7 @@
 									"id": "on-button-pressed",
 									"objectClass": "Gamepad",
 									"sid": 893592192791415,
+									"disabled": true,
 									"parameters": {
 										"gamepad": "0",
 										"button": "button-b"
@@ -3173,6 +3230,7 @@
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
 											"sid": 414095772614355,
+											"disabled": true,
 											"parameters": {
 												"gamepad": "0",
 												"button": "button-x"
@@ -3310,6 +3368,7 @@
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
 											"sid": 738430221489098,
+											"disabled": true,
 											"parameters": {
 												"gamepad": "0",
 												"button": "button-x"
@@ -3817,6 +3876,7 @@
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
 											"sid": 398484563834241,
+											"disabled": true,
 											"parameters": {
 												"gamepad": "0",
 												"button": "right-shoulder-trigger"
@@ -3923,6 +3983,7 @@
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
 											"sid": 414225616990115,
+											"disabled": true,
 											"parameters": {
 												"gamepad": "0",
 												"button": "right-shoulder-trigger"
@@ -4046,6 +4107,7 @@
 													"id": "compare-axis",
 													"objectClass": "Gamepad",
 													"sid": 270386370248656,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"axis": "left-analog-x-axis",
@@ -4099,6 +4161,7 @@
 													"id": "compare-axis",
 													"objectClass": "Gamepad",
 													"sid": 278870739620589,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"axis": "left-analog-x-axis",
@@ -4181,6 +4244,7 @@
 													"id": "compare-axis",
 													"objectClass": "Gamepad",
 													"sid": 709129178834769,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"axis": "left-analog-x-axis",
@@ -4234,6 +4298,7 @@
 													"id": "compare-axis",
 													"objectClass": "Gamepad",
 													"sid": 372001285964928,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"axis": "left-analog-x-axis",
@@ -7742,6 +7807,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 559734313521843,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -7830,6 +7896,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 112853309563929,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -7918,6 +7985,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 834603096309544,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -8422,6 +8490,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 481194039205131,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -8606,6 +8675,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 290381978772778,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -9150,6 +9220,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 672678966980787,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -9428,6 +9499,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 834948531611990,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -9918,6 +9990,7 @@
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
 											"sid": 321937426585536,
+											"disabled": true,
 											"parameters": {
 												"gamepad": "0",
 												"button": "button-b"
@@ -10085,6 +10158,7 @@
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
 											"sid": 540734135637504,
+											"disabled": true,
 											"parameters": {
 												"gamepad": "0",
 												"button": "button-b"
@@ -10323,6 +10397,7 @@
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
 											"sid": 356004934110844,
+											"disabled": true,
 											"parameters": {
 												"gamepad": "0",
 												"button": "button-b"
@@ -10406,6 +10481,7 @@
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
 											"sid": 857420654110904,
+											"disabled": true,
 											"parameters": {
 												"gamepad": "0",
 												"button": "button-b"
@@ -12396,6 +12472,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 128896752377710,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -12588,6 +12665,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 553421972298827,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -12780,6 +12858,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 975880582184403,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -12972,6 +13051,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 696283524055108,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -13132,6 +13212,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 421546436774557,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -13279,6 +13360,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 298800068828475,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -13400,6 +13482,7 @@
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
 													"sid": 910410426590055,
+													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
 														"button": "button-b"
@@ -14193,6 +14276,7 @@
 									"id": "on-button-pressed",
 									"objectClass": "Gamepad",
 									"sid": 294209635259228,
+									"disabled": true,
 									"parameters": {
 										"gamepad": "0",
 										"button": "button-b"
@@ -14398,6 +14482,7 @@
 							"id": "on-button-pressed",
 							"objectClass": "Gamepad",
 							"sid": 956359115975811,
+							"disabled": true,
 							"parameters": {
 								"gamepad": "0",
 								"button": "button-b"
@@ -15159,15 +15244,6 @@
 											"parameters": {
 												"key": 82
 											}
-										},
-										{
-											"id": "on-button-pressed",
-											"objectClass": "Gamepad",
-											"sid": 291939462174402,
-											"parameters": {
-												"gamepad": "0",
-												"button": "back-view"
-											}
 										}
 									],
 									"actions": [
@@ -15212,18 +15288,9 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "on-button-pressed",
-											"objectClass": "Gamepad",
-											"sid": 808693025638789,
-											"parameters": {
-												"gamepad": "0",
-												"button": "back-view"
-											}
-										},
-										{
 											"id": "on-key-pressed",
 											"objectClass": "Keyboard",
-											"sid": 911032395998445,
+											"sid": 592967948396127,
 											"parameters": {
 												"key": 82
 											}
@@ -15234,6 +15301,15 @@
 											"id": "restart-layout",
 											"objectClass": "System",
 											"sid": 793838124987543
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 893126228081142,
+											"parameters": {
+												"variable": "WallJump",
+												"value": "1"
+											}
 										}
 									],
 									"sid": 914675013686509,
@@ -15262,18 +15338,9 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "on-button-pressed",
-											"objectClass": "Gamepad",
-											"sid": 266348913914073,
-											"parameters": {
-												"gamepad": "0",
-												"button": "back-view"
-											}
-										},
-										{
 											"id": "on-key-pressed",
 											"objectClass": "Keyboard",
-											"sid": 616567881988039,
+											"sid": 637784537344705,
 											"parameters": {
 												"key": 82
 											}
@@ -15330,18 +15397,9 @@
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "on-button-pressed",
-											"objectClass": "Gamepad",
-											"sid": 239163530958583,
-											"parameters": {
-												"gamepad": "0",
-												"button": "back-view"
-											}
-										},
-										{
 											"id": "on-key-pressed",
 											"objectClass": "Keyboard",
-											"sid": 671854552514987,
+											"sid": 996155422796020,
 											"parameters": {
 												"key": 82
 											}
@@ -15352,6 +15410,24 @@
 											"id": "restart-layout",
 											"objectClass": "System",
 											"sid": 911468084929349
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 175669155204453,
+											"parameters": {
+												"variable": "WallJump",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 125575378487394,
+											"parameters": {
+												"variable": "ColorSwitch",
+												"value": "1"
+											}
 										}
 									],
 									"sid": 614062714226949,
@@ -15427,6 +15503,15 @@
 									"sid": 335026704745093,
 									"parameters": {
 										"variable": "Reset",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 978578419921657,
+									"parameters": {
+										"variable": "Layer",
 										"value": "1"
 									}
 								},
@@ -15524,6 +15609,15 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
+									"sid": 787458010250326,
+									"parameters": {
+										"variable": "Layer",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
 									"sid": 431205111519519,
 									"parameters": {
 										"variable": "Music",
@@ -15609,6 +15703,15 @@
 									"sid": 884225497044585,
 									"parameters": {
 										"variable": "Reset",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 997327825791464,
+									"parameters": {
+										"variable": "Layer",
 										"value": "3"
 									}
 								},
@@ -15724,6 +15827,15 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
+									"sid": 379046130853480,
+									"parameters": {
+										"variable": "Layer",
+										"value": "4"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
 									"sid": 821739643733512,
 									"parameters": {
 										"variable": "Music",
@@ -15756,7 +15868,7 @@
 				},
 				{
 					"eventType": "group",
-					"disabled": false,
+					"disabled": true,
 					"title": "Controller",
 					"description": "",
 					"isActiveOnStart": true,
@@ -15787,7 +15899,8 @@
 									}
 								}
 							],
-							"sid": 203940579392190
+							"sid": 203940579392190,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -15815,7 +15928,8 @@
 									}
 								}
 							],
-							"sid": 278373714309334
+							"sid": 278373714309334,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -15841,7 +15955,8 @@
 									}
 								}
 							],
-							"sid": 203952597046423
+							"sid": 203952597046423,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -15867,7 +15982,8 @@
 									}
 								}
 							],
-							"sid": 191546740502292
+							"sid": 191546740502292,
+							"disabled": true
 						},
 						{
 							"eventType": "block",
@@ -15899,7 +16015,8 @@
 									}
 								}
 							],
-							"sid": 952029108501169
+							"sid": 952029108501169,
+							"disabled": true
 						}
 					],
 					"sid": 536921626447794
