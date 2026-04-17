@@ -2631,10 +2631,10 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 412810035025464,
+									"sid": 881338677203223,
 									"parameters": {
 										"audio-file": {
-											"path": "Electric shock FX"
+											"path": "Death SFX"
 										},
 										"loop": "not-looping",
 										"volume": "-45",
