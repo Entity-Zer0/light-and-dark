@@ -428,10 +428,10 @@
 								{
 									"id": "on-button-pressed",
 									"objectClass": "Gamepad",
-									"sid": 849187920526385,
+									"sid": 482111859856102,
 									"parameters": {
 										"gamepad": "0",
-										"button": "button-a"
+										"button": "button-b"
 									}
 								}
 							],
@@ -3702,10 +3702,10 @@
 										{
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
-											"sid": 164717441494656,
+											"sid": 398484563834241,
 											"parameters": {
 												"gamepad": "0",
-												"button": "button-b"
+												"button": "right-shoulder-trigger"
 											}
 										}
 									],
@@ -3808,10 +3808,10 @@
 										{
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
-											"sid": 575450009764057,
+											"sid": 414225616990115,
 											"parameters": {
 												"gamepad": "0",
-												"button": "button-b"
+												"button": "right-shoulder-trigger"
 											}
 										}
 									],
@@ -7627,10 +7627,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 960709727441030,
+													"sid": 559734313521843,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -7715,10 +7715,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 218414579019178,
+													"sid": 112853309563929,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -7803,10 +7803,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 734993261330146,
+													"sid": 834603096309544,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -7943,10 +7943,10 @@
 										{
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
-											"sid": 795637306329240,
+											"sid": 889847937777004,
 											"parameters": {
 												"gamepad": "0",
-												"button": "button-a"
+												"button": "button-b"
 											}
 										}
 									],
@@ -8111,10 +8111,10 @@
 										{
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
-											"sid": 865583693554990,
+											"sid": 363356576427146,
 											"parameters": {
 												"gamepad": "0",
-												"button": "button-a"
+												"button": "button-b"
 											}
 										}
 									],
@@ -8193,10 +8193,10 @@
 										{
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
-											"sid": 603066509468229,
+											"sid": 865360850869333,
 											"parameters": {
 												"gamepad": "0",
-												"button": "button-a"
+												"button": "button-b"
 											}
 										}
 									],
@@ -8307,10 +8307,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 537917208430819,
+													"sid": 481194039205131,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -8491,10 +8491,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 630751126959105,
+													"sid": 290381978772778,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -8663,10 +8663,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 722528634872876,
+													"sid": 711509361861312,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -8812,10 +8812,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 652742915174478,
+													"sid": 222496673424685,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -9035,10 +9035,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 539522759640451,
+													"sid": 672678966980787,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -9313,10 +9313,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 870884931377212,
+													"sid": 834948531611990,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -9803,10 +9803,10 @@
 										{
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
-											"sid": 296073318171977,
+											"sid": 321937426585536,
 											"parameters": {
 												"gamepad": "0",
-												"button": "button-a"
+												"button": "button-b"
 											}
 										}
 									],
@@ -9970,10 +9970,10 @@
 										{
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
-											"sid": 988453351619332,
+											"sid": 540734135637504,
 											"parameters": {
 												"gamepad": "0",
-												"button": "button-a"
+												"button": "button-b"
 											}
 										}
 									],
@@ -10208,10 +10208,10 @@
 										{
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
-											"sid": 204465868348433,
+											"sid": 356004934110844,
 											"parameters": {
 												"gamepad": "0",
-												"button": "button-a"
+												"button": "button-b"
 											}
 										}
 									],
@@ -10291,10 +10291,10 @@
 										{
 											"id": "on-button-pressed",
 											"objectClass": "Gamepad",
-											"sid": 958593255951545,
+											"sid": 857420654110904,
 											"parameters": {
 												"gamepad": "0",
-												"button": "button-a"
+												"button": "button-b"
 											}
 										}
 									],
@@ -12281,10 +12281,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 179258231480071,
+													"sid": 128896752377710,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -12473,10 +12473,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 159204852461969,
+													"sid": 553421972298827,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -12665,10 +12665,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 231082485921822,
+													"sid": 975880582184403,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -12857,10 +12857,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 731588263935387,
+													"sid": 696283524055108,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -13017,10 +13017,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 183825750551632,
+													"sid": 421546436774557,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -13164,10 +13164,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 616534538951554,
+													"sid": 298800068828475,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -13285,10 +13285,10 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 530757268006021,
+													"sid": 910410426590055,
 													"parameters": {
 														"gamepad": "0",
-														"button": "button-a"
+														"button": "button-b"
 													}
 												}
 											],
@@ -14078,10 +14078,10 @@
 								{
 									"id": "on-button-pressed",
 									"objectClass": "Gamepad",
-									"sid": 784067866039468,
+									"sid": 294209635259228,
 									"parameters": {
 										"gamepad": "0",
-										"button": "button-a"
+										"button": "button-b"
 									}
 								}
 							],
