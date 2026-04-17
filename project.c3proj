@@ -49,6 +49,13 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Anchor",
 			"name": "Anchor",
@@ -119,7 +126,8 @@
 			"Preview",
 			"Audio",
 			"Mouse",
-			"Text"
+			"Text",
+			"Gamepad"
 		],
 		"subfolders": [
 			{
