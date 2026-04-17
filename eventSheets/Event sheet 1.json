@@ -198,19 +198,9 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 854506815212032,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "StartButton"
-							}
-						},
-						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 294107140227447,
+							"sid": 442877096856217,
 							"parameters": {
 								"variable": "IsBusy",
 								"comparison": 0,
@@ -218,184 +208,213 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 549644173680335,
+					"children": [
 						{
-							"id": "set-visible",
-							"objectClass": "StartAnimation",
-							"sid": 515248150954620,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 351976987475784,
-							"parameters": {
-								"layer": "4",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 684386961377288,
-							"parameters": {
-								"layer": "2",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 356259063006429,
-							"parameters": {
-								"layer": "1",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 155602224561074,
-							"parameters": {
-								"layer": "0",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 465185127695123,
-							"parameters": {
-								"variable": "IsBusy",
-								"value": "1"
-							}
-						},
-						{
-							"id": "start-animation",
-							"objectClass": "StartAnimation",
-							"sid": 679728582573577,
-							"parameters": {
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 754310169575520,
-							"parameters": {
-								"variable": "Skip",
-								"value": "1"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 714837547184142,
-							"parameters": {
-								"seconds": "53",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "fade-volume",
-							"objectClass": "Audio",
-							"sid": 109254259457763,
-							"parameters": {
-								"tag": "\"Music\"",
-								"db": "-100",
-								"duration": "3",
-								"ending": "stop"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 255126051571522,
-							"parameters": {
-								"seconds": "2",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "play",
-							"objectClass": "Audio",
-							"sid": 162428065293298,
-							"parameters": {
-								"audio-file": {
-									"path": "Glass SFX"
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 489112788768861,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "StartButton"
+									}
 								},
-								"loop": "not-looping",
-								"volume": "-15",
-								"stereo-pan": "0",
-								"tag-optional": "\"\""
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 348702760412895,
-							"parameters": {
-								"seconds": "2",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 812614809847772,
-							"parameters": {
-								"variable": "Skip",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 788092823264993,
-							"parameters": {
-								"variable": "Music",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 605236345874478,
-							"parameters": {
-								"variable": "Layer",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 229770892674451,
-							"parameters": {
-								"variable": "IsBusy",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 907538930814333,
-							"parameters": {
-								"variable": "Reset",
-								"value": "1"
-							}
-						},
-						{
-							"id": "go-to-nextprevious-layout",
-							"objectClass": "System",
-							"sid": 674227892737043,
-							"parameters": {
-								"which": "next"
-							}
+								{
+									"id": "on-button-pressed",
+									"objectClass": "Gamepad",
+									"sid": 227936745931003,
+									"parameters": {
+										"gamepad": "0",
+										"button": "start-menu"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "StartAnimation",
+									"sid": 980352682847838,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 430883858770952,
+									"parameters": {
+										"layer": "4",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 822240891900407,
+									"parameters": {
+										"layer": "2",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 141098862477495,
+									"parameters": {
+										"layer": "1",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 303399049463924,
+									"parameters": {
+										"layer": "0",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 128949482367788,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "1"
+									}
+								},
+								{
+									"id": "start-animation",
+									"objectClass": "StartAnimation",
+									"sid": 713458975685376,
+									"parameters": {
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 813786309808777,
+									"parameters": {
+										"variable": "Skip",
+										"value": "1"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 346808140115130,
+									"parameters": {
+										"seconds": "53",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "fade-volume",
+									"objectClass": "Audio",
+									"sid": 304952330018976,
+									"parameters": {
+										"tag": "\"Music\"",
+										"db": "-100",
+										"duration": "3",
+										"ending": "stop"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 626602732728049,
+									"parameters": {
+										"seconds": "2",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 991372911543893,
+									"parameters": {
+										"audio-file": {
+											"path": "Glass SFX"
+										},
+										"loop": "not-looping",
+										"volume": "-15",
+										"stereo-pan": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 852048062093670,
+									"parameters": {
+										"seconds": "2",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 560440041570511,
+									"parameters": {
+										"variable": "Skip",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 639560086659243,
+									"parameters": {
+										"variable": "Music",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 890966858624276,
+									"parameters": {
+										"variable": "Layer",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 547267547543996,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "0"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 121638163277401,
+									"parameters": {
+										"variable": "Reset",
+										"value": "1"
+									}
+								},
+								{
+									"id": "go-to-nextprevious-layout",
+									"objectClass": "System",
+									"sid": 733868063108634,
+									"parameters": {
+										"which": "next"
+									}
+								}
+							],
+							"sid": 420502308418793,
+							"isOrBlock": true
 						}
-					],
-					"sid": 196606390042896
+					]
 				},
 				{
 					"eventType": "block",
@@ -546,95 +565,104 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 922537150982441,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "StartButton"
-							}
-						},
-						{
 							"id": "pick-by-unique-id",
 							"objectClass": "TextBox",
-							"sid": 658038451583515,
+							"sid": 475948889373296,
 							"parameters": {
 								"unique-id": "1961"
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 453895179328289,
+					"children": [
 						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 319348753583255,
-							"parameters": {
-								"seconds": "4",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "SpaceSkipTxt",
-							"sid": 392765619972222,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "TextBox",
-							"sid": 218304691954043,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 311904364526634,
-							"parameters": {
-								"seconds": "4.5",
-								"use-timescale": true
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "SpaceSkipTxt",
-							"sid": 805668778139506,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "TextBox",
-							"sid": 544349731601792,
-							"parameters": {
-								"visibility": "invisible"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 290359996839437,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "StartButton"
+									}
+								},
+								{
+									"id": "on-button-pressed",
+									"objectClass": "Gamepad",
+									"sid": 140464138148114,
+									"parameters": {
+										"gamepad": "0",
+										"button": "start-menu"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 357661488063151,
+									"parameters": {
+										"seconds": "4",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "SpaceSkipTxt",
+									"sid": 453348317303138,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "TextBox",
+									"sid": 550369454744777,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 726132905769467,
+									"parameters": {
+										"seconds": "4.5",
+										"use-timescale": true
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "SpaceSkipTxt",
+									"sid": 967623573170102,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "TextBox",
+									"sid": 642102913545815,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								}
+							],
+							"sid": 862920093061545,
+							"isOrBlock": true
 						}
-					],
-					"sid": 254168539360720
+					]
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 248542763169945,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "ControlsButton"
-							}
-						},
-						{
 							"id": "pick-by-unique-id",
 							"objectClass": "BlackBackground",
-							"sid": 622253234972616,
+							"sid": 522340425359809,
 							"parameters": {
 								"unique-id": "1729"
 							}
@@ -642,7 +670,7 @@
 						{
 							"id": "pick-by-unique-id",
 							"objectClass": "Exit",
-							"sid": 724494990146906,
+							"sid": 515326760506114,
 							"parameters": {
 								"unique-id": "1736"
 							}
@@ -650,7 +678,7 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 542428166491967,
+							"sid": 961908039967369,
 							"parameters": {
 								"variable": "IsBusy",
 								"comparison": 0,
@@ -658,113 +686,132 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 883346926417495,
+					"children": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 857184050021742,
-							"parameters": {
-								"variable": "IsBusy",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BlackBackground",
-							"sid": 454842203049703,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 567013297365510,
-							"parameters": {
-								"layer": "4",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 517307703059072,
-							"parameters": {
-								"layer": "3",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 965529391722329,
-							"parameters": {
-								"layer": "2",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 464408805835242,
-							"parameters": {
-								"layer": "1",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 587300169418596,
-							"parameters": {
-								"layer": "0",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BlackBackground",
-							"sid": 106325450235054,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Exit",
-							"sid": 552507838284362,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "ControlsTxt",
-							"sid": 687763039001123,
-							"parameters": {
-								"visibility": "visible"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 801999581573322,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "ControlsButton"
+									}
+								},
+								{
+									"id": "on-button-pressed",
+									"objectClass": "Gamepad",
+									"sid": 893200130347886,
+									"parameters": {
+										"gamepad": "0",
+										"button": "back-view"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 454858086293423,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "BlackBackground",
+									"sid": 715966631507995,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 122526740724395,
+									"parameters": {
+										"layer": "4",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 989792019076607,
+									"parameters": {
+										"layer": "3",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 315644671511509,
+									"parameters": {
+										"layer": "2",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 329155156209521,
+									"parameters": {
+										"layer": "1",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 825257911913309,
+									"parameters": {
+										"layer": "0",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "BlackBackground",
+									"sid": 929766728887343,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Exit",
+									"sid": 554272136869177,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "ControlsTxt",
+									"sid": 957435011921551,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 403154633146390,
+							"isOrBlock": true
 						}
-					],
-					"sid": 723613886241116
+					]
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 615944032685091,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "Exit"
-							}
-						},
-						{
 							"id": "pick-by-unique-id",
 							"objectClass": "BlackBackground",
-							"sid": 492167003613966,
+							"sid": 379551764093184,
 							"parameters": {
 								"unique-id": "1729"
 							}
@@ -772,119 +819,138 @@
 						{
 							"id": "pick-by-unique-id",
 							"objectClass": "Exit",
-							"sid": 262757783679979,
+							"sid": 122939850399520,
 							"parameters": {
 								"unique-id": "1736"
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 374301241042228,
+					"children": [
 						{
-							"id": "set-visible",
-							"objectClass": "BlackBackground",
-							"sid": 695520903412903,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 875243296267104,
-							"parameters": {
-								"layer": "4",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 338099986178364,
-							"parameters": {
-								"layer": "3",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 228721388237101,
-							"parameters": {
-								"layer": "2",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 117597463297873,
-							"parameters": {
-								"layer": "1",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 759842306357709,
-							"parameters": {
-								"layer": "0",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BlackBackground",
-							"sid": 172445335506301,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Exit",
-							"sid": 560200932411418,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "ControlsTxt",
-							"sid": 991761750827562,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 703376337088804,
-							"parameters": {
-								"variable": "IsBusy",
-								"value": "0"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 319451839179698,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "Exit"
+									}
+								},
+								{
+									"id": "on-button-pressed",
+									"objectClass": "Gamepad",
+									"sid": 451946293759344,
+									"parameters": {
+										"gamepad": "0",
+										"button": "button-b"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "BlackBackground",
+									"sid": 741011232391442,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 355611010224991,
+									"parameters": {
+										"layer": "4",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 113203072907368,
+									"parameters": {
+										"layer": "3",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 381369273243645,
+									"parameters": {
+										"layer": "2",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 124268375657145,
+									"parameters": {
+										"layer": "1",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 650012745532602,
+									"parameters": {
+										"layer": "0",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "BlackBackground",
+									"sid": 841360228150729,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Exit",
+									"sid": 659987220332544,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "ControlsTxt",
+									"sid": 789879889944823,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 152046837331622,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 571584453129065,
+							"isOrBlock": true
 						}
-					],
-					"sid": 729737214205884
+					]
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 733730195319593,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "CreditsButton"
-							}
-						},
-						{
 							"id": "pick-by-unique-id",
 							"objectClass": "BlackBackground",
-							"sid": 849582659663291,
+							"sid": 435586927775713,
 							"parameters": {
 								"unique-id": "1738"
 							}
@@ -892,7 +958,7 @@
 						{
 							"id": "pick-by-unique-id",
 							"objectClass": "Exit",
-							"sid": 825370105637133,
+							"sid": 824192006984418,
 							"parameters": {
 								"unique-id": "1739"
 							}
@@ -900,7 +966,7 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 337057960943771,
+							"sid": 723797916348633,
 							"parameters": {
 								"variable": "IsBusy",
 								"comparison": 0,
@@ -908,113 +974,132 @@
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 102354067494946,
+					"children": [
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 893935003711781,
-							"parameters": {
-								"variable": "IsBusy",
-								"value": "1"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BlackBackground",
-							"sid": 880380771302117,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 977516478267312,
-							"parameters": {
-								"layer": "4",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 710791147789012,
-							"parameters": {
-								"layer": "3",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 374106714893683,
-							"parameters": {
-								"layer": "2",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 821668165702719,
-							"parameters": {
-								"layer": "1",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 515376341553837,
-							"parameters": {
-								"layer": "0",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BlackBackground",
-							"sid": 737121045540041,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Exit",
-							"sid": 696468253915437,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "CreditsTxt",
-							"sid": 410704128217861,
-							"parameters": {
-								"visibility": "visible"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 219862915905616,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "CreditsButton"
+									}
+								},
+								{
+									"id": "on-button-pressed",
+									"objectClass": "Gamepad",
+									"sid": 432891124127255,
+									"parameters": {
+										"gamepad": "0",
+										"button": "button-a"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 816621157159395,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "BlackBackground",
+									"sid": 470933450398021,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 902627877341469,
+									"parameters": {
+										"layer": "4",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 303308057269926,
+									"parameters": {
+										"layer": "3",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 171447776464265,
+									"parameters": {
+										"layer": "2",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 292591015988183,
+									"parameters": {
+										"layer": "1",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 322278654485469,
+									"parameters": {
+										"layer": "0",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "BlackBackground",
+									"sid": 768443470718044,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Exit",
+									"sid": 180319994368721,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CreditsTxt",
+									"sid": 137044745581146,
+									"parameters": {
+										"visibility": "visible"
+									}
+								}
+							],
+							"sid": 512078347717673,
+							"isOrBlock": true
 						}
-					],
-					"sid": 108618976534061
+					]
 				},
 				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "on-object-clicked",
-							"objectClass": "Mouse",
-							"sid": 306325423920184,
-							"parameters": {
-								"mouse-button": "left",
-								"click-type": "clicked",
-								"object-clicked": "Exit"
-							}
-						},
-						{
 							"id": "pick-by-unique-id",
 							"objectClass": "BlackBackground",
-							"sid": 250414000694631,
+							"sid": 555741171779147,
 							"parameters": {
 								"unique-id": "1738"
 							}
@@ -1022,101 +1107,130 @@
 						{
 							"id": "pick-by-unique-id",
 							"objectClass": "Exit",
-							"sid": 580250979525035,
+							"sid": 344915776155744,
 							"parameters": {
 								"unique-id": "1739"
 							}
 						}
 					],
-					"actions": [
+					"actions": [],
+					"sid": 470744049803749,
+					"children": [
 						{
-							"id": "set-visible",
-							"objectClass": "BlackBackground",
-							"sid": 232575896882612,
-							"parameters": {
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 703625483613118,
-							"parameters": {
-								"layer": "4",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 867424251192958,
-							"parameters": {
-								"layer": "3",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 606625120642776,
-							"parameters": {
-								"layer": "2",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 484173213255147,
-							"parameters": {
-								"layer": "1",
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-layer-visible",
-							"objectClass": "System",
-							"sid": 582212390029137,
-							"parameters": {
-								"layer": "0",
-								"visibility": "visible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "BlackBackground",
-							"sid": 429800380936053,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "Exit",
-							"sid": 195564942910016,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-visible",
-							"objectClass": "CreditsTxt",
-							"sid": 366521624754539,
-							"parameters": {
-								"visibility": "invisible"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 522269151266320,
-							"parameters": {
-								"variable": "IsBusy",
-								"value": "0"
-							}
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-object-clicked",
+									"objectClass": "Mouse",
+									"sid": 843632113753386,
+									"parameters": {
+										"mouse-button": "left",
+										"click-type": "clicked",
+										"object-clicked": "Exit"
+									}
+								},
+								{
+									"id": "on-button-pressed",
+									"objectClass": "Gamepad",
+									"sid": 893592192791415,
+									"parameters": {
+										"gamepad": "0",
+										"button": "button-b"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-visible",
+									"objectClass": "BlackBackground",
+									"sid": 366106976187394,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 448583486058919,
+									"parameters": {
+										"layer": "4",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 124100506788136,
+									"parameters": {
+										"layer": "3",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 736713439585659,
+									"parameters": {
+										"layer": "2",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 636425294617279,
+									"parameters": {
+										"layer": "1",
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-layer-visible",
+									"objectClass": "System",
+									"sid": 102410429549577,
+									"parameters": {
+										"layer": "0",
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "BlackBackground",
+									"sid": 517964520698461,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Exit",
+									"sid": 499033269310768,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "CreditsTxt",
+									"sid": 156832525886191,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 896103850154772,
+									"parameters": {
+										"variable": "IsBusy",
+										"value": "0"
+									}
+								}
+							],
+							"sid": 890433393626913,
+							"isOrBlock": true
 						}
-					],
-					"sid": 728441936178496
+					]
 				}
 			],
 			"sid": 689277863324259
@@ -14279,6 +14393,15 @@
 								"click-type": "clicked",
 								"object-clicked": "TitleScrnButton"
 							}
+						},
+						{
+							"id": "on-button-pressed",
+							"objectClass": "Gamepad",
+							"sid": 956359115975811,
+							"parameters": {
+								"gamepad": "0",
+								"button": "button-b"
+							}
 						}
 					],
 					"actions": [
@@ -14399,7 +14522,8 @@
 							}
 						}
 					],
-					"sid": 380714674287382
+					"sid": 380714674287382,
+					"isOrBlock": true
 				}
 			],
 			"sid": 291880399754274
@@ -15012,17 +15136,9 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 498921122653698,
-									"parameters": {
-										"key": 82
-									}
-								},
-								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 480456709028683,
+									"sid": 322817507983220,
 									"parameters": {
 										"variable": "Layer",
 										"comparison": 0,
@@ -15030,39 +15146,58 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 206681189232291,
+							"children": [
 								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 346871543881582
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 523980611345169,
-									"parameters": {
-										"variable": "WallJump",
-										"value": "0"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 514803808556549,
+											"parameters": {
+												"key": 82
+											}
+										},
+										{
+											"id": "on-button-pressed",
+											"objectClass": "Gamepad",
+											"sid": 291939462174402,
+											"parameters": {
+												"gamepad": "0",
+												"button": "back-view"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "restart-layout",
+											"objectClass": "System",
+											"sid": 325309807387087
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 725447572025365,
+											"parameters": {
+												"variable": "WallJump",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 510972169637748,
+									"isOrBlock": true
 								}
-							],
-							"sid": 563056869634684
+							]
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 445182302872986,
-									"parameters": {
-										"key": 82
-									}
-								},
-								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 472138092111540,
+									"sid": 629978353423298,
 									"parameters": {
 										"variable": "Layer",
 										"comparison": 0,
@@ -15070,30 +15205,49 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 489783334158220,
+							"children": [
 								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 898339860611945
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-button-pressed",
+											"objectClass": "Gamepad",
+											"sid": 808693025638789,
+											"parameters": {
+												"gamepad": "0",
+												"button": "back-view"
+											}
+										},
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 911032395998445,
+											"parameters": {
+												"key": 82
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "restart-layout",
+											"objectClass": "System",
+											"sid": 793838124987543
+										}
+									],
+									"sid": 914675013686509,
+									"isOrBlock": true
 								}
-							],
-							"sid": 706492994855032
+							]
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 998441688446622,
-									"parameters": {
-										"key": 82
-									}
-								},
-								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 379945609967560,
+									"sid": 677816586359763,
 									"parameters": {
 										"variable": "Layer",
 										"comparison": 0,
@@ -15101,48 +15255,67 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 554757667116663,
+							"children": [
 								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 986422038836239
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 626366980863700,
-									"parameters": {
-										"variable": "ColorSwitch",
-										"value": "0"
-									}
-								},
-								{
-									"id": "set-eventvar-value",
-									"objectClass": "System",
-									"sid": 205147164551238,
-									"parameters": {
-										"variable": "ButtonOpen",
-										"value": "0"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-button-pressed",
+											"objectClass": "Gamepad",
+											"sid": 266348913914073,
+											"parameters": {
+												"gamepad": "0",
+												"button": "back-view"
+											}
+										},
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 616567881988039,
+											"parameters": {
+												"key": 82
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "restart-layout",
+											"objectClass": "System",
+											"sid": 850677942801951
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 743941139130847,
+											"parameters": {
+												"variable": "ColorSwitch",
+												"value": "0"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 895436793284206,
+											"parameters": {
+												"variable": "ButtonOpen",
+												"value": "0"
+											}
+										}
+									],
+									"sid": 295008202110624,
+									"isOrBlock": true
 								}
-							],
-							"sid": 794525875151293
+							]
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "on-key-pressed",
-									"objectClass": "Keyboard",
-									"sid": 703743151784852,
-									"parameters": {
-										"key": 82
-									}
-								},
-								{
 									"id": "compare-eventvar",
 									"objectClass": "System",
-									"sid": 758412531889800,
+									"sid": 203628790573734,
 									"parameters": {
 										"variable": "Layer",
 										"comparison": 0,
@@ -15150,14 +15323,41 @@
 									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 544176357697290,
+							"children": [
 								{
-									"id": "restart-layout",
-									"objectClass": "System",
-									"sid": 750554834755320
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-button-pressed",
+											"objectClass": "Gamepad",
+											"sid": 239163530958583,
+											"parameters": {
+												"gamepad": "0",
+												"button": "back-view"
+											}
+										},
+										{
+											"id": "on-key-pressed",
+											"objectClass": "Keyboard",
+											"sid": 671854552514987,
+											"parameters": {
+												"key": 82
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "restart-layout",
+											"objectClass": "System",
+											"sid": 911468084929349
+										}
+									],
+									"sid": 614062714226949,
+									"isOrBlock": true
 								}
-							],
-							"sid": 515575031257940
+							]
 						}
 					],
 					"sid": 962399160785900
