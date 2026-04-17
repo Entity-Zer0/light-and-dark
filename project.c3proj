@@ -120,7 +120,8 @@
 			"Audio",
 			"Mouse",
 			"Text",
-			"Text2"
+			"Text2",
+			"Gamepad"
 		],
 		"subfolders": [
 			{
