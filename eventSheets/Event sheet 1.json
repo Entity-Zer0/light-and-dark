@@ -15234,6 +15234,15 @@
 											"id": "restart-layout",
 											"objectClass": "System",
 											"sid": 793838124987543
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 893126228081142,
+											"parameters": {
+												"variable": "WallJump",
+												"value": "1"
+											}
 										}
 									],
 									"sid": 914675013686509,
@@ -15352,6 +15361,24 @@
 											"id": "restart-layout",
 											"objectClass": "System",
 											"sid": 911468084929349
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 175669155204453,
+											"parameters": {
+												"variable": "WallJump",
+												"value": "1"
+											}
+										},
+										{
+											"id": "set-eventvar-value",
+											"objectClass": "System",
+											"sid": 125575378487394,
+											"parameters": {
+												"variable": "ColorSwitch",
+												"value": "1"
+											}
 										}
 									],
 									"sid": 614062714226949,
@@ -15427,6 +15454,15 @@
 									"sid": 335026704745093,
 									"parameters": {
 										"variable": "Reset",
+										"value": "1"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 978578419921657,
+									"parameters": {
+										"variable": "Layer",
 										"value": "1"
 									}
 								},
@@ -15524,6 +15560,15 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
+									"sid": 787458010250326,
+									"parameters": {
+										"variable": "Layer",
+										"value": "2"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
 									"sid": 431205111519519,
 									"parameters": {
 										"variable": "Music",
@@ -15609,6 +15654,15 @@
 									"sid": 884225497044585,
 									"parameters": {
 										"variable": "Reset",
+										"value": "3"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 997327825791464,
+									"parameters": {
+										"variable": "Layer",
 										"value": "3"
 									}
 								},
@@ -15718,6 +15772,15 @@
 									"sid": 535454441102191,
 									"parameters": {
 										"variable": "Reset",
+										"value": "4"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 379046130853480,
+									"parameters": {
+										"variable": "Layer",
 										"value": "4"
 									}
 								},
