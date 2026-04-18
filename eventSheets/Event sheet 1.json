@@ -1754,10 +1754,10 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 941181316070904,
+													"sid": 695707822019259,
 													"parameters": {
 														"audio-file": {
-															"path": "Electric shock FX"
+															"path": "Death SFX"
 														},
 														"loop": "not-looping",
 														"volume": "-40",
@@ -1992,10 +1992,10 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 353750038317099,
+													"sid": 658681685845942,
 													"parameters": {
 														"audio-file": {
-															"path": "Electric shock FX"
+															"path": "Death SFX"
 														},
 														"loop": "not-looping",
 														"volume": "-40",
@@ -2688,10 +2688,10 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 881338677203223,
+									"sid": 698751227549941,
 									"parameters": {
 										"audio-file": {
-											"path": "Death SFX"
+											"path": "Electric shock FX"
 										},
 										"loop": "not-looping",
 										"volume": "-45",
