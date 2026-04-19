@@ -12491,8 +12491,8 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBox",
-													"sid": 971423221100826,
+													"objectClass": "TextBoxForStoryDoc",
+													"sid": 456567056144647,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -12684,8 +12684,8 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBox",
-													"sid": 587679141966616,
+													"objectClass": "TextBoxForStoryDoc",
+													"sid": 698393270193756,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -12877,8 +12877,8 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBox",
-													"sid": 988052551716392,
+													"objectClass": "TextBoxForStoryDoc",
+													"sid": 334056049725040,
 													"parameters": {
 														"visibility": "invisible"
 													}

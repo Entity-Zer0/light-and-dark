@@ -127,7 +127,6 @@
 			"Audio",
 			"Mouse",
 			"Text",
-			"Text2",
 			"Gamepad"
 		],
 		"subfolders": [
@@ -226,7 +225,8 @@
 					"LayoutTitle4",
 					"Sprite5",
 					"ShadeSwitch",
-					"WallJump"
+					"WallJump",
+					"TextBoxForStoryDoc"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -256,7 +256,8 @@
 					"TheEndTxt",
 					"NoteInTable2",
 					"NoteInTable3",
-					"NoteInTable4"
+					"NoteInTable4",
+					"NoteInTable5"
 				],
 				"subfolders": [],
 				"name": "Text"
