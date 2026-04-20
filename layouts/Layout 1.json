@@ -10665,7 +10665,7 @@
 								"magnitude": 15,
 								"magnitude-random": 0,
 								"enabled": true,
-								"live-preview": false
+								"live-preview": true
 							}
 						}
 					},
@@ -11166,13 +11166,13 @@
 								"movement": "horizontal",
 								"wave": "sine",
 								"period": 4,
-								"period-random": 0,
+								"period-random": 1,
 								"period-offset": 0,
 								"period-offset-random": 0,
 								"magnitude": 15,
 								"magnitude-random": 0,
 								"enabled": true,
-								"live-preview": false
+								"live-preview": true
 							}
 						}
 					},
@@ -11225,13 +11225,13 @@
 								"movement": "horizontal",
 								"wave": "sine",
 								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
+								"period-random": 1,
+								"period-offset": 1,
 								"period-offset-random": 0,
 								"magnitude": 15,
 								"magnitude-random": 0,
 								"enabled": true,
-								"live-preview": false
+								"live-preview": true
 							}
 						}
 					},
