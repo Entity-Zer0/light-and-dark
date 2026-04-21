@@ -1,7 +1,7 @@
 {
-	"name": "WhiteEnemy",
+	"name": "WhiteEnemydying",
 	"plugin-id": "Sprite",
-	"sid": 596760568201975,
+	"sid": 590666187932192,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -9,7 +9,7 @@
 		{
 			"behaviorId": "Sin",
 			"name": "Sine",
-			"sid": 951506921721277
+			"sid": 918432134568269
 		}
 	],
 	"effectTypes": [],
@@ -26,7 +26,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3544292,
+						"imageSpriteId": 3749961,
 						"collisionPoly": {
 							"points": [
 								0.6666666666666667,
@@ -66,7 +66,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 575910689110660,
+				"sid": 911994487845665,
 				"name": "Idle",
 				"isLooping": false,
 				"isPingPong": false,
@@ -85,7 +85,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6046237,
+						"imageSpriteId": 7589656,
 						"collisionPoly": {
 							"points": [
 								0.3793103448275862,
@@ -133,7 +133,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9810021,
+						"imageSpriteId": 3656305,
 						"collisionPoly": {
 							"points": [
 								0.3793103448275862,
@@ -181,7 +181,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4004766,
+						"imageSpriteId": 385366,
 						"collisionPoly": {
 							"points": [
 								0.40229885057471265,
@@ -223,7 +223,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1836858,
+						"imageSpriteId": 2942864,
 						"collisionPoly": {
 							"points": [
 								0.3160919540229885,
@@ -263,7 +263,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2646823,
+						"imageSpriteId": 2543332,
 						"collisionPoly": {
 							"points": [
 								0.3160919540229885,
@@ -297,8 +297,8 @@
 						"tag": ""
 					}
 				],
-				"sid": 817088183379705,
-				"name": "WalkingW",
+				"sid": 158680252569720,
+				"name": "Walking",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -316,7 +316,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 7244088,
+						"imageSpriteId": 9861952,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -364,7 +364,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4606875,
+						"imageSpriteId": 8760715,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -412,7 +412,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8334164,
+						"imageSpriteId": 2799728,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -460,7 +460,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3631777,
+						"imageSpriteId": 6505765,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -508,7 +508,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1879087,
+						"imageSpriteId": 5167614,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -556,7 +556,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3907728,
+						"imageSpriteId": 937432,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -604,7 +604,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 6616580,
+						"imageSpriteId": 9775655,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -652,7 +652,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1206801,
+						"imageSpriteId": 3131426,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -700,7 +700,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8133370,
+						"imageSpriteId": 2056349,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -748,7 +748,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 2335069,
+						"imageSpriteId": 8015028,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -796,7 +796,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 9998959,
+						"imageSpriteId": 4593750,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -844,7 +844,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 1917857,
+						"imageSpriteId": 8729899,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -892,7 +892,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 4605639,
+						"imageSpriteId": 3255029,
 						"collisionPoly": {
 							"points": [
 								0.6896551724137931,
@@ -932,7 +932,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 534417452441479,
+				"sid": 908763098185345,
 				"name": "Death Ani",
 				"isLooping": true,
 				"isPingPong": true,

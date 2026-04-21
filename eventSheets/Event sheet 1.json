@@ -5410,6 +5410,15 @@
 							"parameters": {
 								"state": "not-mirrored"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ShadowEnemy",
+							"sid": 589914733382687,
+							"parameters": {
+								"animation": "\"WalkingB\"",
+								"from": "beginning"
+							}
 						}
 					],
 					"sid": 312281872598371
@@ -5433,6 +5442,15 @@
 							"sid": 538712083615970,
 							"parameters": {
 								"state": "mirrored"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ShadowEnemy",
+							"sid": 840681413659647,
+							"parameters": {
+								"animation": "\"WalkingB\"",
+								"from": "beginning"
 							}
 						}
 					],
@@ -5458,6 +5476,15 @@
 							"parameters": {
 								"state": "not-mirrored"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "WhiteEnemy",
+							"sid": 587594837742007,
+							"parameters": {
+								"animation": "\"WalkingW\"",
+								"from": "beginning"
+							}
 						}
 					],
 					"sid": 272299196031479
@@ -5482,9 +5509,60 @@
 							"parameters": {
 								"state": "mirrored"
 							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "WhiteEnemy",
+							"sid": 421381756979546,
+							"parameters": {
+								"animation": "\"WalkingW\"",
+								"from": "beginning"
+							}
 						}
 					],
 					"sid": 741049556903053
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 114957958108962
+						},
+						{
+							"id": "pick-nearestfurthest",
+							"objectClass": "WhiteEnemydying",
+							"sid": 523788434256194,
+							"parameters": {
+								"which": "nearest",
+								"x": "Player.X",
+								"y": "Player.Y",
+								"pick-all-tied": false
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 120455064243609,
+							"parameters": {
+								"variable": "dist",
+								"value": "distance(Player.X, Player.Y, BlackLazer.X, BlackLazer.Y)"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "WhiteEnemydying",
+							"sid": 204560490473505,
+							"parameters": {
+								"animation": "\"Death Ani\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 559278259746941
 				}
 			],
 			"sid": 562115832349281
@@ -5586,10 +5664,19 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 738891164013681,
+									"sid": 353628603918784,
 									"parameters": {
 										"variable": "dist",
-										"value": "distance(Player.X, Player.Y, BlackLazer.X, BlackLazer.Y)"
+										"value": "distance(Player.X, Player.Y,ShadowEnemy.X, ShadowEnemy.Y)"
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 855777664591514,
+									"parameters": {
+										"variable": "dist",
+										"value": "distance(Player.X, Player.Y,WhiteEnemy.X, WhiteEnemy.Y)"
 									}
 								},
 								{
@@ -12574,6 +12661,14 @@
 													}
 												},
 												{
+													"id": "set-visible",
+													"objectClass": "NoteInTable1",
+													"sid": 360279336384798,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
 													"id": "play",
 													"objectClass": "Audio",
 													"sid": 205128753240494,
@@ -13042,6 +13137,148 @@
 												{
 													"id": "on-key-pressed",
 													"objectClass": "Keyboard",
+													"sid": 434079601011675,
+													"parameters": {
+														"key": 32
+													}
+												},
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 891582018981373,
+													"disabled": true,
+													"parameters": {
+														"gamepad": "0",
+														"button": "button-b"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 138184098633140,
+													"parameters": {
+														"seconds": "0.3",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TextBoxForStoryDoc",
+													"sid": 533067412594746,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "NothingFoundTxt",
+													"sid": 797533443617042,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "UpgradeScreen",
+													"sid": 318060574801533,
+													"parameters": {
+														"object": "Player",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "NoteInTable5",
+													"sid": 304041425353703,
+													"parameters": {
+														"object": "Player",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-x",
+													"objectClass": "NoteInTable4",
+													"sid": 967362506089665,
+													"parameters": {
+														"x": "NoteInTable5.X - 43"
+													}
+												},
+												{
+													"id": "set-y",
+													"objectClass": "NoteInTable4",
+													"sid": 587955060554925,
+													"parameters": {
+														"y": "NoteInTable5.Y - 20"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 748565572209603,
+													"parameters": {
+														"variable": "Note",
+														"value": "1"
+													}
+												},
+												{
+													"id": "set-enabled",
+													"objectClass": "Player",
+													"sid": 970887920759646,
+													"behaviorType": "Platform",
+													"parameters": {
+														"state": "disabled"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "UpgradeScreen",
+													"sid": 558003775576329,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "NoteInTable5",
+													"sid": 809756419300543,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 984103277668322,
+													"parameters": {
+														"audio-file": {
+															"path": "Found_level up SFX"
+														},
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												},
+												{
+													"id": "set-time-scale",
+													"objectClass": "System",
+													"sid": 812115287194886,
+													"parameters": {
+														"time-scale": "0"
+													}
+												}
+											],
+											"sid": 770904062828532,
+											"isOrBlock": true
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-pressed",
+													"objectClass": "Keyboard",
 													"sid": 957302776387845,
 													"parameters": {
 														"key": 32
@@ -13070,8 +13307,8 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBox",
-													"sid": 258630584861551,
+													"objectClass": "TextBoxForStoryDoc",
+													"sid": 194700545968171,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -13186,6 +13423,40 @@
 										{
 											"id": "compare-eventvar",
 											"objectClass": "System",
+											"sid": 512705836055235,
+											"parameters": {
+												"variable": "Note",
+												"comparison": 0,
+												"value": "0"
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 815885545710815,
+											"parameters": {
+												"object": "BlackTable"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackTable",
+											"sid": 537358780892349,
+											"parameters": {
+												"unique-id": "1599"
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BlackTable",
+											"sid": 292134044331558,
+											"parameters": {
+												"object": "BlackX"
+											}
+										},
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
 											"sid": 292014318668779,
 											"parameters": {
 												"variable": "Note",
@@ -13273,6 +13544,14 @@
 													"id": "set-visible",
 													"objectClass": "NoteInTable4",
 													"sid": 553154188293844,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "NoteInTable5",
+													"sid": 421782016937099,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -13379,8 +13658,8 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBox",
-													"sid": 251818995936062,
+													"objectClass": "TextBoxForStoryDoc",
+													"sid": 195685991946014,
 													"parameters": {
 														"visibility": "visible"
 													}
@@ -13404,8 +13683,8 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBox",
-													"sid": 198818016235620,
+													"objectClass": "TextBoxForStoryDoc",
+													"sid": 641385029524312,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -13501,8 +13780,8 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBox",
-													"sid": 970768288602249,
+													"objectClass": "TextBoxForStoryDoc",
+													"sid": 755520032187721,
 													"parameters": {
 														"visibility": "visible"
 													}
@@ -13526,8 +13805,8 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBox",
-													"sid": 375197157163937,
+													"objectClass": "TextBoxForStoryDoc",
+													"sid": 926760298294062,
 													"parameters": {
 														"visibility": "invisible"
 													}

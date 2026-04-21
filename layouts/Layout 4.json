@@ -37102,7 +37102,7 @@
 				{
 					"type": "TextBoxForStoryDoc",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -37120,10 +37120,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1016.0073883370333,
-						"y": 638.3738814147039,
-						"width": 128.87037680261227,
-						"height": 89.55399065944229,
+						"x": 1018.2477375111382,
+						"y": 639.6349544557909,
+						"width": 124.38967845440237,
+						"height": 87.0318445772684,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -37173,10 +37173,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1001.7647330787445,
-						"y": 610.7803184627497,
+						"x": 1002.5463688463747,
+						"y": 617.0448804959755,
 						"width": 52.88643395965363,
-						"height": 62.77457767896448,
+						"height": 66.5475960091731,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -37192,7 +37192,7 @@
 				{
 					"type": "TextBoxForStoryDoc",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -37210,10 +37210,62 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 319.78909234307935,
-						"y": 263.69744374505586,
-						"width": 137.64197013488746,
-						"height": 98.11794396168075,
+						"x": 326.48193663137874,
+						"y": 273.6366397738026,
+						"width": 124.2562815582886,
+						"height": 78.23955190418728,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "WhiteEnemydying",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2152,
+					"sid": 468798832324015,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Sine": {
+							"properties": {
+								"movement": "horizontal",
+								"wave": "sine",
+								"period": 0,
+								"period-random": 0,
+								"period-offset": 0,
+								"period-offset-random": 0,
+								"magnitude": 0,
+								"magnitude-random": 0,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 468798832324015,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1219.9922085260052,
+						"y": 1022.711492282794,
+						"width": 26.66707782748307,
+						"height": 23.29286238357929,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -37427,7 +37479,7 @@
 						"text": "Noe Body                                                              March 6th- Carens was a successful experiment for color, but it only reached 20% in red only. So next attempt given our funding we will be able to reach 50% in color. Its mangled body may seem like a mess, but its outcome will be revolutionary. We’ll finally regain some color in our world.\n",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 2.5,
+						"size": 2,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -37442,7 +37494,7 @@
 						"wrapping": "word",
 						"text-direction": "ltr",
 						"icon-set": -1,
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "top-left",
 						"read-aloud": false
 					},
@@ -37458,9 +37510,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 304.3406664484367,
-						"y": 232.17908745723278,
-						"width": 56.02107200850277,
+						"x": 308.8308311162585,
+						"y": 252.39443974414226,
+						"width": 54.08185458082353,
 						"height": 73.70519874000513,
 						"originX": 0,
 						"originY": 0,

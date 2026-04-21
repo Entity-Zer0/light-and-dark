@@ -298,7 +298,7 @@
 					}
 				],
 				"sid": 617852236883751,
-				"name": "Walking",
+				"name": "WalkingB",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -934,8 +934,8 @@
 				],
 				"sid": 923506013361106,
 				"name": "Death Ani",
-				"isLooping": true,
-				"isPingPong": true,
+				"isLooping": false,
+				"isPingPong": false,
 				"repeatCount": 1,
 				"repeatTo": 0,
 				"speed": 5
