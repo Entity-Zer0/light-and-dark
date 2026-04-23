@@ -1,0 +1,107 @@
+{
+	"name": "WallJump",
+	"plugin-id": "Sprite",
+	"sid": 555896767670466,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 614269615363721
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 100,
+						"height": 100,
+						"originX": 0.4989648033126294,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 542208,
+						"collisionPoly": {
+							"points": [
+								0.5238095238095238,
+								0.002070393374741201,
+								0.7391304347826086,
+								0.06211180124223597,
+								0.8281573498964806,
+								0.1242236024844721,
+								0.639751552795031,
+								0.9772256728778468,
+								0.463768115942029,
+								0.9958592132505176,
+								0.2587991718426501,
+								0.9358178053830227,
+								0.2981366459627329,
+								0.043478260869565216
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 512361491872933,
+				"name": "NotAble",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 100,
+						"height": 100,
+						"originX": 0.4989648033126294,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4845434,
+						"collisionPoly": {
+							"points": [
+								0.5238095238095238,
+								0.002070393374741201,
+								0.7391304347826086,
+								0.06211180124223597,
+								0.8281573498964806,
+								0.1242236024844721,
+								0.639751552795031,
+								0.9772256728778468,
+								0.463768115942029,
+								0.9958592132505176,
+								0.2587991718426501,
+								0.9358178053830227,
+								0.2981366459627329,
+								0.043478260869565216
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 942267041948891,
+				"name": "Able",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

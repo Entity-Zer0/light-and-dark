@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 47602,
+	"savedWithRelease": 47603,
 	"name": "Light and Dark",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -45,6 +45,13 @@
 			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "gamepad",
+			"name": "Gamepad",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -119,7 +126,13 @@
 			"Preview",
 			"Audio",
 			"Mouse",
-			"Text"
+			"Text",
+			"Gamepad",
+			"Log7",
+			"Log3",
+			"Log8",
+			"Log15",
+			"Sprite6"
 		],
 		"subfolders": [
 			{
@@ -215,7 +228,10 @@
 					"LayoutTitle2",
 					"LayoutTitle3",
 					"LayoutTitle4",
-					"Sprite5"
+					"Sprite5",
+					"ShadeSwitch",
+					"WallJump",
+					"TextBoxForStoryDoc"
 				],
 				"subfolders": [],
 				"name": "Player"
@@ -245,7 +261,8 @@
 					"TheEndTxt",
 					"NoteInTable2",
 					"NoteInTable3",
-					"NoteInTable4"
+					"NoteInTable4",
+					"NoteInTable5"
 				],
 				"subfolders": [],
 				"name": "Text"
@@ -292,7 +309,8 @@
 					"EnemyRespawn",
 					"WhiteDroneHitbox",
 					"BlackDroneHitbox",
-					"HitboxRight"
+					"HitboxRight",
+					"WhiteEnemydying"
 				],
 				"subfolders": [],
 				"name": "Enemy"
@@ -401,13 +419,43 @@
 					"file-info": {
 						"purpose": "none"
 					}
-<<<<<<< Updated upstream
-=======
+				},
+				{
+					"name": "Glass SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 483733014992727,
+					"file-info": {
+						"purpose": "none"
+					}
 				},
 				{
 					"name": "Finial stage 2.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 901129543328027,
+					"sid": 225026099474625,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Landing SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 123426663417668,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Jump.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 285710608598249,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Jump (1).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 923669008626234,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -415,11 +463,34 @@
 				{
 					"name": "Wall Jump SFX.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 745640059701622,
+					"sid": 648842907770295,
 					"file-info": {
 						"purpose": "none"
 					}
->>>>>>> Stashed changes
+				},
+				{
+					"name": "Death SFX.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 588071655946509,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Enemy SFX2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 522469673608652,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Enemy SFX 1.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 599071240411110,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
@@ -451,9 +522,9 @@
 					}
 				},
 				{
-					"name": "City rooftop theme - 2_13_26, 9.37 AM.webm",
+					"name": "Level 1 theme V2.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 650232983985430,
+					"sid": 924884739784977,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -461,15 +532,23 @@
 				{
 					"name": "City rooftop theme V2.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 735346262810762,
+					"sid": 519948725814859,
 					"file-info": {
 						"purpose": "none"
 					}
 				},
 				{
-					"name": "Level 1 theme V2.webm",
+					"name": "City rooftop theme - 2_13_26, 9.37 AM.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 712366812945345,
+					"sid": 854529185873822,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "City rooftop theme V3.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 687276420008589,
 					"file-info": {
 						"purpose": "none"
 					}

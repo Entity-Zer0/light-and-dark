@@ -1,7 +1,7 @@
 {
-	"name": "MallBackground",
+	"name": "Log3",
 	"plugin-id": "Sprite",
-	"sid": 366185718542706,
+	"sid": 804926263514610,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
@@ -12,21 +12,35 @@
 			{
 				"frames": [
 					{
-						"width": 306,
-						"height": 873,
+						"width": 2360,
+						"height": 1640,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"fileType": "image/webp",
-						"imageSpriteId": 8185248,
+						"fileType": "image/png",
+						"imageSpriteId": 3877922,
+						"collisionPoly": {
+							"points": [
+								0.3885593220338983,
+								0.09573170731707317,
+								0.8021186440677966,
+								0.14573170731707316,
+								0.8025423728813559,
+								0.925,
+								0.3398305084745763,
+								0.9280487804878049,
+								0.3444915254237288,
+								0.09634146341463415
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 781837792678863,
+				"sid": 563487609629236,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

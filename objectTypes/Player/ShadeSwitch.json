@@ -1,32 +1,56 @@
 {
-	"name": "MallBackground",
+	"name": "ShadeSwitch",
 	"plugin-id": "Sprite",
-	"sid": 366185718542706,
+	"sid": 232172217736605,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 770145959750862
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 306,
-						"height": 873,
+						"width": 100,
+						"height": 100,
 						"originX": 0.5,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"fileType": "image/webp",
-						"imageSpriteId": 8185248,
+						"fileType": "image/png",
+						"imageSpriteId": 8633577,
+						"collisionPoly": {
+							"points": [
+								0.6572765151909478,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.2512673060055322,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 781837792678863,
+				"sid": 704241849575033,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,
