@@ -1,0 +1,56 @@
+{
+	"name": "DownSKey",
+	"plugin-id": "Sprite",
+	"sid": 994405569443715,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1066,
+						"height": 386,
+						"originX": 0.3273921200750469,
+						"originY": 0.7616580310880829,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6944494,
+						"collisionPoly": {
+							"points": [
+								0.29174484052532834,
+								0.0025906735751295338,
+								0.45778611632270166,
+								0.031088082901554404,
+								0.4915572232645403,
+								0.19430051813471502,
+								0.5225140712945593,
+								0.9948186528497412,
+								0.10787992495309569,
+								0.917098445595855,
+								0.16322701688555336,
+								0.19430051813471502
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 744564646280744,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

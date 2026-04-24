@@ -832,6 +832,62 @@
 									"parameters": {
 										"visibility": "visible"
 									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "ControlsTxt2",
+									"sid": 996660946371200,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "ADKey",
+									"sid": 255937518771344,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "LeftRightKey",
+									"sid": 205758973570718,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "DownSKey",
+									"sid": 570253128745477,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "UpWKey",
+									"sid": 396495042499321,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "SpaceKey",
+									"sid": 436498337204542,
+									"parameters": {
+										"visibility": "visible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Hider",
+									"sid": 415196134892276,
+									"parameters": {
+										"visibility": "visible"
+									}
 								}
 							],
 							"sid": 403154633146390,
@@ -970,6 +1026,62 @@
 									"id": "set-visible",
 									"objectClass": "ControlsTxt",
 									"sid": 789879889944823,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "ControlsTxt2",
+									"sid": 859206835474822,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "ADKey",
+									"sid": 117213900259189,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "LeftRightKey",
+									"sid": 113706843987629,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "DownSKey",
+									"sid": 361404581958334,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "UpWKey",
+									"sid": 236603314007411,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "SpaceKey",
+									"sid": 469336714134785,
+									"parameters": {
+										"visibility": "invisible"
+									}
+								},
+								{
+									"id": "set-visible",
+									"objectClass": "Hider",
+									"sid": 455921118810756,
 									"parameters": {
 										"visibility": "invisible"
 									}

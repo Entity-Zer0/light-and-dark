@@ -283,7 +283,14 @@
 					"Reset",
 					"TitleScrnButton",
 					"TheEnd",
-					"SpaceSkipTxt"
+					"SpaceSkipTxt",
+					"ADKey",
+					"DownSKey",
+					"LeftRightKey",
+					"SpaceKey",
+					"UpWKey",
+					"ControlsTxt2",
+					"Hider"
 				],
 				"subfolders": [],
 				"name": "Title"
