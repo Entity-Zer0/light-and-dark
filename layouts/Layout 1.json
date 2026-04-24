@@ -16144,7 +16144,7 @@
 						"x": -563.1146834363714,
 						"y": -250.01489790878577,
 						"width": 35.49698083873079,
-						"height": 12.796266739745647,
+						"height": 12.796266739745649,
 						"originX": 0.3273921200750469,
 						"originY": 0.7616580310880829,
 						"color": [
@@ -16191,7 +16191,7 @@
 						"x": -563.9981010785174,
 						"y": -297.08274739319853,
 						"width": 35.63512790269988,
-						"height": 13.25340672489881,
+						"height": 13.253406724898808,
 						"originX": 0.3273921200750469,
 						"originY": 0.7616580310880829,
 						"color": [
@@ -16440,8 +16440,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "none",
-								"top-edge": "none",
+								"left-edge": "window-left",
+								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -16503,8 +16503,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "none",
-								"top-edge": "none",
+								"left-edge": "window-left",
+								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
@@ -16550,8 +16550,8 @@
 					"behaviors": {
 						"Anchor": {
 							"properties": {
-								"left-edge": "none",
-								"top-edge": "none",
+								"left-edge": "window-left",
+								"top-edge": "window-top",
 								"right-edge": "none",
 								"bottom-edge": "none",
 								"enabled": true
