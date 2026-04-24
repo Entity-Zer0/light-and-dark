@@ -234,7 +234,26 @@
 					"WallJump",
 					"TextBoxForStoryDoc"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"Sprite7",
+							"Sprite8",
+							"Text3",
+							"ControlsButton2",
+							"ControlsTxt3",
+							"ControlsTxt4",
+							"ADKey2",
+							"DownSKey2",
+							"Exit2",
+							"LeftRightKey2",
+							"SpaceKey2",
+							"UpWKey2"
+						],
+						"subfolders": [],
+						"name": "PauseMenu"
+					}
+				],
 				"name": "Player"
 			},
 			{

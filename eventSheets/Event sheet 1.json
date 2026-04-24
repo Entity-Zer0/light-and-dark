@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "WallJump",
 			"type": "number",
-			"initialValue": "1",
+			"initialValue": "0",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -73,7 +73,7 @@
 			"eventType": "variable",
 			"name": "Layer",
 			"type": "number",
-			"initialValue": "0",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -186,6 +186,16 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 542719135042007
+		},
+		{
+			"eventType": "variable",
+			"name": "Pause",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 847824643628053
 		},
 		{
 			"eventType": "group",
@@ -16560,6 +16570,444 @@
 				}
 			],
 			"sid": 306763547787801
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "PauseMenu",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 162029171924757,
+							"parameters": {
+								"key": 80
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 659921190997031,
+							"parameters": {
+								"variable": "Pause",
+								"comparison": 0,
+								"value": "0"
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 916840271036393,
+							"parameters": {
+								"variable": "Layer",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 581120145137583,
+							"parameters": {
+								"time-scale": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 151609672197986,
+							"parameters": {
+								"variable": "Pause",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player",
+							"sid": 809992938226192,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite7",
+							"sid": 190041866344465,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ControlsButton2",
+							"sid": 616194606446317,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text3",
+							"sid": 238374675658342,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 662535128913414
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 729084269827347,
+							"parameters": {
+								"key": 80
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 406353194218274,
+							"parameters": {
+								"variable": "Pause",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 512985632882746,
+							"parameters": {
+								"time-scale": "1"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 216154651209142,
+							"parameters": {
+								"variable": "Pause",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Player",
+							"sid": 208456865501463,
+							"behaviorType": "Platform",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite7",
+							"sid": 446712084313611,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ControlsButton2",
+							"sid": 903490978337935,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Text3",
+							"sid": 150777540224072,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Exit2",
+							"sid": 413969635611795,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ControlsTxt3",
+							"sid": 822913291199076,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ControlsTxt4",
+							"sid": 832801913940778,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ADKey2",
+							"sid": 272936520635006,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LeftRightKey2",
+							"sid": 807025493502586,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DownSKey2",
+							"sid": 760885649721091,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "UpWKey2",
+							"sid": 665295693137344,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SpaceKey2",
+							"sid": 665154730074700,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 491161355015491
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 291734723106032,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "ControlsButton"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ControlsButton",
+							"sid": 618855898899699
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 579777258446102,
+							"parameters": {
+								"variable": "Layer",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite8",
+							"sid": 550371582202001,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Exit2",
+							"sid": 273772844541468,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ControlsTxt3",
+							"sid": 583492791212043,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ControlsTxt4",
+							"sid": 676571466316354,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ADKey2",
+							"sid": 649993719969033,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LeftRightKey2",
+							"sid": 645215933414426,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DownSKey2",
+							"sid": 880464376651047,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "UpWKey2",
+							"sid": 211397906005539,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SpaceKey2",
+							"sid": 175294337743299,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 676423408465542
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "Mouse",
+							"sid": 354114364241412,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "Exit"
+							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Exit",
+							"sid": 863532120589018
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 171296473562721,
+							"parameters": {
+								"variable": "Layer",
+								"comparison": 4,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Exit2",
+							"sid": 214529036138037,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ControlsTxt3",
+							"sid": 900492962748228,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ControlsTxt4",
+							"sid": 738293885241203,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "ADKey2",
+							"sid": 525010701807909,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "LeftRightKey2",
+							"sid": 509486727878095,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "DownSKey2",
+							"sid": 151316816219804,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "UpWKey2",
+							"sid": 634947279030441,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "SpaceKey2",
+							"sid": 605374685123170,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 728773878936991
+				}
+			],
+			"sid": 778177303114642
 		}
 	],
 	"sid": 285828799823789
