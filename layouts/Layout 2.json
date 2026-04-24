@@ -29035,8 +29035,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 37.300238582006884,
-						"y": 168.50641812429825,
+						"x": 37.72505597983081,
+						"y": 169.59703469119285,
 						"width": 7.167333715891343,
 						"height": 9.062624386962101,
 						"originX": 0.4742268041237113,
@@ -34224,96 +34224,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "UpgradeScreen",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1699,
-					"sid": 946070356300442,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 946070356300442,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 2500,
-						"y": 276,
-						"width": 89.56699493629665,
-						"height": 53.09740599098376,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "NoteInTable2",
-					"properties": {
-						"text": "February 7th- The test subject is holding up as we continue clinical trials. She hasn't become ill from the injection from Sunday. Although, mentally she has become “wondering” \n\nthis day I'd got her peach ice cream. Usually she would be so excited for it because it was hard to find. her only response was “Oh.” After staring at it for a minute she ate it.\n",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 2,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": false,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 1700,
-					"sid": 955468634234164,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 955468634234164,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 2463,
-						"y": 255,
-						"width": 76.68330558382604,
-						"height": 47.43767342493888,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
 					"type": "LayoutTitle2",
 					"properties": {
 						"initially-visible": false,
@@ -34350,6 +34260,43 @@
 						"height": 21.336621157387725,
 						"originX": 0.4878048780487805,
 						"originY": 0.5128205128205128,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "Log3",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 636,
+					"sid": 923203875360955,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 923203875360955,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 2482.437599254091,
+						"y": 278.0515456874291,
+						"width": 122.94502631946182,
+						"height": 144.38133544627004,
+						"originX": 0.36065573770491804,
+						"originY": 0.47092198581560285,
 						"color": [
 							1,
 							1,

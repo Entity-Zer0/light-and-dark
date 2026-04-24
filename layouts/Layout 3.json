@@ -8118,96 +8118,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "UpgradeScreen",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 1711,
-					"sid": 623875735710750,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 623875735710750,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1100.1149950086453,
-						"y": 463.39259876206404,
-						"width": 83.4044947841783,
-						"height": 53.71785502767676,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "NoteInTable3",
-					"properties": {
-						"text": "Philip Jinbu \n\nMarch 1st- Clinical trials are done– Alex Jinbu is a success in a way. We didn't add physical enhancements due to my wishes. It would have added major growth to her body. \n\nShe is perfect as is.  \n",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 2,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": false,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 1964,
-					"sid": 512555456795043,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 512555456795043,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1065.7655621896643,
-						"y": 440.32397988674927,
-						"width": 69.44675390384896,
-						"height": 47.68382824623785,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
 					"type": "LayoutTitle3",
 					"properties": {
 						"initially-visible": false,
@@ -8244,6 +8154,43 @@
 						"height": 18.712128206689414,
 						"originX": 0.4790697674418605,
 						"originY": 0.5128205128205128,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "Log7",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1699,
+					"sid": 675022986683956,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 675022986683956,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1092.3921471242957,
+						"y": 446.3421516913183,
+						"width": 85.62067531522621,
+						"height": 93.83162107034616,
+						"originX": 0.36065573770491804,
+						"originY": 0.47092198581560285,
 						"color": [
 							1,
 							1,

@@ -14874,43 +14874,6 @@
 						"z": 0,
 						"angle": 0
 					}
-				},
-				{
-					"type": "TextBoxForStoryDoc",
-					"properties": {
-						"initially-visible": false,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 636,
-					"sid": 325539149570785,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 325539149570785,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 268.5314770363058,
-						"y": 439.63125389739037,
-						"width": 124.38967845440237,
-						"height": 76.63636854596476,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
 				}
 			],
 			"sid": 388704480223574,
@@ -15225,8 +15188,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 282.4533992075154,
-						"y": 235.04486025188402,
+						"x": 282.3672568351052,
+						"y": 235.86823693950345,
 						"width": 7.167333715891343,
 						"height": 9.062624386962101,
 						"originX": 0.4742268041237113,
@@ -15760,48 +15723,32 @@
 					}
 				},
 				{
-					"type": "NoteInTable1",
+					"type": "Log1",
 					"properties": {
-						"text": "Philip Jinbu                                                           February 1st- A color changing cloak made with light fibers drenched in chromatophores. \nFifty cuttlefish had to be extracted for the suits  creation A willing participant for are the clinical  trials will be Alex Jinbu.                  ",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 2,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "center",
-						"wrapping": "character",
-						"text-direction": "ltr",
-						"icon-set": -1,
 						"initially-visible": false,
-						"origin": "top-left",
-						"read-aloud": false
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
 					"uid": 1684,
-					"sid": 497749956543999,
+					"sid": 155610212737426,
 					"tags": "",
 					"instanceVariables": {},
 					"behaviors": {},
 					"instanceFolderItem": {
-						"sid": 497749956543999,
+						"sid": 155610212737426,
 						"expanded": true
 					},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 250.62473266845663,
-						"y": 419.2609762691018,
-						"width": 56.33824851028098,
-						"height": 48.8745611850338,
-						"originX": 0,
-						"originY": 0,
+						"x": 279.1266266622305,
+						"y": 418.20512615305825,
+						"width": 86.72041567930088,
+						"height": 103.59691325522837,
+						"originX": 0.36065573770491804,
+						"originY": 0.47092198581560285,
 						"color": [
 							1,
 							1,

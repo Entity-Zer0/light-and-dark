@@ -12635,6 +12635,10 @@
 							"isActiveOnStart": true,
 							"children": [
 								{
+									"eventType": "comment",
+									"text": "Layout1 Table Bottom Left most table"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -12661,14 +12665,6 @@
 											"sid": 795134150331497,
 											"parameters": {
 												"unique-id": "612"
-											}
-										},
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "UpgradeScreen",
-											"sid": 306128102586017,
-											"parameters": {
-												"unique-id": "636"
 											}
 										},
 										{
@@ -12707,20 +12703,21 @@
 											],
 											"actions": [
 												{
+													"id": "set-enabled",
+													"objectClass": "Player",
+													"sid": 962160380346189,
+													"behaviorType": "Platform",
+													"parameters": {
+														"state": "disabled"
+													}
+												},
+												{
 													"id": "wait",
 													"objectClass": "System",
 													"sid": 592382072826309,
 													"parameters": {
 														"seconds": "0.3",
 														"use-timescale": true
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "TextBoxForStoryDoc",
-													"sid": 456567056144647,
-													"parameters": {
-														"visibility": "invisible"
 													}
 												},
 												{
@@ -12733,36 +12730,11 @@
 												},
 												{
 													"id": "set-position-to-another-object",
-													"objectClass": "UpgradeScreen",
-													"sid": 478284522950716,
+													"objectClass": "Log1",
+													"sid": 261959878116038,
 													"parameters": {
 														"object": "Player",
 														"image-point-optional": "0"
-													}
-												},
-												{
-													"id": "set-position-to-another-object",
-													"objectClass": "NoteInTable1",
-													"sid": 809892714541131,
-													"parameters": {
-														"object": "Player",
-														"image-point-optional": "0"
-													}
-												},
-												{
-													"id": "set-x",
-													"objectClass": "NoteInTable1",
-													"sid": 806469590726986,
-													"parameters": {
-														"x": "NoteInTable1.X - 28"
-													}
-												},
-												{
-													"id": "set-y",
-													"objectClass": "NoteInTable1",
-													"sid": 911064434001445,
-													"parameters": {
-														"y": "NoteInTable1.Y - 29"
 													}
 												},
 												{
@@ -12775,34 +12747,9 @@
 													}
 												},
 												{
-													"id": "set-enabled",
-													"objectClass": "Player",
-													"sid": 518015788417515,
-													"behaviorType": "Platform",
-													"parameters": {
-														"state": "disabled"
-													}
-												},
-												{
 													"id": "set-visible",
-													"objectClass": "UpgradeScreen",
-													"sid": 874860257368827,
-													"parameters": {
-														"visibility": "visible"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "NoteInTable1",
-													"sid": 725081961843622,
-													"parameters": {
-														"visibility": "visible"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "NoteInTable1",
-													"sid": 360279336384798,
+													"objectClass": "Log1",
+													"sid": 890344700795157,
 													"parameters": {
 														"visibility": "visible"
 													}
@@ -12836,6 +12783,10 @@
 									]
 								},
 								{
+									"eventType": "comment",
+									"text": "Layout2 Table Guarded by Enemy in Middle point building"
+								},
+								{
 									"eventType": "block",
 									"conditions": [
 										{
@@ -12862,14 +12813,6 @@
 											"sid": 439010399764294,
 											"parameters": {
 												"unique-id": "871"
-											}
-										},
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "UpgradeScreen",
-											"sid": 924046132181537,
-											"parameters": {
-												"unique-id": "1699"
 											}
 										},
 										{
@@ -12908,9 +12851,18 @@
 											],
 											"actions": [
 												{
+													"id": "set-enabled",
+													"objectClass": "Player",
+													"sid": 758070882962612,
+													"behaviorType": "Platform",
+													"parameters": {
+														"state": "disabled"
+													}
+												},
+												{
 													"id": "wait",
 													"objectClass": "System",
-													"sid": 158665160016279,
+													"sid": 535398669436718,
 													"parameters": {
 														"seconds": "0.3",
 														"use-timescale": true
@@ -12918,84 +12870,34 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBoxForStoryDoc",
-													"sid": 698393270193756,
-													"parameters": {
-														"visibility": "invisible"
-													}
-												},
-												{
-													"id": "set-visible",
 													"objectClass": "NothingFoundTxt",
-													"sid": 446788143164050,
+													"sid": 555444122685392,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-position-to-another-object",
-													"objectClass": "UpgradeScreen",
-													"sid": 429042336563397,
+													"objectClass": "Log3",
+													"sid": 948566960407720,
 													"parameters": {
 														"object": "Player",
 														"image-point-optional": "0"
-													}
-												},
-												{
-													"id": "set-position-to-another-object",
-													"objectClass": "NoteInTable2",
-													"sid": 495470333367105,
-													"parameters": {
-														"object": "Player",
-														"image-point-optional": "0"
-													}
-												},
-												{
-													"id": "set-x",
-													"objectClass": "NoteInTable2",
-													"sid": 567132935595034,
-													"parameters": {
-														"x": "NoteInTable2.X - 37"
-													}
-												},
-												{
-													"id": "set-y",
-													"objectClass": "NoteInTable2",
-													"sid": 332779854739010,
-													"parameters": {
-														"y": "NoteInTable2.Y - 22"
 													}
 												},
 												{
 													"id": "set-eventvar-value",
 													"objectClass": "System",
-													"sid": 911979124394535,
+													"sid": 131395982773752,
 													"parameters": {
 														"variable": "Note",
 														"value": "1"
 													}
 												},
 												{
-													"id": "set-enabled",
-													"objectClass": "Player",
-													"sid": 203261300915595,
-													"behaviorType": "Platform",
-													"parameters": {
-														"state": "disabled"
-													}
-												},
-												{
 													"id": "set-visible",
-													"objectClass": "UpgradeScreen",
-													"sid": 447603847224951,
-													"parameters": {
-														"visibility": "visible"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "NoteInTable2",
-													"sid": 888417059358651,
+													"objectClass": "Log3",
+													"sid": 924823019515792,
 													"parameters": {
 														"visibility": "visible"
 													}
@@ -13003,7 +12905,7 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 187072417716035,
+													"sid": 174560576232943,
 													"parameters": {
 														"audio-file": {
 															"path": "Found_level up SFX"
@@ -13017,7 +12919,7 @@
 												{
 													"id": "set-time-scale",
 													"objectClass": "System",
-													"sid": 974330158234217,
+													"sid": 649543425782427,
 													"parameters": {
 														"time-scale": "0"
 													}
@@ -13027,6 +12929,10 @@
 											"isOrBlock": true
 										}
 									]
+								},
+								{
+									"eventType": "comment",
+									"text": "Layout3 Table In hallway Before Vault"
 								},
 								{
 									"eventType": "block",
@@ -13055,22 +12961,6 @@
 											"sid": 129238510676036,
 											"parameters": {
 												"unique-id": "1015"
-											}
-										},
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "Log7",
-											"sid": 723918724724642,
-											"parameters": {
-												"unique-id": "636"
-											}
-										},
-										{
-											"id": "pick-by-unique-id",
-											"objectClass": "UpgradeScreen",
-											"sid": 328327022356482,
-											"parameters": {
-												"unique-id": "1711"
 											}
 										},
 										{
@@ -13109,9 +12999,18 @@
 											],
 											"actions": [
 												{
+													"id": "set-enabled",
+													"objectClass": "Player",
+													"sid": 135217441263931,
+													"behaviorType": "Platform",
+													"parameters": {
+														"state": "disabled"
+													}
+												},
+												{
 													"id": "wait",
 													"objectClass": "System",
-													"sid": 915836011051227,
+													"sid": 250792680689321,
 													"parameters": {
 														"seconds": "0.3",
 														"use-timescale": true
@@ -13119,142 +13018,34 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBox",
-													"sid": 772254352631329,
-													"disabled": true,
-													"parameters": {
-														"visibility": "invisible"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "Log7",
-													"sid": 851002091209085,
-													"parameters": {
-														"visibility": "invisible"
-													}
-												},
-												{
-													"id": "set-visible",
 													"objectClass": "NothingFoundTxt",
-													"sid": 853803562424860,
-													"disabled": true,
+													"sid": 889993755364403,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-position-to-another-object",
-													"objectClass": "UpgradeScreen",
-													"sid": 581496632738493,
-													"parameters": {
-														"object": "Player",
-														"image-point-optional": "0"
-													}
-												},
-												{
-													"id": "set-position-to-another-object",
-													"objectClass": "NoteInTable3",
-													"sid": 268217584381905,
-													"disabled": true,
-													"parameters": {
-														"object": "Player",
-														"image-point-optional": "0"
-													}
-												},
-												{
-													"id": "set-position-to-another-object",
-													"objectClass": "Player",
-													"sid": 777512981312546,
-													"disabled": true,
-													"parameters": {
-														"object": "Player",
-														"image-point-optional": "0"
-													}
-												},
-												{
-													"id": "set-position-to-another-object",
 													"objectClass": "Log7",
-													"sid": 848749260155385,
+													"sid": 815731660482470,
 													"parameters": {
 														"object": "Player",
 														"image-point-optional": "0"
-													}
-												},
-												{
-													"id": "set-x",
-													"objectClass": "NoteInTable3",
-													"sid": 965765540281270,
-													"disabled": true,
-													"parameters": {
-														"x": "NoteInTable3.X - 35"
-													}
-												},
-												{
-													"id": "set-y",
-													"objectClass": "NoteInTable3",
-													"sid": 476685846673232,
-													"disabled": true,
-													"parameters": {
-														"y": "NoteInTable3.Y - 22"
-													}
-												},
-												{
-													"id": "set-x",
-													"objectClass": "Log7",
-													"sid": 554625818715854,
-													"parameters": {
-														"x": "Log7.X - 35"
-													}
-												},
-												{
-													"id": "set-y",
-													"objectClass": "Log7",
-													"sid": 991228055661529,
-													"parameters": {
-														"y": "Log7.Y - 22"
 													}
 												},
 												{
 													"id": "set-eventvar-value",
 													"objectClass": "System",
-													"sid": 206566549431716,
+													"sid": 716605764333005,
 													"parameters": {
 														"variable": "Note",
 														"value": "1"
 													}
 												},
 												{
-													"id": "set-enabled",
-													"objectClass": "Player",
-													"sid": 259086836097679,
-													"behaviorType": "Platform",
-													"parameters": {
-														"state": "disabled"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "UpgradeScreen",
-													"sid": 345421846130628,
-													"disabled": true,
-													"parameters": {
-														"visibility": "visible"
-													}
-												},
-												{
 													"id": "set-visible",
 													"objectClass": "Log7",
-													"sid": 516599671088850,
-													"parameters": {
-														"visibility": "visible"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "NoteInTable3",
-													"sid": 758968001924229,
-													"disabled": true,
+													"sid": 203003719502555,
 													"parameters": {
 														"visibility": "visible"
 													}
@@ -13262,7 +13053,7 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 357529055644968,
+													"sid": 227801923116957,
 													"parameters": {
 														"audio-file": {
 															"path": "Found_level up SFX"
@@ -13276,7 +13067,7 @@
 												{
 													"id": "set-time-scale",
 													"objectClass": "System",
-													"sid": 596795396836809,
+													"sid": 499356513168928,
 													"parameters": {
 														"time-scale": "0"
 													}
@@ -13286,6 +13077,10 @@
 											"isOrBlock": true
 										}
 									]
+								},
+								{
+									"eventType": "comment",
+									"text": "Layout4 Table Experiment Tube Room"
 								},
 								{
 									"eventType": "block",
@@ -13371,9 +13166,18 @@
 											],
 											"actions": [
 												{
+													"id": "set-enabled",
+													"objectClass": "Player",
+													"sid": 452774225485212,
+													"behaviorType": "Platform",
+													"parameters": {
+														"state": "disabled"
+													}
+												},
+												{
 													"id": "wait",
 													"objectClass": "System",
-													"sid": 234938373950822,
+													"sid": 623700674756437,
 													"parameters": {
 														"seconds": "0.3",
 														"use-timescale": true
@@ -13381,84 +13185,34 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBox",
-													"sid": 861037194428398,
-													"parameters": {
-														"visibility": "invisible"
-													}
-												},
-												{
-													"id": "set-visible",
 													"objectClass": "NothingFoundTxt",
-													"sid": 754099700975819,
+													"sid": 971303838834515,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-position-to-another-object",
-													"objectClass": "UpgradeScreen",
-													"sid": 961113875454264,
+													"objectClass": "Log15",
+													"sid": 506678418348339,
 													"parameters": {
 														"object": "Player",
 														"image-point-optional": "0"
-													}
-												},
-												{
-													"id": "set-position-to-another-object",
-													"objectClass": "NoteInTable4",
-													"sid": 691552579346996,
-													"parameters": {
-														"object": "Player",
-														"image-point-optional": "0"
-													}
-												},
-												{
-													"id": "set-x",
-													"objectClass": "NoteInTable4",
-													"sid": 320163864669409,
-													"parameters": {
-														"x": "NoteInTable4.X - 43"
-													}
-												},
-												{
-													"id": "set-y",
-													"objectClass": "NoteInTable4",
-													"sid": 669400375630474,
-													"parameters": {
-														"y": "NoteInTable4.Y - 20"
 													}
 												},
 												{
 													"id": "set-eventvar-value",
 													"objectClass": "System",
-													"sid": 499918600594700,
+													"sid": 454350717170323,
 													"parameters": {
 														"variable": "Note",
 														"value": "1"
 													}
 												},
 												{
-													"id": "set-enabled",
-													"objectClass": "Player",
-													"sid": 838263741974867,
-													"behaviorType": "Platform",
-													"parameters": {
-														"state": "disabled"
-													}
-												},
-												{
 													"id": "set-visible",
-													"objectClass": "UpgradeScreen",
-													"sid": 887991514005341,
-													"parameters": {
-														"visibility": "visible"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "NoteInTable4",
-													"sid": 867736161690362,
+													"objectClass": "Log15",
+													"sid": 792800736948158,
 													"parameters": {
 														"visibility": "visible"
 													}
@@ -13466,7 +13220,7 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 549267966057249,
+													"sid": 525860846650261,
 													"parameters": {
 														"audio-file": {
 															"path": "Found_level up SFX"
@@ -13480,7 +13234,7 @@
 												{
 													"id": "set-time-scale",
 													"objectClass": "System",
-													"sid": 382817898856524,
+													"sid": 279210455570227,
 													"parameters": {
 														"time-scale": "0"
 													}
@@ -13488,207 +13242,61 @@
 											],
 											"sid": 100209393246365,
 											"isOrBlock": true
+										}
+									]
+								},
+								{
+									"eventType": "comment",
+									"text": "Layout4 Table Spike and Laser Room"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 999381221599670,
+											"parameters": {
+												"variable": "Note",
+												"comparison": 0,
+												"value": "0"
+											}
 										},
 										{
-											"eventType": "block",
-											"conditions": [
-												{
-													"id": "compare-eventvar",
-													"objectClass": "System",
-													"sid": 171808786824414,
-													"parameters": {
-														"variable": "Note",
-														"comparison": 0,
-														"value": "0"
-													}
-												},
-												{
-													"id": "is-overlapping-another-object",
-													"objectClass": "Player",
-													"sid": 312445472116926,
-													"parameters": {
-														"object": "BlackTable"
-													}
-												},
-												{
-													"id": "pick-by-unique-id",
-													"objectClass": "BlackTable",
-													"sid": 743511892448568,
-													"parameters": {
-														"unique-id": "1210"
-													}
-												},
-												{
-													"id": "pick-by-unique-id",
-													"objectClass": "UpgradeScreen",
-													"sid": 162457993695594,
-													"parameters": {
-														"unique-id": "1931"
-													}
-												},
-												{
-													"id": "is-overlapping-another-object",
-													"objectClass": "BlackTable",
-													"sid": 350315656451359,
-													"parameters": {
-														"object": "BlackX"
-													}
-												}
-											],
-											"actions": [],
-											"sid": 884362711327908,
-											"children": [
-												{
-													"eventType": "block",
-													"conditions": [
-														{
-															"id": "on-key-pressed",
-															"objectClass": "Keyboard",
-															"sid": 283508887819889,
-															"parameters": {
-																"key": 32
-															}
-														},
-														{
-															"id": "on-button-pressed",
-															"objectClass": "Gamepad",
-															"sid": 715332208489169,
-															"disabled": true,
-															"parameters": {
-																"gamepad": "0",
-																"button": "button-b"
-															}
-														}
-													],
-													"actions": [
-														{
-															"id": "wait",
-															"objectClass": "System",
-															"sid": 482066084259786,
-															"parameters": {
-																"seconds": "0.3",
-																"use-timescale": true
-															}
-														},
-														{
-															"id": "set-visible",
-															"objectClass": "TextBox",
-															"sid": 100929392875826,
-															"parameters": {
-																"visibility": "invisible"
-															}
-														},
-														{
-															"id": "set-visible",
-															"objectClass": "NothingFoundTxt",
-															"sid": 295372026467024,
-															"parameters": {
-																"visibility": "invisible"
-															}
-														},
-														{
-															"id": "set-position-to-another-object",
-															"objectClass": "UpgradeScreen",
-															"sid": 884035472722154,
-															"parameters": {
-																"object": "Player",
-																"image-point-optional": "0"
-															}
-														},
-														{
-															"id": "set-position-to-another-object",
-															"objectClass": "NoteInTable5",
-															"sid": 491657844736497,
-															"parameters": {
-																"object": "Player",
-																"image-point-optional": "0"
-															}
-														},
-														{
-															"id": "set-x",
-															"objectClass": "NoteInTable4",
-															"sid": 901081968034820,
-															"parameters": {
-																"x": "NoteInTable5.X - 43"
-															}
-														},
-														{
-															"id": "set-y",
-															"objectClass": "NoteInTable4",
-															"sid": 660414817116166,
-															"parameters": {
-																"y": "NoteInTable5.Y - 20"
-															}
-														},
-														{
-															"id": "set-eventvar-value",
-															"objectClass": "System",
-															"sid": 621493665201929,
-															"parameters": {
-																"variable": "Note",
-																"value": "1"
-															}
-														},
-														{
-															"id": "set-enabled",
-															"objectClass": "Player",
-															"sid": 475589174273990,
-															"behaviorType": "Platform",
-															"parameters": {
-																"state": "disabled"
-															}
-														},
-														{
-															"id": "set-visible",
-															"objectClass": "UpgradeScreen",
-															"sid": 323805350066250,
-															"parameters": {
-																"visibility": "visible"
-															}
-														},
-														{
-															"id": "set-visible",
-															"objectClass": "NoteInTable5",
-															"sid": 321453910664427,
-															"parameters": {
-																"visibility": "visible"
-															}
-														},
-														{
-															"id": "play",
-															"objectClass": "Audio",
-															"sid": 290923042276296,
-															"parameters": {
-																"audio-file": {
-																	"path": "Found_level up SFX"
-																},
-																"loop": "not-looping",
-																"volume": "-10",
-																"stereo-pan": "0",
-																"tag-optional": "\"\""
-															}
-														},
-														{
-															"id": "set-time-scale",
-															"objectClass": "System",
-															"sid": 552486447860295,
-															"parameters": {
-																"time-scale": "0"
-															}
-														}
-													],
-													"sid": 410746990885957,
-													"isOrBlock": true
-												}
-											]
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 401905921937215,
+											"parameters": {
+												"object": "BlackTable"
+											}
 										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackTable",
+											"sid": 652315173701385,
+											"parameters": {
+												"unique-id": "1210"
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BlackTable",
+											"sid": 985997783343990,
+											"parameters": {
+												"object": "BlackX"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 296430541592360,
+									"children": [
 										{
 											"eventType": "block",
 											"conditions": [
 												{
 													"id": "on-key-pressed",
 													"objectClass": "Keyboard",
-													"sid": 417982496913863,
+													"sid": 166138736841531,
 													"parameters": {
 														"key": 32
 													}
@@ -13696,7 +13304,127 @@
 												{
 													"id": "on-button-pressed",
 													"objectClass": "Gamepad",
-													"sid": 264167378509757,
+													"sid": 497308481978306,
+													"disabled": true,
+													"parameters": {
+														"gamepad": "0",
+														"button": "button-b"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "Player",
+													"sid": 997975717194376,
+													"behaviorType": "Platform",
+													"parameters": {
+														"state": "disabled"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 553503403500391,
+													"parameters": {
+														"seconds": "0.3",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "NothingFoundTxt",
+													"sid": 520457111883492,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "Log15",
+													"sid": 289749296766913,
+													"parameters": {
+														"object": "Player",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 791246840464817,
+													"parameters": {
+														"variable": "Note",
+														"value": "1"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Log15",
+													"sid": 968122180400231,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 742718240967795,
+													"parameters": {
+														"audio-file": {
+															"path": "Found_level up SFX"
+														},
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												},
+												{
+													"id": "set-time-scale",
+													"objectClass": "System",
+													"sid": 495701509706622,
+													"parameters": {
+														"time-scale": "0"
+													}
+												}
+											],
+											"sid": 610508024159871,
+											"isOrBlock": true
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 192598529154472,
+											"parameters": {
+												"variable": "Note",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 823993242944967,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-pressed",
+													"objectClass": "Keyboard",
+													"sid": 686007325243760,
+													"parameters": {
+														"key": 32
+													}
+												},
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 971479758277626,
 													"disabled": true,
 													"parameters": {
 														"gamepad": "0",
@@ -13708,7 +13436,7 @@
 												{
 													"id": "set-time-scale",
 													"objectClass": "System",
-													"sid": 154995458469381,
+													"sid": 929903865446125,
 													"parameters": {
 														"time-scale": "1"
 													}
@@ -13716,7 +13444,7 @@
 												{
 													"id": "wait",
 													"objectClass": "System",
-													"sid": 898316266005806,
+													"sid": 467698258387829,
 													"parameters": {
 														"seconds": "0.3",
 														"use-timescale": true
@@ -13724,53 +13452,8 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "UpgradeScreen",
-													"sid": 662721318108274,
-													"disabled": true,
-													"parameters": {
-														"visibility": "invisible"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "NoteInTable1",
-													"sid": 521693380821156,
-													"disabled": true,
-													"parameters": {
-														"visibility": "invisible"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "NoteInTable2",
-													"sid": 871447706462077,
-													"disabled": true,
-													"parameters": {
-														"visibility": "invisible"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "NoteInTable3",
-													"sid": 618871561695018,
-													"disabled": true,
-													"parameters": {
-														"visibility": "invisible"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "NoteInTable4",
-													"sid": 408750198539411,
-													"disabled": true,
-													"parameters": {
-														"visibility": "invisible"
-													}
-												},
-												{
-													"id": "set-visible",
 													"objectClass": "Log15",
-													"sid": 863424228217545,
+													"sid": 109834574826928,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -13778,7 +13461,7 @@
 												{
 													"id": "set-visible",
 													"objectClass": "Log8",
-													"sid": 847883295668512,
+													"sid": 901158761809125,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -13786,7 +13469,7 @@
 												{
 													"id": "set-visible",
 													"objectClass": "Log7",
-													"sid": 138749901429860,
+													"sid": 594747681371324,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -13794,7 +13477,15 @@
 												{
 													"id": "set-visible",
 													"objectClass": "Log3",
-													"sid": 293690755463840,
+													"sid": 180453583661519,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Log1",
+													"sid": 756170367718722,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -13802,7 +13493,7 @@
 												{
 													"id": "set-eventvar-value",
 													"objectClass": "System",
-													"sid": 189765752365369,
+													"sid": 519770076670487,
 													"parameters": {
 														"variable": "Note",
 														"value": "0"
@@ -13811,42 +13502,17 @@
 												{
 													"id": "set-enabled",
 													"objectClass": "Player",
-													"sid": 148577322393007,
+													"sid": 234621232055908,
 													"behaviorType": "Platform",
 													"parameters": {
 														"state": "enabled"
 													}
 												}
 											],
-											"sid": 950098986814644,
+											"sid": 588293424714741,
 											"isOrBlock": true
 										}
 									]
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "on-key-pressed",
-											"objectClass": "Keyboard",
-											"sid": 325403844934798,
-											"parameters": {
-												"key": 32
-											}
-										}
-									],
-									"actions": [
-										{
-											"id": "set-enabled",
-											"objectClass": "Player",
-											"sid": 114134171346081,
-											"behaviorType": "Platform",
-											"parameters": {
-												"state": "enabled"
-											}
-										}
-									],
-									"sid": 303265094805650
 								}
 							],
 							"sid": 885067695028385
@@ -13854,7 +13520,7 @@
 						{
 							"eventType": "group",
 							"disabled": false,
-							"title": "TableCheck",
+							"title": "TableCheckNothing",
 							"description": "",
 							"isActiveOnStart": true,
 							"children": [
@@ -13926,14 +13592,6 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBoxForStoryDoc",
-													"sid": 195685991946014,
-													"parameters": {
-														"visibility": "visible"
-													}
-												},
-												{
-													"id": "set-visible",
 													"objectClass": "NothingFoundTxt",
 													"sid": 244578290230807,
 													"parameters": {
@@ -13947,14 +13605,6 @@
 													"parameters": {
 														"seconds": "2.5",
 														"use-timescale": true
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "TextBoxForStoryDoc",
-													"sid": 641385029524312,
-													"parameters": {
-														"visibility": "invisible"
 													}
 												},
 												{
@@ -14044,14 +13694,6 @@
 													"parameters": {
 														"variable": "IsBusy",
 														"value": "1"
-													}
-												},
-												{
-													"id": "set-visible",
-													"objectClass": "TextBoxForStoryDoc",
-													"sid": 755520032187721,
-													"parameters": {
-														"visibility": "visible"
 													}
 												},
 												{
@@ -15630,6 +15272,7 @@
 					"id": "set-position-to-another-object",
 					"objectClass": "Player",
 					"sid": 324517772007505,
+					"disabled": true,
 					"parameters": {
 						"object": "Spawn2",
 						"image-point-optional": "0"
