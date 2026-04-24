@@ -132,7 +132,8 @@
 			"Log3",
 			"Log8",
 			"Log15",
-			"Sprite6"
+			"Sprite6",
+			"Text2"
 		],
 		"subfolders": [
 			{

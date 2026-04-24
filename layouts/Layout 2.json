@@ -20820,7 +20820,7 @@
 					"locked": false,
 					"world": {
 						"x": 1142,
-						"y": 179,
+						"y": 181,
 						"width": 27.040266366699257,
 						"height": 20.685753382674573,
 						"originX": 0.5,
@@ -21277,6 +21277,106 @@
 						],
 						"z": 0,
 						"angle": 4.807493706246415
+					}
+				},
+				{
+					"type": "TextBox",
+					"properties": {
+						"initially-visible": false,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 1964,
+					"sid": 372915033716435,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-bottom",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": false
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 372915033716435,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 82.80845937429886,
+						"y": 127.9825284461436,
+						"width": 33.70019157751277,
+						"height": 26.62219770477128,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
+					}
+				},
+				{
+					"type": "Text2",
+					"properties": {
+						"text": "If the same color as the creature and spike hazards you are save!",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 2,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 2148,
+					"sid": 967189585596868,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 967189585596868,
+						"expanded": true
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 69.5926311727634,
+						"y": 118.80018742431855,
+						"width": 28.49961424243685,
+						"height": 20.830020151887766,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"z": 0,
+						"angle": 0
 					}
 				}
 			],
