@@ -1,0 +1,54 @@
+{
+	"name": "Log8",
+	"plugin-id": "Sprite",
+	"sid": 237087120732343,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 2360,
+						"height": 1640,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9469788,
+						"collisionPoly": {
+							"points": [
+								0.3885593220338983,
+								0.09573170731707317,
+								0.8021186440677966,
+								0.14573170731707316,
+								0.8025423728813559,
+								0.925,
+								0.3398305084745763,
+								0.9280487804878049,
+								0.3444915254237288,
+								0.09634146341463415
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 899750811498168,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
