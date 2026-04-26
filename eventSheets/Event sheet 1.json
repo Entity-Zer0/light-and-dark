@@ -1650,13 +1650,13 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 720494304319051,
+													"sid": 850027643908217,
 													"parameters": {
 														"audio-file": {
 															"path": "Death SFX"
 														},
 														"loop": "not-looping",
-														"volume": "-40",
+														"volume": "-30",
 														"stereo-pan": "0",
 														"tag-optional": "\"\""
 													}
@@ -1888,13 +1888,13 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 695707822019259,
+													"sid": 671582611941752,
 													"parameters": {
 														"audio-file": {
 															"path": "Death SFX"
 														},
 														"loop": "not-looping",
-														"volume": "-40",
+														"volume": "-30",
 														"stereo-pan": "0",
 														"tag-optional": "\"\""
 													}
@@ -2126,13 +2126,13 @@
 												{
 													"id": "play",
 													"objectClass": "Audio",
-													"sid": 658681685845942,
+													"sid": 345063092000686,
 													"parameters": {
 														"audio-file": {
 															"path": "Death SFX"
 														},
 														"loop": "not-looping",
-														"volume": "-40",
+														"volume": "-30",
 														"stereo-pan": "0",
 														"tag-optional": "\"\""
 													}
@@ -5752,43 +5752,52 @@
 									"sid": 913671221166142
 								},
 								{
-									"id": "is-visible",
+									"id": "pick-by-unique-id",
 									"objectClass": "ShadowEnemy",
-									"sid": 313230701178898
+									"sid": 587166218010688,
+									"parameters": {
+										"unique-id": "64"
+									}
 								},
 								{
 									"id": "is-visible",
 									"objectClass": "WhiteEnemy",
-									"sid": 232792388071402
-								},
-								{
-									"id": "is-animation-playing",
-									"objectClass": "ShadowEnemy",
-									"sid": 238403133952496,
-									"parameters": {
-										"animation": "\"Walking\""
-									}
-								},
-								{
-									"id": "is-animation-playing",
-									"objectClass": "WhiteEnemy",
-									"sid": 369837624075367,
-									"parameters": {
-										"animation": "\"Walking\""
-									}
+									"sid": 232792388071402,
+									"disabled": true
 								}
 							],
 							"actions": [
 								{
-									"id": "play",
+									"id": "play-at-position",
 									"objectClass": "Audio",
-									"sid": 157427438271801,
+									"sid": 539809898880660,
 									"parameters": {
 										"audio-file": {
 											"path": "Enemy SFX2"
 										},
 										"loop": "looping",
 										"volume": "0",
+										"x": "588",
+										"y": "500",
+										"z": "0",
+										"angle": "0",
+										"inner-angle": "360",
+										"outer-angle": "360",
+										"outer-gain": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 118301046836007,
+									"disabled": true,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "-10",
 										"stereo-pan": "0",
 										"tag-optional": "\"EnemySFX1Sound\""
 									}
@@ -5796,14 +5805,482 @@
 								{
 									"id": "set-volume",
 									"objectClass": "Audio",
-									"sid": 771579760730603,
+									"sid": 606020841285829,
 									"parameters": {
 										"tag": "\"EnemySFX2Sound\"",
-										"db": "-0"
+										"db": "-35"
+									}
+								},
+								{
+									"id": "play-at-position",
+									"objectClass": "Audio",
+									"sid": 962012787312974,
+									"disabled": true,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "0",
+										"x": "588",
+										"y": "500",
+										"z": "0",
+										"angle": "0",
+										"inner-angle": "360",
+										"outer-angle": "360",
+										"outer-gain": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "play-at-position",
+									"objectClass": "Audio",
+									"sid": 828654096913251,
+									"disabled": true,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "0",
+										"x": "536",
+										"y": "103",
+										"z": "0",
+										"angle": "0",
+										"inner-angle": "360",
+										"outer-angle": "360",
+										"outer-gain": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],
 							"sid": 651127463245013
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 888531869746409
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "ShadowEnemy",
+									"sid": 578991653082090,
+									"parameters": {
+										"unique-id": "1950"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "WhiteEnemy",
+									"sid": 734224999888992,
+									"disabled": true
+								}
+							],
+							"actions": [
+								{
+									"id": "play-at-position",
+									"objectClass": "Audio",
+									"sid": 725776053194027,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "0",
+										"x": "536",
+										"y": "103",
+										"z": "0",
+										"angle": "0",
+										"inner-angle": "360",
+										"outer-angle": "360",
+										"outer-gain": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 334278438693618,
+									"disabled": true,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"EnemySFX1Sound\""
+									}
+								},
+								{
+									"id": "set-volume",
+									"objectClass": "Audio",
+									"sid": 324315574019241,
+									"parameters": {
+										"tag": "\"EnemySFX2Sound\"",
+										"db": "-35"
+									}
+								}
+							],
+							"sid": 213348098758664
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 881559390521600
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "ShadowEnemy",
+									"sid": 586926806605494,
+									"parameters": {
+										"unique-id": "1945"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "WhiteEnemy",
+									"sid": 601513265281467,
+									"disabled": true
+								}
+							],
+							"actions": [
+								{
+									"id": "play-at-position",
+									"objectClass": "Audio",
+									"sid": 830695868094695,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "0",
+										"x": "626",
+										"y": "159",
+										"z": "0",
+										"angle": "0",
+										"inner-angle": "360",
+										"outer-angle": "360",
+										"outer-gain": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 778320988025182,
+									"disabled": true,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"EnemySFX1Sound\""
+									}
+								},
+								{
+									"id": "set-volume",
+									"objectClass": "Audio",
+									"sid": 713715519407767,
+									"parameters": {
+										"tag": "\"EnemySFX2Sound\"",
+										"db": "-35"
+									}
+								}
+							],
+							"sid": 134481680274921
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 752737974321021
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "ShadowEnemy",
+									"sid": 687032420242405,
+									"parameters": {
+										"unique-id": "1959"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "WhiteEnemy",
+									"sid": 189263654983946,
+									"disabled": true
+								}
+							],
+							"actions": [
+								{
+									"id": "play-at-position",
+									"objectClass": "Audio",
+									"sid": 193399193059058,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "0",
+										"x": "1529",
+										"y": "280",
+										"z": "0",
+										"angle": "0",
+										"inner-angle": "360",
+										"outer-angle": "360",
+										"outer-gain": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 667479515500227,
+									"disabled": true,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"EnemySFX1Sound\""
+									}
+								},
+								{
+									"id": "set-volume",
+									"objectClass": "Audio",
+									"sid": 401864967584064,
+									"parameters": {
+										"tag": "\"EnemySFX2Sound\"",
+										"db": "-35"
+									}
+								}
+							],
+							"sid": 422204365062685
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 534676162512742
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "ShadowEnemy",
+									"sid": 779548920562289,
+									"parameters": {
+										"unique-id": "1703"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "WhiteEnemy",
+									"sid": 343611611848849,
+									"disabled": true
+								}
+							],
+							"actions": [
+								{
+									"id": "play-at-position",
+									"objectClass": "Audio",
+									"sid": 355976841050440,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "0",
+										"x": "1142",
+										"y": "179",
+										"z": "0",
+										"angle": "0",
+										"inner-angle": "360",
+										"outer-angle": "360",
+										"outer-gain": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 866864587313777,
+									"disabled": true,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"EnemySFX1Sound\""
+									}
+								},
+								{
+									"id": "set-volume",
+									"objectClass": "Audio",
+									"sid": 921885779727634,
+									"parameters": {
+										"tag": "\"EnemySFX2Sound\"",
+										"db": "-35"
+									}
+								}
+							],
+							"sid": 704457376467152
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 814874847286623
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "ShadowEnemy",
+									"sid": 540585457182331,
+									"parameters": {
+										"unique-id": "1953"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "WhiteEnemy",
+									"sid": 750098190891297,
+									"disabled": true
+								}
+							],
+							"actions": [
+								{
+									"id": "play-at-position",
+									"objectClass": "Audio",
+									"sid": 558680505938185,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "-10",
+										"x": "766",
+										"y": "465",
+										"z": "0",
+										"angle": "0",
+										"inner-angle": "360",
+										"outer-angle": "360",
+										"outer-gain": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 233418081748608,
+									"disabled": true,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"EnemySFX1Sound\""
+									}
+								},
+								{
+									"id": "set-volume",
+									"objectClass": "Audio",
+									"sid": 467522846147870,
+									"parameters": {
+										"tag": "\"EnemySFX2Sound\"",
+										"db": "-35"
+									}
+								}
+							],
+							"sid": 107315455968284
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-start-of-layout",
+									"objectClass": "System",
+									"sid": 508825867698874
+								},
+								{
+									"id": "pick-by-unique-id",
+									"objectClass": "WhiteEnemy",
+									"sid": 211588971163132,
+									"parameters": {
+										"unique-id": "1966"
+									}
+								},
+								{
+									"id": "is-visible",
+									"objectClass": "WhiteEnemy",
+									"sid": 887183762897123,
+									"disabled": true
+								}
+							],
+							"actions": [
+								{
+									"id": "play-at-position",
+									"objectClass": "Audio",
+									"sid": 615358134781059,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "0",
+										"x": "2537",
+										"y": "288",
+										"z": "0",
+										"angle": "0",
+										"inner-angle": "360",
+										"outer-angle": "360",
+										"outer-gain": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 491054948619488,
+									"disabled": true,
+									"parameters": {
+										"audio-file": {
+											"path": "Enemy SFX2"
+										},
+										"loop": "looping",
+										"volume": "-10",
+										"stereo-pan": "0",
+										"tag-optional": "\"EnemySFX1Sound\""
+									}
+								},
+								{
+									"id": "set-volume",
+									"objectClass": "Audio",
+									"sid": 683331398108314,
+									"parameters": {
+										"tag": "\"EnemySFX2Sound\"",
+										"db": "-35"
+									}
+								}
+							],
+							"sid": 257137875971509
 						},
 						{
 							"eventType": "block",
@@ -5827,7 +6304,7 @@
 								{
 									"id": "pick-nearestfurthest",
 									"objectClass": "WhiteEnemy",
-									"sid": 373445689499984,
+									"sid": 165196990949518,
 									"parameters": {
 										"which": "nearest",
 										"x": "Player.X",
@@ -5849,7 +6326,7 @@
 								{
 									"id": "set-eventvar-value",
 									"objectClass": "System",
-									"sid": 855777664591514,
+									"sid": 816412584331829,
 									"parameters": {
 										"variable": "dist",
 										"value": "distance(Player.X, Player.Y,WhiteEnemy.X, WhiteEnemy.Y)"
@@ -5858,7 +6335,7 @@
 								{
 									"id": "set-volume",
 									"objectClass": "Audio",
-									"sid": 908249239107590,
+									"sid": 708016754626044,
 									"parameters": {
 										"tag": "\"EnemySFX2Sound\"",
 										"db": "lerp(-60, -13, clamp(1- dist/250, 0, 1))"
@@ -5871,12 +6348,9 @@
 							"eventType": "block",
 							"conditions": [
 								{
-									"id": "every-x-seconds",
+									"id": "every-tick",
 									"objectClass": "System",
-									"sid": 150066278838750,
-									"parameters": {
-										"interval-seconds": "7"
-									}
+									"sid": 595361911396832
 								}
 							],
 							"actions": [
