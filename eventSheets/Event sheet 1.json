@@ -3398,13 +3398,13 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 315169470234757,
+											"sid": 610771495749196,
 											"parameters": {
 												"audio-file": {
 													"path": "Wall Jump SFX"
 												},
 												"loop": "not-looping",
-												"volume": "-35",
+												"volume": "-30",
 												"stereo-pan": "0",
 												"tag-optional": "\"\""
 											}
@@ -3536,13 +3536,13 @@
 										{
 											"id": "play",
 											"objectClass": "Audio",
-											"sid": 937013047689621,
+											"sid": 868076862540487,
 											"parameters": {
 												"audio-file": {
 													"path": "Wall Jump SFX"
 												},
 												"loop": "not-looping",
-												"volume": "-35",
+												"volume": "-30",
 												"stereo-pan": "0",
 												"tag-optional": "\"\""
 											}
@@ -6593,10 +6593,10 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 361828190623812,
+							"sid": 381970659842970,
 							"parameters": {
 								"audio-file": {
-									"path": "Level 1 theme"
+									"path": "Level 1 V2"
 								},
 								"loop": "looping",
 								"volume": "-20",
@@ -6705,16 +6705,21 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 887733060620281,
+							"sid": 762324693418916,
 							"parameters": {
 								"audio-file": {
-									"path": "Final Stage"
+									"path": "Final Stage-2"
 								},
 								"loop": "looping",
 								"volume": "-20",
 								"stereo-pan": "0",
 								"tag-optional": "\"Music\""
 							}
+						},
+						{
+							"type": "script",
+							"language": "javascript",
+							"script": []
 						}
 					],
 					"sid": 538929124378252
