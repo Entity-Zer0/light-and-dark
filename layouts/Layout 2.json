@@ -21795,7 +21795,7 @@
 							"properties": {
 								"movement": "horizontal",
 								"wave": "sine",
-								"period": 4,
+								"period": 2,
 								"period-random": 0,
 								"period-offset": 0,
 								"period-offset-random": 0,
@@ -21856,7 +21856,7 @@
 								"wave": "sine",
 								"period": 4,
 								"period-random": 0,
-								"period-offset": 0,
+								"period-offset": 5,
 								"period-offset-random": 0,
 								"magnitude": 10,
 								"magnitude-random": 0,

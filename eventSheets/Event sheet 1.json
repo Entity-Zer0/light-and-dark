@@ -6890,13 +6890,13 @@
 						{
 							"id": "play",
 							"objectClass": "Audio",
-							"sid": 994346825237270,
+							"sid": 832955926945207,
 							"parameters": {
 								"audio-file": {
-									"path": "Wall Jump SFX"
+									"path": "Jump (1)"
 								},
 								"loop": "not-looping",
-								"volume": "-35",
+								"volume": "-25",
 								"stereo-pan": "0",
 								"tag-optional": "\"\""
 							}
