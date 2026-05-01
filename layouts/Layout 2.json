@@ -33392,43 +33392,6 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 2153,
-					"sid": 768668520645538,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 768668520645538,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 209.90890344316955,
-						"y": 151.9089425612939,
-						"width": 8.108500435495195,
-						"height": 8.889673729217476,
-						"originX": 0.5217391304347826,
-						"originY": 0.45454545454545453,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 4.713576876743349
-					}
-				},
-				{
-					"type": "ColorChangerWhite",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
 					"uid": 2154,
 					"sid": 665750096648361,
 					"tags": "",
