@@ -198,6 +198,16 @@
 			"sid": 847824643628053
 		},
 		{
+			"eventType": "variable",
+			"name": "Key",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 419642466893091
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "TitleScreen",
@@ -13451,6 +13461,309 @@
 								},
 								{
 									"eventType": "comment",
+									"text": "Layout2 key Table"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 788707185704379,
+											"parameters": {
+												"variable": "Note",
+												"comparison": 0,
+												"value": "0"
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 776305638122321,
+											"parameters": {
+												"object": "WhiteTable"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "WhiteTable",
+											"sid": 161635730719884,
+											"parameters": {
+												"unique-id": "118"
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "WhiteTable",
+											"sid": 586613328722137,
+											"parameters": {
+												"object": "WhiteX"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 366090119600649,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-pressed",
+													"objectClass": "Keyboard",
+													"sid": 153879181655394,
+													"parameters": {
+														"key": 32
+													}
+												},
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 780795185285986,
+													"disabled": true,
+													"parameters": {
+														"gamepad": "0",
+														"button": "button-b"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 550410936767131,
+													"parameters": {
+														"variable": "IsBusy",
+														"value": "1"
+													}
+												},
+												{
+													"id": "set-text",
+													"objectClass": "NothingFoundTxt",
+													"sid": 124958498853671,
+													"parameters": {
+														"text": "\"Mystery Key Found\""
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "NothingFoundTxt",
+													"sid": 456858593173838,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TextBox",
+													"sid": 965456573869574,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 773515544791099,
+													"parameters": {
+														"audio-file": {
+															"path": "Found_level up SFX"
+														},
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 769350573793782,
+													"parameters": {
+														"seconds": "2.5",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "NothingFoundTxt",
+													"sid": 192986807168916,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TextBox",
+													"sid": 188790323267914,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 889152907132395,
+													"parameters": {
+														"variable": "IsBusy",
+														"value": "0"
+													}
+												}
+											],
+											"sid": 496214487141907,
+											"isOrBlock": true
+										}
+									]
+								},
+								{
+									"eventType": "comment",
+									"text": "Layout2 Secret behind door"
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-eventvar",
+											"objectClass": "System",
+											"sid": 661450169336896,
+											"parameters": {
+												"variable": "Note",
+												"comparison": 0,
+												"value": "0"
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "Player",
+											"sid": 757200476118101,
+											"parameters": {
+												"object": "BlackTable"
+											}
+										},
+										{
+											"id": "pick-by-unique-id",
+											"objectClass": "BlackTable",
+											"sid": 729753763941230,
+											"parameters": {
+												"unique-id": "790"
+											}
+										},
+										{
+											"id": "is-overlapping-another-object",
+											"objectClass": "BlackTable",
+											"sid": 840601611006444,
+											"parameters": {
+												"object": "BlackX"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 930110314598117,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "on-key-pressed",
+													"objectClass": "Keyboard",
+													"sid": 240424349697010,
+													"parameters": {
+														"key": 32
+													}
+												},
+												{
+													"id": "on-button-pressed",
+													"objectClass": "Gamepad",
+													"sid": 852156543874296,
+													"disabled": true,
+													"parameters": {
+														"gamepad": "0",
+														"button": "button-b"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "set-enabled",
+													"objectClass": "Player",
+													"sid": 230858028800266,
+													"behaviorType": "Platform",
+													"parameters": {
+														"state": "disabled"
+													}
+												},
+												{
+													"id": "wait",
+													"objectClass": "System",
+													"sid": 893124399939614,
+													"parameters": {
+														"seconds": "0.3",
+														"use-timescale": true
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "NothingFoundTxt",
+													"sid": 322119905280282,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-position-to-another-object",
+													"objectClass": "Log8",
+													"sid": 838548712380034,
+													"parameters": {
+														"object": "Player",
+														"image-point-optional": "0"
+													}
+												},
+												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 666323066771475,
+													"parameters": {
+														"variable": "Note",
+														"value": "1"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "Log8",
+													"sid": 524851940149300,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 777447074345175,
+													"parameters": {
+														"audio-file": {
+															"path": "Found_level up SFX"
+														},
+														"loop": "not-looping",
+														"volume": "-10",
+														"stereo-pan": "0",
+														"tag-optional": "\"\""
+													}
+												},
+												{
+													"id": "set-time-scale",
+													"objectClass": "System",
+													"sid": 532446189995700,
+													"parameters": {
+														"time-scale": "0"
+													}
+												}
+											],
+											"sid": 399050469193242,
+											"isOrBlock": true
+										}
+									]
+								},
+								{
+									"eventType": "comment",
 									"text": "Layout3 Table In hallway Before Vault"
 								},
 								{
@@ -14110,9 +14423,25 @@
 													}
 												},
 												{
+													"id": "set-text",
+													"objectClass": "NothingFoundTxt",
+													"sid": 266379265462578,
+													"parameters": {
+														"text": "\"* Nothing found\""
+													}
+												},
+												{
 													"id": "set-visible",
 													"objectClass": "NothingFoundTxt",
 													"sid": 244578290230807,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TextBox",
+													"sid": 443705476897495,
 													"parameters": {
 														"visibility": "visible"
 													}
@@ -14130,6 +14459,14 @@
 													"id": "set-visible",
 													"objectClass": "NothingFoundTxt",
 													"sid": 994097407134914,
+													"parameters": {
+														"visibility": "invisible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TextBox",
+													"sid": 432880798461888,
 													"parameters": {
 														"visibility": "invisible"
 													}
@@ -14216,9 +14553,25 @@
 													}
 												},
 												{
+													"id": "set-text",
+													"objectClass": "NothingFoundTxt",
+													"sid": 652420072969249,
+													"parameters": {
+														"text": "\"* Nothing found\""
+													}
+												},
+												{
 													"id": "set-visible",
 													"objectClass": "NothingFoundTxt",
 													"sid": 889419865379890,
+													"parameters": {
+														"visibility": "visible"
+													}
+												},
+												{
+													"id": "set-visible",
+													"objectClass": "TextBox",
+													"sid": 490764208569907,
 													"parameters": {
 														"visibility": "visible"
 													}
@@ -14234,18 +14587,18 @@
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "TextBoxForStoryDoc",
-													"sid": 926760298294062,
+													"objectClass": "NothingFoundTxt",
+													"sid": 637484708073080,
 													"parameters": {
 														"visibility": "invisible"
 													}
 												},
 												{
 													"id": "set-visible",
-													"objectClass": "NothingFoundTxt",
-													"sid": 637484708073080,
+													"objectClass": "TextBox",
+													"sid": 771076517365226,
 													"parameters": {
-														"visibility": "invisible"
+														"visibility": "visible"
 													}
 												},
 												{
@@ -14768,6 +15121,54 @@
 						}
 					],
 					"sid": 748848371003459
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 474112983389190
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 435805751317702,
+							"parameters": {
+								"variable": "Reset",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "BlackWallsSolid",
+							"sid": 143963087191831,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "BlackWallsSolid",
+							"sid": 512643933304766,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "WhiteDoor",
+							"sid": 124817183310253,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 632811789865543
 				},
 				{
 					"eventType": "block",
@@ -15307,6 +15708,15 @@
 							}
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 196952312085880,
+							"parameters": {
+								"variable": "Key",
+								"value": "0"
+							}
+						},
+						{
 							"id": "go-to-layout",
 							"objectClass": "System",
 							"sid": 130505892874444,
@@ -15764,7 +16174,7 @@
 				{
 					"id": "set-layout-scale",
 					"objectClass": "System",
-					"sid": 283118786682074,
+					"sid": 351507466209641,
 					"parameters": {
 						"scale": "3.5"
 					}
@@ -16764,7 +17174,7 @@
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 916840271036393,
+							"sid": 946758118287468,
 							"parameters": {
 								"variable": "Layer",
 								"comparison": 4,
@@ -16774,20 +17184,29 @@
 					],
 					"actions": [
 						{
-							"id": "set-time-scale",
+							"id": "wait",
 							"objectClass": "System",
-							"sid": 581120145137583,
+							"sid": 483250538534477,
 							"parameters": {
-								"time-scale": "0"
+								"seconds": "0.3",
+								"use-timescale": true
 							}
 						},
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 151609672197986,
+							"sid": 368861627839196,
 							"parameters": {
 								"variable": "Pause",
 								"value": "1"
+							}
+						},
+						{
+							"id": "set-time-scale",
+							"objectClass": "System",
+							"sid": 581120145137583,
+							"parameters": {
+								"time-scale": "0"
 							}
 						},
 						{
@@ -16817,7 +17236,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Text3",
+							"objectClass": "QuitTxt",
 							"sid": 238374675658342,
 							"parameters": {
 								"visibility": "visible"
@@ -16877,6 +17296,14 @@
 						},
 						{
 							"id": "set-visible",
+							"objectClass": "Sprite8",
+							"sid": 993404873287771,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
 							"objectClass": "Sprite7",
 							"sid": 446712084313611,
 							"parameters": {
@@ -16893,7 +17320,7 @@
 						},
 						{
 							"id": "set-visible",
-							"objectClass": "Text3",
+							"objectClass": "QuitTxt",
 							"sid": 150777540224072,
 							"parameters": {
 								"visibility": "invisible"
@@ -16972,27 +17399,27 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 291734723106032,
+							"sid": 351948017404660,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "ControlsButton"
+								"object-clicked": "ControlsButton2"
 							}
-						},
-						{
-							"id": "is-visible",
-							"objectClass": "ControlsButton",
-							"sid": 618855898899699
 						},
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 579777258446102,
+							"sid": 446275291883260,
 							"parameters": {
-								"variable": "Layer",
-								"comparison": 4,
-								"value": "0"
+								"variable": "Pause",
+								"comparison": 0,
+								"value": "1"
 							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "ControlsButton2",
+							"sid": 681437480579370
 						}
 					],
 					"actions": [
@@ -17077,30 +17504,38 @@
 						{
 							"id": "on-object-clicked",
 							"objectClass": "Mouse",
-							"sid": 354114364241412,
+							"sid": 120484810411374,
 							"parameters": {
 								"mouse-button": "left",
 								"click-type": "clicked",
-								"object-clicked": "Exit"
+								"object-clicked": "Exit2"
 							}
-						},
-						{
-							"id": "is-visible",
-							"objectClass": "Exit",
-							"sid": 863532120589018
 						},
 						{
 							"id": "compare-eventvar",
 							"objectClass": "System",
-							"sid": 171296473562721,
+							"sid": 758802977676346,
 							"parameters": {
-								"variable": "Layer",
-								"comparison": 4,
-								"value": "0"
+								"variable": "Pause",
+								"comparison": 0,
+								"value": "1"
 							}
+						},
+						{
+							"id": "is-visible",
+							"objectClass": "Exit2",
+							"sid": 542770593086239
 						}
 					],
 					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Sprite8",
+							"sid": 147628798703915,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
 						{
 							"id": "set-visible",
 							"objectClass": "Exit2",
@@ -17170,6 +17605,91 @@
 				}
 			],
 			"sid": 778177303114642
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Secret",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 779515938368689,
+							"parameters": {
+								"key": 32
+							}
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 239759779038738,
+							"parameters": {
+								"variable": "Key",
+								"comparison": 0,
+								"value": "1"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Player",
+							"sid": 437239819004420,
+							"parameters": {
+								"object": "WhiteDoor"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "WhiteDoor",
+							"sid": 117659741506641,
+							"parameters": {
+								"unique-id": "797"
+							}
+						},
+						{
+							"id": "pick-by-unique-id",
+							"objectClass": "BlackWallsSolid",
+							"sid": 170357987604185,
+							"parameters": {
+								"unique-id": "789"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "BlackWallsSolid",
+							"sid": 741183530515517,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "BlackWallsSolid",
+							"sid": 883094893105207,
+							"behaviorType": "Solid",
+							"parameters": {
+								"state": "disabled"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "WhiteDoor",
+							"sid": 659559089340654,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 401514274996594
+				}
+			],
+			"sid": 601043114569754
 		}
 	],
 	"sid": 285828799823789
