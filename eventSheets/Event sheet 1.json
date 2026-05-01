@@ -4882,6 +4882,14 @@
 									"parameters": {
 										"key": 87
 									}
+								},
+								{
+									"id": "key-is-down",
+									"objectClass": "Keyboard",
+									"sid": 562286946065483,
+									"parameters": {
+										"key": 38
+									}
 								}
 							],
 							"actions": [
@@ -4907,6 +4915,14 @@
 									"sid": 956786093306097,
 									"parameters": {
 										"key": 87
+									}
+								},
+								{
+									"id": "on-key-released",
+									"objectClass": "Keyboard",
+									"sid": 154802420758456,
+									"parameters": {
+										"key": 38
 									}
 								}
 							],
@@ -4995,28 +5011,46 @@
 									"objectClass": "Player",
 									"sid": 317996042944996,
 									"behaviorType": "Platform"
-								},
-								{
-									"id": "key-is-down",
-									"objectClass": "Keyboard",
-									"sid": 591324454739207,
-									"parameters": {
-										"key": 87
-									}
 								}
 							],
-							"actions": [
+							"actions": [],
+							"sid": 823208083125148,
+							"children": [
 								{
-									"id": "simulate-control",
-									"objectClass": "Player",
-									"sid": 710687210252417,
-									"behaviorType": "Platform",
-									"parameters": {
-										"control": "jump"
-									}
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 527079448206725,
+											"parameters": {
+												"key": 87
+											}
+										},
+										{
+											"id": "key-is-down",
+											"objectClass": "Keyboard",
+											"sid": 398533793546918,
+											"parameters": {
+												"key": 38
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "simulate-control",
+											"objectClass": "Player",
+											"sid": 970727217759710,
+											"behaviorType": "Platform",
+											"parameters": {
+												"control": "jump"
+											}
+										}
+									],
+									"sid": 745993682010541,
+									"isOrBlock": true
 								}
-							],
-							"sid": 823208083125148
+							]
 						}
 					],
 					"sid": 447217960186012
