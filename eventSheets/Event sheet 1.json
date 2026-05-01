@@ -13537,6 +13537,15 @@
 													}
 												},
 												{
+													"id": "set-eventvar-value",
+													"objectClass": "System",
+													"sid": 429138282920693,
+													"parameters": {
+														"variable": "Key",
+														"value": "1"
+													}
+												},
+												{
 													"id": "set-text",
 													"objectClass": "NothingFoundTxt",
 													"sid": 124958498853671,

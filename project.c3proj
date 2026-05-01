@@ -337,7 +337,8 @@
 					"WhiteDroneHitbox",
 					"BlackDroneHitbox",
 					"HitboxRight",
-					"WhiteEnemydying"
+					"WhiteEnemydying",
+					"ShadowEvolved"
 				],
 				"subfolders": [],
 				"name": "Enemy"
